@@ -1,0 +1,1183 @@
+[
+  {
+    "question_id": "0",
+    "question": "What place is shown?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2317441.jpg",
+    "ground_truth": "road",
+    "visual_description": "The image captures a lively scene on a street, where a man is riding a skateboard down the road. He is wearing a helmet for safety while performing his skateboarding stunt. There are several other people in the scene, some of them walking or standing on the sidewalk.\n\nIn addition to the skateboarder, there are multiple bicycles scattered throughout the scene, with some parked and others being ridden by people. A few cars are also present in the image, parked or driving along the street. The overall atmosphere of the scene is energetic and active, with people engaging in various outdoor activities.",
+    "prediction": "Street",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "street",
+        "candidates": [
+          {
+            "thought": "The image depicts an energetic street scene with people engaged in various outdoor activities.",
+            "answer": "Street"
+          },
+          {
+            "thought": "A man is seen riding a skateboard on the street.",
+            "answer": "Street"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "road",
+        "candidates": [
+          {
+            "thought": "{\n    \"thoughts\":[\n        \"The road is depicted as a main path that leads to the location where the skateboarder is riding.\",\n        \"There are bicycle lanes and pedestrian pathways intersecting the road at different points.\"\n    ],\n    \"answers\":[\n        \"Yes\",\n        \"A road is shown leading to the location where the skateboarder is riding.\",\n        \"Yes, the bike lanes and pedestrian pathways intersect the road at different points.\"\n    ]\n}",
+            "answer": "{\n    \"thoughts\":[\n        \"The road is depicted as a main path that leads to the location where the skateboarder is riding.\",\n        \"There are bicycle lanes and pedestrian pathways intersecting the road at different points.\"\n    ],\n    \"answers\":[\n        \"Yes\",\n        \"A road is shown leading to the location where the skateboarder is riding.\",\n        \"Yes, the bike lanes and pedestrian pathways intersect the road at different points.\"\n    ]\n}"
+          }
+        ],
+        "scores": [
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "scene",
+        "candidates": [
+          {
+            "thought": "{\n    \"thoughts\": [\"The image captures a scene with a skateboarder performing a stunt on the street.\", \"There are people involved in different activities such as walking, standing, and riding bicycles, demonstrating an energetic and active atmosphere.\"],\n    \"answers\": [\"Lively Scene on Street with Skateboarder Performing Stunt\", \"Busy Outdoor Scene with Different Activities\"]\n}",
+            "answer": "{\n    \"thoughts\": [\"The image captures a scene with a skateboarder performing a stunt on the street.\", \"There are people involved in different activities such as walking, standing, and riding bicycles, demonstrating an energetic and active atmosphere.\"],\n    \"answers\": [\"Lively Scene on Street with Skateboarder Performing Stunt\", \"Busy Outdoor Scene with Different Activities\"]\n}"
+          }
+        ],
+        "scores": [
+          0.85
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "street",
+        "selected_answer": "Street",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "road",
+        "selected_answer": "{\n    \"thoughts\":[\n        \"The road is depicted as a main path that leads to the location where the skateboarder is riding.\",\n        \"There are bicycle lanes and pedestrian pathways intersecting the road at different points.\"\n    ],\n    \"answers\":[\n        \"Yes\",\n        \"A road is shown leading to the location where the skateboarder is riding.\",\n        \"Yes, the bike lanes and pedestrian pathways intersect the road at different points.\"\n    ]\n}",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "scene",
+        "selected_answer": "{\n    \"thoughts\": [\"The image captures a scene with a skateboarder performing a stunt on the street.\", \"There are people involved in different activities such as walking, standing, and riding bicycles, demonstrating an energetic and active atmosphere.\"],\n    \"answers\": [\"Lively Scene on Street with Skateboarder Performing Stunt\", \"Busy Outdoor Scene with Different Activities\"]\n}",
+        "selected_score": 0.85
+      }
+    ]
+  },
+  {
+    "question_id": "1",
+    "question": "What type of clothing is gray?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2390824.jpg",
+    "ground_truth": "pants",
+    "visual_description": "The image captures a baseball game in progress, with a baseball player in the center of the scene. The player is in the process of throwing a baseball, which is visible in the air near the player's arm. The player is wearing a baseball uniform, which includes a cap and a jersey.\n\nThere are several other people in the scene, likely teammates or opponents, positioned around the field. Some of them are closer to the foreground, while others are further in the background. The presence of multiple people suggests that this is a lively and engaging baseball game.",
+    "prediction": "gray shirt: This type of clothing could be associated with the uniform of a specific player at the baseball game, as indicated by the selection of \"gray\" as one of the sub-answers.",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "gray jacket",
+        "candidates": [
+          {
+            "thought": "I see a gray jacket on one of the players, possibly indicating they are wearing a gray jacket for some reason.",
+            "answer": "It appears there is a gray jacket on one of the players."
+          },
+          {
+            "thought": "The presence of a gray jacket could suggest that it was part of the attire worn by a particular player.",
+            "answer": "A gray jacket might have been part of the uniform of a specific player at the baseball game."
+          }
+        ],
+        "scores": [
+          0.75,
+          0.8
+        ],
+        "selected_index": 1
+      },
+      {
+        "sub_question": "black hat",
+        "candidates": [
+          {
+            "thought": "The black hat worn by the player could indicate that it is dark outside or that the player has chosen to wear their hat in a particular way for personal reasons.",
+            "answer": ""
+          },
+          {
+            "thought": "If the black hat is part of the team's attire, it might suggest a specific theme or color scheme for the team. Alternatively, it could be an accessory worn for style or fashion purposes.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.3,
+          0.7
+        ],
+        "selected_index": 1
+      },
+      {
+        "sub_question": "red shirt",
+        "candidates": [
+          {
+            "thought": "Red shirts are often associated with baseball players because they are typically worn by players on the home team.",
+            "answer": "Yes, red shirts are commonly associated with baseball players."
+          },
+          {
+            "thought": "This observation can be supported by the fact that many baseball stadiums feature red banners and uniforms for the home team, which adds to the visual appeal of the game.",
+            "answer": "Additionally, the use of red jerseys and caps by the home team can reinforce the association between the sport and the color red."
+          }
+        ],
+        "scores": [
+          0.7,
+          0.8
+        ],
+        "selected_index": 1
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "gray jacket",
+        "selected_answer": "A gray jacket might have been part of the uniform of a specific player at the baseball game.",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "black hat",
+        "selected_answer": "",
+        "selected_score": 0.7
+      },
+      {
+        "sub_question": "red shirt",
+        "selected_answer": "Additionally, the use of red jerseys and caps by the home team can reinforce the association between the sport and the color red.",
+        "selected_score": 0.8
+      }
+    ]
+  },
+  {
+    "question_id": "2",
+    "question": "What is the man on?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2374543.jpg",
+    "ground_truth": "bench",
+    "visual_description": "The image features a man sitting on a bench in a sandy area, possibly a beach. He is wearing a hat and appears to be enjoying his time outdoors. The bench is located near the center of the scene, with the man sitting on it comfortably. The sandy area extends to the right side of the image, creating a relaxing atmosphere for the man to unwind.",
+    "prediction": "The man on the bench.",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "What is the man on?",
+        "candidates": [
+          {
+            "thought": "The man is most likely sitting on a bench.",
+            "answer": "bench"
+          },
+          {
+            "thought": "It's difficult to say as the image does not provide enough context to confirm what the man might be sitting on.",
+            "answer": "unknown"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.2
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "What is the man on?",
+        "selected_answer": "bench",
+        "selected_score": 0.8
+      }
+    ]
+  },
+  {
+    "question_id": "3",
+    "question": "What type of place is it?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/1498.jpg",
+    "ground_truth": "road",
+    "visual_description": "The image depicts a city street with a blue car parked on the side of the road. There are several people walking along the sidewalk, with some of them carrying backpacks. A man in an orange vest is crossing the street, while others are walking in the opposite direction.\n\nIn addition to the pedestrians, there are a few traffic lights visible in the scene, ensuring the safe flow of traffic. A fire hydrant can also be seen on the sidewalk, providing a sense of the urban environment.",
+    "prediction": "city street",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "city street",
+        "candidates": [
+          {
+            "thought": "This image depicts a busy urban street with a variety of people and vehicles.",
+            "answer": "City Street"
+          },
+          {
+            "thought": "The presence of traffic lights and a fire hydrant suggests that this is an active urban area.",
+            "answer": "City Street"
+          }
+        ],
+        "scores": [
+          0.9,
+          0.8
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "parked vehicle",
+        "candidates": [
+          {
+            "thought": "The parked blue car adds to the visual description by providing context for the setting.",
+            "answer": "A blue car parked on the side of the road."
+          },
+          {
+            "thought": "The presence of several people walking provides details about the location and time of day.",
+            "answer": "Several people walking along the sidewalk."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.6
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "urban environment",
+        "candidates": [
+          {
+            "thought": "This image portrays a bustling urban environment with a variety of people and activities.",
+            "answer": "Urban environment"
+          },
+          {
+            "thought": "The presence of a city street, cars, pedestrians, traffic lights, and a fire hydrant all contribute to this portrayal.",
+            "answer": "Urban environment"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.9
+        ],
+        "selected_index": 1
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "city street",
+        "selected_answer": "City Street",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "parked vehicle",
+        "selected_answer": "A blue car parked on the side of the road.",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "urban environment",
+        "selected_answer": "Urban environment",
+        "selected_score": 0.9
+      }
+    ]
+  },
+  {
+    "question_id": "4",
+    "question": "Are there both vegetables and peppers in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2363859.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a delicious pizza with various toppings, including peppers and onions. The pizza is placed on a dining table, and it appears to be a homemade pizza. The pizza is cut into slices, making it easy to serve and enjoy. The table occupies most of the scene, with the pizza being the main focus.",
+    "prediction": "Yes, the ingredients include peppers and onions.",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "vegetables",
+        "candidates": [
+          {
+            "thought": "The presence of peppers and onions suggests that these are vegetables.",
+            "answer": "Yes, the ingredients include peppers and onions."
+          },
+          {
+            "thought": "A homemade pizza typically includes tomatoes as a topping, which are also considered vegetables.",
+            "answer": "Yes, tomatoes are included in the toppings list as well."
+          }
+        ],
+        "scores": [
+          0.9,
+          0.8
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "peppers",
+        "candidates": [
+          {
+            "thought": "Peppers are a common vegetable topping for pizzas.",
+            "answer": "Peppers are a popular choice for adding flavor and color to a pizza."
+          },
+          {
+            "thought": "Onions are also a common topping choice for pizza.",
+            "answer": "Onions can add a sweet and savory note to the pizza, enhancing its overall taste."
+          }
+        ],
+        "scores": [
+          0.7,
+          0.8
+        ],
+        "selected_index": 1
+      },
+      {
+        "sub_question": "toppings",
+        "candidates": [
+          {
+            "thought": "Toppings are ingredients that are added to the pizza after it has been cooked.",
+            "answer": "Peppers and onions are two common toppings for pizzas."
+          }
+        ],
+        "scores": [
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "vegetables",
+        "selected_answer": "Yes, the ingredients include peppers and onions.",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "peppers",
+        "selected_answer": "Onions can add a sweet and savory note to the pizza, enhancing its overall taste.",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "toppings",
+        "selected_answer": "Peppers and onions are two common toppings for pizzas.",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "5",
+    "question": "Which kind of animal is in the field?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2400769.jpg",
+    "ground_truth": "giraffe",
+    "visual_description": "The image features two giraffes standing in a grassy field under a tree. They are positioned close to each other, with one giraffe on the left side and the other on the right side of the tree. The giraffes appear to be enjoying the shade provided by the tree.\n\nIn the background, there are a few more trees, creating a natural and serene environment for the giraffes. The scene captures the beauty of these majestic animals in their natural habitat.",
+    "prediction": "giraffe",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "giraffe",
+        "candidates": [
+          {
+            "thought": "Giraffe is the common name given to several species of large herbivorous mammals found in Africa.",
+            "answer": "This refers to the animal depicted in the picture."
+          },
+          {
+            "thought": "The term 'giraffe' can also refer to the genus Giraffa, which contains three species of African giraffe.",
+            "answer": "Alternatively, it could refer to this genus as well."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.7
+        ],
+        "selected_index": 1
+      },
+      {
+        "sub_question": "grassy field",
+        "candidates": [
+          {
+            "thought": "[{\"thought\": \"The term 'grassy field' refers to a type of landscape that is typically covered with green grass or turf.\", \"answer\": \"The grassy field provides a backdrop for the giraffes and adds to the overall scenery.\"}]\n\n[{\"thought\": \"A grassy field can refer to any area covered mainly by grass, which is often associated with open spaces or parks.\", \"answer\": \"The presence of a grassy field implies that this is an open area where the giraffes can move freely without being encumbered by vegetation.\"}]",
+            "answer": "[{\"thought\": \"The term 'grassy field' refers to a type of landscape that is typically covered with green grass or turf.\", \"answer\": \"The grassy field provides a backdrop for the giraffes and adds to the overall scenery.\"}]\n\n[{\"thought\": \"A grassy field can refer to any area covered mainly by grass, which is often associated with open spaces or parks.\", \"answer\": \"The presence of a grassy field implies that this is an open area where the giraffes can move freely without being encumbered by vegetation.\"}]"
+          }
+        ],
+        "scores": [
+          0.9
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "tree",
+        "candidates": [
+          {
+            "thought": "The presence of multiple trees in the background creates a lush and verdant environment for the giraffes.",
+            "answer": "Multiple trees"
+          },
+          {
+            "thought": "The shade provided by the tree likely provides relief from the hot sun for the giraffes.",
+            "answer": "Shade"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "giraffe",
+        "selected_answer": "Alternatively, it could refer to this genus as well.",
+        "selected_score": 0.7
+      },
+      {
+        "sub_question": "grassy field",
+        "selected_answer": "[{\"thought\": \"The term 'grassy field' refers to a type of landscape that is typically covered with green grass or turf.\", \"answer\": \"The grassy field provides a backdrop for the giraffes and adds to the overall scenery.\"}]\n\n[{\"thought\": \"A grassy field can refer to any area covered mainly by grass, which is often associated with open spaces or parks.\", \"answer\": \"The presence of a grassy field implies that this is an open area where the giraffes can move freely without being encumbered by vegetation.\"}]",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "tree",
+        "selected_answer": "Multiple trees",
+        "selected_score": 0.8
+      }
+    ]
+  },
+  {
+    "question_id": "6",
+    "question": "Is there a dog near the pillow?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2369293.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a cat sitting on a bed, looking at its reflection in a mirror. The cat appears to be curious about its own image, as it gazes at the mirror. The bed is situated in a room with a chair nearby. The scene captures the cat's interaction with its surroundings and the mirror.",
+    "prediction": "No",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Is there a dog near the pillow?",
+        "candidates": [
+          {
+            "thought": "I don't see any dogs around the bed or in the room.",
+            "answer": "There is no dog mentioned in the description."
+          },
+          {
+            "thought": "Based on the given information, I can conclude that there is no dog near the pillow.",
+            "answer": "No"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Is there a dog near the pillow?",
+        "selected_answer": "There is no dog mentioned in the description.",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "7",
+    "question": "Which kind of food is on the pizza?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2410495.jpg",
+    "ground_truth": "mushroom",
+    "visual_description": "The image features a delicious pizza with various toppings, including mushrooms, peppers, and tomatoes. The pizza is cut into slices and placed in a box, ready to be enjoyed. The box is placed on a dining table, which occupies most of the scene.\n\nIn addition to the pizza, there are a few carrots scattered around the table, adding a touch of color and variety to the scene. The overall atmosphere suggests a casual and enjoyable meal.",
+    "prediction": "pizza: The pizza in the image has a variety of ingredients.",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "pizza",
+        "candidates": [
+          {
+            "thought": "A slice of pizza with various toppings like mushrooms, peppers, and tomatoes.",
+            "answer": "The pizza in the image has a variety of ingredients."
+          },
+          {
+            "thought": "The pizza is being served in a box on a dining table.",
+            "answer": "The pizza is being eaten by someone at a table."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "tomatoes",
+        "candidates": [
+          {
+            "thought": "{\n  \"thoughts\":[\n    \"Tomatoes are typically used as a topping on pizza.\",\n    \"They add flavor, texture, and color to the dish.\"\n  ],\n  \"answers\":[\n    \"Tomatoes are a common topping for pizza and can add flavor, texture, and color.\",\n    \"They are commonly found in Italian cuisine and are often served fresh or canned.\"\n  ]\n}",
+            "answer": "{\n  \"thoughts\":[\n    \"Tomatoes are typically used as a topping on pizza.\",\n    \"They add flavor, texture, and color to the dish.\"\n  ],\n  \"answers\":[\n    \"Tomatoes are a common topping for pizza and can add flavor, texture, and color.\",\n    \"They are commonly found in Italian cuisine and are often served fresh or canned.\"\n  ]\n}"
+          }
+        ],
+        "scores": [
+          0.8
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "dining table",
+        "candidates": [
+          {
+            "thought": "The dining table appears as the main focus of the scene.",
+            "answer": "The dining table is where the pizza is being placed on."
+          },
+          {
+            "thought": "The dining table also serves as a surface for the scattered carrots.",
+            "answer": "The dining table is used as a backdrop for the vegetables."
+          }
+        ],
+        "scores": [
+          0.6,
+          0.4
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "pizza",
+        "selected_answer": "The pizza in the image has a variety of ingredients.",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "tomatoes",
+        "selected_answer": "{\n  \"thoughts\":[\n    \"Tomatoes are typically used as a topping on pizza.\",\n    \"They add flavor, texture, and color to the dish.\"\n  ],\n  \"answers\":[\n    \"Tomatoes are a common topping for pizza and can add flavor, texture, and color.\",\n    \"They are commonly found in Italian cuisine and are often served fresh or canned.\"\n  ]\n}",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "dining table",
+        "selected_answer": "The dining table is where the pizza is being placed on.",
+        "selected_score": 0.6
+      }
+    ]
+  },
+  {
+    "question_id": "8",
+    "question": "Is the yellow vegetable to the left or to the right of the vegetable that is not rotten?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2345610.jpg",
+    "ground_truth": "right",
+    "visual_description": "The image features a white plate filled with a variety of pizza slices. There are at least six different pizza slices on the plate, each with different toppings and sizes. The pizza slices are arranged in a visually appealing manner, making the plate look delicious and inviting. The plate is placed on a dining table, ready to be enjoyed by those who partake in the meal.",
+    "prediction": "The yellow vegetable is not mentioned as being rotten. Therefore, we cannot determine if it is to the left or right of the vegetable that is not rotten.",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "yellow vegetable",
+        "candidates": [
+          {
+            "thought": "The yellow vegetable in this description could be any type of vegetable that adds color and visual appeal to the dish.",
+            "answer": "Tomato"
+          },
+          {
+            "thought": "There is no mention of a specific vegetable in the description, so it is impossible to determine what the yellow vegetable is without additional information.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.1,
+          0.1
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "rotten vegetable",
+        "candidates": [
+          {
+            "thought": "The phrase 'rotten vegetable' refers to an ingredient that has gone bad or spoiled.",
+            "answer": "The phrase 'rotten vegetable' refers to an ingredient that has gone bad or spoiled."
+          },
+          {
+            "thought": "In this context, it seems like the plate might have been prepared using rotten vegetables, which would not taste good or be appetizing for anyone.",
+            "answer": "This is why the plate looks unappealing; the ingredients used were likely rotten."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.3
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "yellow vegetable",
+        "selected_answer": "Tomato",
+        "selected_score": 0.1
+      },
+      {
+        "sub_question": "rotten vegetable",
+        "selected_answer": "The phrase 'rotten vegetable' refers to an ingredient that has gone bad or spoiled.",
+        "selected_score": 0.8
+      }
+    ]
+  },
+  {
+    "question_id": "9",
+    "question": "What kind of vehicle is to the right of the car?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2354268.jpg",
+    "ground_truth": "van",
+    "visual_description": "The image depicts a busy city street with a man wearing a red helmet riding a motorcycle. He is smiling and appears to be enjoying the ride. There are several other people on the street, some of them riding bicycles.\n\nIn addition to the motorcycle, there are multiple cars and a bus on the street. A few cars are parked or stopped, while others are in motion. The bus is located towards the right side of the scene.\n\nThere are also a couple of backpacks visible in the scene, one near the center and the other towards the right side. The overall atmosphere of the image is lively and bustling.",
+    "prediction": "Subq2",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Subq1",
+        "candidates": [
+          {
+            "thought": "",
+            "answer": "[{'thought': 'The man is likely a cyclist or motorcyclist who enjoys their commute.', 'answer': 'The busy street adds to the character of the scene.'}, {'thought': 'The scene captures a vibrant moment in time where people are interacting and moving around the city.', 'answer': 'The bike riders provide a visual contrast to the cars and buses, highlighting the different modes of transportation in the city.'}]"
+          }
+        ],
+        "scores": [
+          0.9
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Subq2",
+        "candidates": [
+          {
+            "thought": "First, I need to describe the visual elements present in the image.",
+            "answer": "The image portrays a bustling city street with a man on a motorcycle riding down the road, surrounded by various vehicles including cars, buses, and bikes."
+          },
+          {
+            "thought": "Next, I should highlight the emotions expressed by the man.",
+            "answer": "From his smile, it's clear that he enjoys the ride. The other people appear engaged as well, suggesting they're part of a group activity."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Subq3",
+        "candidates": [
+          {
+            "thought": "{\n\"thoughts\":[\n\"Based on the description provided, I can generate two possible reasoning paths.\",\n\"First path: The man riding a motorcycle is likely enjoying the ride, as indicated by his smile.\",\n\"Second path: There are other people on the street, including those riding bicycles, which suggests that the area is not just for motorcyclists but also attracts cyclists.\",\n\"Additionally, the presence of multiple cars, buses, and parked cars on the road indicates that this is a busy urban setting.\"\n],\n\"answers\":[\n{\n\"reasoning\":\"The man riding a motorcycle is likely enjoying the ride, as indicated by his smile.\"\n},\n{\n\"reasoning\":\"There are other people on the street, including those riding bicycles, which suggests that the area is not just for motorcyclists but also attracts cyclists.\"\n}\n]\n}",
+            "answer": "{\n\"thoughts\":[\n\"Based on the description provided, I can generate two possible reasoning paths.\",\n\"First path: The man riding a motorcycle is likely enjoying the ride, as indicated by his smile.\",\n\"Second path: There are other people on the street, including those riding bicycles, which suggests that the area is not just for motorcyclists but also attracts cyclists.\",\n\"Additionally, the presence of multiple cars, buses, and parked cars on the road indicates that this is a busy urban setting.\"\n],\n\"answers\":[\n{\n\"reasoning\":\"The man riding a motorcycle is likely enjoying the ride, as indicated by his smile.\"\n},\n{\n\"reasoning\":\"There are other people on the street, including those riding bicycles, which suggests that the area is not just for motorcyclists but also attracts cyclists.\"\n}\n]\n}"
+          }
+        ],
+        "scores": [
+          0.8
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Subq1",
+        "selected_answer": "[{'thought': 'The man is likely a cyclist or motorcyclist who enjoys their commute.', 'answer': 'The busy street adds to the character of the scene.'}, {'thought': 'The scene captures a vibrant moment in time where people are interacting and moving around the city.', 'answer': 'The bike riders provide a visual contrast to the cars and buses, highlighting the different modes of transportation in the city.'}]",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "Subq2",
+        "selected_answer": "The image portrays a bustling city street with a man on a motorcycle riding down the road, surrounded by various vehicles including cars, buses, and bikes.",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "Subq3",
+        "selected_answer": "{\n\"thoughts\":[\n\"Based on the description provided, I can generate two possible reasoning paths.\",\n\"First path: The man riding a motorcycle is likely enjoying the ride, as indicated by his smile.\",\n\"Second path: There are other people on the street, including those riding bicycles, which suggests that the area is not just for motorcyclists but also attracts cyclists.\",\n\"Additionally, the presence of multiple cars, buses, and parked cars on the road indicates that this is a busy urban setting.\"\n],\n\"answers\":[\n{\n\"reasoning\":\"The man riding a motorcycle is likely enjoying the ride, as indicated by his smile.\"\n},\n{\n\"reasoning\":\"There are other people on the street, including those riding bicycles, which suggests that the area is not just for motorcyclists but also attracts cyclists.\"\n}\n]\n}",
+        "selected_score": 0.8
+      }
+    ]
+  },
+  {
+    "question_id": "10",
+    "question": "On which side of the photo is the white SUV?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2380044.jpg",
+    "ground_truth": "left",
+    "visual_description": "The image features a busy street corner with a traffic light and a street sign. The traffic light is positioned on the left side of the scene, while the street sign is located on the right side. The street sign is attached to a pole, and it displays the names of the intersecting streets.\n\nThere are several cars parked or driving on the street, with one car on the left side, another in the middle, and two more on the right side. Additionally, there is a truck parked on the left side of the scene. The presence of multiple vehicles and the street sign indicate that this is a bustling urban area.",
+    "prediction": "on the right side",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "the left side",
+        "candidates": [
+          {
+            "thought": "[{\"thought\": \"The person is referring to the left side of the image.\", \"answer\": \"Yes.\"}, {\"thought\": \"To answer the sub-question correctly, I need to determine which side of the street is being referred to in the prompt.\", \"answer\": \"The person is referring to the left side of the image.\"}]\n\n[{\"thought\": \"I need to provide an answer for the sub-question by providing information about the left side of the street.\", \"answer\": \"The left side of the street includes the cars parked or driving on the street, as well as the truck parked on the left side of the scene.\"}]\n\n[{\"thought\": \"The person is asking about the left side of the street, so I should describe that part of the scene in my answer.\", \"answer\": \"On the left side of the street, there are several cars parked or driving, including one car on the left side, another in the middle, and two more on the right side.\"}]\n\n[{\"thought\": \"The person is referring to the left side of the image.\", \"answer\": \"Yes.\"}, {\"thought\": \"In order to provide a correct answer, I need to describe the left side of the street in terms of its surroundings and contents.\", \"answer\": \"On the left side of the street, there are several cars parked or driving, including one car on the left side, another in the middle, and two more on the right side.\"}]",
+            "answer": "[{\"thought\": \"The person is referring to the left side of the image.\", \"answer\": \"Yes.\"}, {\"thought\": \"To answer the sub-question correctly, I need to determine which side of the street is being referred to in the prompt.\", \"answer\": \"The person is referring to the left side of the image.\"}]\n\n[{\"thought\": \"I need to provide an answer for the sub-question by providing information about the left side of the street.\", \"answer\": \"The left side of the street includes the cars parked or driving on the street, as well as the truck parked on the left side of the scene.\"}]\n\n[{\"thought\": \"The person is asking about the left side of the street, so I should describe that part of the scene in my answer.\", \"answer\": \"On the left side of the street, there are several cars parked or driving, including one car on the left side, another in the middle, and two more on the right side.\"}]\n\n[{\"thought\": \"The person is referring to the left side of the image.\", \"answer\": \"Yes.\"}, {\"thought\": \"In order to provide a correct answer, I need to describe the left side of the street in terms of its surroundings and contents.\", \"answer\": \"On the left side of the street, there are several cars parked or driving, including one car on the left side, another in the middle, and two more on the right side.\"}]"
+          }
+        ],
+        "scores": [
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "the middle",
+        "candidates": [
+          {
+            "thought": "The 'middle' car is not specified in the visual description.",
+            "answer": "No car can be identified as being 'in the middle'."
+          },
+          {
+            "thought": "Assuming 'middle' refers to the second car from the left (as indicated by its position), we know there are three cars in total, but only one has been named.",
+            "answer": "One car was named."
+          }
+        ],
+        "scores": [
+          0.3,
+          0.7
+        ],
+        "selected_index": 1
+      },
+      {
+        "sub_question": "the right side",
+        "candidates": [
+          {
+            "thought": "The street sign is located on the right side.",
+            "answer": "Yes"
+          },
+          {
+            "thought": "The traffic light is positioned on the left side of the scene.",
+            "answer": "No"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.6
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "the left side",
+        "selected_answer": "[{\"thought\": \"The person is referring to the left side of the image.\", \"answer\": \"Yes.\"}, {\"thought\": \"To answer the sub-question correctly, I need to determine which side of the street is being referred to in the prompt.\", \"answer\": \"The person is referring to the left side of the image.\"}]\n\n[{\"thought\": \"I need to provide an answer for the sub-question by providing information about the left side of the street.\", \"answer\": \"The left side of the street includes the cars parked or driving on the street, as well as the truck parked on the left side of the scene.\"}]\n\n[{\"thought\": \"The person is asking about the left side of the street, so I should describe that part of the scene in my answer.\", \"answer\": \"On the left side of the street, there are several cars parked or driving, including one car on the left side, another in the middle, and two more on the right side.\"}]\n\n[{\"thought\": \"The person is referring to the left side of the image.\", \"answer\": \"Yes.\"}, {\"thought\": \"In order to provide a correct answer, I need to describe the left side of the street in terms of its surroundings and contents.\", \"answer\": \"On the left side of the street, there are several cars parked or driving, including one car on the left side, another in the middle, and two more on the right side.\"}]",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "the middle",
+        "selected_answer": "One car was named.",
+        "selected_score": 0.7
+      },
+      {
+        "sub_question": "the right side",
+        "selected_answer": "Yes",
+        "selected_score": 0.8
+      }
+    ]
+  },
+  {
+    "question_id": "11",
+    "question": "Are there any boxes on the desk that is made of wood?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2336704.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a wooden desk with a laptop computer sitting on top of it. The laptop is positioned towards the center of the desk, and a mouse can be seen on the right side of the desk. A telephone is also present on the left side of the desk, adding to the workspace setup.\n\nIn addition to the laptop and phone, there are two keyboards on the desk. One keyboard is located on the left side of the laptop, while the other is placed on the right side. A TV is mounted on the wall above the desk, providing a source of entertainment or information during work breaks.",
+    "prediction": "No, there are no boxes on the desk that is made of wood.",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Are there any boxes on the desk that is made of wood?",
+        "candidates": [
+          {
+            "thought": "No, the description does not mention any boxes on the desk.",
+            "answer": ""
+          },
+          {
+            "thought": "Based on the given visual description, no boxes are shown on the wooden desk.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Are there any boxes on the desk that is made of wood?",
+        "selected_answer": "",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "12",
+    "question": "What is the color of the helmet in the top?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2414658.jpg",
+    "ground_truth": "gray",
+    "visual_description": "The image depicts a group of people, including both children and adults, standing on a snow-covered slope. They are all wearing skis and are lined up, possibly waiting for their turn to ski down the hill. The group consists of at least 12 people, with some standing closer to the foreground and others further back.\n\nThe skis are visible on the ground, with some of them placed horizontally and others vertically. The scene captures the excitement and anticipation of skiing down the slope together.",
+    "prediction": "No mention of helmets or their color.",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "What is the color of the helmet in the top?",
+        "candidates": [
+          {
+            "thought": "The color of the helmet cannot be determined from the given visual description.",
+            "answer": "Insufficient information."
+          },
+          {
+            "thought": "Based on the description, there is no mention of any helmets being present or their color.",
+            "answer": "No mention of helmets or their color."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.75
+        ],
+        "selected_index": 1
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "What is the color of the helmet in the top?",
+        "selected_answer": "No mention of helmets or their color.",
+        "selected_score": 0.75
+      }
+    ]
+  },
+  {
+    "question_id": "13",
+    "question": "What kind of clothing is gray?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2390675.jpg",
+    "ground_truth": "hat",
+    "visual_description": "The image features a man wearing a suit and tie, with a mustache drawn on his face. He is posing for the camera, possibly for a funny or humorous photo. The man appears to be in a playful mood, as he is making a funny face while wearing the suit and tie.",
+    "prediction": "The man is wearing a gray suit and tie, which makes him look professional and sophisticated.",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "What kind of clothing is gray?",
+        "candidates": [
+          {
+            "thought": "{\n  \"thoughts\": [\"Gray refers to any color that is perceived as a shade of grey or dark blue.\", \"In this context, the man is wearing a suit and tie, which is typically considered a neutral color in formal attire.\"],\n  \"answers\": [\n    {\n      \"reasoning\": \"A gray suit and tie would appear neutral, not necessarily black or white.\",\n      \"image_description\": \"Man in gray suit and tie, laughing, smiling.\"\n    },\n    {\n      \"reasoning\": \"Gray is commonly associated with professionalism and sophistication.\",\n      \"image_description\": \"Man in gray suit and tie, serious, focused, and confident.\"\n    }\n  ]\n}",
+            "answer": "{\n  \"thoughts\": [\"Gray refers to any color that is perceived as a shade of grey or dark blue.\", \"In this context, the man is wearing a suit and tie, which is typically considered a neutral color in formal attire.\"],\n  \"answers\": [\n    {\n      \"reasoning\": \"A gray suit and tie would appear neutral, not necessarily black or white.\",\n      \"image_description\": \"Man in gray suit and tie, laughing, smiling.\"\n    },\n    {\n      \"reasoning\": \"Gray is commonly associated with professionalism and sophistication.\",\n      \"image_description\": \"Man in gray suit and tie, serious, focused, and confident.\"\n    }\n  ]\n}"
+          }
+        ],
+        "scores": [
+          0.7
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "What kind of clothing is gray?",
+        "selected_answer": "{\n  \"thoughts\": [\"Gray refers to any color that is perceived as a shade of grey or dark blue.\", \"In this context, the man is wearing a suit and tie, which is typically considered a neutral color in formal attire.\"],\n  \"answers\": [\n    {\n      \"reasoning\": \"A gray suit and tie would appear neutral, not necessarily black or white.\",\n      \"image_description\": \"Man in gray suit and tie, laughing, smiling.\"\n    },\n    {\n      \"reasoning\": \"Gray is commonly associated with professionalism and sophistication.\",\n      \"image_description\": \"Man in gray suit and tie, serious, focused, and confident.\"\n    }\n  ]\n}",
+        "selected_score": 0.7
+      }
+    ]
+  },
+  {
+    "question_id": "14",
+    "question": "Is the sky light blue?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2411098.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features two giraffes standing next to each other in a zoo enclosure. They are positioned near a tree, which provides them with shade and a natural environment. The giraffes are standing close to a fence, which is likely part of their enclosure. The scene captures the essence of a zoo habitat, where the animals are provided with a comfortable and safe space to live.",
+    "prediction": "No, it's impossible to tell if the sky is blue based on the given visual description.",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Is the sky light blue?",
+        "candidates": [
+          {
+            "thought": "{\n  \"thoughts\": [\"It's not possible to determine if the sky is blue based on the given visual description.\", \"As an AI language model, I don't have access to real-time data or images that may influence my answer.\", \"In this case, I will provide an answer without considering any external factors or visual details.\"],\n  \"answers\": [\n    {\n      \"thought\": \"I cannot visually inspect the image.\",\n      \"answer\": \"No, it's impossible to tell if the sky is blue based on the given visual description.\"\n    }\n  ]\n}",
+            "answer": "{\n  \"thoughts\": [\"It's not possible to determine if the sky is blue based on the given visual description.\", \"As an AI language model, I don't have access to real-time data or images that may influence my answer.\", \"In this case, I will provide an answer without considering any external factors or visual details.\"],\n  \"answers\": [\n    {\n      \"thought\": \"I cannot visually inspect the image.\",\n      \"answer\": \"No, it's impossible to tell if the sky is blue based on the given visual description.\"\n    }\n  ]\n}"
+          }
+        ],
+        "scores": [
+          0.1
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Is the sky light blue?",
+        "selected_answer": "{\n  \"thoughts\": [\"It's not possible to determine if the sky is blue based on the given visual description.\", \"As an AI language model, I don't have access to real-time data or images that may influence my answer.\", \"In this case, I will provide an answer without considering any external factors or visual details.\"],\n  \"answers\": [\n    {\n      \"thought\": \"I cannot visually inspect the image.\",\n      \"answer\": \"No, it's impossible to tell if the sky is blue based on the given visual description.\"\n    }\n  ]\n}",
+        "selected_score": 0.1
+      }
+    ]
+  },
+  {
+    "question_id": "15",
+    "question": "What animal are the trees behind of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2336392.jpg",
+    "ground_truth": "elephant",
+    "visual_description": "The image features two elephants standing next to each other in a dirt field. They appear to be walking together, possibly in a zoo or a wildlife reserve. The elephants are positioned close to a stone wall, which adds to the natural setting of the scene. The overall atmosphere of the image is serene and captures the beauty of these majestic creatures.",
+    "prediction": "The trees in the background are elephant trees (Elephantion).",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "What animal are the trees behind of?",
+        "candidates": [
+          {
+            "thought": "{\n  \"thoughts\": [\"I need to identify the trees in the background to provide an answer to the subquestion.\",\n              \"I can see that the trees have leaves on them.\",\n              \"Based on the context provided, it seems likely that they are elephant trees (Elephantion)\",\n              \"Therefore, the trees in the background are elephant trees.\"],\n  \"answers\": [\"Elephant trees\"]\n}",
+            "answer": "{\n  \"thoughts\": [\"I need to identify the trees in the background to provide an answer to the subquestion.\",\n              \"I can see that the trees have leaves on them.\",\n              \"Based on the context provided, it seems likely that they are elephant trees (Elephantion)\",\n              \"Therefore, the trees in the background are elephant trees.\"],\n  \"answers\": [\"Elephant trees\"]\n}"
+          }
+        ],
+        "scores": [
+          0.8
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "What animal are the trees behind of?",
+        "selected_answer": "{\n  \"thoughts\": [\"I need to identify the trees in the background to provide an answer to the subquestion.\",\n              \"I can see that the trees have leaves on them.\",\n              \"Based on the context provided, it seems likely that they are elephant trees (Elephantion)\",\n              \"Therefore, the trees in the background are elephant trees.\"],\n  \"answers\": [\"Elephant trees\"]\n}",
+        "selected_score": 0.8
+      }
+    ]
+  },
+  {
+    "question_id": "16",
+    "question": "On which side of the picture is the silver knife?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2389735.jpg",
+    "ground_truth": "right",
+    "visual_description": "The image features a dining table with a white plate containing a half-eaten meal. The plate has a fork and a knife placed on it, indicating that someone has been eating. There are also a couple of oranges on the plate, adding a touch of color to the meal.\n\nIn addition to the plate, there is a cup on the table, possibly containing a beverage. A spoon can be seen resting on the table as well. The table setting is completed with a knife and a fork placed on the table.",
+    "prediction": "silver knife: Yes",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "knife",
+        "candidates": [
+          {
+            "thought": "The presence of a knife indicates that someone used it to cut food.",
+            "answer": "Yes"
+          },
+          {
+            "thought": "A knife is typically used for cutting and serving food.",
+            "answer": "Yes"
+          }
+        ],
+        "scores": [
+          0.9,
+          0.8
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "silver knife",
+        "candidates": [
+          {
+            "thought": "{\n  \"thoughts\": [\"A silver knife is a common utensil used for slicing food.\", \"It could be possible that the person at the table had eaten before placing the silver knife on their plate.\"],\n  \"answers\": [\n    {\n      \"reasoning\": \"The fact that the silver knife is on the plate indicates that the person ate something before putting it down.\",\n      \"image_result\": \"There is a silver knife on the dining table next to the plate.\"\n    },\n    {\n      \"reasoning\": \"The presence of an orange on the plate suggests that the fruit was part of the meal.\",\n      \"image_result\": \"There is a half-eaten orange on the dining table in front of the plate.\"\n    }\n  ]\n}",
+            "answer": "{\n  \"thoughts\": [\"A silver knife is a common utensil used for slicing food.\", \"It could be possible that the person at the table had eaten before placing the silver knife on their plate.\"],\n  \"answers\": [\n    {\n      \"reasoning\": \"The fact that the silver knife is on the plate indicates that the person ate something before putting it down.\",\n      \"image_result\": \"There is a silver knife on the dining table next to the plate.\"\n    },\n    {\n      \"reasoning\": \"The presence of an orange on the plate suggests that the fruit was part of the meal.\",\n      \"image_result\": \"There is a half-eaten orange on the dining table in front of the plate.\"\n    }\n  ]\n}"
+          }
+        ],
+        "scores": [
+          0.9
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "on side",
+        "candidates": [
+          {
+            "thought": "The dining table is shown in the picture.",
+            "answer": "Yes, the dining table is present in the picture."
+          },
+          {
+            "thought": "A white plate with a half-eaten meal is visible on the dining table.",
+            "answer": "Yes, a white plate with a half-eaten meal is present on the dining table."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.9
+        ],
+        "selected_index": 1
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "knife",
+        "selected_answer": "Yes",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "silver knife",
+        "selected_answer": "{\n  \"thoughts\": [\"A silver knife is a common utensil used for slicing food.\", \"It could be possible that the person at the table had eaten before placing the silver knife on their plate.\"],\n  \"answers\": [\n    {\n      \"reasoning\": \"The fact that the silver knife is on the plate indicates that the person ate something before putting it down.\",\n      \"image_result\": \"There is a silver knife on the dining table next to the plate.\"\n    },\n    {\n      \"reasoning\": \"The presence of an orange on the plate suggests that the fruit was part of the meal.\",\n      \"image_result\": \"There is a half-eaten orange on the dining table in front of the plate.\"\n    }\n  ]\n}",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "on side",
+        "selected_answer": "Yes, a white plate with a half-eaten meal is present on the dining table.",
+        "selected_score": 0.9
+      }
+    ]
+  },
+  {
+    "question_id": "17",
+    "question": "What animal are these, zebras or lambs?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2323225.jpg",
+    "ground_truth": "zebras",
+    "visual_description": "The image features a mother zebra and her baby standing together in a dirt field. The baby zebra is positioned close to the mother, and they appear to be grazing on the grass. The mother zebra is larger than the baby, and they both seem to be enjoying their time in the field.",
+    "prediction": "These are zebras.",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "What animal are these, zebras or lambs?",
+        "candidates": [
+          {
+            "thought": "Based on the description provided, it's clear that these animals are zebras.",
+            "answer": "Zebras"
+          }
+        ],
+        "scores": [
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "What animal are these, zebras or lambs?",
+        "selected_answer": "Zebras",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "18",
+    "question": "Does the bowl to the left of the ball look red?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2317148.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a woman kneeling on the floor, holding a small black kitten in her arms. She is attentively feeding the kitten with a bottle, providing it with the necessary nourishment. The woman appears to be focused on the kitten's well-being, ensuring it receives the proper care.",
+    "prediction": "No, the woman has no glasses.",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Is the bowl on the left red?",
+        "candidates": [
+          {
+            "thought": "Based on the visual description provided, there is no mention of a bowl being red.",
+            "answer": "No, the bowl on the left does not appear to be red."
+          },
+          {
+            "thought": "It seems that the question asks if the bowl is red, but there is no direct reference to a color for the bowl.",
+            "answer": "There is no information about the color of the bowl."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.6
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Are there any other colors in the image besides red?",
+        "candidates": [
+          {
+            "thought": "In this image, only red and black are mentioned.",
+            "answer": ""
+          },
+          {
+            "thought": "There are no other colors mentioned in the description provided.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.8,
+          0.2
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Does the woman have glasses?",
+        "candidates": [
+          {
+            "thought": "Based on the visual description provided, there is no mention of the woman wearing glasses.",
+            "answer": ""
+          },
+          {
+            "thought": "Alternatively, one could infer that the woman is not wearing glasses based on her posture and facial expression.",
+            "answer": "The woman may not be wearing glasses."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Is the bowl on the left red?",
+        "selected_answer": "No, the bowl on the left does not appear to be red.",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "Are there any other colors in the image besides red?",
+        "selected_answer": "",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "Does the woman have glasses?",
+        "selected_answer": "",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "19",
+    "question": "In which part of the photo is the boy, the bottom or the top?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2391960.jpg",
+    "ground_truth": "bottom",
+    "visual_description": "The image showcases a large indoor showroom featuring a variety of motorcycles and cars on display. There are several motorcycles of different sizes and styles, some of which are placed on shelves or elevated platforms. \n\nIn addition to the motorcycles, there are multiple cars on display, including a few sports cars. The showroom is filled with people, likely admiring the vehicles and discussing their features. Some individuals are standing closer to the motorcycles, while others are scattered throughout the showroom, engaging in conversations or observing the vehicles.",
+    "prediction": "top: The image shows a bustling showroom with a diverse range of vehicles for sale.",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "bottom",
+        "candidates": [
+          {
+            "thought": "The image depicts an indoor showroom showcasing various types of vehicles.",
+            "answer": "Yes"
+          },
+          {
+            "thought": "There are many different models of motorcycles on display.",
+            "answer": "Yes"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "top",
+        "candidates": [
+          {
+            "thought": "The image depicts a busy indoor showroom where various types of vehicles are on display.",
+            "answer": "The image shows a bustling showroom with a diverse range of vehicles for sale."
+          },
+          {
+            "thought": "There are also people present in the photo who could be buyers or potential customers interested in the displayed vehicles.",
+            "answer": "The people in the image are most likely interested in purchasing or testing out the displayed vehicles."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "bottom",
+        "selected_answer": "Yes",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "top",
+        "selected_answer": "The image shows a bustling showroom with a diverse range of vehicles for sale.",
+        "selected_score": 0.8
+      }
+    ]
+  }
+]

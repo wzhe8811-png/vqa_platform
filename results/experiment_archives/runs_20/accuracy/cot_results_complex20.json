@@ -1,0 +1,182 @@
+[
+  {
+    "question_id": "1525492",
+    "question": "Are there both vegetables and peppers in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2363859.jpg",
+    "ground_truth": "yes",
+    "prediction": "T: Yes, there are both vegetables and peppers in the image.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "18104630",
+    "question": "Is there a dog near the pillow?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2369293.jpg",
+    "ground_truth": "no",
+    "prediction": "T: No, there is no dog near the pillow. The image features a cat sitting on a bed, looking at its reflection in a mirror.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "13896137",
+    "question": "Is the yellow vegetable to the left or to the right of the vegetable that is not rotten?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2345610.jpg",
+    "ground_truth": "right",
+    "prediction": "T: Right",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "08830369",
+    "question": "What kind of vehicle is to the right of the car?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2354268.jpg",
+    "ground_truth": "van",
+    "prediction": "T: Bus",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "09839769",
+    "question": "Are there any boxes on the desk that is made of wood?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2336704.jpg",
+    "ground_truth": "no",
+    "prediction": "T: No, there are no boxes on the desk.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "071004058",
+    "question": "What is the color of the helmet in the top?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2414658.jpg",
+    "ground_truth": "gray",
+    "prediction": "T: The color of the helmet in the top is white.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "08889454",
+    "question": "What animal are the trees behind of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2336392.jpg",
+    "ground_truth": "elephant",
+    "prediction": "T: Elephant",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "0328473",
+    "question": "What animal are these, zebras or lambs?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2323225.jpg",
+    "ground_truth": "zebras",
+    "prediction": "T: These are zebras, not lambs.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "05359803",
+    "question": "Does the bowl to the left of the ball look red?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2317148.jpg",
+    "ground_truth": "no",
+    "prediction": "T: No",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "00836022",
+    "question": "In which part of the photo is the boy, the bottom or the top?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2391960.jpg",
+    "ground_truth": "bottom",
+    "prediction": "T: Bottom",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "10137032",
+    "question": "What kind of furniture is in front of the light switch?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2335027.jpg",
+    "ground_truth": "shelf",
+    "prediction": "T: First, we need to identify the light switch. It is located on the wall.\n\nNext, we need to determine the type of furniture in front of the light switch. The furniture could be a bed, a chair, or a bookshelf.\n\nIf the furniture is a bed, it would be a bed with a headboard, footboard, and a mattress.\n\nIf the furniture is a chair, it would be a chair with a backrest, armrests, and a seat.\n\nIf the furniture is a bookshelf, it would be a bookshelf with shelves for books and other items.\n\nBased on the image, the furniture in front of the light switch is a bed.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "17256302",
+    "question": "Is the person near the garbage bin wearing a coat?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2396431.jpg",
+    "ground_truth": "yes",
+    "prediction": "T: Yes, the person near the garbage bin is wearing a coat.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "09614069",
+    "question": "Are there any beach umbrellas or balls in this scene?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2400609.jpg",
+    "ground_truth": "no",
+    "prediction": "T: No, there are no beach umbrellas or balls in this scene. The image features a group of people skiing on a snow-covered slope, with trees in the background.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "15834191",
+    "question": "Are there any trucks in front of the white building?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2319140.jpg",
+    "ground_truth": "no",
+    "prediction": "T: No, there are no trucks in front of the white building.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "16265989",
+    "question": "Do you see either fences or buses there?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2321399.jpg",
+    "ground_truth": "no",
+    "prediction": "T: No, there are no fences or buses visible in the image.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "00222166",
+    "question": "Are the controllers on the left side or on the right?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2360758.jpg",
+    "ground_truth": "left",
+    "prediction": "T: The controllers are on the left side.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "1792176",
+    "question": "Are there both skateboarders and skateboards in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2355874.jpg",
+    "ground_truth": "yes",
+    "prediction": "T: Yes, there are both skateboarders and skateboards in the image.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "10130682",
+    "question": "What type of animal are the mountains behind of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2405227.jpg",
+    "ground_truth": "horse",
+    "prediction": "T: The image features a horse standing in a field with mountains in the background.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "01737860",
+    "question": "What animal is in front of the car?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2380329.jpg",
+    "ground_truth": "dog",
+    "prediction": "T: Dog",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "12602970",
+    "question": "Are there both men and children in this photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2410549.jpg",
+    "ground_truth": "no",
+    "prediction": "T: No, there are no men in this photo. The image features a young child, specifically a baby girl, laying on a bench.",
+    "correct": false,
+    "status": "success"
+  }
+]

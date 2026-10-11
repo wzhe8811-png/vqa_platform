@@ -1,0 +1,37 @@
+[
+  {
+    "question_id": "n161313",
+    "question": "Is it overcast?",
+    "predicted_answer": "error",
+    "ground_truth": "no",
+    "image_path": "./data/gqa_standard/images/n161313.jpg"
+  },
+  {
+    "question_id": "n235859",
+    "question": "Who is wearing the dress?",
+    "predicted_answer": "error",
+    "ground_truth": "women",
+    "image_path": "./data/gqa_standard/images/n235859.jpg"
+  },
+  {
+    "question_id": "n336443",
+    "question": "Does the utensil on top of the table look clean and black?",
+    "predicted_answer": "error",
+    "ground_truth": "no",
+    "image_path": "./data/gqa_standard/images/n336443.jpg"
+  },
+  {
+    "question_id": "n179136",
+    "question": "Is the surfer that looks wet wearing a wetsuit?",
+    "predicted_answer": "error",
+    "ground_truth": "yes",
+    "image_path": "./data/gqa_standard/images/n179136.jpg"
+  },
+  {
+    "question_id": "n518912",
+    "question": "How tall is the chair in the bottom of the photo?",
+    "predicted_answer": "error",
+    "ground_truth": "short",
+    "image_path": "./data/gqa_standard/images/n518912.jpg"
+  }
+]

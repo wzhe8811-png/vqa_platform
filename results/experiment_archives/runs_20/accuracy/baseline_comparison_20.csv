@@ -1,0 +1,6 @@
+method,total,success,failed,correct_exact,exact_acc,correct_soft,soft_acc
+Standard,20,20,0,7,35.0,13,65.0
+CoT,20,20,0,9,45.0,15,75.0
+ToT,20,20,0,3,15.0,7,35.0
+GoT,20,20,0,2,10.0,8,40.0
+Modular(4-Module),20,20,0,2,10.0,9,45.0

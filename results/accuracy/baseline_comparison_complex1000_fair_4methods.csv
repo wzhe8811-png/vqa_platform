@@ -1,0 +1,5 @@
+method,total,success,failed,correct_exact,exact_acc,correct_soft,soft_acc
+Standard,1000,1000,0,178,17.8,184,18.4
+CoT,1000,1000,0,259,25.900000000000002,268,26.8
+ToT,1000,1000,0,294,29.4,331,33.1
+GoT,1000,1000,0,294,29.4,340,34.0

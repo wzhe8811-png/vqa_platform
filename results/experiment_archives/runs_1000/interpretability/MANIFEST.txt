@@ -1,0 +1,6 @@
+Existing files copied from results:
+- interpretability_human_scoring_template.csv
+
+Expected/missing (to be generated):
+- interpretability_metrics_complex1000.csv (planned)
+- figure4_interpretability_cases_complex1000.md (planned)

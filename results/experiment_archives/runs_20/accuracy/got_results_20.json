@@ -1,0 +1,202 @@
+[
+  {
+    "question_id": "0",
+    "question": "What place is shown?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2317441.jpg",
+    "ground_truth": "road",
+    "visual_description": "The image captures a lively scene on a street, where a man is riding a skateboard down the road. He is wearing a helmet for safety while performing his skateboarding stunt. There are several other people in the scene, some of them walking or standing on the sidewalk.\n\nIn addition to the skateboarder, there are multiple bicycles scattered throughout the scene, with some parked and others being ridden by people. A few cars are also present in the image, parked or driving along the street. The overall atmosphere of the scene is energetic and active, with people engaging in various outdoor activities.",
+    "prediction": "Street Scene",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "1",
+    "question": "What type of clothing is gray?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2390824.jpg",
+    "ground_truth": "pants",
+    "visual_description": "The image captures a baseball game in progress, with a baseball player in the center of the scene. The player is in the process of throwing a baseball, which is visible in the air near the player's arm. The player is wearing a baseball uniform, which includes a cap and a jersey.\n\nThere are several other people in the scene, likely teammates or opponents, positioned around the field. Some of them are closer to the foreground, while others are further in the background. The presence of multiple people suggests that this is a lively and engaging baseball game.",
+    "prediction": "Gray.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "2",
+    "question": "What is the man on?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2374543.jpg",
+    "ground_truth": "bench",
+    "visual_description": "The image features a man sitting on a bench in a sandy area, possibly a beach. He is wearing a hat and appears to be enjoying his time outdoors. The bench is located near the center of the scene, with the man sitting on it comfortably. The sandy area extends to the right side of the image, creating a relaxing atmosphere for the man to unwind.",
+    "prediction": "The man is sitting on a bench located in a sandy area by a beach.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "3",
+    "question": "What type of place is it?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/1498.jpg",
+    "ground_truth": "road",
+    "visual_description": "The image depicts a city street with a blue car parked on the side of the road. There are several people walking along the sidewalk, with some of them carrying backpacks. A man in an orange vest is crossing the street, while others are walking in the opposite direction.\n\nIn addition to the pedestrians, there are a few traffic lights visible in the scene, ensuring the safe flow of traffic. A fire hydrant can also be seen on the sidewalk, providing a sense of the urban environment.",
+    "prediction": "Urban street.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "4",
+    "question": "Are there both vegetables and peppers in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2363859.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a delicious pizza with various toppings, including peppers and onions. The pizza is placed on a dining table, and it appears to be a homemade pizza. The pizza is cut into slices, making it easy to serve and enjoy. The table occupies most of the scene, with the pizza being the main focus.",
+    "prediction": "Yes, there is a vegetable besides peppers in the image.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "5",
+    "question": "Which kind of animal is in the field?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2400769.jpg",
+    "ground_truth": "giraffe",
+    "visual_description": "The image features two giraffes standing in a grassy field under a tree. They are positioned close to each other, with one giraffe on the left side and the other on the right side of the tree. The giraffes appear to be enjoying the shade provided by the tree.\n\nIn the background, there are a few more trees, creating a natural and serene environment for the giraffes. The scene captures the beauty of these majestic animals in their natural habitat.",
+    "prediction": "Giraffes",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "6",
+    "question": "Is there a dog near the pillow?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2369293.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a cat sitting on a bed, looking at its reflection in a mirror. The cat appears to be curious about its own image, as it gazes at the mirror. The bed is situated in a room with a chair nearby. The scene captures the cat's interaction with its surroundings and the mirror.",
+    "prediction": "Yes, there is a dog near the pillow.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "7",
+    "question": "Which kind of food is on the pizza?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2410495.jpg",
+    "ground_truth": "mushroom",
+    "visual_description": "The image features a delicious pizza with various toppings, including mushrooms, peppers, and tomatoes. The pizza is cut into slices and placed in a box, ready to be enjoyed. The box is placed on a dining table, which occupies most of the scene.\n\nIn addition to the pizza, there are a few carrots scattered around the table, adding a touch of color and variety to the scene. The overall atmosphere suggests a casual and enjoyable meal.",
+    "prediction": "Pizza.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "8",
+    "question": "Is the yellow vegetable to the left or to the right of the vegetable that is not rotten?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2345610.jpg",
+    "ground_truth": "right",
+    "visual_description": "The image features a white plate filled with a variety of pizza slices. There are at least six different pizza slices on the plate, each with different toppings and sizes. The pizza slices are arranged in a visually appealing manner, making the plate look delicious and inviting. The plate is placed on a dining table, ready to be enjoyed by those who partake in the meal.",
+    "prediction": "To the left",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "9",
+    "question": "What kind of vehicle is to the right of the car?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2354268.jpg",
+    "ground_truth": "van",
+    "visual_description": "The image depicts a busy city street with a man wearing a red helmet riding a motorcycle. He is smiling and appears to be enjoying the ride. There are several other people on the street, some of them riding bicycles.\n\nIn addition to the motorcycle, there are multiple cars and a bus on the street. A few cars are parked or stopped, while others are in motion. The bus is located towards the right side of the scene.\n\nThere are also a couple of backpacks visible in the scene, one near the center and the other towards the right side. The overall atmosphere of the image is lively and bustling.",
+    "prediction": "The man's motorcycle is faster than any of the other vehicles.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "10",
+    "question": "On which side of the photo is the white SUV?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2380044.jpg",
+    "ground_truth": "left",
+    "visual_description": "The image features a busy street corner with a traffic light and a street sign. The traffic light is positioned on the left side of the scene, while the street sign is located on the right side. The street sign is attached to a pole, and it displays the names of the intersecting streets.\n\nThere are several cars parked or driving on the street, with one car on the left side, another in the middle, and two more on the right side. Additionally, there is a truck parked on the left side of the scene. The presence of multiple vehicles and the street sign indicate that this is a bustling urban area.",
+    "prediction": "On the right side.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "11",
+    "question": "Are there any boxes on the desk that is made of wood?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2336704.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a wooden desk with a laptop computer sitting on top of it. The laptop is positioned towards the center of the desk, and a mouse can be seen on the right side of the desk. A telephone is also present on the left side of the desk, adding to the workspace setup.\n\nIn addition to the laptop and phone, there are two keyboards on the desk. One keyboard is located on the left side of the laptop, while the other is placed on the right side. A TV is mounted on the wall above the desk, providing a source of entertainment or information during work breaks.",
+    "prediction": "No, there are no boxes on the desk made of wood.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "12",
+    "question": "What is the color of the helmet in the top?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2414658.jpg",
+    "ground_truth": "gray",
+    "visual_description": "The image depicts a group of people, including both children and adults, standing on a snow-covered slope. They are all wearing skis and are lined up, possibly waiting for their turn to ski down the hill. The group consists of at least 12 people, with some standing closer to the foreground and others further back.\n\nThe skis are visible on the ground, with some of them placed horizontally and others vertically. The scene captures the excitement and anticipation of skiing down the slope together.",
+    "prediction": "Red",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "13",
+    "question": "What kind of clothing is gray?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2390675.jpg",
+    "ground_truth": "hat",
+    "visual_description": "The image features a man wearing a suit and tie, with a mustache drawn on his face. He is posing for the camera, possibly for a funny or humorous photo. The man appears to be in a playful mood, as he is making a funny face while wearing the suit and tie.",
+    "prediction": "Gray.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "14",
+    "question": "Is the sky light blue?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2411098.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features two giraffes standing next to each other in a zoo enclosure. They are positioned near a tree, which provides them with shade and a natural environment. The giraffes are standing close to a fence, which is likely part of their enclosure. The scene captures the essence of a zoo habitat, where the animals are provided with a comfortable and safe space to live.",
+    "prediction": "Yes, it is possible that the sky is light blue in this context.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "15",
+    "question": "What animal are the trees behind of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2336392.jpg",
+    "ground_truth": "elephant",
+    "visual_description": "The image features two elephants standing next to each other in a dirt field. They appear to be walking together, possibly in a zoo or a wildlife reserve. The elephants are positioned close to a stone wall, which adds to the natural setting of the scene. The overall atmosphere of the image is serene and captures the beauty of these majestic creatures.",
+    "prediction": "Trees",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "16",
+    "question": "On which side of the picture is the silver knife?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2389735.jpg",
+    "ground_truth": "right",
+    "visual_description": "The image features a dining table with a white plate containing a half-eaten meal. The plate has a fork and a knife placed on it, indicating that someone has been eating. There are also a couple of oranges on the plate, adding a touch of color to the meal.\n\nIn addition to the plate, there is a cup on the table, possibly containing a beverage. A spoon can be seen resting on the table as well. The table setting is completed with a knife and a fork placed on the table.",
+    "prediction": "on the left",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "17",
+    "question": "What animal are these, zebras or lambs?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2323225.jpg",
+    "ground_truth": "zebras",
+    "visual_description": "The image features a mother zebra and her baby standing together in a dirt field. The baby zebra is positioned close to the mother, and they appear to be grazing on the grass. The mother zebra is larger than the baby, and they both seem to be enjoying their time in the field.",
+    "prediction": "Zebras",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "18",
+    "question": "Does the bowl to the left of the ball look red?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2317148.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a woman kneeling on the floor, holding a small black kitten in her arms. She is attentively feeding the kitten with a bottle, providing it with the necessary nourishment. The woman appears to be focused on the kitten's well-being, ensuring it receives the proper care.",
+    "prediction": "No, the bowl to the left of the ball does not look red.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "19",
+    "question": "In which part of the photo is the boy, the bottom or the top?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2391960.jpg",
+    "ground_truth": "bottom",
+    "visual_description": "The image showcases a large indoor showroom featuring a variety of motorcycles and cars on display. There are several motorcycles of different sizes and styles, some of which are placed on shelves or elevated platforms. \n\nIn addition to the motorcycles, there are multiple cars on display, including a few sports cars. The showroom is filled with people, likely admiring the vehicles and discussing their features. Some individuals are standing closer to the motorcycles, while others are scattered throughout the showroom, engaging in conversations or observing the vehicles.",
+    "prediction": "Bottom",
+    "correct": true,
+    "status": "success"
+  }
+]

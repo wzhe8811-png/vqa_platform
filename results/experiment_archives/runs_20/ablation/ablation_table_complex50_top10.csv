@@ -1,0 +1,5 @@
+method,total,correct_exact,exact_acc,correct_soft,soft_acc
+full_modular,10,4,40.0,5,50.0
+no_decomposer,10,4,40.0,6,60.0
+no_evaluator,10,4,40.0,7,70.0
+no_searcher,10,3,30.0,6,60.0

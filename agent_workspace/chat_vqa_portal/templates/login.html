@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>登录 · Vision QA</title>
+  <link rel="stylesheet" href="/static/css/auth.css" />
+</head>
+<body>
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <h1>Vision QA Login</h1>
+      <p class="sub">视觉问答平台 · 用户与管理员统一登录 · User/Admin Sign In</p>
+      <div id="err" class="err" hidden></div>
+      <label>用户名或邮箱</label>
+      <input id="account" type="text" placeholder="用户名 / 邮箱" autocomplete="username" />
+      <label>密码</label>
+      <input id="password" type="password" placeholder="密码" autocomplete="current-password" />
+      <button id="submitBtn" class="primary">登录 Login</button>
+      <p class="foot">还没有账号？<a href="/register">注册 Register</a></p>
+    </div>
+  </div>
+  <script>
+    const errEl = document.getElementById("err");
+    const submitBtn = document.getElementById("submitBtn");
+
+    function showErr(msg) {
+      errEl.textContent = msg;
+      errEl.hidden = !msg;
+    }
+
+    async function login() {
+      showErr("");
+      submitBtn.disabled = true;
+      submitBtn.textContent = "登录中…";
+      try {
+        const res = await fetch("/api/auth/login", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            account: document.getElementById("account").value.trim(),
+            password: document.getElementById("password").value,
+          }),
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || "登录失败");
+        window.location.href = data.redirect_url || "/chat";
+      } catch (e) {
+        showErr(e.message);
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "登录";
+      }
+    }
+
+    submitBtn.onclick = login;
+    document.getElementById("password").addEventListener("keydown", (e) => {
+      if (e.key === "Enter") login();
+    });
+  </script>
+</body>
+</html>

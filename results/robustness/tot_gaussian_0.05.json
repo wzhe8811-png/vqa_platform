@@ -1,0 +1,52 @@
+[
+  {
+    "question_id": "0",
+    "question": "What place is shown?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness/gaussian_0.05/images/00000.jpg",
+    "ground_truth": "road",
+    "visual_description": "The image captures a lively scene on a street, where a man is riding a skateboard down the road. He is wearing a helmet for safety while enjoying his ride. There are several other people in the scene, some of them standing or walking along the street.\n\nIn addition to the skateboarder, there are multiple bicycles scattered throughout the scene, indicating that this is a popular area for various modes of transportation. The presence of multiple people and bicycles suggests that this street is a bustling and active location.",
+    "prediction": "street with skateboard rider",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "1",
+    "question": "What type of clothing is gray?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness/gaussian_0.05/images/00001.jpg",
+    "ground_truth": "pants",
+    "visual_description": "The image captures a baseball game in progress, with a baseball player in the center of the scene. The player is in the process of throwing a baseball, which is visible in the air near the player's arm. The player is wearing a baseball glove, ready to catch the ball.\n\nThere are several other people in the scene, likely teammates or opponents, positioned around the field. Some of them are closer to the foreground, while others are further in the background. The scene is filled with the excitement and anticipation of a successful play.",
+    "prediction": "baseball glove",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "2",
+    "question": "What is the man on?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness/gaussian_0.05/images/00002.jpg",
+    "ground_truth": "bench",
+    "visual_description": "The image features a man sitting on a bench in a sandy area, possibly a beach. He is wearing a hat and appears to be enjoying his time outdoors. The bench is located near the center of the scene, with the man sitting on it comfortably. The sandy area extends to the right side of the image, creating a relaxing atmosphere for the man to unwind.",
+    "prediction": "man sits on a bench",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "3",
+    "question": "What type of place is it?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness/gaussian_0.05/images/00003.jpg",
+    "ground_truth": "road",
+    "visual_description": "The image depicts a city street with a blue car parked on the side of the road. There are several people walking along the sidewalk, with some of them carrying backpacks. In total, there are nine people visible in the scene, with some of them closer to the car and others further away.\n\nAdditionally, there are two traffic lights in the scene, one near the center and the other towards the left side of the image. A fire hydrant can also be seen on the sidewalk, closer to the right side of the scene.",
+    "prediction": "urban street",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "4",
+    "question": "Are there both vegetables and peppers in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness/gaussian_0.05/images/00004.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a pizza with various toppings, including peppers and onions. The pizza is placed in a box, which is open and revealing the delicious meal. The pizza is cut into slices, making it easy to serve and enjoy. The toppings are spread evenly across the pizza, adding a burst of flavor to each bite.",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success"
+  }
+]

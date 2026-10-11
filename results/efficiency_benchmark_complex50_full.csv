@@ -1,0 +1,6 @@
+method,total,exact_acc,soft_acc,wall_time_sec,peak_gpu_mem_mb,status
+Standard,31,16.129,87.0968,19.947,34644,ok
+CoT,31,25.8065,83.871,19.878,34422,ok
+ToT,31,38.7097,48.3871,130.976,48451,ok
+GoT,31,41.9355,54.8387,136.17,38702,ok
+Modular(4-Module),31,41.9355,54.8387,204.985,38566,ok

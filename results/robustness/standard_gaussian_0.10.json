@@ -1,0 +1,47 @@
+[
+  {
+    "question_id": "09853457",
+    "question": "What place is shown?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness/gaussian_0.10/images/00000.jpg",
+    "ground_truth": "road",
+    "prediction": "T: The image shows a street or road where a man is riding a skateboard.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "0313863",
+    "question": "What type of clothing is gray?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness/gaussian_0.10/images/00001.jpg",
+    "ground_truth": "pants",
+    "prediction": "T: Uniform",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "1424972",
+    "question": "What is the man on?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness/gaussian_0.10/images/00002.jpg",
+    "ground_truth": "bench",
+    "prediction": "T: Bench",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "19796956",
+    "question": "What type of place is it?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness/gaussian_0.10/images/00003.jpg",
+    "ground_truth": "road",
+    "prediction": "T: It is a city street with buildings, cars, and pedestrians.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "1525492",
+    "question": "Are there both vegetables and peppers in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness/gaussian_0.10/images/00004.jpg",
+    "ground_truth": "yes",
+    "prediction": "T: Yes, the image features a pizza with both vegetables and peppers on it.",
+    "correct": false,
+    "status": "success"
+  }
+]

@@ -1,0 +1,1118 @@
+[
+  {
+    "question_id": "0",
+    "method": "full_modular",
+    "question": "Are there both vegetables and peppers in the image?",
+    "ground_truth": "yes",
+    "prediction": "yes",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "0",
+    "method": "no_decomposer",
+    "question": "Are there both vegetables and peppers in the image?",
+    "ground_truth": "yes",
+    "prediction": "yes",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "0",
+    "method": "no_evaluator",
+    "question": "Are there both vegetables and peppers in the image?",
+    "ground_truth": "yes",
+    "prediction": "yes",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "0",
+    "method": "no_searcher",
+    "question": "Are there both vegetables and peppers in the image?",
+    "ground_truth": "yes",
+    "prediction": "yes",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "1",
+    "method": "full_modular",
+    "question": "Is there a dog near the pillow?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "1",
+    "method": "no_decomposer",
+    "question": "Is there a dog near the pillow?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "1",
+    "method": "no_evaluator",
+    "question": "Is there a dog near the pillow?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "1",
+    "method": "no_searcher",
+    "question": "Is there a dog near the pillow?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "2",
+    "method": "full_modular",
+    "question": "Is the yellow vegetable to the left or to the right of the vegetable that is not rotten?",
+    "ground_truth": "right",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "2",
+    "method": "no_decomposer",
+    "question": "Is the yellow vegetable to the left or to the right of the vegetable that is not rotten?",
+    "ground_truth": "right",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "2",
+    "method": "no_evaluator",
+    "question": "Is the yellow vegetable to the left or to the right of the vegetable that is not rotten?",
+    "ground_truth": "right",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "2",
+    "method": "no_searcher",
+    "question": "Is the yellow vegetable to the left or to the right of the vegetable that is not rotten?",
+    "ground_truth": "right",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "3",
+    "method": "full_modular",
+    "question": "What kind of vehicle is to the right of the car?",
+    "ground_truth": "van",
+    "prediction": "motorcycle to the right of car",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "3",
+    "method": "no_decomposer",
+    "question": "What kind of vehicle is to the right of the car?",
+    "ground_truth": "van",
+    "prediction": "parked car",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "3",
+    "method": "no_evaluator",
+    "question": "What kind of vehicle is to the right of the car?",
+    "ground_truth": "van",
+    "prediction": "bus",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "3",
+    "method": "no_searcher",
+    "question": "What kind of vehicle is to the right of the car?",
+    "ground_truth": "van",
+    "prediction": "backpacks",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "4",
+    "method": "full_modular",
+    "question": "Are there any boxes on the desk that is made of wood?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "4",
+    "method": "no_decomposer",
+    "question": "Are there any boxes on the desk that is made of wood?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "4",
+    "method": "no_evaluator",
+    "question": "Are there any boxes on the desk that is made of wood?",
+    "ground_truth": "no",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "4",
+    "method": "no_searcher",
+    "question": "Are there any boxes on the desk that is made of wood?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "5",
+    "method": "full_modular",
+    "question": "What is the color of the helmet in the top?",
+    "ground_truth": "gray",
+    "prediction": "red",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "5",
+    "method": "no_decomposer",
+    "question": "What is the color of the helmet in the top?",
+    "ground_truth": "gray",
+    "prediction": "white helmet",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "5",
+    "method": "no_evaluator",
+    "question": "What is the color of the helmet in the top?",
+    "ground_truth": "gray",
+    "prediction": "white",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "5",
+    "method": "no_searcher",
+    "question": "What is the color of the helmet in the top?",
+    "ground_truth": "gray",
+    "prediction": "red",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "6",
+    "method": "full_modular",
+    "question": "What animal are the trees behind of?",
+    "ground_truth": "elephant",
+    "prediction": "elephants",
+    "exact": false,
+    "soft": true
+  },
+  {
+    "question_id": "6",
+    "method": "no_decomposer",
+    "question": "What animal are the trees behind of?",
+    "ground_truth": "elephant",
+    "prediction": "elephants",
+    "exact": false,
+    "soft": true
+  },
+  {
+    "question_id": "6",
+    "method": "no_evaluator",
+    "question": "What animal are the trees behind of?",
+    "ground_truth": "elephant",
+    "prediction": "elephants",
+    "exact": false,
+    "soft": true
+  },
+  {
+    "question_id": "6",
+    "method": "no_searcher",
+    "question": "What animal are the trees behind of?",
+    "ground_truth": "elephant",
+    "prediction": "elephants are standing next to trees",
+    "exact": false,
+    "soft": true
+  },
+  {
+    "question_id": "7",
+    "method": "full_modular",
+    "question": "What animal are these, zebras or lambs?",
+    "ground_truth": "zebras",
+    "prediction": "1) are these, zebras",
+    "exact": false,
+    "soft": true
+  },
+  {
+    "question_id": "7",
+    "method": "no_decomposer",
+    "question": "What animal are these, zebras or lambs?",
+    "ground_truth": "zebras",
+    "prediction": "1) are these, zebras",
+    "exact": false,
+    "soft": true
+  },
+  {
+    "question_id": "7",
+    "method": "no_evaluator",
+    "question": "What animal are these, zebras or lambs?",
+    "ground_truth": "zebras",
+    "prediction": "are these, zebras",
+    "exact": false,
+    "soft": true
+  },
+  {
+    "question_id": "7",
+    "method": "no_searcher",
+    "question": "What animal are these, zebras or lambs?",
+    "ground_truth": "zebras",
+    "prediction": "are these, zebras",
+    "exact": false,
+    "soft": true
+  },
+  {
+    "question_id": "8",
+    "method": "full_modular",
+    "question": "Does the bowl to the left of the ball look red?",
+    "ground_truth": "no",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "8",
+    "method": "no_decomposer",
+    "question": "Does the bowl to the left of the ball look red?",
+    "ground_truth": "no",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "8",
+    "method": "no_evaluator",
+    "question": "Does the bowl to the left of the ball look red?",
+    "ground_truth": "no",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "8",
+    "method": "no_searcher",
+    "question": "Does the bowl to the left of the ball look red?",
+    "ground_truth": "no",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "9",
+    "method": "full_modular",
+    "question": "In which part of the photo is the boy, the bottom or the top?",
+    "ground_truth": "bottom",
+    "prediction": "boy, the bottom",
+    "exact": false,
+    "soft": true
+  },
+  {
+    "question_id": "9",
+    "method": "no_decomposer",
+    "question": "In which part of the photo is the boy, the bottom or the top?",
+    "ground_truth": "bottom",
+    "prediction": "2) the top",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "9",
+    "method": "no_evaluator",
+    "question": "In which part of the photo is the boy, the bottom or the top?",
+    "ground_truth": "bottom",
+    "prediction": "boy, the bottom",
+    "exact": false,
+    "soft": true
+  },
+  {
+    "question_id": "9",
+    "method": "no_searcher",
+    "question": "In which part of the photo is the boy, the bottom or the top?",
+    "ground_truth": "bottom",
+    "prediction": "boy, the bottom",
+    "exact": false,
+    "soft": true
+  },
+  {
+    "question_id": "10",
+    "method": "full_modular",
+    "question": "What kind of furniture is in front of the light switch?",
+    "ground_truth": "shelf",
+    "prediction": "chair",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "10",
+    "method": "no_decomposer",
+    "question": "What kind of furniture is in front of the light switch?",
+    "ground_truth": "shelf",
+    "prediction": "bedside lamp",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "10",
+    "method": "no_evaluator",
+    "question": "What kind of furniture is in front of the light switch?",
+    "ground_truth": "shelf",
+    "prediction": "bedroom furniture",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "10",
+    "method": "no_searcher",
+    "question": "What kind of furniture is in front of the light switch?",
+    "ground_truth": "shelf",
+    "prediction": "table lamp",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "11",
+    "method": "full_modular",
+    "question": "Is the person near the garbage bin wearing a coat?",
+    "ground_truth": "yes",
+    "prediction": "no",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "11",
+    "method": "no_decomposer",
+    "question": "Is the person near the garbage bin wearing a coat?",
+    "ground_truth": "yes",
+    "prediction": "no",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "11",
+    "method": "no_evaluator",
+    "question": "Is the person near the garbage bin wearing a coat?",
+    "ground_truth": "yes",
+    "prediction": "yes",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "11",
+    "method": "no_searcher",
+    "question": "Is the person near the garbage bin wearing a coat?",
+    "ground_truth": "yes",
+    "prediction": "no",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "12",
+    "method": "full_modular",
+    "question": "Are there any beach umbrellas or balls in this scene?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "12",
+    "method": "no_decomposer",
+    "question": "Are there any beach umbrellas or balls in this scene?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "12",
+    "method": "no_evaluator",
+    "question": "Are there any beach umbrellas or balls in this scene?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "12",
+    "method": "no_searcher",
+    "question": "Are there any beach umbrellas or balls in this scene?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "13",
+    "method": "full_modular",
+    "question": "Are there any trucks in front of the white building?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "13",
+    "method": "no_decomposer",
+    "question": "Are there any trucks in front of the white building?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "13",
+    "method": "no_evaluator",
+    "question": "Are there any trucks in front of the white building?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "13",
+    "method": "no_searcher",
+    "question": "Are there any trucks in front of the white building?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "14",
+    "method": "full_modular",
+    "question": "Do you see either fences or buses there?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "14",
+    "method": "no_decomposer",
+    "question": "Do you see either fences or buses there?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "14",
+    "method": "no_evaluator",
+    "question": "Do you see either fences or buses there?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "14",
+    "method": "no_searcher",
+    "question": "Do you see either fences or buses there?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "15",
+    "method": "full_modular",
+    "question": "Are the controllers on the left side or on the right?",
+    "ground_truth": "left",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "15",
+    "method": "no_decomposer",
+    "question": "Are the controllers on the left side or on the right?",
+    "ground_truth": "left",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "15",
+    "method": "no_evaluator",
+    "question": "Are the controllers on the left side or on the right?",
+    "ground_truth": "left",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "15",
+    "method": "no_searcher",
+    "question": "Are the controllers on the left side or on the right?",
+    "ground_truth": "left",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "16",
+    "method": "full_modular",
+    "question": "Are there both skateboarders and skateboards in the image?",
+    "ground_truth": "yes",
+    "prediction": "yes",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "16",
+    "method": "no_decomposer",
+    "question": "Are there both skateboarders and skateboards in the image?",
+    "ground_truth": "yes",
+    "prediction": "yes",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "16",
+    "method": "no_evaluator",
+    "question": "Are there both skateboarders and skateboards in the image?",
+    "ground_truth": "yes",
+    "prediction": "yes",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "16",
+    "method": "no_searcher",
+    "question": "Are there both skateboarders and skateboards in the image?",
+    "ground_truth": "yes",
+    "prediction": "yes",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "17",
+    "method": "full_modular",
+    "question": "What type of animal are the mountains behind of?",
+    "ground_truth": "horse",
+    "prediction": "mountain range",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "17",
+    "method": "no_decomposer",
+    "question": "What type of animal are the mountains behind of?",
+    "ground_truth": "horse",
+    "prediction": "white horse",
+    "exact": false,
+    "soft": true
+  },
+  {
+    "question_id": "17",
+    "method": "no_evaluator",
+    "question": "What type of animal are the mountains behind of?",
+    "ground_truth": "horse",
+    "prediction": "mountain goat",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "17",
+    "method": "no_searcher",
+    "question": "What type of animal are the mountains behind of?",
+    "ground_truth": "horse",
+    "prediction": "mountain range",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "18",
+    "method": "full_modular",
+    "question": "What animal is in front of the car?",
+    "ground_truth": "dog",
+    "prediction": "brown dog",
+    "exact": false,
+    "soft": true
+  },
+  {
+    "question_id": "18",
+    "method": "no_decomposer",
+    "question": "What animal is in front of the car?",
+    "ground_truth": "dog",
+    "prediction": "brown dog",
+    "exact": false,
+    "soft": true
+  },
+  {
+    "question_id": "18",
+    "method": "no_evaluator",
+    "question": "What animal is in front of the car?",
+    "ground_truth": "dog",
+    "prediction": "brown dog",
+    "exact": false,
+    "soft": true
+  },
+  {
+    "question_id": "18",
+    "method": "no_searcher",
+    "question": "What animal is in front of the car?",
+    "ground_truth": "dog",
+    "prediction": "dog",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "19",
+    "method": "full_modular",
+    "question": "Are there both men and children in this photo?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "19",
+    "method": "no_decomposer",
+    "question": "Are there both men and children in this photo?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "19",
+    "method": "no_evaluator",
+    "question": "Are there both men and children in this photo?",
+    "ground_truth": "no",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "19",
+    "method": "no_searcher",
+    "question": "Are there both men and children in this photo?",
+    "ground_truth": "no",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "20",
+    "method": "full_modular",
+    "question": "Which kind of fast food is to the right of the jar?",
+    "ground_truth": "fries",
+    "prediction": "hamburger",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "20",
+    "method": "no_decomposer",
+    "question": "Which kind of fast food is to the right of the jar?",
+    "ground_truth": "fries",
+    "prediction": "a) hamburger",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "20",
+    "method": "no_evaluator",
+    "question": "Which kind of fast food is to the right of the jar?",
+    "ground_truth": "fries",
+    "prediction": "hamburger",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "20",
+    "method": "no_searcher",
+    "question": "Which kind of fast food is to the right of the jar?",
+    "ground_truth": "fries",
+    "prediction": "a hamburger",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "21",
+    "method": "full_modular",
+    "question": "Are there either trays or snowboards in the picture?",
+    "ground_truth": "yes",
+    "prediction": "no",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "21",
+    "method": "no_decomposer",
+    "question": "Are there either trays or snowboards in the picture?",
+    "ground_truth": "yes",
+    "prediction": "no",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "21",
+    "method": "no_evaluator",
+    "question": "Are there either trays or snowboards in the picture?",
+    "ground_truth": "yes",
+    "prediction": "no",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "21",
+    "method": "no_searcher",
+    "question": "Are there either trays or snowboards in the picture?",
+    "ground_truth": "yes",
+    "prediction": "no",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "22",
+    "method": "full_modular",
+    "question": "Is the box to the left or to the right of the man that is looking at the building?",
+    "ground_truth": "left",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "22",
+    "method": "no_decomposer",
+    "question": "Is the box to the left or to the right of the man that is looking at the building?",
+    "ground_truth": "left",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "22",
+    "method": "no_evaluator",
+    "question": "Is the box to the left or to the right of the man that is looking at the building?",
+    "ground_truth": "left",
+    "prediction": "no",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "22",
+    "method": "no_searcher",
+    "question": "Is the box to the left or to the right of the man that is looking at the building?",
+    "ground_truth": "left",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "23",
+    "method": "full_modular",
+    "question": "What is located on top of the cucumber?",
+    "ground_truth": "carrots",
+    "prediction": "fork",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "23",
+    "method": "no_decomposer",
+    "question": "What is located on top of the cucumber?",
+    "ground_truth": "carrots",
+    "prediction": "no cucumber",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "23",
+    "method": "no_evaluator",
+    "question": "What is located on top of the cucumber?",
+    "ground_truth": "carrots",
+    "prediction": "fork",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "23",
+    "method": "no_searcher",
+    "question": "What is located on top of the cucumber?",
+    "ground_truth": "carrots",
+    "prediction": "cucumber is on top of the carrot",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "24",
+    "method": "full_modular",
+    "question": "Is this a squirrel or a cat?",
+    "ground_truth": "cat",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "24",
+    "method": "no_decomposer",
+    "question": "Is this a squirrel or a cat?",
+    "ground_truth": "cat",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "24",
+    "method": "no_evaluator",
+    "question": "Is this a squirrel or a cat?",
+    "ground_truth": "cat",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "24",
+    "method": "no_searcher",
+    "question": "Is this a squirrel or a cat?",
+    "ground_truth": "cat",
+    "prediction": "yes",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "25",
+    "method": "full_modular",
+    "question": "Are there both children and men in this photo?",
+    "ground_truth": "yes",
+    "prediction": "no",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "25",
+    "method": "no_decomposer",
+    "question": "Are there both children and men in this photo?",
+    "ground_truth": "yes",
+    "prediction": "no",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "25",
+    "method": "no_evaluator",
+    "question": "Are there both children and men in this photo?",
+    "ground_truth": "yes",
+    "prediction": "no",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "25",
+    "method": "no_searcher",
+    "question": "Are there both children and men in this photo?",
+    "ground_truth": "yes",
+    "prediction": "no",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "26",
+    "method": "full_modular",
+    "question": "Do you see a frisbee to the left of the dog the helmet is on?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "26",
+    "method": "no_decomposer",
+    "question": "Do you see a frisbee to the left of the dog the helmet is on?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "26",
+    "method": "no_evaluator",
+    "question": "Do you see a frisbee to the left of the dog the helmet is on?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "26",
+    "method": "no_searcher",
+    "question": "Do you see a frisbee to the left of the dog the helmet is on?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "27",
+    "method": "full_modular",
+    "question": "Are there any skateboards or helmets?",
+    "ground_truth": "yes",
+    "prediction": "no",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "27",
+    "method": "no_decomposer",
+    "question": "Are there any skateboards or helmets?",
+    "ground_truth": "yes",
+    "prediction": "no",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "27",
+    "method": "no_evaluator",
+    "question": "Are there any skateboards or helmets?",
+    "ground_truth": "yes",
+    "prediction": "yes",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "27",
+    "method": "no_searcher",
+    "question": "Are there any skateboards or helmets?",
+    "ground_truth": "yes",
+    "prediction": "no",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "28",
+    "method": "full_modular",
+    "question": "Is there any towel to the left of the black bag?",
+    "ground_truth": "yes",
+    "prediction": "no",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "28",
+    "method": "no_decomposer",
+    "question": "Is there any towel to the left of the black bag?",
+    "ground_truth": "yes",
+    "prediction": "no",
+    "exact": false,
+    "soft": false
+  },
+  {
+    "question_id": "28",
+    "method": "no_evaluator",
+    "question": "Is there any towel to the left of the black bag?",
+    "ground_truth": "yes",
+    "prediction": "yes",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "28",
+    "method": "no_searcher",
+    "question": "Is there any towel to the left of the black bag?",
+    "ground_truth": "yes",
+    "prediction": "yes",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "29",
+    "method": "full_modular",
+    "question": "Do the necktie and the book have the same color?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "29",
+    "method": "no_decomposer",
+    "question": "Do the necktie and the book have the same color?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "29",
+    "method": "no_evaluator",
+    "question": "Do the necktie and the book have the same color?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "29",
+    "method": "no_searcher",
+    "question": "Do the necktie and the book have the same color?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "30",
+    "method": "full_modular",
+    "question": "Is there a pig or a hippo in this image?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "30",
+    "method": "no_decomposer",
+    "question": "Is there a pig or a hippo in this image?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "30",
+    "method": "no_evaluator",
+    "question": "Is there a pig or a hippo in this image?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  },
+  {
+    "question_id": "30",
+    "method": "no_searcher",
+    "question": "Is there a pig or a hippo in this image?",
+    "ground_truth": "no",
+    "prediction": "no",
+    "exact": true,
+    "soft": true
+  }
+]

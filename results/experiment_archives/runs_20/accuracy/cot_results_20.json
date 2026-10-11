@@ -1,0 +1,182 @@
+[
+  {
+    "question_id": "09853457",
+    "question": "What place is shown?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2317441.jpg",
+    "ground_truth": "road",
+    "prediction": "T: The image shows a street or road where a man is riding a skateboard.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "0313863",
+    "question": "What type of clothing is gray?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2390824.jpg",
+    "ground_truth": "pants",
+    "prediction": "T: Jersey",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "1424972",
+    "question": "What is the man on?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2374543.jpg",
+    "ground_truth": "bench",
+    "prediction": "T: The man is sitting on a bench.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "19796956",
+    "question": "What type of place is it?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/1498.jpg",
+    "ground_truth": "road",
+    "prediction": "T: It is a city street with buildings, cars, and pedestrians.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "1525492",
+    "question": "Are there both vegetables and peppers in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2363859.jpg",
+    "ground_truth": "yes",
+    "prediction": "T: Yes, there are both vegetables and peppers in the image.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "05864214",
+    "question": "Which kind of animal is in the field?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2400769.jpg",
+    "ground_truth": "giraffe",
+    "prediction": "T: Giraffe",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "18104630",
+    "question": "Is there a dog near the pillow?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2369293.jpg",
+    "ground_truth": "no",
+    "prediction": "T: No, there is no dog near the pillow. The image features a cat sitting on a bed, looking at its reflection in a mirror.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "1964220",
+    "question": "Which kind of food is on the pizza?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2410495.jpg",
+    "ground_truth": "mushroom",
+    "prediction": "T: Mushroom",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "13896137",
+    "question": "Is the yellow vegetable to the left or to the right of the vegetable that is not rotten?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2345610.jpg",
+    "ground_truth": "right",
+    "prediction": "T: Right",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "08830369",
+    "question": "What kind of vehicle is to the right of the car?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2354268.jpg",
+    "ground_truth": "van",
+    "prediction": "T: Bus",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "13105144",
+    "question": "On which side of the photo is the white SUV?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2380044.jpg",
+    "ground_truth": "left",
+    "prediction": "T: Left",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "09839769",
+    "question": "Are there any boxes on the desk that is made of wood?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2336704.jpg",
+    "ground_truth": "no",
+    "prediction": "T: No, there are no boxes on the desk.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "071004058",
+    "question": "What is the color of the helmet in the top?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2414658.jpg",
+    "ground_truth": "gray",
+    "prediction": "T: The color of the helmet in the top is white.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "04198124",
+    "question": "What kind of clothing is gray?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2390675.jpg",
+    "ground_truth": "hat",
+    "prediction": "T: Suit",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "16541496",
+    "question": "Is the sky light blue?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2411098.jpg",
+    "ground_truth": "yes",
+    "prediction": "T: Yes",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "08889454",
+    "question": "What animal are the trees behind of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2336392.jpg",
+    "ground_truth": "elephant",
+    "prediction": "T: Elephant",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "08296231",
+    "question": "On which side of the picture is the silver knife?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2389735.jpg",
+    "ground_truth": "right",
+    "prediction": "T: Right",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "0328473",
+    "question": "What animal are these, zebras or lambs?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2323225.jpg",
+    "ground_truth": "zebras",
+    "prediction": "T: These are zebras, not lambs.",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "05359803",
+    "question": "Does the bowl to the left of the ball look red?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2317148.jpg",
+    "ground_truth": "no",
+    "prediction": "T: No",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "00836022",
+    "question": "In which part of the photo is the boy, the bottom or the top?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2391960.jpg",
+    "ground_truth": "bottom",
+    "prediction": "T: Bottom",
+    "correct": true,
+    "status": "success"
+  }
+]

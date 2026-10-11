@@ -1,0 +1,312 @@
+[
+  {
+    "question_id": "0",
+    "question": "Are there both vegetables and peppers in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00004.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a delicious pizza with various toppings, including peppers and onions. The pizza is placed in a box, which is open and revealing the pizza's contents. The pizza is cut into slices, making it easy to serve and enjoy. The toppings are spread evenly across the pizza, adding a burst of flavor to each bite.",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "1",
+    "question": "Is there a dog near the pillow?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00006.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a cat sitting on a bed, looking at its reflection in a mirror. The cat appears to be curious about its own image, as it gazes at the mirror. The bed is covered with a blanket, providing a cozy and comfortable environment for the cat.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "2",
+    "question": "Is the yellow vegetable to the left or to the right of the vegetable that is not rotten?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00008.jpg",
+    "ground_truth": "right",
+    "visual_description": "The image features a white plate filled with a variety of pizza slices. There are at least six different pizza slices on the plate, each with different toppings and sizes. The pizza slices are arranged in a visually appealing manner, showcasing the assortment of flavors and textures. The plate is placed on a dining table, ready to be enjoyed by those who partake in the delicious meal.",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "3",
+    "question": "What kind of vehicle is to the right of the car?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00009.jpg",
+    "ground_truth": "van",
+    "visual_description": "The image depicts a busy city street with a man wearing a red helmet riding a motorcycle. He is smiling and appears to be enjoying the ride. There are several other people on the street, some of them riding bicycles.\n\nIn addition to the motorcycle, there are multiple cars and a bus on the street. A few cars are parked or stopped, while others are in motion. The bus is located towards the right side of the scene.\n\nThere are also a couple of backpacks visible in the scene, one near the center and the other towards the right side. The overall atmosphere of the image is lively and bustling.",
+    "prediction": "a building",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "4",
+    "question": "Are there any boxes on the desk that is made of wood?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00011.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a wooden desk with a laptop computer sitting on top of it. The laptop is open and ready for use. Next to the laptop, there is a mouse and a telephone, indicating a well-equipped workspace. \n\nIn addition to the laptop and peripherals, there are two books placed on the desk, one on the left side and the other on the right side. A TV is also present in the scene, located above the laptop. The overall setting suggests a comfortable and functional workspace.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "5",
+    "question": "What is the color of the helmet in the top?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00012.jpg",
+    "ground_truth": "gray",
+    "visual_description": "The image depicts a group of people, including both children and adults, skiing on a snow-covered slope. They are all wearing skis and are lined up in a row, possibly waiting for their turn or preparing to ski down the hill. The skiers are spread out across the slope, with some closer to the foreground and others further back.\n\nIn addition to the skiers, there are a few people standing near the edge of the slope, possibly observing the skiing activities or waiting for their turn. The scene captures the excitement and enjoyment of skiing in a winter setting.",
+    "prediction": "white",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "6",
+    "question": "What animal are the trees behind of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00015.jpg",
+    "ground_truth": "elephant",
+    "visual_description": "The image features two elephants standing next to each other in a dirt field. They appear to be walking together, possibly in a zoo or a wildlife reserve. The elephants are positioned close to a tree, which provides a natural backdrop to the scene. The dirt field is surrounded by a stone wall, adding to the overall setting of the scene.",
+    "prediction": "elephants",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "7",
+    "question": "What animal are these, zebras or lambs?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00017.jpg",
+    "ground_truth": "zebras",
+    "visual_description": "The image features a mother zebra and her baby standing together in a dirt field. The baby zebra is positioned close to the mother, and they appear to be grazing on the grass. The mother zebra is larger than the baby, and they both seem to be enjoying their time in the field.",
+    "prediction": "are these, zebras",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "8",
+    "question": "Does the bowl to the left of the ball look red?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00018.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a woman kneeling on the floor, attentively taking care of a small kitten. She is holding a bottle, likely filled with milk, to feed the kitten. The kitten is sitting on the floor, close to the woman, and appears to be drinking from the bottle.\n\nThe scene takes place in a kitchen, with a sink visible in the background. The woman is wearing a red shirt, and there is a bowl placed on the floor near her. The overall atmosphere of the image is one of warmth and care, as the woman nurtures the young kitten.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "9",
+    "question": "In which part of the photo is the boy, the bottom or the top?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00019.jpg",
+    "ground_truth": "bottom",
+    "visual_description": "The image showcases a large indoor showroom featuring a variety of motorcycles and cars on display. There are several motorcycles of different sizes and styles, some of which are placed on shelves or elevated platforms. In addition to the motorcycles, there are multiple cars on display, with some positioned closer to the foreground and others further back in the showroom.\n\nA group of people can be seen walking around and admiring the vehicles, with some individuals standing closer to the motorcycles and others near the cars. The overall atmosphere of the showroom is one of excitement and interest, as people explore and appreciate the diverse collection of vehicles.",
+    "prediction": "2) the top",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "10",
+    "question": "What kind of furniture is in front of the light switch?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00020.jpg",
+    "ground_truth": "shelf",
+    "visual_description": "The image features a woman in a room, bending over a bed with a striped blanket. She appears to be in the process of making the bed or adjusting the sheets. The bed is positioned in the center of the room, and there is a chair located towards the right side of the room.\n\nIn addition to the bed and chair, there are several books scattered around the room, with some placed on the floor and others on surfaces. A handbag can also be seen on the floor, close to the woman.",
+    "prediction": "bedsuit",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "11",
+    "question": "Is the person near the garbage bin wearing a coat?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00021.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a blue and white bus parked next to a bus stop. The bus stop has a covered area, providing shelter for passengers waiting for the bus. Several people are waiting at the bus stop, with some standing closer to the bus and others further away.\n\nIn addition to the bus, there are a few cars parked in the vicinity, and a traffic light can be seen in the background. A person is holding a cell phone, possibly checking for updates or communicating with someone. The scene captures a typical day at a bus stop with people waiting for their ride.",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "12",
+    "question": "Are there any beach umbrellas or balls in this scene?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00022.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image captures a lively scene at a ski resort, with a group of people skiing and snowboarding on a snow-covered slope. There are at least 13 people visible in the scene, some of them skiing and others snowboarding. The skiers and snowboarders are scattered across the slope, with some closer to the foreground and others further in the background.\n\nThe ski resort features a ski lift, which is visible in the background, transporting skiers and snowboarders up the mountain. The skiers and snowboarders are enjoying their time on the mountain, making the most of the winter sports facilities.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "13",
+    "question": "Are there any trucks in front of the white building?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00023.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a black and red train traveling down the tracks, passing by a train station. The train is positioned in the middle of the scene, with the station visible on the right side. The train station has a bench and a potted plant, adding a touch of greenery to the area.\n\nThere are several people in the scene, some of them standing near the train, while others are scattered around the station. A handbag can be seen placed on the ground, possibly belonging to one of the individuals present. The overall atmosphere of the scene is that of a busy train station with people going about their daily activities.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "14",
+    "question": "Do you see either fences or buses there?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00024.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a man wearing a green and black striped hat, standing on a street corner. He is looking at the camera, possibly posing for a picture. The street is bustling with activity, as there are multiple cars parked or driving nearby. A traffic light is visible in the background, indicating that the man is standing at an intersection. The scene captures a moment of everyday life in an urban environment.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "15",
+    "question": "Are the controllers on the left side or on the right?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00025.jpg",
+    "ground_truth": "left",
+    "visual_description": "The image features two men standing in a living room, playing a video game together. Both men are holding Wii controllers, fully engaged in the game. They are standing in front of a couch, which occupies a significant portion of the room.\n\nIn the background, there is a dining table with a cell phone placed on it. A bottle can also be seen on the table, possibly containing a beverage for the players. The living room appears to be a comfortable space for the two friends to enjoy their gaming session.",
+    "prediction": "yes",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "16",
+    "question": "Are there both skateboarders and skateboards in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00026.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a young man skillfully riding a skateboard on a brick walkway. He is performing a trick, possibly a grind, as he moves along the path. The skateboarder is the main focus of the scene, with his skateboard clearly visible beneath him.\n\nIn the background, there are several other people scattered throughout the area, possibly observing the skateboarder or going about their own activities. The scene captures the excitement and energy of the skateboarder's performance.",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "17",
+    "question": "What type of animal are the mountains behind of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00028.jpg",
+    "ground_truth": "horse",
+    "visual_description": "The image features a white horse standing in a dirt field, wearing a saddle and bridle. The horse appears to be calmly posing for the picture. The saddle is placed on the horse's back, and the bridle is attached to the horse's head.\n\nIn the background, there are a few people scattered around the field, possibly observing the horse or attending to other tasks. Additionally, there is a car parked in the background, likely belonging to one of the people present in the scene.",
+    "prediction": "mountains",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "18",
+    "question": "What animal is in front of the car?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00029.jpg",
+    "ground_truth": "dog",
+    "visual_description": "The image features a large brown dog standing in a grassy field, with its tongue out and panting. The dog appears to be enjoying the outdoor environment. In the background, there are several cars parked, with some closer to the dog and others further away. The cars are of various sizes and are arranged in a line, creating a contrast between the dog and the vehicles.",
+    "prediction": "brown dog",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "19",
+    "question": "Are there both men and children in this photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00032.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a young child, possibly a baby, laying on a wooden bench. The child is smiling and holding a snack, possibly a candy bar, in their hands. The bench is located in a park, providing a comfortable and relaxing environment for the child.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "20",
+    "question": "Which kind of fast food is to the right of the jar?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00034.jpg",
+    "ground_truth": "fries",
+    "visual_description": "The image features a dining table with a delicious meal on it. There is a large hamburger placed on a plate, accompanied by a side of french fries. A sandwich is also present on the table, adding to the variety of food.\n\nIn addition to the main meal, there are several items on the table, including a bottle, a cup, a fork, a knife, and a spoon. The table setting suggests a casual dining experience, with the food and utensils arranged for easy access.",
+    "prediction": "burger king",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "21",
+    "question": "Are there either trays or snowboards in the picture?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00036.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image captures a man skillfully riding a skateboard on a ramp, performing a trick. He is wearing a black jacket and appears to be in motion. There are two other people in the scene, one standing near the ramp and another further away.\n\nThe skateboarder is the main focus of the image, and his action is the center of attention. The other people in the scene are likely observing the skateboarder's performance or waiting for their turn to ride the ramp.",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "22",
+    "question": "Is the box to the left or to the right of the man that is looking at the building?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00037.jpg",
+    "ground_truth": "left",
+    "visual_description": "The image depicts a rainy day in a city, with a person holding a colorful umbrella to shield themselves from the rain. The umbrella is open and covers a significant portion of the person's body. Another person can be seen standing nearby, also holding an umbrella.\n\nThe scene takes place near a fence, and there are two trash cans in the area. One trash can is located closer to the left side of the image, while the other is situated more towards the center. A car is parked in the background, and a handbag can be seen placed on the ground near the person holding the umbrella.",
+    "prediction": "yes",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "23",
+    "question": "What is located on top of the cucumber?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00041.jpg",
+    "ground_truth": "carrots",
+    "visual_description": "The image features a dining table with a blue plate containing a delicious meal. The plate is filled with rice, meat, and various vegetables, including carrots and broccoli. There are multiple carrots scattered across the plate, adding a vibrant touch to the dish.\n\nA fork is placed on the table, ready to be used to enjoy the meal. The table setting is complemented by a chair positioned nearby. The overall scene conveys a sense of a well-prepared and appetizing meal.",
+    "prediction": "cucumber",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "24",
+    "question": "Is this a squirrel or a cat?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00042.jpg",
+    "ground_truth": "cat",
+    "visual_description": "The image features a large orange cat standing on a toilet seat, looking at the camera. The cat appears to be curious and is positioned in the middle of the toilet bowl. The toilet is located in a bathroom, and the cat seems to be exploring the area.",
+    "prediction": "yes",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "25",
+    "question": "Are there both children and men in this photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00043.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a lively scene at a park, where a group of children is playing with a flock of birds. The birds are scattered throughout the park, with some flying close to the children and others perched on the ground. The children are enjoying the interaction with the birds, and some are even feeding them.\n\nIn the background, there are several benches and a swing, providing a place for the children to sit and relax. A few people can be seen in the park, likely watching the children and the birds or participating in their own activities.\n\nAdditionally, there are a few handbags and a backpack placed around the park, likely belonging to the children or their parents.",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "26",
+    "question": "Do you see a frisbee to the left of the dog the helmet is on?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00044.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image depicts a lively street scene with a group of people gathered around a red motorcycle. A man is riding the motorcycle, while others are standing or sitting nearby. There are at least 13 people in the scene, with some standing closer to the motorcycle and others further away.\n\nIn addition to the motorcycle, there are two handbags visible in the scene, one near the center and the other towards the right side. A chair can also be seen in the background, placed near the left side of the image. The overall atmosphere appears to be a casual gathering or event, with people enjoying each other's company.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "27",
+    "question": "Are there any skateboards or helmets?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00045.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a young man skillfully riding a skateboard on a sidewalk. He is performing a trick, possibly a kickflip, as he jumps in the air. The skateboarder is wearing a black jacket, which adds to the overall style of the scene.\n\nIn the background, there is a backpack placed on the ground, possibly belonging to the skateboarder or someone else in the area. The scene captures the excitement and energy of the skateboarder as he showcases his talent.",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "28",
+    "question": "Is there any towel to the left of the black bag?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00047.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a bathroom with a white toilet situated next to a sink. Above the toilet, there are two towels hanging on a towel rack, adding a touch of color to the space. The sink is accompanied by a mirror, which reflects the bathroom's interior.\n\nIn the background, there is a person partially visible, likely using the bathroom or attending to other tasks. The overall scene is a typical bathroom setup with a focus on the toilet and sink area.",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "29",
+    "question": "Do the necktie and the book have the same color?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00048.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image depicts two men standing in a living room, each holding a Wii remote and actively playing a video game. They are standing in front of a couch, which occupies a significant portion of the room. \n\nThere are several books scattered around the room, with some placed on the couch and others on the floor. A chair is also visible in the scene, positioned near the couch. The living room appears to be a comfortable space for the two friends to enjoy their gaming session together.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "30",
+    "question": "Is there a pig or a hippo in this image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00049.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a black and white cat sitting on a bed, looking at a box of donuts. The box is filled with various types of donuts, including chocolate and sprinkled ones. The cat appears to be curious about the delicious treats in the box. The bed occupies most of the scene, with the cat positioned towards the left side of the image.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  }
+]

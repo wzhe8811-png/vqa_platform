@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vision QA · {{ username }}</title>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <link rel="stylesheet" href="/static/css/chat.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <button class="new-chat-btn" id="newChatBtn">＋ 新对话</button>
+      </div>
+      <div class="conv-list" id="convList"></div>
+      <div class="sidebar-foot">
+        <div id="userLabel">{{ username }}</div>
+        <button id="logoutBtn">退出登录</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="main-header" id="chatTitle">新对话</div>
+      <div class="messages" id="messages">
+        <div class="empty-hint" id="emptyHint">上传图片并提问，开始视觉问答</div>
+      </div>
+      <div class="composer-wrap">
+        <div class="composer">
+          <textarea id="question" rows="2" placeholder="输入你的问题…"></textarea>
+          <div class="composer-actions">
+            <label class="file-label">
+              <input type="file" id="image" accept="image/*" hidden />
+              <span id="fileName">添加图片</span>
+            </label>
+            <button class="send-btn" id="sendBtn">发送</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <aside class="graph-panel">
+      <div class="title">推理过程（D3）</div>
+      <svg id="graph"></svg>
+      <div id="graphDetail" class="graph-detail">选择一条助手回复后可查看推理图</div>
+    </aside>
+  </div>
+
+  <script src="/static/js/chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>vision_qa_platform</title>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --panel: #111827;
+      --line: #334155;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #22d3ee;
+      --user: #2563eb;
+      --bot: #374151;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      height: 100vh;
+      gap: 10px;
+      padding: 10px;
+    }
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .header {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .chat {
+      flex: 1;
+      overflow: auto;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .bubble {
+      max-width: 82%;
+      padding: 10px 12px;
+      border-radius: 12px;
+      line-height: 1.5;
+      font-size: 14px;
+      border: 1px solid var(--line);
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .user { align-self: flex-end; background: rgba(37,99,235,0.25); }
+    .bot { align-self: flex-start; background: rgba(55,65,81,0.5); }
+    .image-preview {
+      margin-top: 8px;
+      max-width: 280px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+    }
+    .composer {
+      border-top: 1px solid var(--line);
+      padding: 10px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 8px;
+    }
+    .inputs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    input[type="text"], input[type="file"], button {
+      background: #0b1220;
+      color: var(--text);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+    }
+    button {
+      cursor: pointer;
+      background: var(--accent);
+      color: #001018;
+      font-weight: 700;
+      min-width: 120px;
+    }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+    .muted { color: var(--muted); font-size: 12px; }
+
+    #graph { width: 100%; height: 65%; background: #020617; }
+    .detail {
+      border-top: 1px solid var(--line);
+      padding: 10px;
+      height: 35%;
+      overflow: auto;
+      font-size: 12px;
+      color: #cbd5e1;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <section class="panel">
+      <div class="header">vision_qa_platform（上传图片 + 输入问题）</div>
+      <div id="chat" class="chat"></div>
+      <div class="composer">
+        <div class="inputs">
+          <input id="question" type="text" placeholder="请输入问题，例如：图中物体在左边还是右边？" />
+          <input id="image" type="file" accept="image/*" />
+        </div>
+        <button id="sendBtn">发送</button>
+      </div>
+      <div class="muted" style="padding:0 10px 10px 10px;">
+        后端采用四模块：问题分解器、思维生成器、状态评估器、搜索控制器。
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="header">可点击推理图（D3）</div>
+      <svg id="graph"></svg>
+      <div id="detail" class="detail">等待推理结果，点击节点可查看详细内容。</div>
+    </section>
+  </div>
+
+  <script>
+    const chat = document.getElementById("chat");
+    const qInput = document.getElementById("question");
+    const imageInput = document.getElementById("image");
+    const sendBtn = document.getElementById("sendBtn");
+    const detailEl = document.getElementById("detail");
+
+    let running = false;
+
+    const nodeColors = {
+      question: "#22d3ee",
+      subq: "#f59e0b",
+      candidate: "#60a5fa",
+      candidate_selected: "#34d399",
+      pred: "#a78bfa"
+    };
+
+    function addBubble(text, who, imageUrl = null) {
+      const b = document.createElement("div");
+      b.className = `bubble ${who}`;
+      b.textContent = text;
+      if (imageUrl) {
+        const img = document.createElement("img");
+        img.src = imageUrl;
+        img.className = "image-preview";
+        b.appendChild(document.createElement("br"));
+        b.appendChild(img);
+      }
+      chat.appendChild(b);
+      chat.scrollTop = chat.scrollHeight;
+    }
+
+    function setLoading(flag) {
+      running = flag;
+      sendBtn.disabled = flag;
+      sendBtn.textContent = flag ? "推理中..." : "发送";
+    }
+
+    function renderGraph(graph) {
+      const svg = d3.select("#graph");
+      svg.selectAll("*").remove();
+      detailEl.textContent = "点击节点可查看详细内容。";
+
+      const width = svg.node().clientWidth;
+      const height = svg.node().clientHeight;
+      const nodes = graph.nodes.map(d => ({ ...d }));
+      const links = graph.links.map(d => ({ ...d }));
+
+      const sim = d3.forceSimulation(nodes)
+        .force("link", d3.forceLink(links).id(d => d.id).distance(90))
+        .force("charge", d3.forceManyBody().strength(-360))
+        .force("center", d3.forceCenter(width / 2, height / 2))
+        .force("collision", d3.forceCollide().radius(24));
+
+      const link = svg.append("g")
+        .attr("stroke", "#334155")
+        .attr("stroke-opacity", 0.85)
+        .selectAll("line")
+        .data(links)
+        .join("line")
+        .attr("stroke-width", 1.3);
+
+      const node = svg.append("g")
+        .selectAll("circle")
+        .data(nodes)
+        .join("circle")
+        .attr("r", d => d.type.includes("candidate") ? 12 : 16)
+        .attr("fill", d => nodeColors[d.type] || "#94a3b8")
+        .attr("stroke", "#0b1220")
+        .attr("stroke-width", 1.5)
+        .call(d3.drag()
+          .on("start", (event, d) => {
+            if (!event.active) sim.alphaTarget(0.3).restart();
+            d.fx = d.x; d.fy = d.y;
+          })
+          .on("drag", (event, d) => {
+            d.fx = event.x; d.fy = event.y;
+          })
+          .on("end", (event, d) => {
+            if (!event.active) sim.alphaTarget(0);
+            d.fx = null; d.fy = null;
+          })
+        )
+        .on("click", (_, d) => {
+          detailEl.textContent = JSON.stringify(
+            { id: d.id, label: d.label, type: d.type, detail: d.detail },
+            null,
+            2
+          );
+        });
+
+      const label = svg.append("g")
+        .selectAll("text")
+        .data(nodes)
+        .join("text")
+        .text(d => d.label)
+        .attr("font-size", 11)
+        .attr("fill", "#e2e8f0")
+        .attr("text-anchor", "middle")
+        .attr("dy", 4);
+
+      sim.on("tick", () => {
+        link
+          .attr("x1", d => d.source.x)
+          .attr("y1", d => d.source.y)
+          .attr("x2", d => d.target.x)
+          .attr("y2", d => d.target.y);
+        node
+          .attr("cx", d => d.x)
+          .attr("cy", d => d.y);
+        label
+          .attr("x", d => d.x)
+          .attr("y", d => d.y);
+      });
+    }
+
+    async function ask() {
+      if (running) return;
+      const question = qInput.value.trim();
+      const file = imageInput.files[0];
+      if (!question || !file) {
+        addBubble("请同时提供图片和问题。", "bot");
+        return;
+      }
+
+      addBubble(question, "user", URL.createObjectURL(file));
+      setLoading(true);
+
+      try {
+        const form = new FormData();
+        form.append("question", question);
+        form.append("image", file);
+
+        const res = await fetch("/api/ask", { method: "POST", body: form });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || "请求失败");
+
+      const answer = `回答：${data.answer}\n\n（已使用四模块推理并生成可点击图）`;
+        addBubble(answer, "bot");
+        renderGraph(data.graph);
+      } catch (err) {
+        addBubble("推理失败：" + err.message, "bot");
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    sendBtn.onclick = ask;
+    qInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") ask();
+    });
+  </script>
+</body>
+</html>

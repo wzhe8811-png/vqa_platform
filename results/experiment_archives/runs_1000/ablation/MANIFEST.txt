@@ -1,0 +1,6 @@
+Existing files copied from results:
+
+Expected/missing (to be generated):
+- ablation_table_complex1000_full.csv
+- ablation_table_complex1000_full.md
+- ablation_raw_complex1000_full.json

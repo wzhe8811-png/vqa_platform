@@ -1,0 +1,9 @@
+question_id,question,prediction,ground_truth,logic_coherence_score_1to5,evidence_relevance_score_1to5,redundancy_score_1to5,overall_interpretability_score_1to5,annotator_notes
+2,Is the yellow vegetable to the left or to the right of the vegetable that is not rotten?,yes,right,,,,,
+3,What kind of vehicle is to the right of the car?,car,van,,,,,
+5,What is the color of the helmet in the top?,white helmet,gray,,,,,
+6,What animal are the trees behind of?,elephants,elephant,,,,,
+7,"What animal are these, zebras or lambs?","are these, zebras",zebras,,,,,
+8,Does the bowl to the left of the ball look red?,yes,no,,,,,
+9,"In which part of the photo is the boy, the bottom or the top?",2) the top,bottom,,,,,
+10,What kind of furniture is in front of the light switch?,"furniture: bed, chair, books",shelf,,,,,

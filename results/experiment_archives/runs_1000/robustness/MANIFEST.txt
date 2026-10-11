@@ -1,0 +1,6 @@
+Existing files copied from results:
+
+Expected/missing (to be generated):
+- robustness_summary_complex1000.csv
+- robustness_curve_exact_complex1000.png
+- robustness_curve_soft_complex1000.png

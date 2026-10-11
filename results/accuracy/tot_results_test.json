@@ -1,0 +1,10 @@
+[
+  {
+    "question_id": "0",
+    "question": "What place is shown?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2317441.jpg",
+    "visual_description": "The image captures a lively scene on a street, where a man is riding a skateboard down the road. He is wearing a helmet for safety while performing his skateboarding stunt. There are several other people in the scene, some of them walking or standing on the sidewalk.\n\nIn addition to the skateboarder, there are multiple bicycles scattered throughout the scene, with some parked and others being ridden by people. A few cars are also present in the image, parked or driving along the street. The overall atmosphere of the scene is energetic and active, with people engaging in various outdoor activities.",
+    "prediction": "Street",
+    "status": "success"
+  }
+]

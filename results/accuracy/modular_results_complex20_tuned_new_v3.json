@@ -1,0 +1,1185 @@
+[
+  {
+    "question_id": "0",
+    "question": "Are there both vegetables and peppers in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2363859.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个带有肉类和蔬菜的饼干。饼干上有许多蔬菜，包括西红柿和西红柿酱。饼干的底部是烤的，而上面则是带有肉类的。整个饼干看起来非常美味，充满了色彩和口感。",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "蔬菜",
+        "candidates": [
+          {
+            "thought": "从图片中可以看出，蔬菜有西红柿和西红柿酱。",
+            "answer": "西红柿和西红柿酱"
+          },
+          {
+            "thought": "这些蔬菜出现在饼干的顶部，说明它们被放在了饼干上。",
+            "answer": "放在饼干顶部的蔬菜"
+          },
+          {
+            "thought": "通过观察图片中的颜色对比，我们可以看到蔬菜的颜色鲜艳，这表明蔬菜是新鲜的。",
+            "answer": "新鲜的蔬菜"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "辣椒",
+        "candidates": [
+          {
+            "thought": "[{\"thought\":\"这个饼干看起来很受欢迎，因为它有多种配料，比如肉、蔬菜和辣椒\",\"answer\":\"辣椒可能是这饼干中的一部分\"},{\"thought\":\"蔬菜和肉混合在一起会带来独特的味道\",\"answer\":\"这种搭配可能会创造出一种新的口味体验\"},{\"thought\":\"颜色鲜艳的食物通常更有吸引力\",\"answer\":\"视觉上的吸引也是吸引顾客的一个重要因素\"]}]",
+            "answer": "[{\"thought\":\"这个饼干看起来很受欢迎，因为它有多种配料，比如肉、蔬菜和辣椒\",\"answer\":\"辣椒可能是这饼干中的一部分\"},{\"thought\":\"蔬菜和肉混合在一起会带来独特的味道\",\"answer\":\"这种搭配可能会创造出一种新的口味体验\"},{\"thought\":\"颜色鲜艳的食物通常更有吸引力\",\"answer\":\"视觉上的吸引也是吸引顾客的一个重要因素\"]}]"
+          }
+        ],
+        "scores": [
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "颜色",
+        "candidates": [
+          {
+            "thought": "该图片中的饼干整体呈现出了鲜艳的红色和绿色",
+            "answer": "鲜艳的颜色"
+          },
+          {
+            "thought": "图片中肉制品的颜色未知,但是从图片的整体色彩上看,大部分是红色和绿色",
+            "answer": "红色和绿色"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "蔬菜",
+        "selected_answer": "西红柿和西红柿酱",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "辣椒",
+        "selected_answer": "[{\"thought\":\"这个饼干看起来很受欢迎，因为它有多种配料，比如肉、蔬菜和辣椒\",\"answer\":\"辣椒可能是这饼干中的一部分\"},{\"thought\":\"蔬菜和肉混合在一起会带来独特的味道\",\"answer\":\"这种搭配可能会创造出一种新的口味体验\"},{\"thought\":\"颜色鲜艳的食物通常更有吸引力\",\"answer\":\"视觉上的吸引也是吸引顾客的一个重要因素\"]}]",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "颜色",
+        "selected_answer": "鲜艳的颜色",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "1",
+    "question": "Is there a dog near the pillow?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2369293.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了两只猫在一起，其中一只猫看着另一只猫的反射。这两只猫都在床上，床上还有一张床垫。猫的反射在镜子上，使得它们看起来像是在对话。这张图片展示了猫之间的互动和相互关注。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Is there a dog near the pillow?",
+        "candidates": [
+          {
+            "thought": "[]",
+            "answer": "[]"
+          }
+        ],
+        "scores": [
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Is there a dog near the pillow?",
+        "selected_answer": "[]",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "2",
+    "question": "Is the yellow vegetable to the left or to the right of the vegetable that is not rotten?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2345610.jpg",
+    "ground_truth": "right",
+    "visual_description": "这张图片展示了一个白盘上的三个半切的披萨。每个半切都有着各种蔬菜和奶酪。其中一个半切的披萨有辣椒，另外两个半切的披萨没有辣椒。这些披萨均呈现出美味的口感，具有各种口味和食材的独特魅力。",
+    "prediction": "left",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "左边或右边：左边或右边：左边或右边",
+        "candidates": [
+          {
+            "thought": "左边",
+            "answer": "左"
+          },
+          {
+            "thought": "中间",
+            "answer": "中"
+          },
+          {
+            "thought": "右边",
+            "answer": "右"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "左边或右边：左边或右边：左边或右边",
+        "selected_answer": "左",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "3",
+    "question": "What kind of vehicle is to the right of the car?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2354268.jpg",
+    "ground_truth": "van",
+    "visual_description": "这张图片展示了一个人在一辆摩托车上，他笑着，看向前方。这辆摩托车位于一个繁忙的街道上，周围有许多其他车辆，包括一辆公交车。街道上还有一些行人，其中一个人正在拿着一个手提包。整个场景表现出一种活力和热情。",
+    "prediction": "motorcycle",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "What kind of vehicle is to the right of the car?",
+        "candidates": [
+          {
+            "thought": "根据图片描述，可以看出右边的车辆是一辆摩托车。",
+            "answer": "摩托车"
+          },
+          {
+            "thought": "从图片中可以推断出，左边的车是摩托车，而右前方的车可能是公交车。",
+            "answer": "公交车"
+          },
+          {
+            "thought": "从整体上看，画面充满了活力和热情，可以看到道路两边的车辆都是行驶状态，所以最有可能的是摩托车或自行车。",
+            "answer": "摩托车"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "What kind of vehicle is to the right of the car?",
+        "selected_answer": "摩托车",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "4",
+    "question": "Are there any boxes on the desk that is made of wood?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2336704.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个桌子上的电脑和电话。电脑占据了大部分桌子的空间，而电话则位于电脑的左侧。桌子上还有一个麦克风，并且还有一些其他的电子设备。整个场景呈现出一个现代化的办公室。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Are there any boxes on the desk that is made of wood?",
+        "candidates": [
+          {
+            "thought": "[{\"thought\": \"从图像中无法直接判断是否有木制盒子放在桌上。\", \"answer\": \"无法确定\"}, {\"thought\": \"根据图像描述，没有看到任何木制盒子的信息。\", \"answer\": \"无法确定\"}, {\"thought\": \"由于没有看到木制盒子的具体信息，因此无法得出结论。\", \"answer\": \"无法确定\"}}",
+            "answer": "[{\"thought\": \"从图像中无法直接判断是否有木制盒子放在桌上。\", \"answer\": \"无法确定\"}, {\"thought\": \"根据图像描述，没有看到任何木制盒子的信息。\", \"answer\": \"无法确定\"}, {\"thought\": \"由于没有看到木制盒子的具体信息，因此无法得出结论。\", \"answer\": \"无法确定\"}}"
+          }
+        ],
+        "scores": [
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Are there any boxes on the desk that is made of wood?",
+        "selected_answer": "[{\"thought\": \"从图像中无法直接判断是否有木制盒子放在桌上。\", \"answer\": \"无法确定\"}, {\"thought\": \"根据图像描述，没有看到任何木制盒子的信息。\", \"answer\": \"无法确定\"}, {\"thought\": \"由于没有看到木制盒子的具体信息，因此无法得出结论。\", \"answer\": \"无法确定\"}}",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "5",
+    "question": "What is the color of the helmet in the top?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2414658.jpg",
+    "ground_truth": "gray",
+    "visual_description": "这张图片展示了一群人在雪地上穿过雪山。他们都穿着冰雪防护服，并且有许多人穿着帽子。他们的脚上都有滑雪板，准备开始滑雪。这些人分成两个队伍，一个队伍在前面，另一个队伍在后面。他们都在等待，准备开始滑雪。",
+    "prediction": "white or gray",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "颜色",
+        "candidates": [
+          {
+            "thought": "图片中人物穿的冰雪防护服和帽子是白色或灰色为主色调",
+            "answer": "颜色以白色或灰色为主"
+          },
+          {
+            "thought": "图片中人物的滑雪装备主要是蓝色、黄色等色彩",
+            "answer": "颜色主要为蓝色、黄色等色彩"
+          },
+          {
+            "thought": "图片中的背景是白色的雪山",
+            "answer": "背景色为白色"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "是否包含白色",
+        "candidates": [
+          {
+            "thought": "存在大量白色的背景，如雪山、冰川和雪地，以及白色的安全装备，因此可以判断出图片中包含白色。",
+            "answer": "[{'color': 'white'}]"
+          }
+        ],
+        "scores": [
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "颜色",
+        "selected_answer": "颜色以白色或灰色为主",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "是否包含白色",
+        "selected_answer": "[{'color': 'white'}]",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "6",
+    "question": "What animal are the trees behind of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2336392.jpg",
+    "ground_truth": "elephant",
+    "visual_description": "这张图片展示了两只大型黑色象龟在一个园区中相互交流。象龟们的身体呈现出圆形，它们的头部和脖子呈现出弯曲的形状。象龟们的脚掌很大，可以用来抓住东西。\n\n这个园区有一些树木，象龟们在其中间活动。园区内还有一些植物，如椰子和植物。象龟们在这个园区中相互交流，展示了它们的社交和互动。",
+    "prediction": "trees",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "答案",
+        "candidates": [
+          {
+            "thought": "两只大型黑色象龟在一个园区中相互交流。",
+            "answer": "两只大象正在公园里交流"
+          },
+          {
+            "thought": "象龟们的身体呈现出圆形，它们的头部和脖子呈现出弯曲的形状。",
+            "answer": "大象体型庞大，身体呈圆柱形，头颈弯曲"
+          },
+          {
+            "thought": "象龟们的脚掌很大，可以用来抓住东西。",
+            "answer": "大象脚掌大而有力，可以抓取食物或保护自己"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "树木背后是象龟栖息地中的树",
+        "candidates": [
+          {
+            "thought": "树木后面应该有遮挡物，以保护象龟免受太阳直射。",
+            "answer": "[{'text': '树木后面可能是一个石头墙或一个高大的树木屏障'}]"
+          },
+          {
+            "thought": "象龟通常喜欢在植被丰富的环境中生活。",
+            "answer": "[{'text': '象龟栖息地中的树应该是茂密的乔木，如椰子树、棕榈树等。'}]"
+          },
+          {
+            "thought": "象龟是一种具有社会性的动物，它们通过交流来沟通和协作。",
+            "answer": "[{'text': '象龟在园区中的交流行为表明它们之间存在一种复杂的社会关系。'}]"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "答案",
+        "candidates": [
+          {
+            "thought": "两只大型黑色象龟在园区中相互交流",
+            "answer": "两只大型黑色象龟在园区中相互交流"
+          },
+          {
+            "thought": "园区中有树木、植物等生物",
+            "answer": "园区中有树木、植物等生物"
+          },
+          {
+            "thought": "象龟们在园区中活动",
+            "answer": "象龟们在园区中活动"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "答案",
+        "selected_answer": "两只大象正在公园里交流",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "树木背后是象龟栖息地中的树",
+        "selected_answer": "[{'text': '树木后面可能是一个石头墙或一个高大的树木屏障'}]",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "答案",
+        "selected_answer": "两只大型黑色象龟在园区中相互交流",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "7",
+    "question": "What animal are these, zebras or lambs?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2323225.jpg",
+    "ground_truth": "zebras",
+    "visual_description": "这张图片展示了一只成年的纹身猴子和它的小孩在一个简单的绿色环境中共同吃草。成年的纹身猴子背后有一只小纹身猴子，它们在草地上走动，享受着自然的美好。这个场景展示了母纹身猴子和它的幼崽之间的亲情和互相的关爱。",
+    "prediction": "are these zebras",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "zebra",
+        "candidates": [
+          {
+            "thought": "这是一只成年纹身猴子带着它的孩子在绿草地上吃草。",
+            "answer": "这只成年纹身猴子可能是一个母亲。"
+          },
+          {
+            "thought": "这只动物看起来很友好和慈爱。",
+            "answer": "可以推断出这些动物之间有良好的关系。"
+          },
+          {
+            "thought": "这幅画作可能象征着自然界中母爱的力量。",
+            "answer": "这幅画可能是一种表达对大自然之美的赞美。"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.9,
+          0.7
+        ],
+        "selected_index": 1
+      },
+      {
+        "sub_question": "lamb",
+        "candidates": [
+          {
+            "thought": "[{\"thought\":\"这只纹身猴子是母性的象征，它保护和关爱自己的幼崽。\",\"answer\":\"这只纹身猴子是母性的象征。\"},\n,{\"thought\":\"纹身猴子可能是野生的或人工培育的, 但不管怎样, 这种亲密关系都是非常珍贵的。\",\"answer\":\"这种亲密关系是非常珍贵的。\"},\n,{\"thought\":\"这个场景中，纹身猴子和它的小孩一起吃草，这表明它们生活在一起，共享食物和空间。\",\"answer\":\"这个场景展现了纹身猴子和它的小孩共享食物和空间的生活方式。\"]}]}",
+            "answer": "[{\"thought\":\"这只纹身猴子是母性的象征，它保护和关爱自己的幼崽。\",\"answer\":\"这只纹身猴子是母性的象征。\"},\n,{\"thought\":\"纹身猴子可能是野生的或人工培育的, 但不管怎样, 这种亲密关系都是非常珍贵的。\",\"answer\":\"这种亲密关系是非常珍贵的。\"},\n,{\"thought\":\"这个场景中，纹身猴子和它的小孩一起吃草，这表明它们生活在一起，共享食物和空间。\",\"answer\":\"这个场景展现了纹身猴子和它的小孩共享食物和空间的生活方式。\"]}]}"
+          }
+        ],
+        "scores": [
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "sibling",
+        "candidates": [
+          {
+            "thought": "成年纹身猴子与它的小孩共享一片绿草地，体现了它们之间的情感联系和相互依存的关系。",
+            "answer": "共享"
+          },
+          {
+            "thought": "母纹身猴子保护着它的幼崽，这表明了母爱的力量和对子女的关爱。",
+            "answer": "关爱"
+          },
+          {
+            "thought": "这个场景展现了自然界中母性力量的强大，以及孩子对母亲的依赖关系。",
+            "answer": "依赖"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.8,
+          0.7
+        ],
+        "selected_index": 1
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "zebra",
+        "selected_answer": "可以推断出这些动物之间有良好的关系。",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "lamb",
+        "selected_answer": "[{\"thought\":\"这只纹身猴子是母性的象征，它保护和关爱自己的幼崽。\",\"answer\":\"这只纹身猴子是母性的象征。\"},\n,{\"thought\":\"纹身猴子可能是野生的或人工培育的, 但不管怎样, 这种亲密关系都是非常珍贵的。\",\"answer\":\"这种亲密关系是非常珍贵的。\"},\n,{\"thought\":\"这个场景中，纹身猴子和它的小孩一起吃草，这表明它们生活在一起，共享食物和空间。\",\"answer\":\"这个场景展现了纹身猴子和它的小孩共享食物和空间的生活方式。\"]}]}",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "sibling",
+        "selected_answer": "关爱",
+        "selected_score": 0.8
+      }
+    ]
+  },
+  {
+    "question_id": "8",
+    "question": "Does the bowl to the left of the ball look red?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2317148.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个女孩坐在地上，亲切地抚摸一只小猫。她手里拿着一瓶液体，可能是为这只小猫喂食。周围的环境包括一个碗和一个毛巾，这些物品可能是为这只小猫准备的。整个场景表现出一种温馨和关爱的氛围。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "判断题",
+        "candidates": [
+          {
+            "thought": "这个小女孩非常爱护小猫，可能是因为她有爱心或者对动物有特殊的情感联系。",
+            "answer": "这个小女孩非常喜欢小猫，很关心它。"
+          },
+          {
+            "thought": "小女孩可能会是一位母亲，因为她在照顾小猫。",
+            "answer": "这个场景可能是一个家庭情境，小女孩是家里的母亲或保姆。"
+          },
+          {
+            "thought": "小女孩可能正在给小猫喂食，因为她手上拿着液体。",
+            "answer": "这个场景是在为小猫提供食物，小女孩在喂养小猫。"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "判断题",
+        "candidates": [
+          {
+            "thought": "这个场景是一个小女孩在照顾一只小猫，她正在给它喂食。",
+            "answer": "这是一个小孩在为小动物喂食。"
+          },
+          {
+            "thought": "小女孩手中拿着瓶液体可能代表食物或水，这表明她在喂养小动物。",
+            "answer": "小女孩手中的瓶子可能是用来喂食的小动物。"
+          },
+          {
+            "thought": "周围摆放着碗和毛巾，这些都是喂食时用到的工具。",
+            "answer": "碗和毛巾是小女孩喂食小动物时使用的餐具和垫料。"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "判断题",
+        "selected_answer": "这个小女孩非常喜欢小猫，很关心它。",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "判断题",
+        "selected_answer": "这是一个小孩在为小动物喂食。",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "9",
+    "question": "In which part of the photo is the boy, the bottom or the top?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2391960.jpg",
+    "ground_truth": "bottom",
+    "visual_description": "这张图片展示了一个巨大的摩托车展览，其中有多种摩托车和车辆。这些摩托车和车辆分布在不同的层次上，形成了一个巨大的摩托车展览。\n\n在展览中，有一些人观看这些摩托车和车辆，他们可能是摩托车爱好者或者是展览的参观者。这些人在展览中漫步，欣赏这些各种摩托车和车辆的美丽和精美。",
+    "prediction": "top",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "底部",
+        "candidates": [
+          {
+            "thought": "[]",
+            "answer": "[]"
+          }
+        ],
+        "scores": [
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "顶部",
+        "candidates": [
+          {
+            "thought": "这个答案是关于摩托车展览的描述",
+            "answer": "[{'text': '摩托车展览'}, {'text': '摩托车'}, {'text': '展出的车辆'}]"
+          }
+        ],
+        "scores": [
+          0.8
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "不确定",
+        "candidates": [
+          {
+            "thought": "这是一个大型摩托车展览会，有许多摩托车和车辆展出。",
+            "answer": "这可能是一个摩托车展."
+          },
+          {
+            "thought": "人们在欣赏摩托车和车辆，可能是摩托车爱好者或展览参观者.",
+            "answer": "这些人是摩托车爱好者或参观者."
+          },
+          {
+            "thought": "摩托车和车辆分布在不同层面上,形成巨大的摩托车展.",
+            "answer": "摩托车和车辆分散在多个层次上."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "底部",
+        "selected_answer": "[]",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "顶部",
+        "selected_answer": "[{'text': '摩托车展览'}, {'text': '摩托车'}, {'text': '展出的车辆'}]",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "不确定",
+        "selected_answer": "这可能是一个摩托车展.",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "10",
+    "question": "What kind of furniture is in front of the light switch?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2335027.jpg",
+    "ground_truth": "shelf",
+    "visual_description": "这张图片展示了一个女性在床上弯过身，似乎在寻找某物。她的头部和脖子露在床上的蓝色毛巾之上。床上还有一些书籍和椰子，给整个场景一种舒适的氛围。",
+    "prediction": "bedroom furniture",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "What kind of furniture is in front of the light switch?",
+        "candidates": [
+          {
+            "thought": "从图像中没有直接观察到家具，所以无法回答这个问题。",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "What kind of furniture is in front of the light switch?",
+        "selected_answer": "",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "11",
+    "question": "Is the person near the garbage bin wearing a coat?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2396431.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个人在一个蓝色的公交车的门口，他正在购买周一到周五的票。公交车停在一个停车槽中，并且有几个其他人在周围的地方。\n\n在这个场景中，还有一些车辆，包括一个距离公交车较近的车，以及另外两个车辆，分别在较远的地方。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "是否可以看到这个人附近有垃圾桶？",
+        "candidates": [
+          {
+            "thought": "没有垃圾桶出现",
+            "answer": "无法判断"
+          },
+          {
+            "thought": "可能存在垃圾桶,因为公交车旁通常会有垃圾箱",
+            "answer": "存在"
+          },
+          {
+            "thought": "没有垃圾桶,但可能有人放了垃圾",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "如果看到了垃圾桶，那个人是否有穿外套？",
+        "candidates": [
+          {
+            "thought": "没有提到垃圾桶的存在，所以无法确定这个人是否穿着外套。",
+            "answer": ""
+          },
+          {
+            "thought": "根据图像描述，这个人的行为是在等待公交车，而不是在寻找垃圾桶或购物，因此无法判断他是否穿着外套。",
+            "answer": ""
+          },
+          {
+            "thought": "根据图像描述，可以看到有其他的车辆和人存在，但并没有看到垃圾桶，因此也无法得出关于这个人是否穿着外套的信息。",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "如果是夏天，那个人可能不需要穿外套。",
+        "candidates": [
+          {
+            "thought": "这个人穿着夏季服装，因为这是夏天。",
+            "answer": "夏天可能会比较热，所以他会穿着夏季服装。"
+          },
+          {
+            "thought": "他没有携带太多物品，因此不需要携带外套来保持凉爽。",
+            "answer": "根据图片中的情况，这个人看起来并不需要携带过多的物品，所以他可以不必携带外套以保持凉爽。"
+          },
+          {
+            "thought": "他是在公共场所等待公交车，所以不会感到太冷或热。",
+            "answer": "公共场合通常比家里的温度要高一些，所以这个人也不会感到太冷或热。"
+          }
+        ],
+        "scores": [
+          0.9,
+          0.8,
+          0.75
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "是否可以看到这个人附近有垃圾桶？",
+        "selected_answer": "无法判断",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "如果看到了垃圾桶，那个人是否有穿外套？",
+        "selected_answer": "",
+        "selected_score": 0.1
+      },
+      {
+        "sub_question": "如果是夏天，那个人可能不需要穿外套。",
+        "selected_answer": "夏天可能会比较热，所以他会穿着夏季服装。",
+        "selected_score": 0.9
+      }
+    ]
+  },
+  {
+    "question_id": "12",
+    "question": "Are there any beach umbrellas or balls in this scene?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2400609.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个冬季滑雪场，许多人在滑雪道上穿梭。人们在雪地上穿梭，有些人在滑雪道上，而其他人则在周围的雪地上活动。滑雪道上有许多人，他们在雪地上穿梭，享受冬季的快乐。",
+    "prediction": "in this scene",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Are there any beach umbrellas or balls in this scene?",
+        "candidates": [
+          {
+            "thought": "没有海滩伞或球出现在该场景中",
+            "answer": "否"
+          },
+          {
+            "thought": "该场景描绘的是一个冬季滑雪场, 而不是沙滩",
+            "answer": "是"
+          },
+          {
+            "thought": "没有明显的海滩环境出现",
+            "answer": "否"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Are there any beach umbrellas or balls in this scene?",
+        "selected_answer": "否",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "13",
+    "question": "Are there any trucks in front of the white building?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2319140.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一辆铁路蒸汽车在一个小站附近停靠。车辆的前部和车厢都有烟雾，表明车辆正在发烟。站点周围有一些小建筑，如一个小屋和另一个小屋。此外，还有一些植物，如一棵树和一些草。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Are there any trucks in front of the white building?",
+        "candidates": [
+          {
+            "thought": "[]",
+            "answer": "[]"
+          }
+        ],
+        "scores": [
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Are there any trucks in front of the white building?",
+        "selected_answer": "[]",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "14",
+    "question": "Do you see either fences or buses there?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2321399.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片是一个人在街头停着，他正在看向远方。他穿着一个带有斑点的帽子，并且还有一个带有斑点的帽子在他的头上。他的头部和脸部都被这些帽子所覆盖。\n\n在这个街头，还有一辆小车在远处，并且还有一个红色的灯光。这个街头看起来很寂静，没有其他人或活动。",
+    "prediction": "buses there",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Do you see either fences or buses there?",
+        "candidates": [
+          {
+            "thought": "从提供的信息中无法判断是否有围墙（fences）或公交车（buses）在街上。",
+            "answer": ""
+          },
+          {
+            "thought": "根据图片中的环境，我们可以推断出人行道上可能有自行车停放的地方，但这并不排除有人骑自行车经过的可能性。",
+            "answer": ""
+          },
+          {
+            "thought": "图片中的环境给人一种安静、祥和的感觉，但并没有直接提到有围墙或公交车的存在。",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Do you see either fences or buses there?",
+        "selected_answer": "",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "15",
+    "question": "Are the controllers on the left side or on the right?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2360758.jpg",
+    "ground_truth": "left",
+    "visual_description": "这张图片展示了两个男人在一个家庭室内的客厅中玩游戏。他们都手持游戏控制器，享受着一个游戏。室内还有一张沙发，两个贴图和一个桌子。\n\n在室内外，还有一些其他的物品。在客厅外，有一辆车和一把植物。在客厅内，还有一把植物和一个飞机模型。",
+    "prediction": "right",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Are the controllers on the left side or on the right?",
+        "candidates": [
+          {
+            "thought": "根据图像中的位置信息，我们可以推断出控制器位于右侧。",
+            "answer": "On the right."
+          },
+          {
+            "thought": "从图像布局来看，左侧为空白区域，因此可以推断出控制器应该位于右侧。",
+            "answer": "On the right."
+          },
+          {
+            "thought": "由于室内空间的布局是均匀分布的，所以我们可以假设控制器在右侧。",
+            "answer": "On the right."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Are the controllers on the left side or on the right?",
+        "selected_answer": "On the right.",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "16",
+    "question": "Are there both skateboarders and skateboards in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2355874.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个年轻人在一个巨大的建筑物前面滑板。他正在滑板，似乎在一个巨大的圆形隧道中。这个隧道的墙壁是由玻璃构成的，给人一种宽敞的感觉。\n\n在这个场景中，还有其他人可以看到，他们在建筑物周围漫步。整个场景充满了活力和热情，展示了这个年轻人在这个巨大建筑物中的勇敢和自信。",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "是",
+        "candidates": [
+          {
+            "thought": "这个人可能是一个冲浪者，因为他在滑板，这通常是一种在海洋或湖泊上滑行的动作。",
+            "answer": "可能是冲浪者"
+          },
+          {
+            "thought": "这个年轻人穿着运动服，表明他是一个活跃的年轻人，喜欢户外活动。",
+            "answer": "可能是年轻人"
+          },
+          {
+            "thought": "背景中有大量的窗户，显示这是一个高层建筑, 有可能是在城市中一个大型购物中心或办公大楼.",
+            "answer": "可能是年轻人会在这里找到乐趣"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.8,
+          0.7
+        ],
+        "selected_index": 1
+      },
+      {
+        "sub_question": "是",
+        "candidates": [
+          {
+            "thought": "[{\"thought\":\"这个年轻人在巨大的建筑物前滑板，看起来非常自信和大胆。\",\n\"answer\":\"这个年轻人可能是一名极限运动爱好者或专业滑手。\",\n},{\"thought\":\"隧道的墙壁由玻璃制成，给人一种宽敞的感觉。\",\n\"answer\":\"这可能是一个滑板公园或者类似的户外活动场地。\",\n},{\"thought\":\"其他人也在建筑物周围散步，展现了年轻人的勇气和决心。\",\n\"answer\":\"这是一个社交场合，人们在这里庆祝或放松。\"]}",
+            "answer": "[{\"thought\":\"这个年轻人在巨大的建筑物前滑板，看起来非常自信和大胆。\",\n\"answer\":\"这个年轻人可能是一名极限运动爱好者或专业滑手。\",\n},{\"thought\":\"隧道的墙壁由玻璃制成，给人一种宽敞的感觉。\",\n\"answer\":\"这可能是一个滑板公园或者类似的户外活动场地。\",\n},{\"thought\":\"其他人也在建筑物周围散步，展现了年轻人的勇气和决心。\",\n\"answer\":\"这是一个社交场合，人们在这里庆祝或放松。\"]}"
+          }
+        ],
+        "scores": [
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "是",
+        "candidates": [
+          {
+            "thought": "年轻人在滑板,说明他很自信",
+            "answer": "这个年轻人看起来很有自信"
+          },
+          {
+            "thought": "巨大的建筑物提供了丰富的空间",
+            "answer": "这是一个充满活力和热情的场景"
+          },
+          {
+            "thought": "玻璃墙让隧道更显得宽敞",
+            "answer": "隧道内部环境也显得开阔"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "是",
+        "selected_answer": "可能是年轻人",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "是",
+        "selected_answer": "[{\"thought\":\"这个年轻人在巨大的建筑物前滑板，看起来非常自信和大胆。\",\n\"answer\":\"这个年轻人可能是一名极限运动爱好者或专业滑手。\",\n},{\"thought\":\"隧道的墙壁由玻璃制成，给人一种宽敞的感觉。\",\n\"answer\":\"这可能是一个滑板公园或者类似的户外活动场地。\",\n},{\"thought\":\"其他人也在建筑物周围散步，展现了年轻人的勇气和决心。\",\n\"answer\":\"这是一个社交场合，人们在这里庆祝或放松。\"]}",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "是",
+        "selected_answer": "这个年轻人看起来很有自信",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "17",
+    "question": "What type of animal are the mountains behind of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2405227.jpg",
+    "ground_truth": "horse",
+    "visual_description": "这张图片展示了一个白色马在一个简单的场地上。马儿有一个驼骨舒适的鞍子，并且还有一个带有带子的鞍子。马儿的颈部和胸部都有带有带子的鞍子。马儿看起来很舒适，但它的颈部和胸部看起来有些紧张。",
+    "prediction": "cattle or sheep",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "What type of animal are the mountains behind of?",
+        "candidates": [
+          {
+            "thought": "从图像中无法判断山脉的动物类型",
+            "answer": ""
+          },
+          {
+            "thought": "根据马的形象，可能是马身后的山属于草原或荒漠地区",
+            "answer": "草原或荒漠"
+          },
+          {
+            "thought": "马匹通常生活在草原上，所以山脉可能对应于草原中的山",
+            "answer": "草原"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 1
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "What type of animal are the mountains behind of?",
+        "selected_answer": "草原或荒漠",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "18",
+    "question": "What animal is in front of the car?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2380329.jpg",
+    "ground_truth": "dog",
+    "visual_description": "这张图片展示了一只黄色的狗在草地上吞口水。狗的嘴巴和舌头都在吞口水，显得非常满足。狗的身体占据了大部分图片，它的身体呈现出一种宽广的姿态。\n\n在这个场景中，还有几辆车，分布在背景中。其中一辆车位于狗的左侧，另外三辆车分别在狗的右侧和背景中。这些车辆的位置和大小都与狗的身体大小相匹配，给人一种和谐的感觉。",
+    "prediction": "a yellow dog",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "What animal is in front of the car?",
+        "candidates": [
+          {
+            "thought": "The dog is in front of the car.",
+            "answer": "The dog"
+          },
+          {
+            "thought": "The dog is the main focus of the image.",
+            "answer": "The dog"
+          },
+          {
+            "thought": "The vehicle appears to be parked and not moving, suggesting it's stationary.",
+            "answer": "The vehicle"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "What animal is in front of the car?",
+        "selected_answer": "The dog",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "19",
+    "question": "Are there both men and children in this photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2410549.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个小孩子在一个长椭圆形的椰子椰子上卧。她拿着一个包装盒子，看起来很开心。她的手掌在椰子上，让她看起来像在抱枝头。她还拿着一个卡片，可能是一个纪念卡片。整个场景充满了快乐和温馨的氛围。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "None",
+        "candidates": [
+          {
+            "thought": "小女孩坐在椰子树上，手持盒子，似乎正在庆祝某个特别的日子。",
+            "answer": "小女孩可能正在庆祝生日或某项特别活动"
+          },
+          {
+            "thought": "画面中洋溢着欢乐和温暖的气氛，小女孩的笑容让人感到愉快。",
+            "answer": "这是一幅充满欢笑的画面，给人一种轻松愉悦的感觉"
+          },
+          {
+            "thought": "小女孩手上的盒子可能是送给朋友的礼物，暗示了这是一个特别的时刻。",
+            "answer": "这可能是一个家庭聚会或者朋友间的分享会"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "None",
+        "candidates": [
+          {
+            "thought": "这是一个小孩正在享受椰子果实的美好时光.",
+            "answer": "小孩很享受椰子果香."
+          },
+          {
+            "thought": "小孩拿着一张卡片,可能是纪念卡.",
+            "answer": "小孩准备纪念这次美好的时刻."
+          },
+          {
+            "thought": "小孩抱着椰子树,显得非常开心.",
+            "answer": "小孩非常喜欢这个椰子树."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "None",
+        "candidates": [
+          {
+            "thought": "孩子手里拿着纪念卡，可能是送给朋友的生日礼物或毕业纪念品。",
+            "answer": "孩子可能收到了来自朋友的纪念卡片，可能是送给孩子的生日礼物或毕业纪念品"
+          },
+          {
+            "thought": "孩子穿着白色连衣裙，头发扎着蝴蝶结，显得格外可爱。",
+            "answer": "这个小孩非常可爱，穿着白色的连衣裙，头发扎成蝴蝶结，看起来很活泼乐观"
+          },
+          {
+            "thought": "画面中的背景是绿色的，暗示了这是一个热带地区，如泰国、菲律宾等国家。",
+            "answer": "根据环境，可以推测出这是在泰国或者菲律宾这样的热带国家拍摄的照片。"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "None",
+        "selected_answer": "小女孩可能正在庆祝生日或某项特别活动",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "None",
+        "selected_answer": "小孩很享受椰子果香.",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "None",
+        "selected_answer": "孩子可能收到了来自朋友的纪念卡片，可能是送给孩子的生日礼物或毕业纪念品",
+        "selected_score": 0.5
+      }
+    ]
+  }
+]

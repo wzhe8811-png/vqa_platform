@@ -1,0 +1,2982 @@
+[
+  {
+    "question_id": "0",
+    "question": "Are there both vegetables and peppers in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00004.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个带有肉类和蔬菜的烤面包。烤面包的底部是烤肉，而上面则是各种蔬菜，包括西红柿和西红柿。这个烤面包看起来非常美味，可能是一种特别的烤面包，具有独特的口感和味道。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "1",
+    "question": "Is there a dog near the pillow?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00006.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了两只猫在一个房间里相互嬉戏。其中一只猫正在镜子前面嬉戏，另一只猫则在床上嬉戏。这两只猫在镜子中看到彼此的反射，形成了一个有趣的视觉效果。\n\n房间内还有一些家具，如一张沙发和一个桌子。此外，还有一些电子设备，如一台电视和两个手机。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "2",
+    "question": "Is the yellow vegetable to the left or to the right of the vegetable that is not rotten?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00008.jpg",
+    "ground_truth": "right",
+    "visual_description": "这张图片展示了一个白色盘子上的三个半切的披萨。每个半切都有半个蘑菇和半个西红柿。这些披萨均充满了奶酪，给人一种美味的感觉。整个披萨看起来非常美味，充满了各种口味。",
+    "prediction": "right",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "3",
+    "question": "What kind of vehicle is to the right of the car?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00009.jpg",
+    "ground_truth": "van",
+    "visual_description": "这张图片展示了一个人在一辆摩托车上，他笑着，看向远方。这辆摩托车位于一个繁忙的街道上，周围有许多其他车辆，包括一辆公交车。街道上还有一些行人，其中一个人在远处看着这个笑容的骑手。",
+    "prediction": "bus",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "4",
+    "question": "Are there any boxes on the desk that is made of wood?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00011.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个桌子上的电脑和电话。电脑占据了大部分桌子的空间，而电话则位于电脑的左侧。桌子上还有一个麦克风，并且还有一些其他的电子设备。整个场景呈现出一个现代化的办公室。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "5",
+    "question": "What is the color of the helmet in the top?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00012.jpg",
+    "ground_truth": "gray",
+    "visual_description": "这张图片展示了一群人在雪地上穿过雪山。他们都穿着冰雪防护服，并且有许多人穿着帽子。他们的脚上都有滑雪板，他们正在准备开始滑雪。这些人分布在雪地上的不同位置，有些人在前面，有些人在后面，而有些人则在中间。",
+    "prediction": "black",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "6",
+    "question": "What animal are the trees behind of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00015.jpg",
+    "ground_truth": "elephant",
+    "visual_description": "这张图片展示了两只大型黑色象龄的麋鹿在一个园区中共度过时光。象龄的身体呈现出强壮的外观，它们的长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长",
+    "prediction": "elephants",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "7",
+    "question": "What animal are these, zebras or lambs?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00017.jpg",
+    "ground_truth": "zebras",
+    "visual_description": "这张图片展示了一只成年的纹身猴子和一只幼崽纹身猴子在一个箱子里。成年的纹身猴子背后有一只幼崽，他们在一个草地上吃草。这个场景看起来非常温馨，展示了母乳猴子和幼崽之间的亲情。",
+    "prediction": "2) lambs",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "8",
+    "question": "Does the bowl to the left of the ball look red?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00018.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个女孩坐在地上，亲切地抚摸一只小猫。她手里拿着一瓶液体，可能是为小猫喂养。小猫很可爱，它的身体占据了大部分图片的空间。\n\n在这个场景中，还有一些其他的物品，如一个碗和一个毛巾。碗位于左侧上方，毛巾则在右侧下方。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "9",
+    "question": "In which part of the photo is the boy, the bottom or the top?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00019.jpg",
+    "ground_truth": "bottom",
+    "visual_description": "这张图片展示了一个巨大的摩托车展览馆，其中有多种摩托车和汽车展示。这些摩托车和汽车都很大，并且有很多种类。展览馆的墙壁上有几个摩托车和汽车的模型，展示了这些车的不同特征和设计。\n\n展览馆的人们在游览这些展品，他们可以看到各种摩托车和汽车的详细信息。这个展览馆是一个充满活力和热情的地方，吸引了许多摩托车和汽车爱好者。",
+    "prediction": "bottom",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "10",
+    "question": "What kind of furniture is in front of the light switch?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00020.jpg",
+    "ground_truth": "shelf",
+    "visual_description": "这张图片展示了一个女性在床上弯过身，似乎在寻找某物。她的头部和脖子露在床上的蓝色毛巾之上。床上还有一些书籍和椰子，给整个场景一种舒适和温馨的氛围。",
+    "prediction": "books, coconuts",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "11",
+    "question": "Is the person near the garbage bin wearing a coat?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00021.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个公交车站，其中有一个蓝色的公交车停在站点上，准备接受乘客。车站上有一个候车亭，并有一些乘客在候车亭附近等待。\n\n在站点周围，有几个车辆和其他交通工具，如汽车和自行车。还有一些行人在站点周围活动，其中一些人手持手提物品，如手提包和手提书包。\n\n整个场景表现出一个繁忙的城市环境，公交车作为主要的交通工具，为乘客提供了方便的出行方式。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "12",
+    "question": "Are there any beach umbrellas or balls in this scene?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00022.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个冬季滑雪场，有许多人在滑雪。人们在雪地上滑行，有些人在滑雪道上，而其他人则在周围的雪地上活动。滑雪道上有许多滑雪者，他们在雪地上滑行，享受冬季的快乐。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "13",
+    "question": "Are there any trucks in front of the white building?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00023.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一辆铁路蒸汽车在一个小站附近停靠。车辆位于中心，并且有几个人在站附近。其中一个人在站的左侧，另外两个人分别在站的右侧和前方。\n\n站附近还有一些植物，包括两个树和两个草地。草地分别位于站的左侧和右侧，而树分别位于站的左侧和右侧，还有一个树在站的前方。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "14",
+    "question": "Do you see either fences or buses there?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00024.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片是一个人在街头停着，他穿着一个带有斑点的帽子，看向远方。他身边有一辆小车，还有一个车辆在远处。街头上还有一个红灯，可能是一个交通信号。\n\n在背景中，可以看到一些建筑物，包括一个房屋和一个巨大的建筑。这个场景表现出一个晚上的城市氛围，人们在街头停着，看向远方。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "15",
+    "question": "Are the controllers on the left side or on the right?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00025.jpg",
+    "ground_truth": "left",
+    "visual_description": "这张图片展示了两个男人在一个家庭厅里玩游戏。他们都拿着游戏控制器，享受着一个游戏。厅里有一张沙发，两个男人分别站在沙发上。\n\n在厅里，还有一些其他的物品，如一杯和一个手机。这些物品都在桌子上，让这个家庭厅看起来更加舒适。",
+    "prediction": "right",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "16",
+    "question": "Are there both skateboarders and skateboards in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00026.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个年轻人在一个巨大的建筑物前面滑板。他正在滑板，似乎在一个巨大的圆形隧道中。\n\n在这个场景中，还有其他人可以看到，他们在建筑物周围的地方。整个场景充满了活力和刺激，展示了这个年轻人在这个巨大建筑物前面滑板的勇敢和激情。",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "17",
+    "question": "What type of animal are the mountains behind of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00028.jpg",
+    "ground_truth": "horse",
+    "visual_description": "这张图片展示了一个白色马在一个简单的场地上。马儿有一个驼革在背上，并且还有一个带有带子的鞍子。马儿看起来很漂亮，它的脸部和背部都很明亮。马儿的身体很大，它的肩膀和腿部都很强壮。",
+    "prediction": "horse",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "18",
+    "question": "What animal is in front of the car?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00029.jpg",
+    "ground_truth": "dog",
+    "visual_description": "这张图片展示了一只黄色的狗在草地上嘴巴开，嘴巴上有红色的标记。狗看着环境，似乎在笑。周围的环境包括几辆汽车和一些车辆，这些车辆分布在背景中。狗的身体占据了大部分图片的空间，表现出它的庞大和健康。",
+    "prediction": "a big yellow dog",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "19",
+    "question": "Are there both men and children in this photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00032.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个小孩子在一把长椭圆形椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子椰子",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "20",
+    "question": "Which kind of fast food is to the right of the jar?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00034.jpg",
+    "ground_truth": "fries",
+    "visual_description": "这张图片展示了一个美味的汉堡，包括一个带有薯条的汉堡，一杯啤酒和一杯水。桌子上还有一些刀具，如刀和剪刀，以及一些餐具，如叉和勺子。此外，还有一些其他食品，如一个卷粿。整个场景充满了美食和饮料，呈现出一个愉快的餐饮体验。",
+    "prediction": "hamburger",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "21",
+    "question": "Are there either trays or snowboards in the picture?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00036.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个年轻的男子在夜晚滑雪板。他正在执行一个强大的滑雪动作，使他的身体弯曲并且滑雪板在地上呈现出一个强烈的反光效果。\n\n在这个场景中，还有其他两个人，但他们并不是主要的焦点。这个场景整体看起来很吸引人的，展示了这个年轻人在夜晚的活动。",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "22",
+    "question": "Is the box to the left or to the right of the man that is looking at the building?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00037.jpg",
+    "ground_truth": "left",
+    "visual_description": "这张黑白照片展示了一个人在城市街道上拿着一个彩虹色的伞，避免风雨。另一个人在背后看着这个人。两个人都在一个墙上，似乎在等待某事情。\n\n环境中，有一些车辆，包括两辆车和一辆汽车。还有一些植物，如一棵树和两棵小树。",
+    "prediction": "left",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "23",
+    "question": "What is located on top of the cucumber?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00041.jpg",
+    "ground_truth": "carrots",
+    "visual_description": "这张图片展示了一个美味的食物，包括蔬菜和肉类食物。食物摆放在一个蓝色的碗子里，碗子上还有一把刀。碗子周围有一些蔬菜，如西红柿和西红柿。此外，还有一些肉类食物，如烤鸡和烤肉。整个食物摆放在一个银色的桌子上，桌子周围有一些蔬菜和肉类食物。",
+    "prediction": "a chicken cutlet",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "24",
+    "question": "Is this a squirrel or a cat?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00042.jpg",
+    "ground_truth": "cat",
+    "visual_description": "这张图片展示了一只橙色猫在家庭浴室的床上玩耍。猫咪在床上弯曲身体，似乎在尝试跳进浴室的淋浴。浴室的床上有一个淋浴，猫咪正在它的周围玩耍。整个场景充满了欢乐和活力。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "25",
+    "question": "Are there both children and men in this photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00043.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个孩子在公园里看着一群白色的鸟。孩子正在玩乐器，而鸟在他的周围飞舞。公园里还有其他人，一些在远处，一些在更接近孩子的位置。\n\n公园内还有一些软件，如滑水道和游戏设备。滑水道的一部分可以看到，而游戏设备则位于远处。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "26",
+    "question": "Do you see a frisbee to the left of the dog the helmet is on?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00044.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个小孩在骑自行车，他的父母在他身边，看着他轻松地骑车。孩子正在骑车，而父母则在他身边，保护他。\n\n此外，还有其他人在街上，其中一些人在走路，而其他人则在坐在地上。这些人在不同的位置，但都在这个街上。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "27",
+    "question": "Are there any skateboards or helmets?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00045.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个年轻人在一个巨大的壁垒上拿着一把滑板，正在进行一个壮丽的滑板表演。他的身体弯曲，脚掌向下，手掌向上，展示出他的技巧和激情。\n\n在这个场景中，还有一些其他的物品，如一个袋子和一个帽子。这些物品可能是他的衣物或是他在表演过程中使用的工具。",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "28",
+    "question": "Is there any towel to the left of the black bag?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00047.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个浴室和洗手间的内部。浴室的墙上挂着两个红色毛巾，它们的颜色与洗手间的毛巾相匹配。洗手间的橱柜上有一个水杯，并且还有一个卫生盒。洗手间的墙上还挂着一个镜子，可以看到浴室的内部。整个场景呈现出一个整洁、舒适的浴室和洗手间。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "29",
+    "question": "Do the necktie and the book have the same color?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00048.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了两个年轻男子在一个客厅中玩游戏。他们都拿着游戏控制器，享受着一场激烈的游戏。客厅内还有一张沙发，一个桌子和一些书籍。\n\n在客厅中，还有其他人，但他们并不在游戏的关注范围内。这个场景展示了一个愉快的游戏时光，让人们感受到友谊和共同的兴趣。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "30",
+    "question": "Is there a pig or a hippo in this image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00049.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一只黑白猫坐在床上，眼睛紧盯着一个开盒子里的各种甜点。盒子里有几个卡通形状的甜点，包括各种饼干和糖果。猫看起来很好奇，可能想要尝试这些甜点。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "31",
+    "question": "Are there any women to the right of the bowl that is to the left of the bottle?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00050.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了两个女性在厨房准备食物。其中一个女性在烤箱里烤食物，而另一个女性则在厨房里准备食物。厨房内有几个碗和餐具，如餐具和碗。\n\n厨房内还有一些食品，如一个碗里有饭，还有一些蔬菜。此外，还有一些烹饪工具，如一个锅和一个铲。",
+    "prediction": "right",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "32",
+    "question": "Is the person that is to the left of the umpire wearing a cap?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00053.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个人在棒球场上，正在准备打球。他正在拿着棒球棍，准备把球打出去。场上还有其他人，包括一个坐在投手旁边的人，可能是投手或者另一名球员。整个场地都被棒球场的草地包围。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "33",
+    "question": "Is there any sand in this picture?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00054.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片是一个人在草地上打羽毛球的场景。有四个人在场，其中一个人正在投掷羽毛球，而其他三个人则在等待或准备接球。\n\n场地上有一棵树，并且还有几个车辆和一些家具，如植物和一个椰子。此外，还有一些其他的物品，如一个手机和一个钥匙。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "34",
+    "question": "Which kind of vegetable is to the right of the onions?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00056.jpg",
+    "ground_truth": "artichokes",
+    "visual_description": "这张图片展示了一个充满各种蔬菜的棚子。蔬菜包括许多不同类型的西红柿，如紫西红柿、红西红柿和黄西红柿。此外，还有许多西红柿的芯，以及一些蔬菜的茎。\n\n棚子内还有一些其他蔬菜，如西红柿、西红柿和西红柿。这些蔬菜都很美丽，展示出各种颜色和形状。整个场景充满了生机和活力，展示出农场生产的美好。",
+    "prediction": "tomatoes",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "35",
+    "question": "Who in the image is standing?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00058.jpg",
+    "ground_truth": "lady",
+    "visual_description": "这张图片展示了一个人在街上停着，正在使用手机。她站在一个巨大的树下，这个树位于一个巨大的街道上。周围有几辆车，其中一辆是红色的车，另外还有一些其他车辆。\n\n街道上还有其他人，一个人在远处，还有几个人在较近的距离内。这个街道上还有一些交通灯，以及一些汽车的路灯。",
+    "prediction": "person is standing on street",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "36",
+    "question": "Is the car small and black?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00059.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一辆红色列车在轨道上行驶。列车的前部和后部都有窗户，并且有一些标志和文字在列车上。列车的前端还有一个驾驶室，并且还有一个小型的汽车在列车的后部。整个场景充满了活力和动感。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "37",
+    "question": "What color is the vehicle near the man?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00060.jpg",
+    "ground_truth": "blue",
+    "visual_description": "这张图片展示了一辆黄色和黑色的车辆，它是一辆英国铁路的货运车。车辆上方有英国国旗，显示出其国籍。车辆的前部有两个灯，并且还有一个镜头。\n\n在车辆的周围，有一些人，其中一个人正在拿着相机，可能是拍摄车辆或者是拍照。还有一个人在站在车辆的左侧，可能是车辆的司机或者是其他工作人员。",
+    "prediction": "yellow and black",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "38",
+    "question": "Does the man to the left of the chair wear glasses?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00061.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个街角，其中有一个男孩正在站在街上，他手里拿着一个牌子，显示着“Fremont Ave.” 他的背包在他身后。还有其他人在街角，其中一个人在坐在一个蓝色椰子上。\n\n街角上还有一些背包和手提包，以及一些衣物。还有一个椰子和一个袋子。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "39",
+    "question": "Is the person in front of the people wearing a helmet?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00062.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个冬季滑雪场，有几个人在滑雪道上。其中一位人物穿着黄色和黑色的服装，手上拿着一把滑雪板。还有其他人在场，他们的服装和板子都是不同的。\n\n整个场景充满了活力和激情，这些人正在享受冬季的刺激和快乐。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "40",
+    "question": "On which side is the Caucasian woman, the left or the right?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00063.jpg",
+    "ground_truth": "right",
+    "visual_description": "这张图片展示了一个人在开启一个冷冻室，里面有一些水果。另外还有两个人在室内，一个人在冷冻室的门口，另一个人在室内的另一侧。\n\n在冷冻室里，有一些水果，包括三个苹果和一个橙子。这些水果分布在冷冻室的不同位置，如苹果在冷冻室的中央和门口，橙子则在冷冻室的门口。\n\n整个场景展示了一个人在开启冷冻室，并在室内的门口和另一侧的人。",
+    "prediction": "left",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "41",
+    "question": "What items of furniture are to the right of the blinds?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00066.jpg",
+    "ground_truth": "chairs",
+    "visual_description": "这张图片展示了一个宽敞的厨房，其中有一个蓝色的沙发，另外还有两个沙发，一个是红色的，另一个是黄色的。这个厨房还有一个电视，一个桌子，以及一些家具和装饰品，如植物和玩具。\n\n在这个厨房中，还有一些各种家具和装饰品，如一个植物，一个玩具，以及一些其他的家具。这个厨房的设计和装饰品使其看起来非常舒适和美观。",
+    "prediction": "the table is to the right of the blinds",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "42",
+    "question": "Is the cat in front of the bookcase orange or black?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00068.jpg",
+    "ground_truth": "black",
+    "visual_description": "这张图片展示了一只黑色猫坐在一个开放的行李箱上。猫坐在行李箱的底部，仿佛在睡觉。行李箱内部有几件衣服和一些书籍。其中，有两本书籍放在行李箱的上部，还有几本书籍在行李箱的底部。此外，还有一些衣服和一个鞋子放在行李箱的底部。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "43",
+    "question": "Which color is the drawer to the left of the bag?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00074.jpg",
+    "ground_truth": "green",
+    "visual_description": "这张图片展示了一个杂乱的工作区，充满了电子设备和文件。在这个区域里，有一个电脑、一个键盘和一个鼠标。此外，还有一些印刷材料、纸张和书籍。\n\n桌子上还有一些各种食品和饮料，如几个瓶、一个碗和一个杯。此外，还有一些其他物品，如一个手机、一个钥匙和一个钢笔。\n\n整个工作区域充满了各种工具和物品，使得这个区域看起来很杂乱。",
+    "prediction": "the blue drawer",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "44",
+    "question": "Is the gate small and wooden?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00075.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一只牛在一个笛卡尔的场地中徘徊。牛正在离开一个笛卡尔的笛卡尔，它的身体半隐在门口。场地周围有一些草地，并且有一些其他的牛在背景中。这个场地看起来是一个牧场，牛们在这里徘徊和休息。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "45",
+    "question": "Is there either a mobile phone or a computer in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00076.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个杂乱的家庭办公室。它充满了电子设备，包括两个电视（一个位于左侧，另一个位于右侧）和两个电脑（一个在中央，另一个在右侧）。此外，还有一个键盘和一个鼠标。\n\n办公室的桌子上有一些玩具和玩具盒子，如一个玩具盒子和一个玩具。此外，还有一些书籍和一个植物。\n\n整个办公室的桌子充满了各种物品，给人一种杂乱的感觉。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "46",
+    "question": "Are there spoons or forks that are made out of plastic?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00078.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个精美的餐具，包括一个充满食物的碗和一个带有刀子的餐具。碗中的食物是一种汤类食物，可能是蔬菜汤。整个餐具都是精美的釉陶制品，充满了艺术感。\n\n在这张图片中，还有一个另一个碗，但它没有任何食物。此外，还有一个刀子，可能用于切割食物。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "47",
+    "question": "Is the plate the same color as the skillet?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00081.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个彩斑色的厨房，它充满了各种厨房用品。厨房内有一个餐桌，上面放置了几个餐具，包括几个餐具和几个餐具。厨房还有一个洗碗机和一个洗碗盆。\n\n厨房的墙上挂满了各种厨房用品，包括几个餐具和几个餐具。厨房还有一个洗碗机和一个洗碗盆。\n\n厨房的墙上挂满了各种厨房用品，包括几个餐具和几个餐具。厨房还有一个洗碗机和一个洗碗盆。\n\n厨房的墙上挂满了各种厨房用品，包括几个餐具和几个餐具。厨房还有一个洗碗机和一个洗碗盆。\n\n厨房的墙上挂满了各种厨房用品，包括几个餐具和几个餐具。厨房还有一个洗碗机和一个洗碗盆。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "48",
+    "question": "What is the name of the aircraft that is to the right of the people on the left?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00082.jpg",
+    "ground_truth": "jet",
+    "visual_description": "这张图片展示了一架空中客车在机场的跑道上停着。这架飞机是由法国航空公司运营的，并且有“Air France”的标志。在飞机周围，有几个小型的货车和工作车，可能用于运输和维护。此外，还有一些人在跑道上，可能是机场工作人员或乘客。",
+    "prediction": "right",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "49",
+    "question": "Is the animal in front of the tree eating a branch?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00084.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一只企鹅在水中吃草。企鹅占据了大部分图片，它的身体占据了左中右三个方向。企鹅在水中吃草，草占据了大部分图片的上半部分。\n\n在图片的背景中，有一棵树，它的尖端可以看到。此外，还有一些草和树叶，分布在水中的不同位置。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "50",
+    "question": "Is that a bed or a desk?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00085.jpg",
+    "ground_truth": "desk",
+    "visual_description": "这张图片展示了一个办公室，其中包含了一个桌子，上面有一台电话和一台计时器。桌子周围还有一些书籍和一台键盘。办公室的墙上挂着一个幻灯片，墙上还有一个镜子。此外，还有一个植物在办公室内，为室内增添了一些生机。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "51",
+    "question": "Is the oven to the left or to the right of the cabinets the countertop is above?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00087.jpg",
+    "ground_truth": "left",
+    "visual_description": "这张图片展示了一个女孩在厨房里，她正在把手抱在汤杯上，手上拿着一个汤杯。厨房里有一个锅，还有几个汤杯和瓶子。她的手上还拿着一个汤杯，看起来她在做某种厨房活动。",
+    "prediction": "right",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "52",
+    "question": "Does the tap to the right of the soap look antique?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00089.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个宽敞的浴室，其中有两个洁净的洗手台。洗手台上有两个盒子，其中一个盒子是红色的，而另一个盒子是黑色的。洗手台周围还有一些洁净的植物，如红色的花朵和一些盒子。浴室的墙上还有一个镜子，可以让人在浴室内看到更广阔的空间。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "53",
+    "question": "What is the device to the right of the cell phone sitting on?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00090.jpg",
+    "ground_truth": "book",
+    "visual_description": "这张图片展示了一个红色碗，里面有一些糖果和牛奶。碗中的糖果有不同的形状和颜色，包括橙色和黄色的糖果。牛奶的颜色是白色，与糖果形成鲜明对比。整个碗充满了糖果和牛奶，给人一种愉悦的感觉。",
+    "prediction": "a bowl",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "54",
+    "question": "What is parked next to the crosswalk?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00092.jpg",
+    "ground_truth": "scooter",
+    "visual_description": "这张图片展示了一辆烧焦油的车辆在街道上着火。许多人在附近聚集，看着这场火灾。其中一些人可以在背景中看到。\n\n街道上还有一些交通工具，如摩托车和汽车。摩托车位于中心地带，而汽车则在车辆着火的左侧。\n\n一个人在街道上跑来，可能是试图阻止火灾或者是逃离火场。",
+    "prediction": "moped",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "55",
+    "question": "What is located on top of the table?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00093.jpg",
+    "ground_truth": "television",
+    "visual_description": "这张图片展示了两个年轻男子在一个房间里玩游戏。他们正在一个电视上玩游戏，并且使用了许多虚拟人物。他们的游戏机器人可以在电视上看到，并且他们还有一些其他的游戏控制器。\n\n这个房间有一张桌子，上面放置了一些物品，如一个袋子和一个书。这个房间的整体氛围看起来很舒适，适合玩游戏。",
+    "prediction": "book",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "56",
+    "question": "Is it indoors or outdoors?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00096.jpg",
+    "ground_truth": "indoors",
+    "visual_description": "这张图片展示了一个地图，其中包含了一个帽子的模型。帽子的位置在地图的中心，而地图的背景是一个海洋。此外，还有一个圆形的图标，可能是一个标志或者是一个地图上的标记。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "57",
+    "question": "Is the black vehicle in the bottom or in the top of the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00100.jpg",
+    "ground_truth": "bottom",
+    "visual_description": "这张图片展示了两个人在沙滩上，他们正在拿着一个红色帆布，准备在海边飞帆。他们的脚踏在沙滩上，手握着帆布，准备在海边飞行。在这个场景中，还有其他人在沙滩上，但他们并没有参与这个帆布的活动。",
+    "prediction": "bottom",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "58",
+    "question": "Is there any knife or bottle in the photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00101.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个美味的餐饮，包括炸鸡、炸薯条和牛排。炸鸡和炸薯条都有一些酱汁和汤汁，让这些食物更加美味。整个餐饮都是在一个白色的桌子上摆放的。\n\n除了食物，还有一杯酒和一碗水，可能是为了满足顾客的饮料需求。整个场景看起来非常舒适和美味，是一个完美的餐饮体验。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "59",
+    "question": "Is the person that is not female wearing a cap?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00104.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一位男子在绿色草地上，正在准备打羽毛球。他手握羽毛球拍拍，准备进行比赛。场地上还有其他人，但他们并不在焦点上。场地上还有一把车，但它并不是主要的场景。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "60",
+    "question": "How is the device to the left of the keyboard on the right of the picture called?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00105.jpg",
+    "ground_truth": "computer monitor",
+    "visual_description": "这张图片展示了一个办公室，其中有两个电脑和一个键盘。电脑的屏幕分别显示了不同的内容，如文档和图表。办公室还有一些其他物品，如一个植物、一个笔、一个铅笔和一些书籍。整个办公室充满了工作和生活的元素，给人一种舒适和专业的感觉。",
+    "prediction": "left",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "61",
+    "question": "What is located on top of the pizza on the right?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00106.jpg",
+    "ground_truth": "pepperoni",
+    "visual_description": "这张图片展示了一只彩色猫在草地上吃一些饭。猫正在草地上坐，它的身体占据了大部分图片的空间。猫的头部和背部都很明显，而其他部分则被猫的身体所覆盖。\n\n在猫的周围，有一些饭碎，可能是猫吃的。这些饭碎分布在草地上，并且有一些在猫的脚下。整个场景充满了生活的气息，展示了一只猫在自然环境中吃饭的情景。",
+    "prediction": "on the pizza: food",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "62",
+    "question": "Does the clock to the right of the statue have gold color and tiny size?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00107.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个巨大的铁骑士雕塑，手握一把长棍，站在一个巨大的墙上。这个墙上还有一个巨大的钟，显示了时间。这个场景看起来像是一个历史战争的场景，或者是一个壮丽的建筑。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "63",
+    "question": "Are the train doors open and red?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00109.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一列红色和黄色的列车，它们正在停在一个车站。列车的车厢分为两部分，一部分是红色的，另一部分是黄色的。列车的车厢之间有一些窗户，可以看到内部的环境。\n\n在车站，有一些人在站台上，可能是乘客或工作人员。车站的设施包括一些横板和柱子，为乘客提供安全和舒适的旅行环境。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "64",
+    "question": "Are there any televisions or lamps in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00110.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个厨房，其中有一个长长的沙发，它位于厨房的中心。沙发上有几个舒适的毛衣，为居民提供舒适的坐姿。厨房还有一个小厨房，其中有一个小餐桌和一个小卧室。\n\n厨房内还有一个床，它位于厨房的一侧。厨房还有一个小电视，可以为居民提供娱乐。此外，厨房还有一个小桌子，可以用来做饭或喝茶。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "65",
+    "question": "What is common to the shirt and the road?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00112.jpg",
+    "ground_truth": "color",
+    "visual_description": "这张图片展示了一个繁忙的街道，有许多汽车和骑车在行驶。其中，一位骑手在停在街上的自行车上，他正在等待着。另外，还有一些骑手在其他地方等待着。\n\n街道上还有一些交通灯，其中一个灯位于上方，另一个灯位于下方。此外，还有一些汽车和骑车在行驶，其中一辆车在停在街上的自行车上。\n\n街道上还有一些树木，其中一棵树位于左侧，另一棵树位于右侧。",
+    "prediction": "shirt is on the road",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "66",
+    "question": "Are there any benches in front of the bed that the pillow is on?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00113.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一张床，上面有几个毛巾和几个护照。床上还有一些灯，可能是为了提供更多的照明。床的头托和床垫都是白色的，给床底增添了一些清新的感觉。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "67",
+    "question": "On which side is the mirror?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00114.jpg",
+    "ground_truth": "left",
+    "visual_description": "这张图片展示了一个简洁的浴室，其中包括一个白色的厕所和一个洗手间。厕所的床位置在浴室的中央，而洗手间的位置在厕所的左侧。浴室的墙上没有任何装饰，只有一个洗手间的抽屉。整个浴室的墙都是白色的，给人一种清新的感觉。",
+    "prediction": "right",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "68",
+    "question": "Is the gold tray in the top part or in the bottom of the photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00115.jpg",
+    "ground_truth": "top",
+    "visual_description": "这张图片展示了一张带有蘑菇和烤辣椒的披萨，它被放置在一个木板上。披萨的底部是一个圆形的木板，上面有一个圆形的盘子。在披萨周围，有一个盘子和一个带有水果的盘子。\n\n在披萨周围，还有一些水果，包括两个苹果和一个橙子。这些水果被放置在一个带有水果的盘子中。整个场景呈现出一个美味的披萨和水果的浪漫场景。",
+    "prediction": "bottom",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "69",
+    "question": "What is the device to the left of the mirror that the pillow is to the right of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00116.jpg",
+    "ground_truth": "laptop",
+    "visual_description": "这张图片展示了一个室内空间，其中有一个玻璃壁炉，它的反射使得整个室内看起来更加明亮。在这个空间中，有一些植物，包括一棵大花朵和一些鲜花，它们被放置在玻璃壁炉的周围。此外，还有一些家具，如一张沙发和一个桌子，为居住者提供舒适的休息环境。",
+    "prediction": "right",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "70",
+    "question": "What type of vehicle is to the left of the person on the bicycle?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00119.jpg",
+    "ground_truth": "buses",
+    "visual_description": "这张图片展示了一个人在一条狭窄的道路上骑自行车。道路两旁有两辆公交车，一辆位于左侧，另一辆位于右侧。此外，还有一些车辆在道路上行驶，包括一辆距离公交车较近的车辆。\n\n道路上还有一些行人，其中一个人在道路的中央位置，另一个人在道路的右侧，还有一个人在道路的左侧。这些人可能是在漫步或者在等待公交车。",
+    "prediction": "left: bus",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "71",
+    "question": "What is the computer in front of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00120.jpg",
+    "ground_truth": "pillow",
+    "visual_description": "这张图片展示了一只猫在一台电脑的桌子上，猫正在使用电脑。电脑的屏幕上显示了另一只猫的照片，给人一种虚拟的感觉。桌子上还有一些物品，如一个手机和一个笔。此外，还有一些书籍和一个飞行模型，这些物品都在电脑周围。",
+    "prediction": "a computer on a desk",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "72",
+    "question": "Are there any pillows to the right of the couch?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00121.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一间奢华的卧室，它充满了豪华的装饰品。床上有两个橙色的枕头，并且还有一个橙色的椰子。卧室的墙上挂着两个巨大的灯笼，为卧室增添了一份浪漫气氛。此外，卧室还有一个桌子，上面放着一些书籍和一个椰子。整个卧室的设计和装饰品都充满了豪华感，给人一种舒适和豪华的感觉。",
+    "prediction": "yes",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "73",
+    "question": "Which color is the sky?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00122.jpg",
+    "ground_truth": "red",
+    "visual_description": "这张图片展示了一个美丽的日落景观，镜头朝向一座高楼。在这个景观中，一个红色的太阳在远处升起，给人一种温馨的感觉。\n\n街道上有许多车辆，包括轿车和跑车。车辆的位置各不相同，有些车辆在前面，而其他车辆则在后面或旁边。这些车辆的颜色和形状都各不相同，展示了一个多样化的城市环境。",
+    "prediction": "the sky is red",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "74",
+    "question": "The bananas on the left side are what color?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00123.jpg",
+    "ground_truth": "green",
+    "visual_description": "这张图片展示了一棵大型的热带植物，其中有一棵繁殖的珍珠奶油树。树干上挂着一棵珍珠奶油树的叶子，叶子中充满了珍珠奶油。树干上还有一些珍珠奶油树的叶子，它们的形状和大小都与主树的叶子相似。整个树干上的叶子都充满了珍珠奶油，给人一种浓郁的感觉。",
+    "prediction": "bananas are green",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "75",
+    "question": "Are there both a pizza and a fork in this photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00124.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个小女孩在一张餐桌上，她正在吃一个带有奶油的薯粉饼。餐桌上还有几个带有奶油的薯粉饼，以及一些带有奶油的薯粉饼。此外，还有一杯水和一杯奶油。\n\n餐桌上还有一些刀具，包括两把刀和一把剪刀。另外，还有一把植物，可能是一朵花或者一棵植物。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "76",
+    "question": "What kind of vegetable is the same color as the bananas near the vegetables?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00125.jpg",
+    "ground_truth": "lemons",
+    "visual_description": "这张图片展示了一个充满各种蔬菜和水果的摊位。蔬菜包括西红柿、西红柿和西红柿，水果则有香蕉和柠檬。摊位上还有一些苹果和橙子。\n\n各种蔬菜和水果都有各自的价格标签，以便购买者了解价格。整个摊位充满了各种蔬菜和水果，展示出了丰富的种类和美味的食材。",
+    "prediction": "yellow pepper",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "77",
+    "question": "Are the chairs on the left side or on the right?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00128.jpg",
+    "ground_truth": "right",
+    "visual_description": "这张图片展示了一个厨房，其中有三个人在做饭。他们在一个厨桌上摆放了几瓶饮料和一些食物。厨房内还有一些衣物和食品，如苹果和瓶子。\n\n厨房内还有一些厨具，如几个植物和一些碗。其中，有一个碗放在厨桌上，还有一个碗放在厨房的另一侧。此外，还有一个植物放在厨房的另一侧，以及另外一个植物放在厨桌上。",
+    "prediction": "right",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "78",
+    "question": "Is the wood chair on the left side?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00130.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个桌子上的食物和饮料。桌子上有两个很大的薯片，一个位于左侧，另一个位于右侧。还有一个很大的烤面包，它位于桌子的右侧。桌子上还有两个很大的冰淇淋，一个位于左侧，另一个位于右侧。\n\n在桌子周围，有两个人，一个位于左侧，另一个位于右侧。两个人的手触碰到桌子上的食物和饮料。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "79",
+    "question": "Are there both a blanket and a pillow in this picture?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00133.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一只狗在一张橙色的枕头上睡觉。狗的身体卷在枕头上，展现出它的舒适和安全感。狗的脚排在枕头上，显示出它的舒适和安全感。整个场景充满了温馨和舒适的氛围。",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "80",
+    "question": "Are there either bottles or bowls in this image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00134.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个年轻男子和一个女子在一家餐厅吃饭。男子正在吃一个卷面，而女子则在吃一个卷面的另一边。他们坐在一张长桌子上，桌子上还有一些食物和饮料。\n\n在这个环境中，墙上有一些字画，可能是餐厅的装饰或者是其他顾客的笔记。这个场景表现了一个普通的餐厅遇见，其中包括食物、饮料和顾客。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "81",
+    "question": "Is the gray shirt sleeveless or short sleeved?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00137.jpg",
+    "ground_truth": "short sleeved",
+    "visual_description": "这张图片展示了两个年轻男子在一个房间里玩游戏。他们都拿着游戏控制器，互相竞争，享受着游戏的乐趣。\n\n房间内有一张沙发，位于中央部分。两个男子分别站在沙发的两侧，一个男子在左侧，另一个男子在右侧。他们的游戏控制器分别在他们的手中，展示他们正在玩游戏。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "82",
+    "question": "Is the stove on the left or on the right?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00138.jpg",
+    "ground_truth": "right",
+    "visual_description": "这张图片展示了一个厨房，其中包含了各种厨房用品。厨房中有一个冰箱，一个洗碗机和一个烤箱。此外，还有一些烘焙盘和烤盘，以及一些碗和杯子。厨房还有一些食品，如一些水果和一些面包。整个厨房都是很整洁的，充满了各种厨房用品。",
+    "prediction": "right",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "83",
+    "question": "Which is less healthy, the orange or the ice cream?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00139.jpg",
+    "ground_truth": "ice cream",
+    "visual_description": "这张图片展示了一个小女孩在一家餐厅，她正在用勺子刺着一个冰淇淋。她坐在一个桌子上，桌子上还有一些食物和饮料，如一个碗、一个冰淇淋、一个苹果和一杯饮料。另外，还有一个另一个人坐在餐厅的桌子上，但他并没有在图片中。",
+    "prediction": "the ice cream",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "84",
+    "question": "Where is the man working?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00141.jpg",
+    "ground_truth": "food truck",
+    "visual_description": "这张图片展示了一个餐厅的内部，其中有两个餐厅员在准备食物。他们正在准备各种饮品和食物，包括多个各种饼干和面包。餐厅员们正在准备这些食物，以便在餐厅中提供给客人。",
+    "prediction": "kitchen",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "85",
+    "question": "How big is the rope on the right of the photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00143.jpg",
+    "ground_truth": "small",
+    "visual_description": "这张图片展示了一个沉重的渔船坞，它固定了几艘小船。这些小船均固定在渔船坞上，并且有一些船只还没有被固定。整个场景充满了活力和热情，展示了一个充满活力的渔船坞。",
+    "prediction": "not mentioned",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "86",
+    "question": "What is the food to the left of the vegetable with the lettuce called?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00144.jpg",
+    "ground_truth": "shrimp",
+    "visual_description": "这张图片展示了一个填充的白盒子，里面有一些食物，包括蔬菜和虾。盒子的内部有一个填充物，可能是鸡蛋或者其他食材。在盒子的周围，有一个勺子和一个剪刀，这些工具可能用于准备或者整理食物。整个场景呈现出一个舒适的午餐环境。",
+    "prediction": "lettuce",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "87",
+    "question": "What appliance is to the right of the cardboard box?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00145.jpg",
+    "ground_truth": "refrigerator",
+    "visual_description": "这张图片展示了一个穿着正式服装的男子，他笑着微笑，看向镜头。他穿着一把黑色礼服，配有一把白色卷领。他的笑容显示出他的友善和自信。\n\n在这个场景中，还有一些其他的物品。一个冰箱位于背景中左侧，而一个瓶子在背景中右侧。此外，还有一个卷领和一个礼服，分别位于背景中左侧和右侧。",
+    "prediction": "fridge",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "88",
+    "question": "What kind of appliance is on the right of the microwave?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00146.jpg",
+    "ground_truth": "blender",
+    "visual_description": "这张图片展示了一个小孩在厨房里，他正在吃烘焙食物。孩子坐在厨房的桌子上，烘焙食物在他的桌子上。厨房里还有一个混合杯和一个碗。另外，还有一个厨房扉，可能是通往厨房的门。",
+    "prediction": "oven",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "89",
+    "question": "Are the trains to the left of the other train white or blue?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00149.jpg",
+    "ground_truth": "blue",
+    "visual_description": "这张图片展示了两辆红白绿色的列车，它们正在靠在一起。第一辆列车位于左侧，第二辆列车位于右侧。两辆列车都有窗户，并且它们的颜色和外观看起来非常相似。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "90",
+    "question": "Is the dress red or yellow?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00150.jpg",
+    "ground_truth": "yellow",
+    "visual_description": "这张图片是一位女子在一个绿色的网球场上，正在准备打球。她正在跳起来，手挥着网球拍拍着。场地上有几个观众，看着她在比赛中的表现。场地上还有一些其他的物品，如一个手掌和一个软件盒。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "91",
+    "question": "Are there both breads and dips in the picture?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00151.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个圆形桌子上的圣诞树，周围有几杯红酒和一些水瓶。桌子上还有一些食物，如蘑菇和蘑菇酱。\n\n在这个场景中，有几个人坐在桌子周围的植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物�",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "92",
+    "question": "Is the laptop closed and gray?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00153.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个简洁的卧室，它有一张床，上面放置了一个笔记本电脑。床上还有一个小狗，看起来很舒服。卧室的灯光照亮了这个空间，使得它看起来更加明亮。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "93",
+    "question": "What is the food to the right of the white plate?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00155.jpg",
+    "ground_truth": "sausages",
+    "visual_description": "这张图片展示了一个美味的早餐，包括煎鸡、烤肉、烤薯条和烤西红柿。早餐还有一杯牛奶和一杯茶。整个早餐都是在一个精致的桌子上摆放的。\n\n桌子上还有一把勺子和一把剪刀，可能用于准备早餐。此外，还有一杯可能是用来喝茶或牛奶的。整个早餐摆放在一个精致的桌子上，呈现出一个美味的早餐。",
+    "prediction": "grilled tomato",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "94",
+    "question": "Is the tool that looks brown old and metallic?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00158.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个绿色的苹果，它在一个砖地上的砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖砖",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "95",
+    "question": "What is on the bed the nightstand is to the right of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00161.jpg",
+    "ground_truth": "pillow",
+    "visual_description": "这张图片展示了一个简洁的房间，其中有一个小几乎空的房间，只有一张桌子和一把植物灯。灯光从窗户透过，照亮了桌子和周围的空间。窗户的玻璃看起来很普通，没有特别的装饰。整个房间看起来非常简洁，没有任何其他的家具或装饰品。",
+    "prediction": "bed",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "96",
+    "question": "Is the statue in the bottom part or in the top of the photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00162.jpg",
+    "ground_truth": "bottom",
+    "visual_description": "这张图片展示了一个巨大的室内空间，其中有五个巨大的五彩圆形彩票挂在玻璃墙上。这些彩票都是彩票圆形的副本，它们的颜色分别是红、黄、绿、蓝和紫。\n\n此外，这个空间还有一个巨大的半圆形彩票挂在玻璃墙上，它的颜色是白色。在这个空间中，还有一个钟，它位于玻璃墙上的中央部分。\n\n整个空间看起来非常宽敞，充满了光线，给人一种宽敞的感觉。",
+    "prediction": "top",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "97",
+    "question": "What is the woman near the water bottle wearing?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00165.jpg",
+    "ground_truth": "watch",
+    "visual_description": "这张图片展示了两个女性在沙滩上练习游泳。其中一个女性正在演练游泳动作，而另一个女性则在她的身边，看着她的表演。两人都穿着游泳衣，并且有一些衣物和手套在沙滩上。\n\n在沙滩上，还有其他人，但他们并不在这张图片的焦点上。整个场景充满了活力和欢乐的氛围。",
+    "prediction": "she's holding a water bottle",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "98",
+    "question": "What is the animal that is to the left of the container made of metal?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00166.jpg",
+    "ground_truth": "dog",
+    "visual_description": "这张图片展示了一只狗在一台电脑的桌子上卧。狗占据了桌子的大部分，仿佛在等待电脑的主人。电脑的屏幕可以看到，但狗的身体占据了屏幕的大部分。\n\n桌子上还有一些其他物品，包括一杯和一些书籍。桌子周围还有一些各种工具和物品，如一把钥匙、一把铅笔和一些书籍。",
+    "prediction": "cat",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "99",
+    "question": "What is common to the umbrella and the sign?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00167.jpg",
+    "ground_truth": "color",
+    "visual_description": "这张图片展示了一个女孩在一个充满箱子的房间里喝酒。她正在喝一杯清洁的白酒，并且笑着。她坐在一个植物盆子上，周围有几个箱子。另外，还有一个另一个人在房间的另一侧。",
+    "prediction": "an umbrella",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "100",
+    "question": "What is the name of the animal on the post that is made of metal?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00168.jpg",
+    "ground_truth": "sheep",
+    "visual_description": "这张图片展示了一个女性在一个牧场中与一只毛羊互动。女性正在给毛羊洗澡，使用一个喷水器来喷水。毛羊很享受这个过程，因为它们喜欢洗澡。\n\n牧场中还有其他人，但他们并不在这个场景中。还有一些植物和一些椰子，分布在牧场的不同地方。\n\n整个场景充满了活力和生机，展示了人们与动物之间的亲密关系。",
+    "prediction": "a goat",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "101",
+    "question": "Is this a bed or a table?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00170.jpg",
+    "ground_truth": "table",
+    "visual_description": "这张图片展示了一个笑容的年轻男子，他正在用两根刀划一个巨大的甜品。他穿着蓝色的衬衫，并且有一个背包在他的背上。\n\n在这个场景中，还有其他人可以看到，他们在吃东西。另外，还有一些刀刀和厨具，如另外两根刀和一个厨具。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "102",
+    "question": "What food item is not large?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00173.jpg",
+    "ground_truth": "egg",
+    "visual_description": "这张图片展示了一个人手握一个橙子，橙子的一侧被描绘成一个卵。橙子和卵都在一个桌子上，桌子上还有一些食物包装，包括一些鸡蛋和一些面包。桌子的背景是一个蓝色的地毯，增加了一种舒适的氛围。",
+    "prediction": "the egg is small",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "103",
+    "question": "Is it an indoors scene?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00174.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个街道上的混乱场景。一个汽车在街上行驶，而另一辆汽车则在路边停着。两辆汽车之间有一个汽车泄水，泄水的水流冲洗了整个街道。\n\n除了汽车之外，还有一些其他的交通工具，如一辆拖拉机和一辆货车。街道上还有一些人，可能是路人或者是在街上工作的人员。\n\n街道上还有一个绿色的汽车，与其他汽车形成对比。此外，还有一个绿色的汽车泄水，与其他汽车形成对比。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "104",
+    "question": "Do you see any small cow or elephant there?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00176.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一群大象在一片泥土上走动。大象们分布在整个画面中，有些距离较近，而有些则较远。这些大象们在草地上活动，似乎在寻找食物。整个画面充满了动物的活力和生命力。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "105",
+    "question": "Is the umpire to the left or to the right of the batter on the field?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00177.jpg",
+    "ground_truth": "left",
+    "visual_description": "这张图片是一个美国棒球比赛的场景。球员正在战斗，其中一名球员正在把棒拨开，准备打球。另一名球员在棒球场上走动，可能是在跑垒或者在等待比赛继续。\n\n场上还有其他人，可能是队员或者观众。其中一名人物手上拿着棒球棍，可能是准备接捕或者打球。整个场景充满了紧张和竞争的氛围。",
+    "prediction": "left",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "106",
+    "question": "Are there men to the right of the sheet that is in the bottom?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00178.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个人在车内，他的头被一根半透明的牛排放在他的头上。这个人看起来很吃惊，因为他没有意识到这个牛排的存在。\n\n车内还有一个半透明的瓶子，可能是用来储存水或其他液体。此外，还有一个半透明的椭圆形物体，可能是一个半透明的椰子或其他类似的物品。",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "107",
+    "question": "Is the open laptop on a bed?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00179.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个简洁的卧室，它有一张床，上面放置了一个笔记本电脑。床上还有一个小狗，看起来很舒服。卧室的灯光照亮了这个空间，使得它看起来更加明亮。",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "108",
+    "question": "Is there either a chair or a desk in this image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00180.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个整理的工作区，包括电脑、手机、钥匙、笔、书签、钱包和其他电子设备。电脑和手机都在地上，钥匙和笔插在其中。书签和钱包分别位于左侧和右侧。此外，还有一些其他电子设备，如闪光灯和键盘。整个区域看起来非常整洁，有助于提高工作效率。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "109",
+    "question": "Is the brown dirt behind the net that is behind the boy?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00181.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个足球运动员在捡拿球的过程中。运动员正在尝试抓住一个滑行的足球，他的手臂已经伸进了球的轨道。这个运动员正在努力保持足球在他手中，同时他的手臂也在努力抓住球。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "110",
+    "question": "What is the item of furniture that that clock is sitting on?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00182.jpg",
+    "ground_truth": "shelf",
+    "visual_description": "这张图片展示了一个简陋的客厅，它有一张沙发和一个小床。沙发上放置了一些毛毯和毛巾，给予了一种舒适的感觉。客厅还有一个小床，并且还有一个小卧室。\n\n在客厅中，还有一个小卧室和一个沙发。客厅的墙上挂满了各种家具，如一个小卧室和一个沙发。此外，还有一个小卧室和一个沙发。\n\n客厅的墙上还有一个小卧室和一个沙发。此外，还有一个小卧室和一个沙发。",
+    "prediction": "a small bed",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "111",
+    "question": "Is the bike to the right of a biker?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00184.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个小团队在一条狭窄的山路上骑行。他们共有四辆摩托车，分别在路上行驶。这些骑手似乎在享受自然的美景，因为他们的路线穿过一片树林。\n\n在这个团队中，有三名骑手穿过山路，而第四名骑手则在路的另一侧。这些骑手的车辆分布在不同的位置，从最左侧到最右侧，分别是第一辆、第二辆、第三辆和第四辆。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "112",
+    "question": "Who is holding the telephone in the middle of the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00185.jpg",
+    "ground_truth": "guy",
+    "visual_description": "这张图片展示了一个人在一个办公室中，他正在使用手机。办公室内还有其他人，他们在各自的工作位置上工作。\n\n在办公室中，有几个桌子，其中一个桌子上有一个电脑。还有一些椰子和一个椰子盒子。\n\n办公室内还有一些其他物品，如一个手机、一个钥匙、一个椰子和一个椰子盒子。",
+    "prediction": "person holding phone",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "113",
+    "question": "What color is that shirt?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00186.jpg",
+    "ground_truth": "gray",
+    "visual_description": "这张图片展示了一个红色STOP牌，它位于一个稀疏的路上，附近有一些树木。牌子的位置很重要，因为它是指示路上的交通规则，要求其他车辆停下来。这个场景可能是在一个小镇或者乡村地区，因为牌子的稀疏和周围的树木。",
+    "prediction": "red",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "114",
+    "question": "Do you see kittens or birds that are not small?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00189.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一只小猫咪在一个小盒子里咀嚼。猫咪看起来很小，但它的大小与盒子相当。猫咪的眼睛看起来很渴望，但它的表情并不明显。整个场景充满了温馨和可爱的气息。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "115",
+    "question": "Is the black object that is to the right of the mouse small or large?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00191.jpg",
+    "ground_truth": "large",
+    "visual_description": "这张图片展示了一个电脑的外部设备，包括鼠标、键盘和各种声卡。鼠标和键盘都是黑色的，而声卡则有不同的颜色。这些设备都在地板上，且有一些线缆和电源线。整个电脑系统的外部设备都在一起，展示出电脑的外部设备。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "116",
+    "question": "Is the dark car to the right or to the left of the vehicle that looks gray?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00193.jpg",
+    "ground_truth": "left",
+    "visual_description": "这张图片展示了一个繁华的城市街道，人们正在使用彩色的伞来保护自己免受雨水。街道上有许多车辆，包括车辆和公交车。许多人在街道上行走，其中一些人可能正在购物或往返工作。\n\n街道上还有一些交通信号灯，以帮助人们安全地穿过街道。此外，街道上还有一些货物，如手提包和袋子。整个场景充满了活力和热闹，展示了一个繁华的城市生活。",
+    "prediction": "left",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "117",
+    "question": "What is in front of the fence in this photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00194.jpg",
+    "ground_truth": "hedge",
+    "visual_description": "这张图片展示了一个人坐在公园的长植物旁边的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长植物树枝上的长",
+    "prediction": "person sits in front of long plant",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "118",
+    "question": "Is the pot on the left of the photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00195.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个宽敞的房间，其中有两个充满花朵的银罐，分别放在桌子上。这些银罐充满了各种颜色的花朵，给整个房间带来了一种生机和活力。\n\n在房间的另一侧，有一个长长的桌子，上面还有一个镜子。整个房间的设计和装饰都充满了艺术感和美感，使得这个房间看起来非常舒适和宜人。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "119",
+    "question": "Which kind of food is to the right of the knife?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00196.jpg",
+    "ground_truth": "toast",
+    "visual_description": "这张图片展示了一个人在一张宽桌子上，正在吃一个带有鸡蛋和西红柿的披萨。披萨的一侧是一个盘子，里面有一些西红柿和鸡蛋。还有一个盘子，里面有一些鸡蛋和西红柿。桌子上还有一杯咖啡和一杯水。整个场景充满了美食和温馨的氛围。",
+    "prediction": "tomatoes, eggs",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "120",
+    "question": "What vehicle is to the right of the white vehicle?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00200.jpg",
+    "ground_truth": "truck",
+    "visual_description": "这张图片展示了一个驾驶停车区的红灯停车牌，上面有一些字样。在这个场景中，有一辆蓝色车辆停在红灯停车牌的旁边，并且还有其他车辆在周围的道路上行驶。这个场景表明，这个红灯停车牌可能在雨天或者晚上时分，让驾驶人停车以确保安全。",
+    "prediction": "blue vehicle",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "121",
+    "question": "What kind of animal are the people to the right of the men riding?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00201.jpg",
+    "ground_truth": "horses",
+    "visual_description": "这张图片展示了一群骑自行车的人在沙漠中跑步。他们的车辆分布在沙漠中，有些车辆距离人们更近，而有些则距离更远。这些人们在沙漠中跑步，享受着沙漠的美景。",
+    "prediction": "horses",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "122",
+    "question": "Do you see any pickles to the left of the fork that is to the left of the bread?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00202.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个人在一张黑色桌子上，正在切着一些各种肉类食物。这些食物包括肉、香肠、蘑菇和蘑菇酱。同时，还有一些酱料和蘑菇酱。\n\n人手在桌子上，手持一把针头和一把刀子，切着食物。桌子上还有一杯酒，可能是用来搭配这些美食。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "123",
+    "question": "What is the color of the grass?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00204.jpg",
+    "ground_truth": "brown",
+    "visual_description": "这张图片展示了一个年轻的男孩在滑板上在草地上进行滑雪运动。他正在尝试一个滑雪板，并且在空中把滑板旋转。他的衣服是灰色的，让他看起来非常时髦。\n\n在这个场景中，还有一些树木，其中一棵树位于背景中央，另一棵树则在背景左侧。这个场景看起来非常活跃，展示了这个男孩的活力和热情。",
+    "prediction": "gray grass",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "124",
+    "question": "On which side is the crab, the right or the left?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00205.jpg",
+    "ground_truth": "right",
+    "visual_description": "这张图片展示了一个厨房，其中有几个白色碗和罐子，里面装满了各种食材。其中包括许多蔬菜和肉类食品，如蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇、蘑菇",
+    "prediction": "left",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "125",
+    "question": "Is the remote on the left side?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00206.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个男人在家中，正在玩一个游戏机。他坐在一张黄色的床上，手握游戏控制器。床上还有一些玩具和礼物，如一个玩具鱼和几个礼盒。\n\n另外，这个房间还有一个电视，可能是他在玩游戏时看的。整个房间充满了游戏元素，表明这个男人是一个游戏爱好者。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "126",
+    "question": "Is the chair in front of the desk antique and red?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00208.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个办公室，其中包含了一个桌子，上面有一台电话和一台计时器。桌子周围还有一些书籍和一台键盘。办公室的墙上挂着一个幻灯片，墙上还有一个镜子。此外，还有一个植物在办公室内，为室内增添了一些生机。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "127",
+    "question": "Which color is the shirt?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00209.jpg",
+    "ground_truth": "blue",
+    "visual_description": "这张图片展示了一个男人和一个女人在一辆车的顶部，他们正在享受一个彩虹色的帆布。这个男人穿着短裤，而女人则穿着一个带有冠冕的礼服。他们的帆布提供了一个遮阳的效果，使他们在车辆上感到舒适。",
+    "prediction": "blue",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "128",
+    "question": "What is the color of the cow next to the other cow?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00211.jpg",
+    "ground_truth": "dark brown",
+    "visual_description": "这张图片展示了一群牛在草地上走动。牛们分布在草地的不同位置，有些牛距离彼此较近，而有些则较远。牛们的身体呈现出不同的颜色，包括黑色、白色和棕色。这些牛在草地上走动，似乎在探索或在寻找食物。",
+    "prediction": "brown",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "129",
+    "question": "Where is the toilet, on the left or on the right side of the picture?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00216.jpg",
+    "ground_truth": "left",
+    "visual_description": "这张图片展示了一个洁净的浴室，其中包括一个浴缸和一个卫生间。浴缸位于浴室的中心，而卫生间则在浴室的左侧。浴室的墙上有许多洁白的砖块，为整个空间增添了一种清新的感觉。\n\n在浴室中，有一个洁净的卫生间，其中包括一个盆和一个洗手板。盆和洗手板都位于卫生间的左侧。此外，还有一些洁净的浴室用品，如洗手奶和洗发水，分别放在浴室的左侧和右侧。",
+    "prediction": "right",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "130",
+    "question": "Are there any rackets or baseball bats that are not black?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00217.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片是一位男子在草地上打羽毛球。他正在准备把球打向对方的网，展示出他的羽毛球技能。他的衣服是白色的，让他看起来非常专业。\n\n在场地上，还有一些其他的物品，如一把植物和一把植物盆。这些物品可能是为了让球员在比赛中感到更舒适，或者是为了让场地更加美观。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "131",
+    "question": "Is the monitor on the left?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00218.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个白色熊猫在一台电脑上工作。熊猫手臂拿着一个鼠标，似乎在操作电脑。电脑的键盘和鼠标都在熊猫手臂的下方。\n\n周围的环境包括一个植物和一个椰子。植物位于电脑的左侧，而椰子则在电脑的右侧。这个场景很有趣，因为熊猫通常不会像人类一样使用电脑。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "132",
+    "question": "Which kind of food is not fresh?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00219.jpg",
+    "ground_truth": "apple",
+    "visual_description": "这张图片展示了一个充满水果的桶子。桶子里有许多不同种类的水果，包括苹果、梨、桃子和香蕉。其中，苹果和梨占据了主要的位置，分别占据了左右两侧的空间。桃子和香蕉则分别位于桶子的中心和右侧。整个桶子充满了各种水果，给人一种充满生机和活力的感觉。",
+    "prediction": "banana is not fresh",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "133",
+    "question": "Is the tomato on the left or on the right of the picture?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00221.jpg",
+    "ground_truth": "left",
+    "visual_description": "这张图片展示了一个餐具，上面有三个半径不同的墨西哥饼，其中一个饼还有一根蔬菜挂在上面。餐具上还有一个盘子，其中有一杯墨西哥风味的汤。整个餐具坐在一个桌子上，周围还有一杯墨西哥饮料。",
+    "prediction": "left",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "134",
+    "question": "What is the color of the sand the backpack is lying on top of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00222.jpg",
+    "ground_truth": "brown",
+    "visual_description": "这张图片展示了一个女孩在沙滩上，她正在拿着一把蓝色滑水板。她的脚踝虽然在沙滩上，但她似乎在滑水板上，因为她的脚踝挂在板子上。她的衣服是黑色的，她还戴着一顶帽子。\n\n在她的周围，有一些衣物和物品，如一把袋子和一把手提包。这些物品可能是她的衣物和个人物品。",
+    "prediction": "the sand the backpack is lying on top of is blue",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "135",
+    "question": "What is the rectangular item of furniture in this picture called?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00223.jpg",
+    "ground_truth": "dresser",
+    "visual_description": "这张图片展示了一个女孩在床上阅读一本书。她坐在床上，手握书本，享受阅读的乐趣。床上的布料宛如一把红色的床，为她提供舒适的阅读环境。",
+    "prediction": "red bed",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "136",
+    "question": "What is the name of the fruit that is to the left of the pineapple on the right?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00225.jpg",
+    "ground_truth": "strawberry",
+    "visual_description": "这张图片展示了一个充满水果的市场。在市场中，有许多橙子和香蕉，以及一些苹果。橙子和香蕉分布在市场的各个角落，而苹果则集中在市场的中心。\n\n市场的价格标签可以在各个水果的周围看到，这些标签显示了水果的价格。整个市场充满了各种水果，呈现出一个充满生机的场景。",
+    "prediction": "left",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "137",
+    "question": "What color is the fence?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00226.jpg",
+    "ground_truth": "gray",
+    "visual_description": "这张图片展示了一个皮肤白色的男子，他缺乏上身的衣服，只穿着短裤。他站在一个篮球场上，手里拿着一把篮球棍。他的表情看起来很压抑，可能因为他在比赛中失败了。场地周围有一些树木，为场地增添了一些自然元素。",
+    "prediction": "white",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "138",
+    "question": "Do these people have the same gender?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00229.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个小女孩在观察一个充满肉类食物的卡罗伊薯条。她穿着一件帽子，看着这个美味的食物。卡罗伊薯条充满了肉类和蔬菜，如洋葱和番茄。手掌上的卡罗伊薯条被捆绑在一个纸巾上，让它更加美观。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "139",
+    "question": "Where in the image is the car, on the right or on the left side?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00230.jpg",
+    "ground_truth": "left",
+    "visual_description": "这张图片展示了一个男子在一个街道上骑自行车，他的自行车上有一个小车箱。他的脸上带着一个微笑，看起来很开心。\n\n在这个街道上，还有其他的人和车辆。有两个人在远处，还有三个车辆，其中一辆是靠近男子的车辆。此外，还有一个植物在街道上，可能是一个树或者一个花坛。",
+    "prediction": "right",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "140",
+    "question": "Is the woman to the left or to the right of the screen on the left side?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00231.jpg",
+    "ground_truth": "right",
+    "visual_description": "这张图片展示了一个女性正在使用两台电脑。她坐在桌子上，手握着一台电脑，另一台电脑位于她的左侧。她还有一杯茶在桌子上，可能在享受一下她的工作环境。\n\n桌子上还有一些其他物品，如一个餐具和一个玩具狗。此外，还有一些食物，如一个薯片和一个饼干。",
+    "prediction": "left",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "141",
+    "question": "Is the boy to the right of a man?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00232.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个人在一个简单的草地上打羽毛球。他正在准备把球打出去。还有其他人在场，看着这个人打球。\n\n场地上有一些建筑物，如一栋房子和一个小建筑。还有一些其他的物品，如一个手推车和一个植物。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "142",
+    "question": "Which kind of furniture is not made?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00233.jpg",
+    "ground_truth": "dresser",
+    "visual_description": "这张图片展示了一个充满印刷品和新闻纸的卧室。卧室的墙上挂着各种印刷品和新闻纸，给人一种热闹的感觉。床上有两个毛巾，一个是橙色的，另一个是紫色的。卧室的床铺上有一个灯，照亮了整个卧室。\n\n在卧室的一侧，有一个橱柜，里面装满了各种印刷品和新闻纸。橱柜的门上还有一个红色的扣子。卧室的墙上还有一个橙色的毛巾。",
+    "prediction": "cabinets",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "143",
+    "question": "Are the clouds gray or dark?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00236.jpg",
+    "ground_truth": "dark",
+    "visual_description": "这张图片展示了一个拥挤的街道，沿着一条山坡上的道路。许多车辆，包括轿车和汽车，堆满了这条街道。许多车辆在上坡道上行驶，而其他车辆则在下坡道上行驶。\n\n此外，还有一些行人在街道上行走，并且一些人在车辆附近。这个街道看起来非常繁忙，需要谨慎行驶以避免事故。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "144",
+    "question": "How big is the umbrella on the right of the picture?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00238.jpg",
+    "ground_truth": "large",
+    "visual_description": "这张图片展示了一辆旧式漂亮的橙色轿车，它的车窗和车灯都是闪闪发光的。车辆正在一个停车场，周围有几个带有风扇的帽子，并且还有一些植物，如花朵和树木。\n\n在这个场景中，还有几辆其他车辆，包括一辆蓝色的车辆，它位于车场的右侧。此外，还有一些人在场，他们可能是车场的工作人员或是车主。",
+    "prediction": "medium",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "145",
+    "question": "What's the woman before?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00239.jpg",
+    "ground_truth": "net",
+    "visual_description": "这张图片展示了一个小型工程机器在一个停车场中停着。这个场地上有几辆小型摩托车，其中一些车辆被围起来。还有一些人在场地上，其中一个女孩正在走过场地。\n\n这个场地看起来是一个停车场，但由于工程机器的存在，它也可能是一个工程或建筑项目的场地。",
+    "prediction": "a girl",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "146",
+    "question": "What is the food to the left of the open book?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00243.jpg",
+    "ground_truth": "bread",
+    "visual_description": "这张图片展示了一个白色桌子上的食物和饮料。在桌子上，有一碗卵，一碗茶，一杯咖啡和一杯奶昔。还有一本书放在桌子上，可能是用来阅读或作为背景。桌子上还有一些盐和一杯奶昔。整个场景呈现出一个舒适的阅读和喝咖啡的环境。",
+    "prediction": "the plate with an egg",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "147",
+    "question": "Are the platform and the shirt the same color?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00244.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个人在海滩上，正在划着帆船，享受着浪涛的欢乐。他的身体被带着帆船，让他在水面上漂浮。\n\n此外，还有其他人在海滩上，享受着海浪的美景。整个场景充满了活力和欢乐的氛围。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "148",
+    "question": "Is the man on the left side?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00247.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个家庭在一个巨大的建筑物的露台上玩儿童飞翼。一个小男孩在露台上升空，而一个小女孩则在地上帮助他。其他成员也在场，一个人在远处，另一个人在地上。\n\n儿童飞翼的颜色是红色，而其他人的衣服则是白色。这个家庭在这个巨大的建筑物的露台上度过了一个愉快的时光。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "149",
+    "question": "Are there any cars or buses that are blue?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00248.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个巨大的公交车场，其中有许多公交车和汽车停在停车场。这些车辆分布在各个区域，包括停车场的中心和周围。\n\n公交车场的设施也很丰富，有许多汽车和公交车停在停车场。这些车辆的位置各不相同，有些车辆停在停车场的中心，而其他车辆则停在周围的区域。\n\n此外，还有一些人在公交车场，可能是工作人员或者是旅客等候公交车。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "150",
+    "question": "Is there a child to the right of the animal on the right?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00249.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一群人在草地上，他们都是戴着铁甲，手持长棍，似乎在演练战斗。他们的棍棒有不同的长度和形状，但都是用来战斗的。\n\n在这个场景中，有一骏马，可能是用来帮助人们在战斗中移动。这些人们看起来非常准备好，他们的姿势和表情都表明他们在热情地战斗。\n\n整个场景充满了活力和激情，展示了这些人们的勇气和战斗精神。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "151",
+    "question": "Is the safety cone on the right or on the left?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00251.jpg",
+    "ground_truth": "left",
+    "visual_description": "这张图片展示了一个空港场地，其中有一架飞机和一些工作人员。工作人员正在拿着手机，可能在与飞机或其他人员通信。\n\n在场地上，有一些货物和车辆，包括一个货车和一个车辆。还有一些背包和手提包，可能是工作人员的工具或物品。\n\n整个场地看起来很干净，没有太多的杂乱或废弃物品。",
+    "prediction": "right",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "152",
+    "question": "What is the camera in front of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00252.jpg",
+    "ground_truth": "phone",
+    "visual_description": "这张图片展示了一个女孩在洗手间里拿着一枚手机，她正在拍摄自己的照片。她的笑容表明她很开心。她身穿一件黑色的衬衫，手机占据了她的手中。洗手间里还有一把洗手盆，并且还有一个毛巾。",
+    "prediction": "a phone",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "153",
+    "question": "What color is the sand?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00253.jpg",
+    "ground_truth": "brown",
+    "visual_description": "这张图片展示了两个人在沙滩上骑自行车。他们的自行车分别位于左侧和右侧。两个人在沙滩上行驶，享受着沙滩上的美景。\n\n在背景中，可以看到一座巨大的岛屿，它的形状类似于一座山。这座岛屿与沙滩相邻，为游客提供了一个壮观的景观。",
+    "prediction": "brown",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "154",
+    "question": "Is the man on the right?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00255.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一位男子在一个篮球场上，正在进行一个篮球比赛。他正在跳起来，准备投篮球。场上有许多观众围绕，他们坐在各种植物的植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物植物�",
+    "prediction": "yes",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "155",
+    "question": "What vehicles are to the right of the tent?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00256.jpg",
+    "ground_truth": "cars",
+    "visual_description": "这张图片展示了一个美丽的城市风景，位于一个大湖畔。城市的高楼大厦和建筑物在湖畔的背景中突出，展示出它们的壮丽。\n\n在湖畔，有许多船只和游船，这些船只在湖上漂流，为游客提供了享受湖景的机会。此外，还有一些车辆在湖畔的道路上行驶，这些车辆可能是为了运输人员或者是为了游览湖畔的旅游者。\n\n整个景象充满了活力和美丽，展示出这个城市的壮丽和吸引力。",
+    "prediction": "boats",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "156",
+    "question": "Does the sky seem to be cloudy and blue?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00257.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了两个街道牌，分别为“Front Ave”和“Seventh St”。牌子上方还有一个小的“Front St”牌子。这些牌子都是银色的，并且都有一个小的圆形图标。牌子的位置是在一个树下，树的高度大约是半个人的高度。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "157",
+    "question": "What color are the boxes the book is to the right of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00259.jpg",
+    "ground_truth": "yellow",
+    "visual_description": "这张图片展示了一个充满卡片的桌子，桌子上有一个壮观的瓷艺摆品，它的底部是一个圆形的瓷艺。桌子上还有一些书籍和卡片，这些卡片和书籍都是各种颜色的。整个场景充满了各种卡片和书籍，给人一种繁华的感觉。",
+    "prediction": "yellow and green. two books",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "158",
+    "question": "Is the sky both cloudless and blue?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00263.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个美丽的山峰，周围环绕着雪覆盖的山脉。山峰的峰顶被冰雪覆盖，形成了一个巨大的冰层。山脉的斜坡上有一条小路，途经穿过一片树林。山脉的斜坡上还有一些小树，散布在雪地上。整个景象充满了冬季的气息，给人一种寒冷而又宁静的感觉。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "159",
+    "question": "Are there both windows and doors in the photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00264.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片是一个红色公交车的背部，上面有一个标志。标志上有一个印有文字的图案，其中包含了一个印有文字的剑。标志下面还有一个人的形象。这个标志可能是为了宣传公交车的服务，或者是为了表达公交车的品牌。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "160",
+    "question": "Are there either any bicycles or pots in this scene?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00266.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一只大型黑色和灰色的麋鹿在草地上吃树枝。麋鹿的长牙和短牙都很明显，展示了它的强壮和凶猛。\n\n在麋鹿的周围，草地很宽广，有一些树木和枝叶。草地上还有一些小树和枝叶，给人一种自然的感觉。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "161",
+    "question": "What animal has the same color as the jacket in the picture?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00267.jpg",
+    "ground_truth": "cat",
+    "visual_description": "这张图片展示了一个女孩坐在沙发上，抱着一只黑色猫。她的手抱着猫的身体，显示出她对猫的关爱。猫也享受着这位女孩的抱枕，感到安心和温暖。\n\n沙发占据了大部分图片的空间，而女孩和猫的身体占据了剩下的空间。在这个温馨的场景中，女孩和猫之间的互动和情感被强烈地传达出来。",
+    "prediction": "black cat",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "162",
+    "question": "What is the cat standing on?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00268.jpg",
+    "ground_truth": "toilet",
+    "visual_description": "这张图片展示了一只橙色猫在家庭浴室的床上玩耍。猫咪在床上弯曲身体，似乎在尝试跳进浴室的淋浴。浴室的床上有一个淋浴，猫咪正在它的周围玩耍。整个场景充满了欢乐和活力。",
+    "prediction": "the cat is on a bed",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "163",
+    "question": "Are there any books near the device that is not open?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00269.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个桌子上的电脑和一些书籍。电脑位于桌子的中心，而书籍则分布在桌子周围。桌子上还有一些其他物品，如一个钥匙和一个铅笔。整个场景呈现出一个舒适的学习或工作环境。",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "164",
+    "question": "Are both these people the same gender?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00271.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片是一个人在一个硬地球球场上打羽毛球。这个人正在向前奔跑，手握羽毛球棒，准备投出球。场地上还有其他人，但他们并不在焦点上。场地上还有一些袋子和手套。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "165",
+    "question": "What's the grass in front of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00273.jpg",
+    "ground_truth": "tree",
+    "visual_description": "这张图片展示了两只乌龟在一个园区中的草地上走动。它们正在探索周围的环境，可能在寻找食物或探索新的地方。这个园区有一个带有棚盖的树下，提供了一个遮蔽的区域，可能为乌龟提供避风和避阳的机会。",
+    "prediction": "green grass",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "166",
+    "question": "On which side of the image is the faucet, the right or the left?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00274.jpg",
+    "ground_truth": "right",
+    "visual_description": "这张图片展示了一个粉色花盆，里面有红色花朵，放在浴室的洁净桌子上。洁净桌子周围有一些洁净用品，如洁净剂和洁净棉。此外，还有一个洁净桌子上的洁净棉，以及一个洁净桌子上的洁净剂。",
+    "prediction": "right",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "167",
+    "question": "Are there notebooks next to the cup to the right of the mobile phone?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00276.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个电脑桌面，其中包含了两个大屏幕，一个位于左侧，另一个位于右侧。这些屏幕上分别显示了一些图片和文字。\n\n在电脑桌面上，还有一个键盘和一个杯子。键盘位于电脑桌面的中心，而杯子则位于右侧的桌面上。此外，还有一个手机和一个笔在桌面上。\n\n整个电脑桌面的设置看起来非常简洁，只有最基本的电脑设备和一些小物件。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "168",
+    "question": "Which side are the books on, the left or the right?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00277.jpg",
+    "ground_truth": "left",
+    "visual_description": "这张图片展示了一个年轻的男孩，他穿着正式的白色西装，包括白色的衬衫和剪刀石头链。他的头发是短的，给他一个帅气的外观。\n\n这个男孩正在一个书架区域内的图书馆中拍照，他的身体位于图书馆的中心。在这个区域内，有几本书，分布在不同的高度。这个图书馆的设计使得它看起来非常有趣和吸引人们。",
+    "prediction": "left",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "169",
+    "question": "Of what color is the sweater?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00278.jpg",
+    "ground_truth": "white",
+    "visual_description": "这张图片展示了一个婆娑的女性坐在地上，拿着两个黄色的香蕉。她的衣服是红色和白色的斑点，给她一种独特的风格。\n\n周围的环境包括几个骑车，其中一辆是摩托车。还有几个人在场，其中一个人在背后，另一个人在右侧，还有一个人在左侧。\n\n此外，还有一个手提袋，可能是用来携带物品或者是作为购物袋。",
+    "prediction": "red",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "170",
+    "question": "Is the woman in front of the trees holding scissors?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00279.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个女孩在雪地上穿越树林，她正在滑雪。她穿着黑色的裤子和白色的外套，手上拿着滑雪杆。她的脸上戴着粉色的帽子，给她带来一种快乐的感觉。\n\n周围的树林充满了雪，给人一种寒冷的感觉。她的滑雪道上有一些树木，但她仍然能够继续滑下去。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "171",
+    "question": "Which kind of food is not rolled?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00283.jpg",
+    "ground_truth": "cucumber",
+    "visual_description": "这张图片展示了一个美味的食物，包括蔬菜和肉类食物。食物摆放在一个蓝色的碗子里，碗子上还有一把刀。碗子周围有一些蔬菜，如西红柿和西红柿。此外，还有一些肉类食物，如烤鸡和烤肉。整个食物摆放在一个银色的桌子上，桌子周围有一些蔬菜和肉类食物。",
+    "prediction": "roast chicken is not listed as part of the description provided",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "172",
+    "question": "Are both the metal bench and the lamp on the wall black?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00287.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个独立的公园区域，位于一个古老的城市中。公园内有一个铁般的雕塑，它的位置是公园的中心。公园周围有一些植物，如树木和花坛，为公园增添了一些生机。\n\n公园的入口是一个楼梯，通向公园的内部。楼梯上有一个铁般的雕塑，与公园的主题相匹配。公园内还有一个长椅，可以提供座位，让人们在公园里休息和欣赏周围的美景。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "173",
+    "question": "Is the tall giraffe on the right or on the left?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00288.jpg",
+    "ground_truth": "left",
+    "visual_description": "这张图片展示了两只企鹅在一个狭窄的地方共同吃树叶。它们的身体呈现出企鹅的典型外观，具有长长的腿和狭窄的身体。这两只企鹅在一棵树上吃树叶，享受着这个美好的自然环境。",
+    "prediction": "right",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "174",
+    "question": "Does the girl's hair look black and long?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00291.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个办公室，其中有一位女性正在使用一台电脑。她正在拍摄一个视频，可能是为了报道或者展示办公室内的情况。\n\n办公室内还有其他人，包括一位男性和一位女性。其中一位女性正在使用一台电脑，而另一位女性则在办公室内坐着。\n\n办公室内还有一些物品，包括一杯水、一杯茶和一些书籍。这些物品可能是为了使用或者是为了娱乐。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "175",
+    "question": "Is the man on the right of the picture?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00292.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个充满活力的城市广场，位于一个红色建筑的旁边。广场上有几个黑色长椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭圆形的椭",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "176",
+    "question": "Which color is that train?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00293.jpg",
+    "ground_truth": "orange",
+    "visual_description": "这张图片展示了一条轨道上的列车，它正在穿越一个山区。列车由两节车组成，其中一节车是黄色的，而另一节车则是白色的。这些车辆在山区的山坡上行驶，为旅行者提供了一种独特的旅行体验。",
+    "prediction": "yellow train",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "177",
+    "question": "Is the bell tower on the left side?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00294.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一座高耸的建筑，可能是一座教堂或者一个历史悠久的建筑。建筑的顶部有一个钟，显示了当地的时间。周围的环境是一片草地，有一些牧羊狗在草地上走动。此外，还有一些牛在草地上吃草。整个场景充满了恬静和宁静的氛围。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "178",
+    "question": "Are there any desks or couches?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00299.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个很漂亮的客厅，它有一个长长的桌子，可以容纳几个人。桌子上有几个餐具，包括几个碗和几个勺子。桌子周围有几个植物，增加了这个客厅的美丽。\n\n客厅还有一个很大的沙发，可以让人们舒适地坐下。此外，客厅还有一个很大的窗户，让光线流进来，使得整个客厅变得更加明亮。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "179",
+    "question": "Is it outdoors?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00301.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一只纹身的狗在草地中吃草。狗的身体呈现纹状，具有独特的外观。它在草地中寻找食物，并且在草地中吃草。整个场景充满了生命力和自然美。",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "180",
+    "question": "Do the wall and the backpack have the same color?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00302.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个年轻人在一个滑板公园中滑板。他正在滑板的滑道上，准备做一个滑板的动作。另外，还有其他人在公园中看着这个年轻人滑板，共计有13人。\n\n公园中还有一些背包和手袋，可能是他们带来的物品。整个场景充满了活力和欢乐的氛围。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "181",
+    "question": "Is it an outdoors scene?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00303.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个洁净的浴室，其中包括一个白色的洗面盆，一个洗手盆和一个洗头盆。洗手盆和洗头盆都有水泵器，并且还有一个洗面盆的水泵器。洗面盆的水泵器位于盆的左侧，而洗手盆和洗头盆的水泵器分别位于盆的右侧和下方。\n\n浴室的墙上有一个镜子，并且还有一个植物架，上面装饰着一些植物。浴室的墙上还有一个洗手盆，并且还有一个洗头盆。洗手盆和洗头盆都有水泵器，并且还有一个洗面盆的水泵器。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "182",
+    "question": "What is the color of the faucet in the bottom part?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00304.jpg",
+    "ground_truth": "silver",
+    "visual_description": "这张图片展示了一个洁净的浴室，其中有两个白色洁净的洗手盆，分别位于浴室的左侧和右侧。浴室内还有一个床，并且还有一些洁净的洗手盆和洗手盆的架子。浴室的墙上还有一些洁净的洗手盆和洗手盆的架子。整个浴室都很整洁，看起来非常舒适。",
+    "prediction": "white",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "183",
+    "question": "Is the cabinet in the top part or in the bottom of the photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00305.jpg",
+    "ground_truth": "bottom",
+    "visual_description": "这张图片展示了一个厨房，其中有一个烘箱和一个磨碎机。烘箱和磨碎机都是黄色的，并且它们的位置相互交叉。在厨房中，还有一个烤箱和一个餐具。此外，还有一个烤盘和一个碗，这些物品都是银色的。在厨房的一侧，还有一个洗碗机。",
+    "prediction": "bottom",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "184",
+    "question": "Is the motorcycle in the top part or in the bottom of the picture?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00306.jpg",
+    "ground_truth": "top",
+    "visual_description": "这张图片展示了一个摆倒的骑车，其中有一个摩托车的底盖。骑车的底盖被摆倒，展示了它的内部结构。此外，还有一些其他的骑车和摩托车在场，这些骑车和摩托车的位置和角度都与主要的摆倒的骑车有关。",
+    "prediction": "bottom",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "185",
+    "question": "Are there both lemons and boxes in the picture?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00307.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个桌子上的各种蔬菜和水果。其中包括苹果、橙子、柠檬、西红柿、西红柿和西红柿。这些食物都很美观，并且具有各种独特的味道和口感。这些食物可能是用来制作一些美味的菜肴，或者是独立的食物。",
+    "prediction": "yes",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "186",
+    "question": "What color is the vending machine?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00308.jpg",
+    "ground_truth": "orange",
+    "visual_description": "这张图片展示了一个红色双层旅游巴士在一个繁忙的街道上行驶。巴士正在行驶，并且有一个人站在路边。\n\n街道上还有其他的车辆，包括一辆轿车和两辆汽车。还有一些人在街道上行走，其中一个人站在路边。\n\n整个场景充满了活力和热闹，展示了一个繁忙的城市环境。",
+    "prediction": "vending machine is red",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "187",
+    "question": "Is there either any coffee or tea that is not black?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00309.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个白色盘子上的美味午餐。盘子上有一份煎肉、煎蛋和绿色西红柿。还有一杯茶和一杯水，均位于盘子周围。整个桌子上还有一些餐具，如另一杯和另一杯的茶和水。整个场景呈现出一个舒适的午餐环境。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "188",
+    "question": "Is it an indoors scene?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00312.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个简洁的卧室，它有一张床、一张桌子和一把植物。床上有一个毛巾和一个卡片，桌子上有一个电脑和一个键盘。卡片上还有一些书籍。卧室的窗户派上用场，为室内带来阳光。整个卧室充满了简约的氛围，给人一种舒适的感觉。",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "189",
+    "question": "Do the trousers have a different color than the skis?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00313.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片是一个女孩在滑雪道上，她正在滑雪。她的身体位于中心，并且她正在滑行。她的脚掌向下，掌握着滑雪板。她的身体朝向右侧，而她的脚则朝向左侧。她的衣服是蓝色的，透过她的身体。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "190",
+    "question": "What kind of food is to the right of the refrigerator?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00315.jpg",
+    "ground_truth": "salad",
+    "visual_description": "这张图片展示了一个女性在厨房准备做一个带有辣椒和西红柿的麦片饼。她正在把麦片倒在一个木制平底上，并在准备把麦片捏成饼状。厨房中还有一把冰箱，一把植物和一把植物灯。\n\n厨房内还有一把植物和一把植物灯，以及一把冰箱。厨房中还有一把植物和一把植物灯。",
+    "prediction": "vegetable dish",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "191",
+    "question": "What is the animal that is standing called?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00316.jpg",
+    "ground_truth": "giraffe",
+    "visual_description": "这张图片展示了一个动物园里的四只长颈动物，分别是三只长颈和一只短颈的鹿。这些动物在草地上躺着，享受着阳光和温暖的气温。它们的身体呈现出各自的特点，展示了这个动物园里的多样性。",
+    "prediction": "standing deer",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "192",
+    "question": "What kind of furniture is the laptop on?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00317.jpg",
+    "ground_truth": "coffee table",
+    "visual_description": "这张图片展示了一个家庭厅，其中有两个女性和一个男性。其中一个女性正在使用一台电脑，另一个女性坐在沙发上，而男性则坐在另一个沙发上。\n\n厅内还有一些家具，如一张桌子，一把沙发和一把床。此外，还有一些电子设备，如一台电视和两台手机。\n\n在这个家庭厅里，还有一些书籍和一杯水。这个厅的氛围看起来非常舒适，适合休息和工作。",
+    "prediction": "laptop on desk",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "193",
+    "question": "What is the piece of furniture that the bowls are on?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00318.jpg",
+    "ground_truth": "table",
+    "visual_description": "这张图片展示了一个人在一个办公室中，他正在与一只小狗相互嬉戏。狗在地上跳跃，而人则在地上走动。办公室内还有一些植物，包括一棵植物在左侧和另一棵植物在右侧。此外，还有一些厨房设备，如一个桌子和一个植物盆。",
+    "prediction": "table",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "194",
+    "question": "Are there any sacks or beach umbrellas in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00323.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个沼漓地，其中有一只白色和棕色的马在草地上吃草。马的身体半白半棕，给人一种独特的视觉效果。马在沼漓地中吃草，似乎在探索这个积水区。\n\n此外，还有一些家畜，如鸡和猪，在马附近活动。鸡和猪分别位于马的左侧和右侧。这个场景整体看起来是一个温馨的田园风景，展示了一个充满生命力的自然环境。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "195",
+    "question": "What is the color of that refrigerator?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00325.jpg",
+    "ground_truth": "red",
+    "visual_description": "这张图片展示了一个很漂亮的客厅，其中有一个红色的沙发，一个黑色的沙发，以及一个很大的床。这个客厅还有一个很大的桌子，上面放着一些水果和一个小灯。\n\n在客厅中，还有一些家具和装饰品，如一个植物和一个植物盆，还有一个植物和一个植物盆。此外，还有一个植物和一个植物盆，以及一个植物和一个植物盆。\n\n客厅的灯光非常明亮，使得整个空间都充满了光线。",
+    "prediction": "red",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "196",
+    "question": "What is the color of his hair?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00326.jpg",
+    "ground_truth": "gray",
+    "visual_description": "这张图片是一位老人，他穿着白色的衬衫和皮带，正在穿着眼镜。他的头发是短的，有点抹杂。他的眼睛看得很清晰，看起来很聪明。他的脸上有一颗鼻子，他的嘴巴很短。他的衬衫是白色的，看起来很整洁。他的皮带是黑色的，看起来很时髦。他的手腕上有一颗手腕戒指，看起来很时髦。",
+    "prediction": "black",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "197",
+    "question": "What's the fence in front of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00328.jpg",
+    "ground_truth": "bushes",
+    "visual_description": "这张图片展示了一个绿色的草地，其中有四个白色的玩具熊玩具，分别位于草地的四个角落。这些玩具熊玩具看起来像是骑自行车的玩具熊，它们的身体和腿部都是白色的。这个草地看起来像是一个绿色的园子，它的草地很茂密，给人一种宁静的感觉。",
+    "prediction": "a fence surrounds the park",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "198",
+    "question": "Are there any sandwiches to the left of the hot dog on the right?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00329.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个人在街头卖热狗。他正在吃一个热狗，同时一只鸟在他的头顶飞过。还有几个热狗在他的摊位上，以及一些瓶装在摊位上。\n\n在这个场景中，还有几个人在附近，其中一个人正在吃热狗。整个场景充满了活力和生活的氛围。",
+    "prediction": "right",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "199",
+    "question": "What color is the jacket?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00330.jpg",
+    "ground_truth": "pink",
+    "visual_description": "这张图片展示了一个人在空中弹射雪橇，他的身体弯曲，手挂在雪橇上。这位雪橇手在空中弹射，展示了他的技巧和激情。\n\n在这个场景中，还有一些其他的人物，但他们并不是主要的焦点。这张图片整体展示了一个充满活力和激情的冬季活动。",
+    "prediction": "white",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "200",
+    "question": "What shape is the silver mirror?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00332.jpg",
+    "ground_truth": "round",
+    "visual_description": "这张图片展示了一个洁净的浴室，其中包括一个浴缸和一个洗手间。浴缸位于洗手间的一侧，而洗手间则位于浴缸的另一侧。浴室的墙上有一个镜子，可以让人在浴室内看到自己。洗手间内还有一个洗手板，并且还有一些毛巾和毛巾把手。整个浴室充满了清洁和舒适的氛围。",
+    "prediction": "circle",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "201",
+    "question": "Which color is that license plate, white or orange?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00333.jpg",
+    "ground_truth": "white",
+    "visual_description": "这张图片展示了两辆公交车在一条街上行驶。第一辆公交车位于左侧，第二辆公交车位于右侧。两辆公交车都有许多窗户，提供便利的视野和通风。\n\n在这个街道上，还有一些其他的车辆，包括一辆轿车和两辆汽车。这些车辆都在行驶，形成了一个繁忙的街道场景。",
+    "prediction": "orange",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "202",
+    "question": "Is the color of the watch the same as the color of the door?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00335.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个美丽的女性，她笑着抬起手，把手放在脸上。她穿着一件绚丽的礼服，手腕上还戴着一个手表。\n\n房间里有一些家具，如一个桌子和一个植物。桌子上有几个水杯和一个卷绑。植物位于房间的左侧。\n\n此外，还有一个厨房设备，即一个微波炉，它位于房间的右侧。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "203",
+    "question": "Is the field green and small?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00337.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片是一个美国棒球比赛的场景。一名棒球运动员正在跑垒，他的脚踝跑得很快，似乎在奔跑。许多观众在看比赛，他们坐在不同的位置，包括椰子和植物。\n\n场地上有许多坐席，其中一些坐席是靠近棒球运动员的位置。许多观众可以看到运动员在比赛中的动作。\n\n整个场地都充满了观众，他们都在监督比赛的进展。这场比赛充满了紧张和激情的氛围。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "204",
+    "question": "Is there a black cat or bird?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00340.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一只猫在地上玩耍，它正在咬住一个黄色的椰子。猫的身体占据了大部分图片，展示了它的轻盈和活力。整个场景充满了生活的欢乐气息。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "205",
+    "question": "Is the man on the left side or on the right?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00341.jpg",
+    "ground_truth": "left",
+    "visual_description": "这张图片展示了一个团队在一个室内的餐厅团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队团队��",
+    "prediction": "right",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "206",
+    "question": "Do both the flag to the left of the kite and the American flag of the flag look blue?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00343.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个大型的飞行器，类似于一个巨大的飞翼，正在一个公园中飞行。这个公园是一个庞大的场地，有许多人在场地上活动。\n\n在场地上，有许多人聚集在一起，其中包括一些人在飞行器的周围。还有一些人在公园的其他地方活动，如在草地上走动或在草地上坐着。\n\n此外，还有一些背包和手提包在场地上，可能是人们带来的物品。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "207",
+    "question": "Does the baseball player seem to be standing?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00344.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片是一个美国棒球比赛的场景。一名打者正在把棒拨开，准备打球。他的手握着棒，身体准备向前运动。另外，还有其他球员在场上，他们准备接受或发起攻击。\n\n场上有一些资源，如棒球板、棒球、手套和袋子。棒球板位于中心，球员们在其周围运动。手套和袋子分别位于场上的左侧和右侧。\n\n整个场景充满了热情和竞争气氛，展示了这项运动的精彩和激烈。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "208",
+    "question": "How is the vehicle to the right of the man called?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00346.jpg",
+    "ground_truth": "truck",
+    "visual_description": "这张图片展示了一个充满历史感的场景，其中有几辆古老的货车和一些车辆。这些车辆各自具有独特的外观和设计，展示了历史上的车辆。\n\n在这个场景中，有一些人走在路上，可能是欣赏这些车辆的独特之处。整个场景充满了历史感和浓厚的氛围，让人们感受到过去的时光。",
+    "prediction": "old truck",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "209",
+    "question": "Is the plastic fork in the top or in the bottom part of the photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00347.jpg",
+    "ground_truth": "top",
+    "visual_description": "这张图片展示了一个美味的烤猪肉卷，它被放在了一个烤箱中。烤猪肉卷的一端被捆绑，以便在烤箱中烤制。在烤箱的旁边，有一碗烤猪肉汤，它与烤猪肉卷一起呈现出一种美味的烤猪肉佳品。此外，还有一碗烤猪肉卷的配料，如炸鸡排和炸鸡蛋糕。",
+    "prediction": "bottom",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "210",
+    "question": "Which color is the vest?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00349.jpg",
+    "ground_truth": "white",
+    "visual_description": "这张图片展示了一对新人在婚礼上，他们正在切割一块红色巨大蛋糕。新人们都笑着，显得非常开心。他们手持一把刀，用它来切割蛋糕。\n\n周围的环境包括一张镜子，可能是在拍摄婚礼的瞬间。此外，还有一些花朵和一把植物，为场地增添了一些生机。",
+    "prediction": "red vest",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "211",
+    "question": "What is the vegetable to the left of the fork on the table called?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00351.jpg",
+    "ground_truth": "potato",
+    "visual_description": "这张图片展示了一个白色盘子上的美味食物。盘子上有一些炒鸡和蔬菜，包括辣椒和西红柿。炒鸡和蔬菜都被涂上了酱料，使其更加美味。此外，还有一些炒鸡肉和蔬菜，呈现出一种健康的餐饮选择。整个食物摆放在了一个白色盘子上，呈现出一种清洁和美观的食品展示。",
+    "prediction": "tomato",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "212",
+    "question": "Is the woman to the right or to the left of the man who is wearing trousers?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00353.jpg",
+    "ground_truth": "left",
+    "visual_description": "这张图片展示了三个年轻人在床上享受宁静的时光。其中有一个人在床上，另外两个人坐在床上的头枕上。他们都在床上，享受睡眠的愉悦。\n\n床上的一些物品包括一把植物和一把钢琴。钢琴的位置在床的左侧，而植物则位于床的右侧。这些物品为这个温馨的场景增添了一些生活的元素。",
+    "prediction": "left",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "213",
+    "question": "Does the animal that is eating look white and tall?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00356.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一只巨大的长颈鹿在一棵树上吃树枝。它的身体占据了大部分画面，展示了它的巨大身体和长长的颈部。树枝被划分为两部分，一部分位于鹿的左侧，另一部分位于鹿的右侧。\n\n在这个场景中，还有另外一只鹿在画面的左侧，但它的身体并不占据画面，而是在背景中。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "214",
+    "question": "Are there both a bag and a bike in this photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00357.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个繁华的中国街区，人们在街上行走，许多人在步行步道上。街道上有许多车辆，包括摩托车和其他车辆。街上还有一些货物，如手提包和袋子。\n\n街灯和交通信号也是这个街区的一部分，交通信号显示了红灯，指示着车辆和行人需要停下来。街灯则提供了更好的照明，使街区更加安全和舒适。\n\n整个街区充满了活力和热情，展示了中国城市的繁华和独特的文化。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "215",
+    "question": "Are there any guys to the right of the man that is wearing a shirt?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00359.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个篮球比赛场地，其中有四位篮球运动员在场地上交流。其中一位运动员在场地上拿着一个篮球，与其他三位运动员交流。\n\n场地上还有一些观众，他们看着比赛进行。场地上还有一些摄影设备，如摄像机和镜头，用于记录比赛。\n\n整个场地上还有一些衣物，如衣服和鞋子，可能是运动员的衣物。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "216",
+    "question": "Are there bottles to the left of the pencils in the bottom part of the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00360.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了两个女孩在一个酒吧里喝酒，享受她们的时光。他们坐在一个长桌子上，桌子上有几瓶酒和一杯酒。两个女孩都笑着，显示她们在享受彼此的公共时光。\n\n周围的环境包括一些酒瓶和一个卡片。还有一些其他的物品，如一个手机和一个笔。这些物品都在桌子周围，让这个场景更加真实。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "217",
+    "question": "Is there a red towel or pillow?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00361.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一间奢华的卧室，它充满了舒适和豪华感。床上有两堆白色的卧垫，带有许多舒适的白色毛垫。卧室的灯光照亮了这个室内，使得它看起来更加舒适。\n\n卧室的墙上挂着一幅画，并且还有一些植物和花朵，增加了这个卧室的美丽和舒适感。卧室的门也是卷曲的，给人一种温馨的感觉。\n\n此外，卧室还有一个楼梯，可以通往其他层。整个卧室的设计和装饰都非常豪华，让人感到舒适和愉悦。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "218",
+    "question": "Do you see both monitors and keyboards?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00363.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个桌子上的电脑和键盘。电脑的屏幕是半透明的，显示了一个软件窗口。桌子上还有一个键盘和一个鼠标。此外，还有一个小猫的玩具和一个卡片在桌子上。\n\n在桌子周围，还有一个半透明的墙灯，并且还有一个墙上的画作。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "219",
+    "question": "Are there white curtains or lamps?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00364.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个简洁的卧室，它有一张床、一张桌子和一个灯。床上有一张简单的卧姿垫，桌子上有一个灯和一个花瓶。卧室的窗户被细长的窗帘遮住，为室内带来一种温暖的氛围。整个卧室充满了简洁的风格，给人一种舒适的感觉。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "220",
+    "question": "Is the man to the left of the person wearing a cap?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00366.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一位老人在一个草地上，他正在用一把网球拿球。他的衣服是白色的，让他看起来非常专业。\n\n周围有很多人观看比赛，他们坐在草地上的几个植物中。其中有一些人可能是他的粉丝，而其他人则可能是其他参与比赛的人。\n\n整个场地都充满了热情和活力，这场比赛吸引了很多人的关注。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "221",
+    "question": "Is it outdoors?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00368.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片是一个电视屏幕的截图，展示了一场赛车比赛。赛车在赛道上竞驰，观众们在旁边观看。赛车比赛的车辆分布在整个道路上，从前到后，从左到右，每一辆都在竞争中。\n\n电视屏幕上的赛车比赛充满了紧张和激情，让观众们感受到这场比赛的强烈竞争氛围。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "222",
+    "question": "Are there any cars to the right of the person that is to the right of the bag?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00369.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个彩斑的步行道，上面有一条红色的滑水道。步行道的两侧都有彩斑的步架，这些步架的颜色与步行道的颜色相匹配。\n\n周围的街道上有许多车辆，包括轿车、跑车和卡车等。这些车辆在不同的位置，有些在步行道上，而其他的则在街道上。\n\n此外，还有一些人在街道上，他们可能是行人或者是在街道上漫步。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "223",
+    "question": "Are there either any soap dispensers or baseballs?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00370.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个动物园里的动物，包括多只狗和猴子。狗和猴子在草地上吃草，而其他动物则在草地周围活动。整个场景充满了生命力和活力，展示了动物园里的生态和动物的自然行为。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "224",
+    "question": "Is the man that is sitting down sitting on the bench the van is to the left of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00371.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个中年男子正在使用一台Apple电脑。他坐在一个桌子上，电脑的屏幕靠在他的胸前。他笑着，显示出他在使用电脑时的愉悦。\n\n周围的环境包括一个摄影机，一个扫地机器，以及几个人。其中一个人正在使用手机，而另一个人则在远处。这些人物在不同的地方，但都与电脑使用者有关联。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "225",
+    "question": "What is the vehicle to the right of the car?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00372.jpg",
+    "ground_truth": "suv",
+    "visual_description": "这张图片是一个夜晚的街景，展示了一个灰蓝色的街道。街道上有一个灰蓝色的灯杆，上面挂着一个灰蓝色的街牌。街牌上写着“Snore Rd”。\n\n街道上还有一些车辆，包括两辆车和一辆车辆。这些车辆都是灰蓝色的，与街景的色彩相协调。",
+    "prediction": "a gray-blue car",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "226",
+    "question": "Is the knife to the right or to the left of the plate on the left of the picture?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00373.jpg",
+    "ground_truth": "right",
+    "visual_description": "这张图片展示了一个人在一张桌子上吃烤面包。桌子上还有一些刀具，包括几个刀和一个勺子。此外，还有一些水瓶和一个手机。\n\n在桌子周围，有几个人，其中一个人正在吃烤面包，而其他人则在吃饭或者在喝水。整个场景充满了愉快和亲密的氛围。",
+    "prediction": "right",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "227",
+    "question": "How clean are the cabinet doors?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00374.jpg",
+    "ground_truth": "clean",
+    "visual_description": "这张图片展示了一个简易的厨房，其中包含了一个微波炉和一个洗手间。微波炉位于厨房的一侧，而洗手间则在厨房的另一侧。厨房的桌子上有一个碗和一个杯，还有一个厨房洗手间的洗手巾。此外，还有一个瓶子和一个杯子在厨房的其他地方。",
+    "prediction": "clean",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "228",
+    "question": "Is the brick house on the right side or on the left?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00375.jpg",
+    "ground_truth": "right",
+    "visual_description": "这张图片展示了一个人在一个废弃的建筑物前面，他正在与另一个人交谈。两人都在草地上，周围有一些植物和树木。\n\n在这个场景中，还有一些植物和树木，其中一棵树位于人们的左侧，另一棵树则在人们的右侧。这个场景充满了自然的氛围，同时也表现了人们在这个环境中的互动。",
+    "prediction": "right",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "229",
+    "question": "Is there rice on the plate in the top?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00376.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个白色盘子，里面有一些烤蔬菜，包括许多烤西红柿和蔬菜。盘子占据了整个图片的中心，而其他食物则分布在周围的区域。\n\n除了盘子里的食物，还有一些其他的食物，如一个饭碗和一个另一个盘子。这些额外的食物都位于图片的左侧和上方。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "230",
+    "question": "Is the white refrigerator to the left or to the right of her?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00378.jpg",
+    "ground_truth": "right",
+    "visual_description": "这张图片展示了一个餐厅的厨师在准备食物。她正在制作一个带有蔬菜的烤饼，并在准备一些沙拉。厨师正在准备食物，她的手臂涂抹着蔬菜。\n\n餐厅内部有一些其他的食品和饮料。一个冰箱位于厨师的左侧，而一个厨房桌子则位于厨师的右侧。厨师还有一些其他的工具和食品，如一个植物和一个几个瓶。",
+    "prediction": "left",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "231",
+    "question": "Which color is the rug, black or white?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00383.jpg",
+    "ground_truth": "black",
+    "visual_description": "这张图片展示了一个宽敞的卧室，床上有两个棉质的垫块和两个毛绒垫块。床上还有两个毛绒垫块，一个位于床的中央，另一个位于床的左侧。床上还有一个毛绒垫块，位于床的右侧。\n\n床上还有一个灯，灯的光线照亮了整个卧室。床上还有一个椰子，椰子位于床的左侧。床上还有一个毛绒垫块，位于床的右侧。\n\n床上还有一个毛绒垫块，位于床的左侧。床上还有一个毛绒垫块，位于床的右侧。床上还有一个毛绒垫块，位于床的左侧。\n\n床上还有一个毛绒垫块，位于床的右侧。床上还有一个毛绒垫块，位于床的左侧。床上还有一个毛绒垫块，位于床的右侧。\n\n床上还有一个毛绒垫块，位于床的左侧。床上还有一个毛绒垫块，位于床的右侧。床上还有一个��",
+    "prediction": "white",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "232",
+    "question": "Is the color of the shirt blue?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00384.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个厨房，其中有一个烤箱正在烤食物。一位女性正在烤食物，她穿着棉衣，手握着把手，笑着。厨房中还有一些厨具，如厨铲、餐具和碗。此外，还有一些水果和食物，如苹果和鸡蛋。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "233",
+    "question": "Is the white bag on the left or on the right side?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00385.jpg",
+    "ground_truth": "left",
+    "visual_description": "这张图片展示了一个人在一个长宽的地下通道里拖着一个货车。货车里装了很多袋子和手提包，看起来像是准备去旅行或者是带着很多物品。通道里还有其他人，但他们并不在货车的视野范围内。",
+    "prediction": "right",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "234",
+    "question": "Is the girl's hair red and short?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00387.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个女孩在一个室外市场上吃一个带有红色糖果的卷饼。她很开心地吃着这个美味的食物。市场上有很多人，其中一些人在远处。\n\n市场上还有一些其他的食物和饮料，如一个带有热狗的烧烤和一个带有热狗的烧烤。此外，还有一些其他的食物和饮料，如一个带有热狗的烧烤和一个带有热狗的烧烤。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "235",
+    "question": "In which part of the photo is the palm, the bottom or the top?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00388.jpg",
+    "ground_truth": "top",
+    "visual_description": "这张图片是一系列照片的合成，展示了一个人在滑板上在一个坡道上滑行。这个人在不同的照片中都在不同的位置，展示了他在滑板上的不同动作和姿势。\n\n除了滑板运动员，还有其他人物在照片中出现，如骑自行车的人和骑车的人。这些人物在不同的照片中也在不同的位置，展示了他们在不同的时间和地点上的活动。\n\n整个场景中，还有一些车辆和其他物品，如手账和手机。这些物品在不同的照片中也在不同的位置，展示了他们在不同的时间和地点上的活动。",
+    "prediction": "top",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "236",
+    "question": "Is the toilet white and clean?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00389.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个混合的洗手间和卫生间，其中包含了一个洗手间的卫生设备，如厕所和洗手间柜。在这个混合的洗手间和卫生间中，有一个厕所，并且还有一个洗手间柜，其中还有一个卫生便器。此外，还有一个卫生便器的垫片，以及一个卫生便器的垫片。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "237",
+    "question": "Is the trash can blue or black?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00390.jpg",
+    "ground_truth": "black",
+    "visual_description": "这张图片展示了一个浴室，其中包含了一个洗手间和一个浴缸。浴室内还有一个洗手间，并且还有一个浴缸。浴室的墙上挂着两幅画，并且还有一个植物在浴室的一侧。浴室的地面是黑色的，洗手间的地面是白色的。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "238",
+    "question": "Are there bottles or cups that are made of plastic?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00394.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个瓶子，里面有一根纸巾和一根纸尖。瓶子看起来像一个烟灯罩，它的内部被填充了水。纸巾和纸尖都被绑在瓶子的口部，形成了一个简单的装饰。这个瓶子可能是用来装饰或者是作为一个小型的水杯。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "239",
+    "question": "Are there any cars or trucks in the picture?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00395.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个女性穿着一件斑点裙，她在一个箱子上坐着。她的裙子是斑点的，让她看起来非常时髦。她还穿着一条红色的带子，给她的服装增添了一些色彩。她的手挥向上，显示出她的自信和她的时尚气质。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "240",
+    "question": "What is the color of the trees?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00396.jpg",
+    "ground_truth": "dark",
+    "visual_description": "这张图片展示了一个动物园，其中有两只长身的黑色和白色的长颈鹿，一只黑色的鸟和一只黑色的大象。这些动物们在一个园区里共存，并且在一个狭窄的路径上相互交流。\n\n在这个园区里，还有一些植物，如树木和草地，为这些动物提供了一个自然的环境。这个园区的设计允许这些动物们相互交流，同时也保护了它们的安全。",
+    "prediction": "green",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "241",
+    "question": "Which kind of meat is to the left of the pan?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00397.jpg",
+    "ground_truth": "bacon",
+    "visual_description": "这张图片展示了一个人在烹饪房间的烤炉上烹制烤面包。烤炉中有许多烤面包，其中一些已经烤好，而其他的还在烤中。烤炉周围有一些厨房用品，如几个植物和一些厨房工具，如刀和铲。此外，还有一些烤炉周围的食材，如一些蘑菇和一些蔬菜。",
+    "prediction": "left: meat",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "242",
+    "question": "Which kind of clothing is not black?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00398.jpg",
+    "ground_truth": "cap",
+    "visual_description": "这张图片展示了一个厨房，其中有几个女孩在做饭。她们正在准备食物，并且有一些食物和餐具在厨房里。\n\n厨房里有几个碗和餐具，如勺子和餐剑。还有一些食物，如蛋糕和蘑菇。厨房的灯光照亮了整个空间，使得女孩们能够清晰地看到她们正在做的事情。\n\n整个厨房都充满了活力和快乐的氛围，展示了女孩们在一起做饭的愉快时光。",
+    "prediction": "the answer is: blue and white striped shirt",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "243",
+    "question": "What color do you think the rocks are?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00399.jpg",
+    "ground_truth": "gray",
+    "visual_description": "这张图片展示了一个山峰顶部的景色，其中有三个人坐在一个巨大的岩石上，享受着美丽的自然风光。其中一个人正在喝一杯冰水，而其他两个人则在欣赏周围的美景。\n\n这个地方的山峰巨大，岩石巨大，给人一种壮观的感觉。这个场景充满了探险精神，让人们感受到自然的壮美和神秘。",
+    "prediction": "brown-black",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "244",
+    "question": "Are there both ties and glasses in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00402.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个男女双人在一个办公室中，他们正在切割一条红色彩斑斓的彩旗。这个彩旗看起来像一条剪刀，因此他们需要手动切割。这个场景显示了一种友好的氛围，让人感到愉悦。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "245",
+    "question": "Is the woman to the left of a purse?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00404.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个美丽的海滩，满且满的人在沙滩上享受着阳光和海浪。人们在沙滩上散布着，有些人在沙滩上倒垫，而其他人则在沙滩上坐着。\n\n在海滩上，有几个带有风扇的棚子，提供了遮阳和避风的功能。这些棚子分布在海滩的不同区域，为人们提供了更舒适的休息场所。\n\n整个场景充满了活力和欢乐，展示了一个愉快的海滩旅行体验。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "246",
+    "question": "What animal is behind the tree?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00411.jpg",
+    "ground_truth": "cow",
+    "visual_description": "这张图片展示了一个草地，其中有三只牛在草地中吃草。这些牛分别位于左、中和右侧。草地周围有树木，其中一棵树位于左侧，另一棵树位于右侧。此外，还有一些苹果树在草地中间，为牛提供了更多的食物。",
+    "prediction": "a cow is behind the tree",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "247",
+    "question": "Is the spatula the same material as the pipe?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00412.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个巨大的烤箱，它被用来制作大型的烤食品，如烤肉和烤蔬菜。烤箱的内部热度非常高，使得食物能够得到烤熟的效果。\n\n在烤箱周围，有几个人聚集在一起，可能是准备吃这些烤食品。还有一些刀子和棒子放在烤箱周围，这些工具可能用于准备食物或者在烤箱内进行其他操作。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "248",
+    "question": "Who is holding the mobile phone which is to the left of the guy?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00413.jpg",
+    "ground_truth": "boy",
+    "visual_description": "这张图片展示了一个团队正在使用手机。其中有一个小孩在使用手机，而其他成员则在使用手机或者观看。整个场景充满了活力和团队精神。\n\n在场景中，有一些人可以看到，而其他人则在背景中。手机在场景中的使用方式各不相同，有些人手持手机，而其他人则在使用手机。\n\n整个场景展示了一个团队正在共同工作，并且充满了活力和团队精神。",
+    "prediction": "man holds phone",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "249",
+    "question": "Is the catcher to the right or to the left of the helmet the boy is with?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00414.jpg",
+    "ground_truth": "right",
+    "visual_description": "这张图片展示了一场小联盟棒球比赛。有四名球员在场，其中一名球员正在投掷球，而其他三名球员分别在守备和打击位置。其中一名球员正在投掷球，而其他三名球员分别在守备和打击位置。\n\n球员们的衣服各不相同，其中一名球员穿着蓝色的衣服，而其他三名球员则穿着不同颜色的衣服。整个场地都是白色的，给人一种清洁和简洁的感觉。",
+    "prediction": "left",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "250",
+    "question": "Is the frisbee to the left or to the right of the man that is wearing shorts?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00415.jpg",
+    "ground_truth": "left",
+    "visual_description": "这张图片展示了两个男子在草地上玩投掷游戏。其中一个男子正在努力投掷一个白色的投掷球，而另一个男子则在草地上迅速跑来接投。这场比赛看起来非常精彩，展示了这两个男子的运动能力和协作。",
+    "prediction": "right",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "251",
+    "question": "Which kind of dessert is to the right of the shelves?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00416.jpg",
+    "ground_truth": "cupcake",
+    "visual_description": "这张图片展示了一个巨大的糕点碗，里面有很多种类的糕点，包括巧克力、奶油、巧克力和奶油的混合糕点。糕点碗的底部是一个巨大的碗，而糕点则是从上到下排列的。这个糕点碗充满了各种糕点，吸引人们的目光。",
+    "prediction": "chocolate and奶油的混合糕点",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "252",
+    "question": "Is there a mug or a cup that is made of glass?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00417.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了两个女性在一个办公室中，她们正在笑互相。办公室内有一个长桌，上面放置了一个电脑和一个键盘。还有一些植物和椰子，为办公室增添了一些生机。\n\n办公室内还有一些植物和椰子，为办公室增添了一些生机。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "253",
+    "question": "Does the bike tire look round and large?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00421.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个人在街道上做独特的动作，他在空中伸展他的脚，看起来像是在跳舞。这个人正在执行一个异常的动作，吸引了几个人的注意。\n\n街道上还有其他的人，一些人在走路，而其他人则在站着。还有一些车辆，包括一辆车和一辆汽车，这些车辆在街道上行驶。\n\n整个场景充满了活力和热情，展示了这个人在街道上的壮丽表现。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "254",
+    "question": "How do you think is the food on the counter top called?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00425.jpg",
+    "ground_truth": "pizza",
+    "visual_description": "这张图片展示了两个带有蘑菇和辣椒的烤面包，它们正在烤盘上。烤盘的表面是由砂石和砂岩构成的，给烤面包带来一种独特的外观。这些烤面包看起来非常美味，充满了色彩和口感。",
+    "prediction": "grilled bread with mushrooms and pepper",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "255",
+    "question": "What color do you think is the vehicle the girl is washing?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00426.jpg",
+    "ground_truth": "red",
+    "visual_description": "这张图片展示了一个小女孩在一辆红色汽车的后面，她正在洗车。另外，还有两个女孩在车辆的另一侧，也在洗车。这些女孩们看起来很开心，互相帮助，共同完成这个任务。",
+    "prediction": "red car",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "256",
+    "question": "Is the shirt short sleeved or long sleeved?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00428.jpg",
+    "ground_truth": "long sleeved",
+    "visual_description": "这张图片展示了一位老妇在一个笼子里与一只白色的马相互接触。她轻轻地摸着马的鼻子，给予它一些关爱。马在笼子内徘徊，似乎在等待老妇的接触。\n\n笼子的铁栏围绕着马，并且有一些草在地上。老妇手上拿着一个钱包，可能是带着她的钱或者其他物品。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "257",
+    "question": "What vehicle is the skater in front of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00429.jpg",
+    "ground_truth": "bus",
+    "visual_description": "这张图片展示了一个年轻的男子在街道上骑自行车。他穿着蓝色的裤子，手握车杆，享受着自由的感觉。他的自行车配备了红色的轮子，给人一种充满活力的感觉。\n\n在这个场景中，还有一些其他的人物，如一个人在远处，还有另外两个人在较近的距离。这些人物都在这个街道上，享受着这个城市的活力。",
+    "prediction": "cyclist",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "258",
+    "question": "What animal is following the horse?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00430.jpg",
+    "ground_truth": "dog",
+    "visual_description": "这张图片展示了一个人在沙滩上骑自行车。这个人正在沿着海岸行驶，享受着美丽的海景。在海岸上，还有一些小船，让人感受到浪漫的氛围。整个场景充满了浪漫和舒适感，让人感到放松和愉悦。",
+    "prediction": "fox",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "259",
+    "question": "Do you see a lemon to the right of the hamburger next to the fries?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00431.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一份美味的汉堡，包括一个肉卷和一份罗西亚芥菜。汉堡的肉卷很大，占据了很大一半的整个汉堡。罗西亚芥菜的卷薯很多，占据了很大一半的整个汉堡。整个汉堡都是很美味的，很适合一个人享用。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "260",
+    "question": "Is the palm on the right side of the picture?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00432.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个充满棚罩的庭院，其中有四个带有棚罩的棚子，分别位于左、中、右和上方。这些棚子的棚罩形状有些不同，但它们都是用竹制成的。\n\n在这个庭院中，还有一些其他的建筑物，如一个小房子和一个巨大的建筑。此外，还有一些植物，如一棵树和一些草。\n\n整个庭院的设计充满了舒适感，带给人们一种温馨的氛围。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "261",
+    "question": "Are there either any cameras or laptops in this picture?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00434.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个旅行者的旅行准备。旅行者的行李包括一个红色的手提包、一个黑色的背包和一个白色的笔记本。这些行李都在地上，旅行者可能正在准备离开。\n\n除了行李，还有一些其他物品，如一个手提电话、一个针和一个牙刷。这些物品都在地上，与旅行者的行李一起展示了他的旅行准备。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "262",
+    "question": "Are there backpacks to the left of the open suitcase?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00437.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个房间，其中有一个大箱子和一个小箱子。这些箱子看起来像是用来搬家的。在房间的一侧，还有一个背包，可能是用来搬家的。此外，还有一个手提包，可能是用来搬家的。这些箱子和背包都在地上，形成了一个堆积的形状。",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "263",
+    "question": "What device is to the right of the screen?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00438.jpg",
+    "ground_truth": "keyboard",
+    "visual_description": "这张图片展示了一个电脑工作站，其中包括两台电脑和一台键盘。其中一台电脑的屏幕显示了一个混杂的字符序列，看起来像黑色的拼图。另一台电脑的屏幕显示了一个混杂的字符序列，看起来像黑色的拼图。键盘位于工作站的桌面上，与电脑相互配合。",
+    "prediction": "keyboard",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "264",
+    "question": "Are there any women or pedestrians in the photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00440.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个很大的带有肉类和蔬菜的披萨。披萨占据了整个图片，它的底部半径约为30厘米。披萨上面有许多肉类和蔬菜，包括许多蘑菇和蔬菜。\n\n在这张图片中，还有两个人，一个位于左侧，另一个位于右侧。这两个人看起来很兴奋，可能在等待披萨的即时到来。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "265",
+    "question": "Is the man outdoors?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00441.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个男性在一个房间里，他正在把一本书放在一台DJ设备上。这台DJ设备包括一台麦克风和一台磁带播放器。这个房间也有一些其他的物品，如一个植物和一个飞鸟的模型。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "266",
+    "question": "Are there any women to the right of the person that is on the sidewalk?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00443.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个繁华的城市街道，充满了红色的公交车。这些车辆在街道上行驶，并且有许多人在街上行走。街道上还有一些骑自行车的人，他们在与公交车共存的环境中行驶。\n\n街道上的人们来自不同的国家和文化背景，他们在这个繁华的城市里生活和工作。这个繁华的城市街道展示了城市生活的多样性和活力。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "267",
+    "question": "Is the bed sheet to the right of the nightstand that is made of wood?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00444.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个黑白电视，放置在一张床上。电视上的画面是一个女人在床上伸出手，给人一种浪漫的感觉。床上的睡衣和枕头为床带来一种舒适的氛围。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "268",
+    "question": "Is the knife to the right of the green peas?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00445.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个充满食物的白色盘子。盘子上有牛肉、豆芽、烤豆、烤蔬菜和烤肉。其中，牛肉位于盘子的左侧，豆芽和烤豆分别位于中心和右侧，烤蔬菜和烤肉则分别位于盘子的右侧和下方。整个盘子充满了各种美味的食物，呈现出一份丰富的餐桌。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "269",
+    "question": "Is the fence on the right of the picture?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00446.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了两个女性在街上聊天。她们身穿黑色皮衣，手挽手，互相交流。她们的脸部和头发都是红色的，给人一种强烈的视觉冲击。\n\n在这个街头场景中，还有其他人物，包括一个人在远处，还有两个人在较近的距离。此外，还有一个背包，可能是旅行者的。\n\n街上的交通环境包括一个红色的信号灯，一个车，以及两个手掌形的物体。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "270",
+    "question": "Is the person to the right of the boy sitting in a boat?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00447.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个人在一头大象的背上骑着。这个人坐在一个特殊的植物坐垫上，而大象则沿着一条小路前行。在这个场景中，还有另外一个人可以看到，他在远处看着这个场景。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "271",
+    "question": "Are there either any bikes or napkins in this image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00448.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个街道上的街牌，标志着一个街区。街牌上显示了两个街名，分别是“Forty-Fifth Street”和“Forty-Sixth Avenue”。这个街区的位置在一个交叉口，并且有一些车辆在周围行驶。\n\n在这个街道上，有两辆车，一辆位于左侧，另一辆位于右侧。还有一辆车在交叉口处，可能正在等待交通信号。此外，还有一个人在这个街道上行走。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "272",
+    "question": "Is the white device in the bottom part or in the top of the picture?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00454.jpg",
+    "ground_truth": "top",
+    "visual_description": "这张图片展示了一个年轻男子在家中，正在用手挥动Wii游戏控制器，玩一个游戏。他的手在空中挥动，似乎在投掷游戏物品。\n\n在这个家庭厅里，还有一个墙上的电视，显示着游戏的画面。另外，还有一个较小的蜡烛形状的物品，位于厅里的一侧。",
+    "prediction": "top",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "273",
+    "question": "Is there any dog or bird that is not little?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00460.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了三个老人坐在一个长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形的长椭圆形",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "274",
+    "question": "How does the jacket look, green or black?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00461.jpg",
+    "ground_truth": "black",
+    "visual_description": "这张图片展示了一个穿着黑色西装的年轻男子在一个公园中跳起来。他笑着，手挂在腰间，似乎在欢快地欢迎某个事件。他的脚高似乎在空中跳跃，给人一种活力和快乐的感觉。\n\n公园中还有一些树木，其中一棵树很大，宛如一座小山。这个场景充满了活力和快乐的气息，让人感到愉悦和快乐。",
+    "prediction": "black",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "275",
+    "question": "Is the girl to the right or to the left of the man that is walking with a surf board?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00462.jpg",
+    "ground_truth": "right",
+    "visual_description": "这张图片展示了一个漂亮的海滩，有许多人在沙滩上游泳和享受阳光。其中，一个男孩和一个女孩在沙滩上携带彼此的游泳板，享受着浪漫的时光。\n\n还有其他的人在沙滩上活动，其中一些人在游泳，而其他人则在沙滩上散步或享受阳光。整个场景充满了活力和欢乐的氛围。",
+    "prediction": "left",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "276",
+    "question": "What is the man that is to the left of the woman playing?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00463.jpg",
+    "ground_truth": "keyboard",
+    "visual_description": "这张图片展示了一个人在公共场所内弹奏钢琴，他的音乐吸引了一群人聚集在他周围。这些人有些是在欢呼，有些则是在拍照。\n\n场地上还有一些其他的物品，如一个植物和一个椰子。此外，还有一些其他的人物，如一个男孩在拿着一个手机，还有一个女孩在拿着一个手提包。\n\n整个场地充满了活力和热情，展示了一个充满音乐和欢呼的场合。",
+    "prediction": "the man playing to the right",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "277",
+    "question": "Is there a red blanket or towel?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00464.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了两个女孩在一个房间里玩游戏。其中一个女孩正在抱着游戏控制器，而另一个女孩则在她的手上拿着另一个游戏控制器。他们的游戏机器人可以在房间里找到。\n\n房间内还有一张沙发，一个桌子和一个植物。在桌子上，有一杯和一个玩具。房间的墙上还挂着一些照明设备。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "278",
+    "question": "Is the man to the right of a person?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00465.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个充满活力的街区，人们在街上漫步，拍照，走狗等。一个巨大的白色教堂建筑位于街区的中心，吸引了大量的游客。\n\n街上有许多车辆，包括一辆公交车和几辆汽车。人们在街上漫步，有些人在拍照，而其他人则在走狗或者与朋友交流。\n\n整个街区充满了活力和生机，展示了一个繁华的城市环境。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "279",
+    "question": "Which kind of vegetable is to the right of the bowl?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00466.jpg",
+    "ground_truth": "onion",
+    "visual_description": "这张图片展示了三个人在一个木制餐厅坐在长桌子上，共同享用美食。他们正在用餐具，如刀、餐具和碗，来吃饭。桌子上还有一些饮料，如一杯白酒和一杯水。\n\n桌子上还有一些食物，如一个碗蘑菇和一个碗蔬菜。三个人都坐在桌子上，并且他们的姿态表明他们正在享用美食。",
+    "prediction": "mushroom to the right",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "280",
+    "question": "Is the tray to the right of the paper towels leaning on the wall?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00467.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一张带有蘑菇和烤辣椒的披萨，它被放置在一个木板上。披萨的底部是一个圆形的木板，上面有一个圆形的盘子。在披萨周围，有一个盘子和一个带有水果的盘子。\n\n在披萨周围，还有一些水果，包括两个苹果和一个橙子。这些水果被放置在一个带有水果的盘子中。整个场景呈现出一个美味的披萨和水果的浪漫场景。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "281",
+    "question": "Do you see any helmets that are not blue?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00468.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片是一个人在打羽毛球的场地。他正在准备把球打出去。这位球手正在准备把球打出去，他的手握着一把棒，并且正在准备把球打出去。场地上还有一些其他的人，但他们并不在焦点上。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "282",
+    "question": "Is the man standing in front of a train?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00469.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个男子在一辆黑色跑车旁边，他手握着一条绿色狗绳。这辆跑车很大，它的车窗和车门都是黑色的。男子身穿一件白色的外套，他的笑容表明他很开心。狗绳的颜色与狗的身体相匹配，这使得整个场景看起来更加美观。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "283",
+    "question": "Is the surfboard white and small?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00470.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个小孩在海滩上，他正在坐在一把滑水板上，享受着海浪的愉悦。孩子的身体卷在滑水板上，展示出他的活力和欢乐。\n\n在海滩上，还有一些其他的人物，但他们并不是主要的焦点。整个场景充满了活力和欢乐的氛围，展示出这个小孩在海滩上的快乐时光。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "284",
+    "question": "What is in front of the window?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00472.jpg",
+    "ground_truth": "television",
+    "visual_description": "这张图片展示了一个人在家中，正在用游戏控制器与电视游戏进行互动。电视上的游戏是一个绿色的虚拟球队，而这个人正在扮演球员，使用游戏控制器来操作。\n\n房间中还有一些其他物品，如书籍和一些动物。在房间的一侧，有一个小狗，而在另一侧，有一些书籍。整个房间充满了游戏和娱乐元素。",
+    "prediction": "dog",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "285",
+    "question": "What is on the appliance to the right of the man?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00475.jpg",
+    "ground_truth": "magnets",
+    "visual_description": "这张图片展示了一个人在厨房准备食物。他正在用锅盘将食物放入锅中，同时还有其他人在厨房看着他。厨房内还有一些食品和饮料，如瓶子和盒子。\n\n在厨房中，还有一些其他的物品，如植物和厨房用品。植物可以在厨房中找到，而厨房用品则可以在厨房周围的地方找到。",
+    "prediction": "oven",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "286",
+    "question": "What size is the shopping bag, large or small?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00478.jpg",
+    "ground_truth": "large",
+    "visual_description": "这张图片展示了一个繁忙的街道，有许多人在路上行走。其中，一个年轻的男子正在使用手机，另一个女子也在使用手机。还有其他人在使用手机或者聊天。\n\n街道上有许多货物，包括许多手提包和袋子。一些人还拿着书包和袋子。街道上还有一些车辆，如车辆和车辆。\n\n整个场景充满了活力和热闹，展示了一个繁忙的城市生活。",
+    "prediction": "small",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "287",
+    "question": "Are there any motorbikes?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00480.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一只小狗在地上寻找东西。狗在地上弯曲，似乎在探索周围的东西。周围有几双鞋，其中一双鞋的跟缝被狗占据。此外，还有一些其他的鞋子。整个场景充满了温馨和可爱的氛围。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "288",
+    "question": "Do you see either any bowls or peppers?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00482.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个美味的沙拉，充满了各种蔬菜和肉类。沙拉中有许多蔬菜，如西红柿和西红柿，以及肉类，如火鸡。沙拉的一半是蔬菜，另一半是肉类。\n\n在这个美味的沙拉中，还有一些其他食物，如一个烤肉末和一个烤肉末。这些食物都在一个红色的盘子中，与沙拉一起摆放。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "289",
+    "question": "What is the plane in front of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00484.jpg",
+    "ground_truth": "field",
+    "visual_description": "这张图片展示了一架带有“Jetayyou.com”字样的绿色飞机。飞机正在飞行，并且在地面上。在飞机的前部，有两个小车，可能是用于维护或检查。此外，还有一些车辆在飞机周围，可能是与飞机相关的服务车。",
+    "prediction": "green plane",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "290",
+    "question": "Was the photo taken in a beach or at a field?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00486.jpg",
+    "ground_truth": "field",
+    "visual_description": "这张图片展示了一只长身的黑色和白色斑点的狗牙，它在一片草地中走动。狗牙的身体呈现弯曲的形状，它的头部朝向上方，显示出它的高大和威严。\n\n在这个草地中，还有几只其他的狗牙，分布在不同的位置。这些狗牙的身体呈现各种不同的长度和形状，展示出它们的多样性。",
+    "prediction": "at a field",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "291",
+    "question": "Do you see a bottle on top of the long table?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00488.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个充满人的室内场景，人们在一个长桌子上享用各种餐品，包括很多薯片和各种饮品。人们在吃饭的同时，也在聊天和交流。\n\n桌子上有几个薯片和几个饮品，而且还有一些其他食物。人们在场景中的不同位置，如桌子的前后和周围，可以看到他们在享用美食的同时。\n\n整个场景充满了活力和社交氛围，展示了人们在共同场合下的互动和交流。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "292",
+    "question": "What color is the sweater she is wearing?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00489.jpg",
+    "ground_truth": "gray",
+    "visual_description": "这张图片展示了一个孕妇的肚子，上面有一个小熊玩具坐在她的肚子上。这个小熊玩具看起来很可爱，与孕妇的肚子形成了一个温馨的场景。",
+    "prediction": "blue",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "293",
+    "question": "What is the cooking utensil on top of the stove that is to the right of the woman called?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00490.jpg",
+    "ground_truth": "pan",
+    "visual_description": "这张图片展示了两个女性在厨房准备食物。其中一个女性在烤箱里烤食物，而另一个女性则在厨房里准备食物。厨房内有几个碗和餐具，如餐具和碗。\n\n厨房内还有一些食品，如一个碗里有饭，还有一些蔬菜。此外，还有一些烹饪工具，如一个锅和一个铲。",
+    "prediction": "potato pan",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "294",
+    "question": "Is the computer to the right of the monitor that looks silver?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00491.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个桌子上的电脑和键盘。电脑的屏幕是半透明的，显示了一个软件窗口。桌子上还有一个键盘和一个鼠标。此外，还有一个小猫的玩具和一个卡片在桌子上。\n\n在桌子周围，还有一个半透明的墙灯，并且还有一个墙上的画作。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success"
+  },
+  {
+    "question_id": "295",
+    "question": "What is in front of the animal?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00492.jpg",
+    "ground_truth": "fence",
+    "visual_description": "这张图片展示了一只黑熊在一个笼子里，笼子是由铁栏围成的。黑熊看着笼子的内部，似乎在寻找食物。笼子的内部有一些草和树枝，可能是为了吸引熊或提供一些食物。此外，还有一个小苹果在笼子的内部，可能是为了给熊提供一些额外的食物。",
+    "prediction": "apple",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "296",
+    "question": "Are there blueberries to the left of the strawberries the oatmeal is with?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00493.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个美味的早餐，包括燕麦、水果和牛奶。燕麦和水果的杯子均占据了桌子的大部分，牛奶则位于桌子的右侧。\n\n燕麦和水果的杯子中，有许多苹果和橙子，分别占据了左侧和中心部分。此外，还有一些葡萄和草莓，分别位于杯子的右侧和中心部分。整个早餐桌子上还有一杯牛奶，它位于桌子的右侧。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success"
+  },
+  {
+    "question_id": "297",
+    "question": "Are there any boats to the left of the bag the person is carrying?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_500/gaussian_0.00/images/00497.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个美丽的海滩，拥有许多带有帆布的小船，以及一些人在海滩上活动。其中，有一位人在骑自行车，而其他人则在海滩上享受阳光和海风。\n\n此外，还有一些背包和手提包在海滩上，可能是旅行者或者游客带来的。整个场景充满了活力和欢乐的氛围，让人感到放松和愉悦。",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success"
+  }
+]

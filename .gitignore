@@ -1,0 +1,42 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# ---- 大数据与运行时文件 ----
+# GQA 图片样例（10000 张，约 1.3GB，不随仓库分发）
+data_sample/
+# Web 服务运行时上传的图片
+agent_workspace/chat_vqa_webapp/uploads/
+# Web 服务运行目录（pid / 日志）
+agent_workspace/.run/
+agent_workspace/.logs/
+*.log
+
+# ---- 模型权重（需自行下载，见 README）----
+llava-1.5-7b-hf/
+qwen2_1_5b_instruct/
+models/
+text_model/
+*.bin
+*.safetensors
+
+# ---- 数据文件 ----
+data/
+*.jsonl
+*.parquet
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---- 上传时排除 ----
+_git_backup_upload/
+tree-of-thought-llm-master/logs/
+graph-of-thoughts/paper/

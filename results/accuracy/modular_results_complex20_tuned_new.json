@@ -1,0 +1,1867 @@
+[
+  {
+    "question_id": "0",
+    "question": "Are there both vegetables and peppers in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2363859.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个带有肉类和蔬菜的饼干。饼干上有许多蔬菜，包括西红柿和西红柿酱。饼干的底部是烤的，而上面则是带有肉类的。整个饼干看起来非常美味，充满了色彩和口感。",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Yes",
+        "candidates": [
+          {
+            "thought": "The image is of a savory cookie.",
+            "answer": "Savory cookie"
+          },
+          {
+            "thought": "It includes vegetables and meat.",
+            "answer": "Vegetables and meat"
+          },
+          {
+            "thought": "The texture and color are appealing.",
+            "answer": "Appealing textures"
+          },
+          {
+            "thought": "A mouth-watering snack.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Vegetables",
+        "candidates": [
+          {
+            "thought": "包含多种蔬菜如西红柿和西红柿酱.",
+            "answer": "多种蔬菜"
+          },
+          {
+            "thought": "有肉馅.",
+            "answer": "含有肉类"
+          },
+          {
+            "thought": "颜色丰富．",
+            "answer": "充满色彩"
+          },
+          {
+            "thought": "外观诱人．",
+            "answer": "视觉吸引"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Yes",
+        "candidates": [
+          {
+            "thought": "A colorful, savory dessert",
+            "answer": ""
+          },
+          {
+            "thought": "Meat and vegetables in one dish",
+            "answer": ""
+          },
+          {
+            "thought": "Vegetables on top of the meat",
+            "answer": ""
+          },
+          {
+            "thought": "Rich colors and textures",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7,
+          0.6,
+          0.9
+        ],
+        "selected_index": 3
+      },
+      {
+        "sub_question": "Tomatoes",
+        "candidates": [
+          {
+            "thought": "Tomato in/on/around the cookie.",
+            "answer": "Tomato"
+          },
+          {
+            "thought": "The tomato is ripe and fresh.",
+            "answer": "Ripe"
+          },
+          {
+            "thought": "Tomato is used as a condiment.",
+            "answer": "Condiment"
+          },
+          {
+            "thought": "Tomato adds color, flavor to the cookie.",
+            "answer": "Flavor"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Yes",
+        "selected_answer": "Savory cookie",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "Vegetables",
+        "selected_answer": "多种蔬菜",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "Yes",
+        "selected_answer": "",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "Tomatoes",
+        "selected_answer": "Tomato",
+        "selected_score": 0.5
+      }
+    ],
+    "modular_prediction": "no",
+    "direct_prediction": "yes",
+    "merged_prediction": "yes"
+  },
+  {
+    "question_id": "1",
+    "question": "Is there a dog near the pillow?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2369293.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了两只猫在一起，其中一只猫看着另一只猫的反射。这两只猫都在床上，床上还有一张床垫。猫的反射在镜子上，使得它们看起来像是在对话。这张图片展示了猫之间的互动和相互关注。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Is there a cat near the pillow?",
+        "candidates": [
+          {
+            "thought": "Yes, one of the cats is near the pillow.",
+            "answer": "Yes"
+          },
+          {
+            "thought": "One cat has its head on the pillow.",
+            "answer": "Head on pillow"
+          },
+          {
+            "thought": "Other cat is looking at the reflection in the mirror.",
+            "answer": "Looking at reflection"
+          },
+          {
+            "thought": "Both cats have their attention focused on each other.",
+            "answer": "Focused on each other"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Are there any other animals besides cats and dogs present in the image?",
+        "candidates": [
+          {
+            "thought": "No other animal mentioned.",
+            "answer": ""
+          },
+          {
+            "thought": "Only two cats shown.",
+            "answer": ""
+          },
+          {
+            "thought": "Cats interact with each other.",
+            "answer": ""
+          },
+          {
+            "thought": "Cats look at each other through mirrors.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Does the presence of the reflection on the mirror suggest that the cats are communicating with each other?",
+        "candidates": [
+          {
+            "thought": "Yes, they appear to be communicating.",
+            "answer": ""
+          },
+          {
+            "thought": "The reflection suggests interaction.",
+            "answer": ""
+          },
+          {
+            "thought": "It implies communication.",
+            "answer": ""
+          },
+          {
+            "thought": "They seem to be interacting visually through the image.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "What could be inferred about the relationship between the two cats?",
+        "candidates": [
+          {
+            "thought": "Positive interaction",
+            "answer": "Positive"
+          },
+          {
+            "thought": "Observing each other",
+            "answer": "Observational"
+          },
+          {
+            "thought": "Careful",
+            "answer": "Careful"
+          },
+          {
+            "thought": "Trust",
+            "answer": "Trustful"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7,
+          0.6,
+          0.9
+        ],
+        "selected_index": 3
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Is there a cat near the pillow?",
+        "selected_answer": "Yes",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "Are there any other animals besides cats and dogs present in the image?",
+        "selected_answer": "",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "Does the presence of the reflection on the mirror suggest that the cats are communicating with each other?",
+        "selected_answer": "",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "What could be inferred about the relationship between the two cats?",
+        "selected_answer": "Trustful",
+        "selected_score": 0.9
+      }
+    ],
+    "modular_prediction": "no",
+    "direct_prediction": "no",
+    "merged_prediction": "no"
+  },
+  {
+    "question_id": "2",
+    "question": "Is the yellow vegetable to the left or to the right of the vegetable that is not rotten?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2345610.jpg",
+    "ground_truth": "right",
+    "visual_description": "这张图片展示了一个白盘上的三个半切的披萨。每个半切都有着各种蔬菜和奶酪。其中一个半切的披萨有辣椒，另外两个半切的披萨没有辣椒。这些披萨均呈现出美味的口感，具有各种口味和食材的独特魅力。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Which side of the yellow vegetable does not have a rotting vegetable?",
+        "candidates": [
+          {
+            "thought": "Yellow vegetable on left side is not rotten.",
+            "answer": "Left"
+          },
+          {
+            "thought": "No rotting vegetables in center.",
+            "answer": "Center"
+          },
+          {
+            "thought": "One rotten vegetable on right side.",
+            "answer": "Right"
+          },
+          {
+            "thought": "Three slices, each unique in flavor and ingredient combinations.",
+            "answer": "All"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "What is the color of the rotting vegetable?",
+        "candidates": [
+          {
+            "thought": "The image does not show any rotting vegetables.",
+            "answer": ""
+          },
+          {
+            "thought": "There is no information about the color of the rotting vegetable.",
+            "answer": ""
+          },
+          {
+            "thought": "Based on the context, it seems unlikely that there would be a rotting vegetable in this scenario.",
+            "answer": ""
+          },
+          {
+            "thought": "Given the lack of specific details, we cannot determine the color of the rotting vegetable.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Does the rotting vegetable have any other color than the yellow vegetable?",
+        "candidates": [
+          {
+            "thought": "No, it's just a visual detail.",
+            "answer": ""
+          },
+          {
+            "thought": "The picture does not provide this information.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Are all the vegetables on the plate ripe?",
+        "candidates": [
+          {
+            "thought": "[{\"thought\":\"Ripe vegetables not mentioned.\",\"answer\":\"\"},{\"thought\":\"No ripeness information given.\",\"answer\":\"\"},{\"thought\":\"Assumption made based on visual description.\",\"answer\":\"Not specified\"},{\"thought\":\"Insufficient data for conclusion.\",\"answer:\"}]",
+            "answer": "[{\"thought\":\"Ripe vegetables not mentioned.\",\"answer\":\"\"},{\"thought\":\"No ripeness information given.\",\"answer\":\"\"},{\"thought\":\"Assumption made based on visual description.\",\"answer\":\"Not specified\"},{\"thought\":\"Insufficient data for conclusion.\",\"answer:\"}]"
+          }
+        ],
+        "scores": [
+          0.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Which side of the yellow vegetable does not have a rotting vegetable?",
+        "selected_answer": "Left",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "What is the color of the rotting vegetable?",
+        "selected_answer": "",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "Does the rotting vegetable have any other color than the yellow vegetable?",
+        "selected_answer": "",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "Are all the vegetables on the plate ripe?",
+        "selected_answer": "[{\"thought\":\"Ripe vegetables not mentioned.\",\"answer\":\"\"},{\"thought\":\"No ripeness information given.\",\"answer\":\"\"},{\"thought\":\"Assumption made based on visual description.\",\"answer\":\"Not specified\"},{\"thought\":\"Insufficient data for conclusion.\",\"answer:\"}]",
+        "selected_score": 0.0
+      }
+    ],
+    "modular_prediction": "no",
+    "direct_prediction": "no",
+    "merged_prediction": "no"
+  },
+  {
+    "question_id": "3",
+    "question": "What kind of vehicle is to the right of the car?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2354268.jpg",
+    "ground_truth": "van",
+    "visual_description": "这张图片展示了一个人在一辆摩托车上，他笑着，看向前方。这辆摩托车位于一个繁忙的街道上，周围有许多其他车辆，包括一辆公交车。街道上还有一些行人，其中一个人正在拿着一个手提包。整个场景表现出一种活力和热情。",
+    "prediction": "right motorcycle",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "sub question 1：It's a motorcycle.]：[sub question 2：The vehicle is located on a busy street.]：[sub question 3：There are other vehicles and people nearby.",
+        "candidates": [
+          {
+            "thought": "Person riding a motorcycle.",
+            "answer": ""
+          },
+          {
+            "thought": "Busy street.",
+            "answer": ""
+          },
+          {
+            "thought": "Crowd of vehicles.",
+            "answer": ""
+          },
+          {
+            "thought": "Passing pedestrians.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "sub question 1：It's a motorcycle.]：[sub question 2：The vehicle is located on a busy street.]：[sub question 3：There are other vehicles and people nearby.",
+        "selected_answer": "",
+        "selected_score": 0.5
+      }
+    ],
+    "modular_prediction": "right motorcycle",
+    "direct_prediction": "a bus",
+    "merged_prediction": "right motorcycle"
+  },
+  {
+    "question_id": "4",
+    "question": "Are there any boxes on the desk that is made of wood?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2336704.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个桌子上的电脑和电话。电脑占据了大部分桌子的空间，而电话则位于电脑的左侧。桌子上还有一个麦克风，并且还有一些其他的电子设备。整个场景呈现出一个现代化的办公室。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "False",
+        "candidates": [
+          {
+            "thought": "A modern office setting.",
+            "answer": "True"
+          },
+          {
+            "thought": "Modern office.",
+            "answer": "True"
+          },
+          {
+            "thought": "Multiple electronic devices on table.",
+            "answer": "True"
+          },
+          {
+            "thought": "Computer dominates space.",
+            "answer": "True"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "False",
+        "selected_answer": "True",
+        "selected_score": 1.0
+      }
+    ],
+    "modular_prediction": "no",
+    "direct_prediction": "no",
+    "merged_prediction": "no"
+  },
+  {
+    "question_id": "5",
+    "question": "What is the color of the helmet in the top?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2414658.jpg",
+    "ground_truth": "gray",
+    "visual_description": "这张图片展示了一群人在雪地上穿过雪山。他们都穿着冰雪防护服，并且有许多人穿着帽子。他们的脚上都有滑雪板，准备开始滑雪。这些人分成两个队伍，一个队伍在前面，另一个队伍在后面。他们都在等待，准备开始滑雪。",
+    "prediction": "white",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "The color of the helmet in the top",
+        "candidates": [
+          {
+            "thought": "Hats in helmets",
+            "answer": "Color: white"
+          },
+          {
+            "thought": "Skis on feet",
+            "answer": "Color: black"
+          },
+          {
+            "thought": "Two teams",
+            "answer": "Color: blue"
+          },
+          {
+            "thought": "Snowy background",
+            "answer": "Color: white"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "It is red",
+        "candidates": [
+          {
+            "thought": "[{\"thought\":\"Red snow and ice.\",\"answer\":\"Red\"},{\"thought\":\"Snow and ice.\",\"answer\":\"White\"},{\"thought\":\"Two groups of people.\",answer:\"Two\"},{\"thought\":\"Waiting for start.\",\"answer\":\"Awaiting\"}]",
+            "answer": "[{\"thought\":\"Red snow and ice.\",\"answer\":\"Red\"},{\"thought\":\"Snow and ice.\",\"answer\":\"White\"},{\"thought\":\"Two groups of people.\",answer:\"Two\"},{\"thought\":\"Waiting for start.\",\"answer\":\"Awaiting\"}]"
+          }
+        ],
+        "scores": [
+          0.8
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "The color of the helmet in the top",
+        "candidates": [
+          {
+            "thought": "Helmets are black.",
+            "answer": ""
+          },
+          {
+            "thought": "Skis are blue.",
+            "answer": ""
+          },
+          {
+            "thought": "Snow is white.",
+            "answer": ""
+          },
+          {
+            "thought": "People wear hats.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "The color of the helmet in the top",
+        "selected_answer": "Color: white",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "It is red",
+        "selected_answer": "[{\"thought\":\"Red snow and ice.\",\"answer\":\"Red\"},{\"thought\":\"Snow and ice.\",\"answer\":\"White\"},{\"thought\":\"Two groups of people.\",answer:\"Two\"},{\"thought\":\"Waiting for start.\",\"answer\":\"Awaiting\"}]",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "The color of the helmet in the top",
+        "selected_answer": "",
+        "selected_score": 0.5
+      }
+    ],
+    "modular_prediction": "white",
+    "direct_prediction": "red",
+    "merged_prediction": "white"
+  },
+  {
+    "question_id": "6",
+    "question": "What animal are the trees behind of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2336392.jpg",
+    "ground_truth": "elephant",
+    "visual_description": "这张图片展示了两只大型黑色象龟在一个园区中相互交流。象龟们的身体呈现出圆形，它们的头部和脖子呈现出弯曲的形状。象龟们的脚掌很大，可以用来抓住东西。\n\n这个园区有一些树木，象龟们在其中间活动。园区内还有一些植物，如椰子和植物。象龟们在这个园区中相互交流，展示了它们的社交和互动。",
+    "prediction": "the park is not depicted",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Sub-question 1:",
+        "candidates": [
+          {
+            "thought": "象龟展示友好行为.",
+            "answer": "友善交流"
+          },
+          {
+            "thought": "象龟喜欢树木.",
+            "answer": "树下休息"
+          },
+          {
+            "thought": "象龟好奇周围的环境.",
+            "answer": ""
+          },
+          {
+            "thought": "象龟在探索.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Sub-question 1:",
+        "selected_answer": "友善交流",
+        "selected_score": 0.5
+      }
+    ],
+    "modular_prediction": "elephants",
+    "direct_prediction": "no tree is shown",
+    "merged_prediction": "no tree is shown"
+  },
+  {
+    "question_id": "7",
+    "question": "What animal are these, zebras or lambs?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2323225.jpg",
+    "ground_truth": "zebras",
+    "visual_description": "这张图片展示了一只成年的纹身猴子和它的小孩在一个简单的绿色环境中共同吃草。成年的纹身猴子背后有一只小纹身猴子，它们在草地上走动，享受着自然的美好。这个场景展示了母纹身猴子和它的幼崽之间的亲情和互相的关爱。",
+    "prediction": "1) zebras",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "animal name",
+        "candidates": [
+          {
+            "thought": "This is a scene of a mother and her young child.",
+            "answer": "mother/child"
+          },
+          {
+            "thought": "The environment is simple and natural.",
+            "answer": "green environment"
+          },
+          {
+            "thought": "They are eating grass together.",
+            "answer": "grass eating"
+          },
+          {
+            "thought": "There's love and care between them.",
+            "answer": "love, care"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "animal name",
+        "candidates": [
+          {
+            "thought": "It is a monkey family.",
+            "answer": ""
+          },
+          {
+            "thought": "The monkeys are in nature.",
+            "answer": ""
+          },
+          {
+            "thought": "The animals have young and old.",
+            "answer": ""
+          },
+          {
+            "thought": "The scene shows love between them.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7,
+          0.6,
+          0.9
+        ],
+        "selected_index": 3
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "animal name",
+        "selected_answer": "mother/child",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "animal name",
+        "selected_answer": "",
+        "selected_score": 0.9
+      }
+    ],
+    "modular_prediction": "1) are these, zebras",
+    "direct_prediction": "zebras",
+    "merged_prediction": "zebras"
+  },
+  {
+    "question_id": "8",
+    "question": "Does the bowl to the left of the ball look red?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2317148.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个女孩坐在地上，亲切地抚摸一只小猫。她手里拿着一瓶液体，可能是为这只小猫喂食。周围的环境包括一个碗和一个毛巾，这些物品可能是为这只小猫准备的。整个场景表现出一种温馨和关爱的氛围。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Does the bowl to the left of the ball look red?",
+        "candidates": [
+          {
+            "thought": "The bowl to the left looks white.",
+            "answer": "False"
+          }
+        ],
+        "scores": [
+          0.2
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Does the bowl to the left of the ball look red?",
+        "selected_answer": "False",
+        "selected_score": 0.2
+      }
+    ],
+    "modular_prediction": "no",
+    "direct_prediction": "no",
+    "merged_prediction": "no"
+  },
+  {
+    "question_id": "9",
+    "question": "In which part of the photo is the boy, the bottom or the top?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2391960.jpg",
+    "ground_truth": "bottom",
+    "visual_description": "这张图片展示了一个巨大的摩托车展览，其中有多种摩托车和车辆。这些摩托车和车辆分布在不同的层次上，形成了一个巨大的摩托车展览。\n\n在展览中，有一些人观看这些摩托车和车辆，他们可能是摩托车爱好者或者是展览的参观者。这些人在展览中漫步，欣赏这些各种摩托车和车辆的美丽和精美。",
+    "prediction": "boy, the bottom",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "The boy is in the lower part of the photo.：The boy is not in the upper part of the photo.] {boy position: [lower：upper",
+        "candidates": [
+          {
+            "thought": "Boy is near bottom.",
+            "answer": "Lower part."
+          },
+          {
+            "thought": "Boy is not in top.",
+            "answer": "Not upper part"
+          },
+          {
+            "thought": "Boy is on level.",
+            "answer": "Equal level"
+          },
+          {
+            "thought": "Boy is observing.",
+            "answer": "Observing"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Please note that this answer is based on visual analysis and may vary depending on the actual image.",
+        "candidates": [
+          {
+            "thought": "Multiple vehicles of various types displayed.",
+            "answer": "Many different vehicles."
+          },
+          {
+            "thought": "People walking around, some taking pictures.",
+            "answer": "Visitors and photographers."
+          },
+          {
+            "thought": "Covers multiple levels for display.",
+            "answer": "Several tiers."
+          },
+          {
+            "thought": "Beautiful and exquisite motorcycles and vehicles.",
+            "answer": "Exquisite vehicles."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7,
+          0.9,
+          0.6
+        ],
+        "selected_index": 2
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "The boy is in the lower part of the photo.：The boy is not in the upper part of the photo.] {boy position: [lower：upper",
+        "selected_answer": "Lower part.",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "Please note that this answer is based on visual analysis and may vary depending on the actual image.",
+        "selected_answer": "Several tiers.",
+        "selected_score": 0.9
+      }
+    ],
+    "modular_prediction": "boy, the bottom",
+    "direct_prediction": "boy, the bottom",
+    "merged_prediction": "boy, the bottom"
+  },
+  {
+    "question_id": "10",
+    "question": "What kind of furniture is in front of the light switch?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2335027.jpg",
+    "ground_truth": "shelf",
+    "visual_description": "这张图片展示了一个女性在床上弯过身，似乎在寻找某物。她的头部和脖子露在床上的蓝色毛巾之上。床上还有一些书籍和椰子，给整个场景一种舒适的氛围。",
+    "prediction": "bedroom furniture",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Furniture near the light switch",
+        "candidates": [
+          {
+            "thought": "Light switch nearby",
+            "answer": ""
+          },
+          {
+            "thought": "Bedside table visible",
+            "answer": ""
+          },
+          {
+            "thought": "Books scattered around",
+            "answer": ""
+          },
+          {
+            "thought": "Coco",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7,
+          0.6,
+          0.9
+        ],
+        "selected_index": 3
+      },
+      {
+        "sub_question": "Color of the blue towel",
+        "candidates": [
+          {
+            "thought": "Blue.",
+            "answer": "Towel color."
+          },
+          {
+            "thought": "Calm.",
+            "answer": "Ambience"
+          },
+          {
+            "thought": "Comfortable.",
+            "answer": "Bed linen"
+          },
+          {
+            "thought": "Neutral.",
+            "answer": "Towel"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7,
+          0.6,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Number of books on the bed",
+        "candidates": [
+          {
+            "thought": "Few books.",
+            "answer": "2"
+          },
+          {
+            "thought": "Many books.",
+            "answer": "5"
+          },
+          {
+            "thought": "A few books.",
+            "answer": "2"
+          },
+          {
+            "thought": "A lot of books.",
+            "answer": "7"
+          }
+        ],
+        "scores": [
+          0.6,
+          0.8,
+          0.4,
+          0.9
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Type of fruit",
+        "candidates": [
+          {
+            "thought": "Type of fruit is coconut.",
+            "answer": "Coconut"
+          }
+        ],
+        "scores": [
+          0.8
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Furniture near the light switch",
+        "selected_answer": "",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "Color of the blue towel",
+        "selected_answer": "Towel color.",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "Number of books on the bed",
+        "selected_answer": "2",
+        "selected_score": 0.6
+      },
+      {
+        "sub_question": "Type of fruit",
+        "selected_answer": "Coconut",
+        "selected_score": 0.8
+      }
+    ],
+    "modular_prediction": "bed",
+    "direct_prediction": "bed, books, coconut",
+    "merged_prediction": "bed, books, coconut"
+  },
+  {
+    "question_id": "11",
+    "question": "Is the person near the garbage bin wearing a coat?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2396431.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个人在一个蓝色的公交车的门口，他正在购买周一到周五的票。公交车停在一个停车槽中，并且有几个其他人在周围的地方。\n\n在这个场景中，还有一些车辆，包括一个距离公交车较近的车，以及另外两个车辆，分别在较远的地方。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Is the person wearing a coat?",
+        "candidates": [
+          {
+            "thought": "No coat.",
+            "answer": ""
+          },
+          {
+            "thought": "Wearing coat.",
+            "answer": "Yes"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5
+        ],
+        "selected_index": 1
+      },
+      {
+        "sub_question": "Is there a garbage bin nearby?",
+        "candidates": [
+          {
+            "thought": "No garbage bin near.",
+            "answer": ""
+          },
+          {
+            "thought": "Close by parking spot.",
+            "answer": ""
+          },
+          {
+            "thought": "Not visible from image.",
+            "answer": ""
+          },
+          {
+            "thought": "Can't determine.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Are there any other vehicles around?",
+        "candidates": [
+          {
+            "thought": "There are multiple vehicles nearby.",
+            "answer": ""
+          },
+          {
+            "thought": "The closest vehicle is to the bus stop.",
+            "answer": ""
+          },
+          {
+            "thought": "Additional vehicles are located at various distances.",
+            "answer": ""
+          },
+          {
+            "thought": "The scene includes several buses in the background.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Is the bus parked close to the garbage bin?",
+        "candidates": [
+          {
+            "thought": "Yes, it is.",
+            "answer": ""
+          },
+          {
+            "thought": "The bus is not parked next to the garbage bin.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Is the person wearing a coat?",
+        "selected_answer": "Yes",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "Is there a garbage bin nearby?",
+        "selected_answer": "",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "Are there any other vehicles around?",
+        "selected_answer": "",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "Is the bus parked close to the garbage bin?",
+        "selected_answer": "",
+        "selected_score": 0.5
+      }
+    ],
+    "modular_prediction": "no",
+    "direct_prediction": "no",
+    "merged_prediction": "no"
+  },
+  {
+    "question_id": "12",
+    "question": "Are there any beach umbrellas or balls in this scene?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2400609.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个冬季滑雪场，许多人在滑雪道上穿梭。人们在雪地上穿梭，有些人在滑雪道上，而其他人则在周围的雪地上活动。滑雪道上有许多人，他们在雪地上穿梭，享受冬季的快乐。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Are there any beach umbrellas or balls in this scene?",
+        "candidates": [
+          {
+            "thought": "No beach umbrellas or balls.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Are there any beach umbrellas or balls in this scene?",
+        "selected_answer": "",
+        "selected_score": 0.5
+      }
+    ],
+    "modular_prediction": "no",
+    "direct_prediction": "no",
+    "merged_prediction": "no"
+  },
+  {
+    "question_id": "13",
+    "question": "Are there any trucks in front of the white building?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2319140.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一辆铁路蒸汽车在一个小站附近停靠。车辆的前部和车厢都有烟雾，表明车辆正在发烟。站点周围有一些小建筑，如一个小屋和另一个小屋。此外，还有一些植物，如一棵树和一些草。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Is there a truck in front of the white building?",
+        "candidates": [
+          {
+            "thought": "No truck.",
+            "answer": ""
+          },
+          {
+            "thought": "Truck behind white building.",
+            "answer": ""
+          },
+          {
+            "thought": "Truck at back.",
+            "answer": ""
+          },
+          {
+            "thought": "Truck visible.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Does the white building have any other structures beside the small house?",
+        "candidates": [
+          {
+            "thought": "Yes, it has another structure.",
+            "answer": ""
+          },
+          {
+            "thought": "The tree is in front of the station.",
+            "answer": ""
+          },
+          {
+            "thought": "The grass around the trees adds more natural beauty.",
+            "answer": ""
+          },
+          {
+            "thought": "The smoke suggests that there might be an ongoing activity nearby.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Is there a station nearby with a passenger waiting area?",
+        "candidates": [
+          {
+            "thought": "Yes, a passenger is waiting.",
+            "answer": ""
+          },
+          {
+            "thought": "No specific passenger.",
+            "answer": ""
+          },
+          {
+            "thought": "Yes, small buildings nearby.",
+            "answer": ""
+          },
+          {
+            "thought": "Yes, plants around.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Can we see any smoke coming from the vehicle's engine?",
+        "candidates": [
+          {
+            "thought": "Yes, smoke is visible.",
+            "answer": "Yes"
+          },
+          {
+            "thought": "Smoke is coming from the engine.",
+            "answer": "Yes"
+          },
+          {
+            "thought": "Vehicle has an open cab.",
+            "answer": "No"
+          },
+          {
+            "thought": "Station is located near the vehicle.",
+            "answer": "Yes"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          0.5,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Is there a truck in front of the white building?",
+        "selected_answer": "",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "Does the white building have any other structures beside the small house?",
+        "selected_answer": "",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "Is there a station nearby with a passenger waiting area?",
+        "selected_answer": "",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "Can we see any smoke coming from the vehicle's engine?",
+        "selected_answer": "Yes",
+        "selected_score": 1.0
+      }
+    ],
+    "modular_prediction": "no",
+    "direct_prediction": "no",
+    "merged_prediction": "no"
+  },
+  {
+    "question_id": "14",
+    "question": "Do you see either fences or buses there?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2321399.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片是一个人在街头停着，他正在看向远方。他穿着一个带有斑点的帽子，并且还有一个带有斑点的帽子在他的头上。他的头部和脸部都被这些帽子所覆盖。\n\n在这个街头，还有一辆小车在远处，并且还有一个红色的灯光。这个街头看起来很寂静，没有其他人或活动。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Is there a fence in this street?",
+        "candidates": [
+          {
+            "thought": "[]",
+            "answer": "[]"
+          }
+        ],
+        "scores": [
+          0.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Are there any buses in this street?",
+        "candidates": [
+          {
+            "thought": "No buses.",
+            "answer": ""
+          },
+          {
+            "thought": "No activity.",
+            "answer": ""
+          },
+          {
+            "thought": "Crowded.",
+            "answer": ""
+          },
+          {
+            "thought": "Empty.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Is there a fence in this street?",
+        "selected_answer": "[]",
+        "selected_score": 0.0
+      },
+      {
+        "sub_question": "Are there any buses in this street?",
+        "selected_answer": "",
+        "selected_score": 0.5
+      }
+    ],
+    "modular_prediction": "no",
+    "direct_prediction": "no",
+    "merged_prediction": "no"
+  },
+  {
+    "question_id": "15",
+    "question": "Are the controllers on the left side or on the right?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2360758.jpg",
+    "ground_truth": "left",
+    "visual_description": "这张图片展示了两个男人在一个家庭室内的客厅中玩游戏。他们都手持游戏控制器，享受着一个游戏。室内还有一张沙发，两个贴图和一个桌子。\n\n在室内外，还有一些其他的物品。在客厅外，有一辆车和一把植物。在客厅内，还有一把植物和一个飞机模型。",
+    "prediction": "no",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Controllers on the left",
+        "candidates": [
+          {
+            "thought": "Men playing video games.",
+            "answer": "Playing games."
+          },
+          {
+            "thought": "Two men in living room.",
+            "answer": "Two men"
+          },
+          {
+            "thought": "Controller on left.",
+            "answer": "Left controller"
+          },
+          {
+            "thought": "In family room.",
+            "answer": "Family room"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Controllers on the right",
+        "candidates": [
+          {
+            "thought": "Two men playing games.",
+            "answer": "Playing games"
+          },
+          {
+            "thought": "Men in room.",
+            "answer": "Men"
+          },
+          {
+            "thought": "Controller on left.",
+            "answer": "Left controller"
+          },
+          {
+            "thought": "Controller on right.",
+            "answer": "Right controller"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Vehicle outside",
+        "candidates": [
+          {
+            "thought": "The vehicle is a car.",
+            "answer": ""
+          },
+          {
+            "thought": "The plant is outside.",
+            "answer": ""
+          },
+          {
+            "thought": "There is no mention of a plane in the description.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Plant inside",
+        "candidates": [
+          {
+            "thought": "Plant is on table",
+            "answer": ""
+          },
+          {
+            "thought": "Table has plants",
+            "answer": ""
+          },
+          {
+            "thought": "Plants are in room",
+            "answer": ""
+          },
+          {
+            "thought": "Room has table",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Controllers on the left",
+        "selected_answer": "Playing games.",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "Controllers on the right",
+        "selected_answer": "Playing games",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "Vehicle outside",
+        "selected_answer": "",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "Plant inside",
+        "selected_answer": "",
+        "selected_score": 0.5
+      }
+    ],
+    "modular_prediction": "no",
+    "direct_prediction": "no",
+    "merged_prediction": "no"
+  },
+  {
+    "question_id": "16",
+    "question": "Are there both skateboarders and skateboards in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2355874.jpg",
+    "ground_truth": "yes",
+    "visual_description": "这张图片展示了一个年轻人在一个巨大的建筑物前面滑板。他正在滑板，似乎在一个巨大的圆形隧道中。这个隧道的墙壁是由玻璃构成的，给人一种宽敞的感觉。\n\n在这个场景中，还有其他人可以看到，他们在建筑物周围漫步。整个场景充满了活力和热情，展示了这个年轻人在这个巨大建筑物中的勇敢和自信。",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Yes",
+        "candidates": [
+          {
+            "thought": "Young person on skateboard in large building's circular tunnel.",
+            "answer": ""
+          },
+          {
+            "thought": "Others around, walking around.",
+            "answer": ""
+          },
+          {
+            "thought": "A great atmosphere of enthusiasm and bravery.",
+            "answer": ""
+          },
+          {
+            "thought": "The glass wall creates an open feeling.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7,
+          0.9,
+          0.6
+        ],
+        "selected_index": 2
+      },
+      {
+        "sub_question": "Skateboarders",
+        "candidates": [
+          {
+            "thought": "Young man on skateboard in large building.",
+            "answer": ""
+          },
+          {
+            "thought": "Large circular tunnel.",
+            "answer": ""
+          },
+          {
+            "thought": "Friendly surroundings.",
+            "answer": ""
+          },
+          {
+            "thought": "Brave and confident.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7,
+          0.6,
+          0.9
+        ],
+        "selected_index": 3
+      },
+      {
+        "sub_question": "Skateboarding",
+        "candidates": [
+          {
+            "thought": "Young man skates on glass tunnel.",
+            "answer": "Skating."
+          },
+          {
+            "thought": "Others around.",
+            "answer": "People."
+          },
+          {
+            "thought": "Big building.",
+            "answer": "Building."
+          },
+          {
+            "thought": "Positive energy.",
+            "answer": "Energy."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7,
+          0.6,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "Young man",
+        "candidates": [
+          {
+            "thought": "The young man is brave and confident.",
+            "answer": "Brave & Confident"
+          },
+          {
+            "thought": "He's on a skateboard.",
+            "answer": "Skateboarder"
+          },
+          {
+            "thought": "There's an open space in the background.",
+            "answer": "Open Space"
+          },
+          {
+            "thought": "The building has glass walls.",
+            "answer": "Glass Walls"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7,
+          0.6,
+          0.9
+        ],
+        "selected_index": 3
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Yes",
+        "selected_answer": "",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "Skateboarders",
+        "selected_answer": "",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "Skateboarding",
+        "selected_answer": "Skating.",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "Young man",
+        "selected_answer": "Glass Walls",
+        "selected_score": 0.9
+      }
+    ],
+    "modular_prediction": "yes",
+    "direct_prediction": "yes",
+    "merged_prediction": "yes"
+  },
+  {
+    "question_id": "17",
+    "question": "What type of animal are the mountains behind of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2405227.jpg",
+    "ground_truth": "horse",
+    "visual_description": "这张图片展示了一个白色马在一个简单的场地上。马儿有一个驼骨舒适的鞍子，并且还有一个带有带子的鞍子。马儿的颈部和胸部都有带有带子的鞍子。马儿看起来很舒适，但它的颈部和胸部看起来有些紧张。",
+    "prediction": "a white horse",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "What type of animal is the white horse?：The white horse is a horse.]：[Is the horse on a simple field?：Yes.：No.] [Does the horse have a comfortable saddle with straps?：Yes.：No.] [Does the horse have a saddle with straps around its neck and chest?：Yes.：No.",
+        "candidates": [
+          {
+            "thought": "White horse.",
+            "answer": ""
+          },
+          {
+            "thought": "Simple field.",
+            "answer": ""
+          },
+          {
+            "thought": "Comfortable saddle.",
+            "answer": ""
+          },
+          {
+            "thought": "Saddles with straps.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7,
+          0.9,
+          0.6
+        ],
+        "selected_index": 2
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "What type of animal is the white horse?：The white horse is a horse.]：[Is the horse on a simple field?：Yes.：No.] [Does the horse have a comfortable saddle with straps?：Yes.：No.] [Does the horse have a saddle with straps around its neck and chest?：Yes.：No.",
+        "selected_answer": "",
+        "selected_score": 0.9
+      }
+    ],
+    "modular_prediction": "a horse",
+    "direct_prediction": "a white horse",
+    "merged_prediction": "a white horse"
+  },
+  {
+    "question_id": "18",
+    "question": "What animal is in front of the car?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2380329.jpg",
+    "ground_truth": "dog",
+    "visual_description": "这张图片展示了一只黄色的狗在草地上吞口水。狗的嘴巴和舌头都在吞口水，显得非常满足。狗的身体占据了大部分图片，它的身体呈现出一种宽广的姿态。\n\n在这个场景中，还有几辆车，分布在背景中。其中一辆车位于狗的左侧，另外三辆车分别在狗的右侧和背景中。这些车辆的位置和大小都与狗的身体大小相匹配，给人一种和谐的感觉。",
+    "prediction": "a yellow dog",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "The animal in front of the car]：[It's a dog]：[Yes]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：",
+        "candidates": [
+          {
+            "thought": "Dog is satisfied.",
+            "answer": "happy"
+          },
+          {
+            "thought": "Dog is eating.",
+            "answer": "eating"
+          },
+          {
+            "thought": "Dog has water.",
+            "answer": "water"
+          },
+          {
+            "thought": "Dog's body is wide.",
+            "answer": "wide"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7,
+          0.9,
+          0.6
+        ],
+        "selected_index": 2
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "The animal in front of the car]：[It's a dog]：[Yes]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：[No]：",
+        "selected_answer": "water",
+        "selected_score": 0.9
+      }
+    ],
+    "modular_prediction": "a yellow dog",
+    "direct_prediction": "dog",
+    "merged_prediction": "a yellow dog"
+  },
+  {
+    "question_id": "19",
+    "question": "Are there both men and children in this photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2410549.jpg",
+    "ground_truth": "no",
+    "visual_description": "这张图片展示了一个小孩子在一个长椭圆形的椰子椰子上卧。她拿着一个包装盒子，看起来很开心。她的手掌在椰子上，让她看起来像在抱枝头。她还拿着一个卡片，可能是一个纪念卡片。整个场景充满了快乐和温馨的氛围。",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Yes",
+        "candidates": [
+          {
+            "thought": "Young girl on long cylindrical coconut.",
+            "answer": ""
+          },
+          {
+            "thought": "Smiling and holding a box.",
+            "answer": ""
+          },
+          {
+            "thought": "Holding a cardboard note.",
+            "answer": ""
+          },
+          {
+            "thought": "Happy atmosphere.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7,
+          0.6,
+          0.9
+        ],
+        "selected_index": 3
+      },
+      {
+        "sub_question": "No",
+        "candidates": [
+          {
+            "thought": "Child holding box on coconut, smiling.",
+            "answer": "Happy child"
+          },
+          {
+            "thought": "Box contains something special.",
+            "answer": "Memorable gift"
+          },
+          {
+            "thought": "Coconut holds child's arms.",
+            "answer": "Cradle-like position"
+          },
+          {
+            "thought": "Card in hand, likely for a note.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7,
+          0.6,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Yes",
+        "selected_answer": "",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "No",
+        "selected_answer": "Happy child",
+        "selected_score": 0.8
+      }
+    ],
+    "modular_prediction": "no",
+    "direct_prediction": "no",
+    "merged_prediction": "no"
+  }
+]

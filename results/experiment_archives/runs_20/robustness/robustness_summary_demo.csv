@@ -1,0 +1,16 @@
+noise_level,method,exact_acc,soft_acc
+0.0,Standard,20.0,40.0
+0.0,CoT,0.0,60.0
+0.0,ToT,20.0,40.0
+0.0,GoT,20.0,40.0
+0.0,Modular(4-Module),20.0,40.0
+0.05,Standard,20.0,40.0
+0.05,CoT,0.0,60.0
+0.05,ToT,20.0,40.0
+0.05,GoT,20.0,20.0
+0.05,Modular(4-Module),20.0,20.0
+0.1,Standard,20.0,60.0
+0.1,CoT,0.0,60.0
+0.1,ToT,20.0,40.0
+0.1,GoT,20.0,40.0
+0.1,Modular(4-Module),20.0,40.0

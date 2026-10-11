@@ -1,0 +1,9 @@
+question_id,question,prediction,ground_truth,logic_coherence_score_1to5,evidence_relevance_score_1to5,redundancy_score_1to5,overall_interpretability_score_1to5,annotator_notes
+2,Is the yellow vegetable to the left or to the right of the vegetable that is not rotten?,left,right,,,,,
+3,What kind of vehicle is to the right of the car?,moto bike,van,,,,,
+4,Are there any boxes on the desk that is made of wood?,yes,no,,,,,
+5,What is the color of the helmet in the top?,red,gray,,,,,
+6,What animal are the trees behind of?,elephants,elephant,,,,,
+9,"In which part of the photo is the boy, the bottom or the top?",top,bottom,,,,,
+10,What kind of furniture is in front of the light switch?,bedside table,shelf,,,,,
+11,Is the person near the garbage bin wearing a coat?,no,yes,,,,,

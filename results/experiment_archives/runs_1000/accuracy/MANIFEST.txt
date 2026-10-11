@@ -1,0 +1,11 @@
+Existing files copied from results:
+
+Expected/missing (to be generated):
+- baseline_comparison_complex1000.csv
+- baseline_comparison_complex1000.md
+- baseline_comparison_complex1000.png
+- standard_results_complex1000.json
+- cot_results_complex1000.json
+- tot_results_complex1000.json
+- got_results_complex1000.json
+- modular_results_complex1000.json

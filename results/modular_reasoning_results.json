@@ -1,0 +1,472 @@
+[
+  {
+    "question_id": "0",
+    "question": "What place is shown?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2317441.jpg",
+    "ground_truth": "road",
+    "visual_description": "The image captures a lively scene on a street, where a man is riding a skateboard down the road. He is wearing a helmet for safety while performing his skateboarding stunt. There are several other people in the scene, some of them walking or standing on the sidewalk.\n\nIn addition to the skateboarder, there are multiple bicycles scattered throughout the scene, with some parked and others being ridden by people. A few cars are also present in the image, parked or driving along the street. The overall atmosphere of the scene is energetic and active, with people engaging in various outdoor activities.",
+    "prediction": "urban street",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "street",
+        "candidates": [
+          {
+            "thought": "The street refers to the main pathway through which this scene unfolds.",
+            "answer": "Street"
+          },
+          {
+            "thought": "This scene depicts a bustling urban area with numerous pedestrians, vehicles, and outdoor activities.",
+            "answer": "Urban Street"
+          },
+          {
+            "thought": "Skateboarders, cyclists, and motorists coexist on this street, demonstrating the diverse range of activities taking place in the urban environment.",
+            "answer": "Urban Street"
+          }
+        ],
+        "scores": [
+          0.9,
+          0.85,
+          0.7
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "skateboard",
+        "candidates": [
+          {
+            "thought": "Skateboard is the object captured in the image.",
+            "answer": "Skateboard"
+          },
+          {
+            "thought": "Skateboard is a tool used for skateboarders to perform stunts and tricks.",
+            "answer": "Skateboard"
+          },
+          {
+            "thought": "Skateboard is the device that allows someone to ride a skateboard.",
+            "answer": "Skateboard"
+          }
+        ],
+        "scores": [
+          0.9,
+          0.85,
+          0.7
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "bicycles",
+        "candidates": [
+          {
+            "thought": "Bicycles are commonly associated with transportation and recreational activities.",
+            "answer": "Bicycles are frequently used in this scene as vehicles and for exercise."
+          }
+        ],
+        "scores": [
+          0.8
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "street",
+        "selected_answer": "Street",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "skateboard",
+        "selected_answer": "Skateboard",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "bicycles",
+        "selected_answer": "Bicycles are frequently used in this scene as vehicles and for exercise.",
+        "selected_score": 0.8
+      }
+    ]
+  },
+  {
+    "question_id": "1",
+    "question": "What type of clothing is gray?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2390824.jpg",
+    "ground_truth": "pants",
+    "visual_description": "The image captures a baseball game in progress, with a baseball player in the center of the scene. The player is in the process of throwing a baseball, which is visible in the air near the player's arm. The player is wearing a baseball uniform, which includes a cap and a jersey.\n\nThere are several other people in the scene, likely teammates or opponents, positioned around the field. Some of them are closer to the foreground, while others are further in the background. The presence of multiple people suggests that this is a lively and engaging baseball game.",
+    "prediction": "baseball uniform",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "gray clothing",
+        "candidates": [
+          {
+            "thought": "The color gray can be seen on the baseball player's uniform.",
+            "answer": "Yes, the baseball player is wearing a gray uniform."
+          },
+          {
+            "thought": "Gray is often used as a neutral color in sports uniforms to create contrast against the white of the ball and the black lines on the shirt.",
+            "answer": "Yes, gray is a common choice for the baseball uniform colors due to its ability to stand out against the ball and the background."
+          },
+          {
+            "thought": "The gray color can also represent seriousness or professionalism, depending on the team's style and values.",
+            "answer": "Yes, the use of gray can reflect the team's identity and values by using a classic color that represents reliability and trustworthiness."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7,
+          0.9
+        ],
+        "selected_index": 2
+      },
+      {
+        "sub_question": "baseball uniform",
+        "candidates": [
+          {
+            "thought": "The baseball uniform includes clothing elements like a hat and shirt.",
+            "answer": "A baseball uniform typically consists of a hat (such as a cap) and a shirt."
+          },
+          {
+            "thought": "Baseballs players often wear baseball caps as part of their uniform.",
+            "answer": "Yes, hats are a common feature of a baseball uniform."
+          },
+          {
+            "thought": "Jerseys are another element of the uniform, representing the team's colors and logo.",
+            "answer": "A jersey is an important component of a baseball uniform, displaying the team's logo."
+          }
+        ],
+        "scores": [
+          0.6,
+          0.75,
+          0.8
+        ],
+        "selected_index": 2
+      },
+      {
+        "sub_question": "gray shirt",
+        "candidates": [
+          {
+            "thought": "The gray shirt is likely a member of the opposing team.",
+            "answer": "True."
+          },
+          {
+            "thought": "It is possible that one of the players on the field has a gray shirt as well.",
+            "answer": "True."
+          },
+          {
+            "thought": "Gray shirts can be worn by different players depending on their position and style of play.",
+            "answer": "True."
+          }
+        ],
+        "scores": [
+          0.9,
+          0.8,
+          0.7
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "gray clothing",
+        "selected_answer": "Yes, the use of gray can reflect the team's identity and values by using a classic color that represents reliability and trustworthiness.",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "baseball uniform",
+        "selected_answer": "A jersey is an important component of a baseball uniform, displaying the team's logo.",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "gray shirt",
+        "selected_answer": "True.",
+        "selected_score": 0.9
+      }
+    ]
+  },
+  {
+    "question_id": "2",
+    "question": "What is the man on?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2374543.jpg",
+    "ground_truth": "bench",
+    "visual_description": "The image features a man sitting on a bench in a sandy area, possibly a beach. He is wearing a hat and appears to be enjoying his time outdoors. The bench is located near the center of the scene, with the man sitting on it comfortably. The sandy area extends to the right side of the image, creating a relaxing atmosphere for the man to unwind.",
+    "prediction": "man sits on a bench",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "main_q",
+        "candidates": [
+          {
+            "thought": "The main question is not clear. Please provide more context or information.",
+            "answer": "I am unable to generate a response without a clear question."
+          }
+        ],
+        "scores": [
+          0.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "decomposed_subq1",
+        "candidates": [
+          {
+            "thought": "The man is sitting on a bench at a sandy beach.",
+            "answer": "He is enjoying his time outdoors."
+          },
+          {
+            "thought": "The man is wearing a hat.",
+            "answer": "It adds to the relaxed atmosphere."
+          },
+          {
+            "thought": "The bench is located near the center of the scene.",
+            "answer": "It makes the scene feel more balanced and cohesive."
+          }
+        ],
+        "scores": [
+          0.9,
+          0.85,
+          0.7
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "decomposed_subq2",
+        "candidates": [
+          {
+            "thought": "The subject is sitting on a bench in a sandy area.",
+            "answer": "He is sitting on a bench in a sandy area."
+          },
+          {
+            "thought": "The man is likely enjoying his time outdoors.",
+            "answer": "He looks relaxed and seems to enjoy the surroundings."
+          },
+          {
+            "thought": "The bench is located near the center of the scene.",
+            "answer": "It's in the middle of the frame."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7,
+          0.9
+        ],
+        "selected_index": 2
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "main_q",
+        "selected_answer": "I am unable to generate a response without a clear question.",
+        "selected_score": 0.0
+      },
+      {
+        "sub_question": "decomposed_subq1",
+        "selected_answer": "He is enjoying his time outdoors.",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "decomposed_subq2",
+        "selected_answer": "It's in the middle of the frame.",
+        "selected_score": 0.9
+      }
+    ]
+  },
+  {
+    "question_id": "3",
+    "question": "What type of place is it?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/1498.jpg",
+    "ground_truth": "road",
+    "visual_description": "The image depicts a city street with a blue car parked on the side of the road. There are several people walking along the sidewalk, with some of them carrying backpacks. A man in an orange vest is crossing the street, while others are walking in the opposite direction.\n\nIn addition to the pedestrians, there are a few traffic lights visible in the scene, ensuring the safe flow of traffic. A fire hydrant can also be seen on the sidewalk, providing a sense of the urban environment.",
+    "prediction": "city street",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "urban",
+        "candidates": [
+          {
+            "thought": "The image portrays a bustling city street with multiple individuals and elements such as vehicles, pedestrian walkways, and landmarks.",
+            "answer": "Urban"
+          },
+          {
+            "thought": "There are various elements present that indicate the presence of a bustling urban area, including a street with cars, pedestrians, and traffic signals.",
+            "answer": "Urban"
+          },
+          {
+            "thought": "The image shows a city street with a mix of people and vehicles, indicating it is an urban setting.",
+            "answer": "Urban"
+          }
+        ],
+        "scores": [
+          0.9,
+          0.8,
+          0.7
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "city",
+        "candidates": [
+          {
+            "thought": "This image describes a typical city street.",
+            "answer": "True"
+          },
+          {
+            "thought": "The presence of a fire hydrant suggests that this is an urban area.",
+            "answer": "True"
+          },
+          {
+            "thought": "The color blue is associated with cities and transportation.",
+            "answer": "True"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "public space",
+        "candidates": [
+          {
+            "thought": "The term 'public space' refers to areas that are open and accessible to all members of society, free from discrimination or restriction.",
+            "answer": "This image depicts a public space as it includes various elements such as a blue car parked on the side of the road, several people walking along the sidewalk, a man in an orange vest crossing the street, and a fire hydrant on the sidewalk."
+          },
+          {
+            "thought": "A city street is considered a public space because it's designed for public use by the general population.",
+            "answer": "This image depicts a city street where the blue car, people walking, and a man in an orange vest cross the street demonstrate that this area is meant for public use."
+          },
+          {
+            "thought": "Public spaces are often found in places like parks, streets, sidewalks, and other open areas.",
+            "answer": "This image depicts a public space as it showcases various types of public spaces including a city street, a fire hydrant, and pedestrians walking on the sidewalk."
+          }
+        ],
+        "scores": [
+          0.9,
+          0.8,
+          0.7
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "urban",
+        "selected_answer": "Urban",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "city",
+        "selected_answer": "True",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "public space",
+        "selected_answer": "This image depicts a public space as it includes various elements such as a blue car parked on the side of the road, several people walking along the sidewalk, a man in an orange vest crossing the street, and a fire hydrant on the sidewalk.",
+        "selected_score": 0.9
+      }
+    ]
+  },
+  {
+    "question_id": "4",
+    "question": "Are there both vegetables and peppers in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2363859.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a delicious pizza with various toppings, including peppers and onions. The pizza is placed on a dining table, and it appears to be a homemade pizza. The pizza is cut into slices, making it easy to serve and enjoy. The table occupies most of the scene, with the pizza being the main focus.",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "vegetables",
+        "candidates": [
+          {
+            "thought": "The presence of peppers and onions suggests that this pizza was made with fresh vegetables.",
+            "answer": "Yes, peppers and onions indicate that this pizza was likely made with fresh vegetables."
+          },
+          {
+            "thought": "The fact that the pizza is being served as a cut piece suggests that it is meant to be enjoyed by more than one person.",
+            "answer": "Yes, the serving method indicates that this pizza is intended for sharing among multiple people."
+          },
+          {
+            "thought": "The use of natural ingredients such as pepper and onion may also imply that this pizza was prepared in an authentic or traditional manner, rather than using processed or artificial ingredients.",
+            "answer": "Yes, the inclusion of natural ingredients like peppers and onions suggests that this pizza was prepared with local, seasonal, and organic ingredients."
+          }
+        ],
+        "scores": [
+          0.9,
+          0.85,
+          0.75
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "tomatoes",
+        "candidates": [
+          {
+            "thought": "The image suggests that the pizza has tomato-based toppings.",
+            "answer": "Yes, tomatoes are commonly used in pizza as a topping."
+          },
+          {
+            "thought": "Tomatoes can add color, flavor, and texture to the pizza.",
+            "answer": "Tomatoes also enhance the overall taste and texture of the pizza."
+          },
+          {
+            "thought": "Tomatoes are a staple ingredient in many types of pizzas around the world.",
+            "answer": "Yes, tomatoes are often included in different types of pizzas, such as Chicago-style or Margherita-style."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.6,
+          0.7
+        ],
+        "selected_index": 2
+      },
+      {
+        "sub_question": "mushrooms",
+        "candidates": [
+          {
+            "thought": "Mushrooms are often used as a topping for pizzas.",
+            "answer": "Yes, mushrooms can be a good choice for a homemade pizza."
+          },
+          {
+            "thought": "Mushrooms add flavor and texture to the pizza.",
+            "answer": "Absolutely, mushrooms can enhance the taste and texture of the pizza."
+          },
+          {
+            "thought": "Mushrooms are also healthy and nutritious.",
+            "answer": "Indeed, mushrooms are rich in vitamins and minerals that are beneficial for health."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.9,
+          0.7
+        ],
+        "selected_index": 1
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "vegetables",
+        "selected_answer": "Yes, peppers and onions indicate that this pizza was likely made with fresh vegetables.",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "tomatoes",
+        "selected_answer": "Yes, tomatoes are often included in different types of pizzas, such as Chicago-style or Margherita-style.",
+        "selected_score": 0.7
+      },
+      {
+        "sub_question": "mushrooms",
+        "selected_answer": "Absolutely, mushrooms can enhance the taste and texture of the pizza.",
+        "selected_score": 0.9
+      }
+    ]
+  }
+]

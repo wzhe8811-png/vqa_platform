@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>注册 · Vision QA</title>
+  <link rel="stylesheet" href="/static/css/auth.css" />
+</head>
+<body>
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <h1>创建账号</h1>
+      <p class="sub">注册后即可保存历史问答记录</p>
+      <div id="err" class="err" hidden></div>
+      <label>用户名</label>
+      <input id="username" type="text" placeholder="3-32 位，支持中文" autocomplete="username" />
+      <label>邮箱</label>
+      <input id="email" type="email" placeholder="name@example.com" autocomplete="email" />
+      <label>密码</label>
+      <input id="password" type="password" placeholder="至少 6 位" autocomplete="new-password" />
+      <label>确认密码</label>
+      <input id="password2" type="password" placeholder="再次输入密码" autocomplete="new-password" />
+      <button id="submitBtn" class="primary">注册</button>
+      <p class="foot">已有账号？<a href="/login">登录</a></p>
+    </div>
+  </div>
+  <script>
+    const errEl = document.getElementById("err");
+    const submitBtn = document.getElementById("submitBtn");
+
+    function showErr(msg) {
+      errEl.textContent = msg;
+      errEl.hidden = !msg;
+    }
+
+    async function register() {
+      showErr("");
+      const password = document.getElementById("password").value;
+      const password2 = document.getElementById("password2").value;
+      if (password !== password2) {
+        showErr("两次密码不一致");
+        return;
+      }
+      submitBtn.disabled = true;
+      submitBtn.textContent = "注册中…";
+      try {
+        const res = await fetch("/api/auth/register", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            username: document.getElementById("username").value.trim(),
+            email: document.getElementById("email").value.trim(),
+            password,
+          }),
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || "注册失败");
+        window.location.href = data.redirect_url || "/chat";
+      } catch (e) {
+        showErr(e.message);
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "注册";
+      }
+    }
+
+    submitBtn.onclick = register;
+  </script>
+</body>
+</html>

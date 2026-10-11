@@ -1,0 +1,406 @@
+[
+  {
+    "question_id": "0",
+    "question": "What place is shown?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness/gaussian_0.05/images/00000.jpg",
+    "ground_truth": "road",
+    "visual_description": "The image captures a lively scene on a street, where a man is riding a skateboard down the road. He is wearing a helmet for safety while enjoying his ride. There are several other people in the scene, some of them standing or walking along the street.\n\nIn addition to the skateboarder, there are multiple bicycles scattered throughout the scene, indicating that this is a popular area for various modes of transportation. The presence of multiple people and bicycles suggests that this street is a bustling and active location.",
+    "prediction": "street scene",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "[[\"Street\"], [\"Skateboarder's Ride\"], [\"Bicycles\"]",
+        "candidates": [
+          {
+            "thought": "{\n    \"thoughts\": [\n        \"The image features a skateboarder riding down a busy street.\",\n        \"There are also bicycles present, suggesting that it's a common area for transportation.\",\n        \"Multiple people can be seen walking or standing around the scene.\"\n    ],\n    \"answers\": [\n        {\n            \"thought\": \"The image depicts a vibrant street scene with a skateboarder and multiple bicycles.\",\n            \"answer\": \"A Street Scene with Skater and Bicycles\"\n        },\n        {\n            \"thought\": \"This picture shows a busy street where many people are moving around.\",\n            \"answer\": \"Busy Street with People Moving Around\"\n        },\n        {\n            \"thought\": \"The scene includes a skateboarder and multiple bicycles on the street.\",\n            \"answer\": \"A Street with Skater and Bicycle Transportation\"\n        }\n    ]\n}",
+            "answer": "{\n    \"thoughts\": [\n        \"The image features a skateboarder riding down a busy street.\",\n        \"There are also bicycles present, suggesting that it's a common area for transportation.\",\n        \"Multiple people can be seen walking or standing around the scene.\"\n    ],\n    \"answers\": [\n        {\n            \"thought\": \"The image depicts a vibrant street scene with a skateboarder and multiple bicycles.\",\n            \"answer\": \"A Street Scene with Skater and Bicycles\"\n        },\n        {\n            \"thought\": \"This picture shows a busy street where many people are moving around.\",\n            \"answer\": \"Busy Street with People Moving Around\"\n        },\n        {\n            \"thought\": \"The scene includes a skateboarder and multiple bicycles on the street.\",\n            \"answer\": \"A Street with Skater and Bicycle Transportation\"\n        }\n    ]\n}"
+          }
+        ],
+        "scores": [
+          0.8
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "[[\"Street\"], [\"Skateboarder's Ride\"], [\"Bicycles\"]",
+        "selected_answer": "{\n    \"thoughts\": [\n        \"The image features a skateboarder riding down a busy street.\",\n        \"There are also bicycles present, suggesting that it's a common area for transportation.\",\n        \"Multiple people can be seen walking or standing around the scene.\"\n    ],\n    \"answers\": [\n        {\n            \"thought\": \"The image depicts a vibrant street scene with a skateboarder and multiple bicycles.\",\n            \"answer\": \"A Street Scene with Skater and Bicycles\"\n        },\n        {\n            \"thought\": \"This picture shows a busy street where many people are moving around.\",\n            \"answer\": \"Busy Street with People Moving Around\"\n        },\n        {\n            \"thought\": \"The scene includes a skateboarder and multiple bicycles on the street.\",\n            \"answer\": \"A Street with Skater and Bicycle Transportation\"\n        }\n    ]\n}",
+        "selected_score": 0.8
+      }
+    ]
+  },
+  {
+    "question_id": "1",
+    "question": "What type of clothing is gray?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness/gaussian_0.05/images/00001.jpg",
+    "ground_truth": "pants",
+    "visual_description": "The image captures a baseball game in progress, with a baseball player in the center of the scene. The player is in the process of throwing a baseball, which is visible in the air near the player's arm. The player is wearing a baseball glove, ready to catch the ball.\n\nThere are several other people in the scene, likely teammates or opponents, positioned around the field. Some of them are closer to the foreground, while others are further in the background. The scene is filled with the excitement and anticipation of a successful play.",
+    "prediction": "baseball uniform",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "gray clothing",
+        "candidates": [
+          {
+            "thought": "The gray clothing can be seen on various elements of the scene.",
+            "answer": "The gray clothing can be identified as being worn by players, coaches, or fans."
+          },
+          {
+            "thought": "Gray clothing is often associated with team colors and logos for teams playing baseball.",
+            "answer": "The gray clothing may also indicate that the players or team is representing a specific team or organization."
+          },
+          {
+            "thought": "Gray clothing can represent a casual or non-traditional style, depending on the context of the game or the attire of the players.",
+            "answer": "Gray clothing could represent different styles such as streetwear, casual wear, or athletic wear."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.65,
+          0.7
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "baseball glove",
+        "candidates": [
+          {
+            "thought": "Baseball gloves are typically worn by players as protective gear.",
+            "answer": "A baseball glove is commonly associated with the sport of baseball."
+          },
+          {
+            "thought": "Baseballs can be thrown and caught using various types of gloves.",
+            "answer": "Different styles of baseball gloves are designed for different purposes such as catching balls, blocking pitches, and protecting hands during games."
+          },
+          {
+            "thought": "Gloves also help to maintain uniformity between players on the same team.",
+            "answer": "In addition to their practical use, baseball gloves contribute to the overall look and feel of the game."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.75,
+          0.6
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "teammates or opponents",
+        "candidates": [
+          {
+            "thought": "This visual description suggests that there are teammates or opponents playing a baseball game.",
+            "answer": "Teammates or Opponents"
+          },
+          {
+            "thought": "The fact that the image is capturing an ongoing event implies that it involves two teams competing against each other.",
+            "answer": "Opponents"
+          },
+          {
+            "thought": "The presence of a baseball glove on the player indicates they are preparing to throw the ball, which usually happens before or during the game.",
+            "answer": "Teammates"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "gray clothing",
+        "selected_answer": "The gray clothing can be identified as being worn by players, coaches, or fans.",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "baseball glove",
+        "selected_answer": "A baseball glove is commonly associated with the sport of baseball.",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "teammates or opponents",
+        "selected_answer": "Teammates or Opponents",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "2",
+    "question": "What is the man on?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness/gaussian_0.05/images/00002.jpg",
+    "ground_truth": "bench",
+    "visual_description": "The image features a man sitting on a bench in a sandy area, possibly a beach. He is wearing a hat and appears to be enjoying his time outdoors. The bench is located near the center of the scene, with the man sitting on it comfortably. The sandy area extends to the right side of the image, creating a relaxing atmosphere for the man to unwind.",
+    "prediction": "beach",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "man",
+        "candidates": [
+          {
+            "thought": "The man is sitting on a bench.",
+            "answer": "Sitting"
+          },
+          {
+            "thought": "He is wearing a hat.",
+            "answer": "Wearing a hat"
+          },
+          {
+            "thought": "It's possible he is at a beach.",
+            "answer": "At a beach"
+          }
+        ],
+        "scores": [
+          0.7,
+          0.5,
+          0.8
+        ],
+        "selected_index": 2
+      },
+      {
+        "sub_question": "bench",
+        "candidates": [
+          {
+            "thought": "{\n  \"thoughts\": [\"The bench is the object in question because it provides context about where the man is sitting.\", \n               \"The man is described as sitting on the bench, indicating that he is resting there.\", \n               \"The fact that he is sitting on the bench suggests that he may be enjoying nature or spending some time alone outside.\", \n               \"The sandy area extending to the right side of the image creates a peaceful environment for him to relax.\", \n               \"Overall, the bench serves as a physical representation of the place where the man is spending time and enjoying his surroundings.\"],\n  \"answers\": [\n    {\n      \"description\": \"The bench is the object in question because it provides context about where the man is sitting.\",\n      \"reasoning\": \"The man is described as sitting on the bench, which implies that he is resting there.\"\n    },\n    {\n      \"description\": \"The man is described as sitting on the bench, indicating that he is enjoying his time outdoors.\",\n      \"reasoning\": \"The bench is located near the center of the scene, suggesting that the man is outdoors.\"\n    },\n    {\n      \"description\": \"The sand area extending to the right side of the image creates a peaceful environment for him to relax.\",\n      \"reasoning\": \"The sandy area indicates that the man is not in an urban setting, implying that he is likely at a beach.\"\n    }\n  ]\n}",
+            "answer": "{\n  \"thoughts\": [\"The bench is the object in question because it provides context about where the man is sitting.\", \n               \"The man is described as sitting on the bench, indicating that he is resting there.\", \n               \"The fact that he is sitting on the bench suggests that he may be enjoying nature or spending some time alone outside.\", \n               \"The sandy area extending to the right side of the image creates a peaceful environment for him to relax.\", \n               \"Overall, the bench serves as a physical representation of the place where the man is spending time and enjoying his surroundings.\"],\n  \"answers\": [\n    {\n      \"description\": \"The bench is the object in question because it provides context about where the man is sitting.\",\n      \"reasoning\": \"The man is described as sitting on the bench, which implies that he is resting there.\"\n    },\n    {\n      \"description\": \"The man is described as sitting on the bench, indicating that he is enjoying his time outdoors.\",\n      \"reasoning\": \"The bench is located near the center of the scene, suggesting that the man is outdoors.\"\n    },\n    {\n      \"description\": \"The sand area extending to the right side of the image creates a peaceful environment for him to relax.\",\n      \"reasoning\": \"The sandy area indicates that the man is not in an urban setting, implying that he is likely at a beach.\"\n    }\n  ]\n}"
+          }
+        ],
+        "scores": [
+          0.8
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "beach",
+        "candidates": [
+          {
+            "thought": "The man is likely at a beach because he is sitting on a bench and enjoying the sand.",
+            "answer": "Beach"
+          },
+          {
+            "thought": "There are no buildings in the background that could indicate a park or other indoor space.",
+            "answer": "Beach"
+          },
+          {
+            "thought": "The man's hat suggests he is outside in nature.",
+            "answer": "Beach"
+          }
+        ],
+        "scores": [
+          0.9,
+          0.8,
+          0.7
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "man",
+        "selected_answer": "At a beach",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "bench",
+        "selected_answer": "{\n  \"thoughts\": [\"The bench is the object in question because it provides context about where the man is sitting.\", \n               \"The man is described as sitting on the bench, indicating that he is resting there.\", \n               \"The fact that he is sitting on the bench suggests that he may be enjoying nature or spending some time alone outside.\", \n               \"The sandy area extending to the right side of the image creates a peaceful environment for him to relax.\", \n               \"Overall, the bench serves as a physical representation of the place where the man is spending time and enjoying his surroundings.\"],\n  \"answers\": [\n    {\n      \"description\": \"The bench is the object in question because it provides context about where the man is sitting.\",\n      \"reasoning\": \"The man is described as sitting on the bench, which implies that he is resting there.\"\n    },\n    {\n      \"description\": \"The man is described as sitting on the bench, indicating that he is enjoying his time outdoors.\",\n      \"reasoning\": \"The bench is located near the center of the scene, suggesting that the man is outdoors.\"\n    },\n    {\n      \"description\": \"The sand area extending to the right side of the image creates a peaceful environment for him to relax.\",\n      \"reasoning\": \"The sandy area indicates that the man is not in an urban setting, implying that he is likely at a beach.\"\n    }\n  ]\n}",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "beach",
+        "selected_answer": "Beach",
+        "selected_score": 0.9
+      }
+    ]
+  },
+  {
+    "question_id": "3",
+    "question": "What type of place is it?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness/gaussian_0.05/images/00003.jpg",
+    "ground_truth": "road",
+    "visual_description": "The image depicts a city street with a blue car parked on the side of the road. There are several people walking along the sidewalk, with some of them carrying backpacks. In total, there are nine people visible in the scene, with some of them closer to the car and others further away.\n\nAdditionally, there are two traffic lights in the scene, one near the center and the other towards the left side of the image. A fire hydrant can also be seen on the sidewalk, closer to the right side of the scene.",
+    "prediction": "city street",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "city street",
+        "candidates": [
+          {
+            "thought": "The given description provides details about a city street with various elements such as a blue car, people walking, traffic lights, and a fire hydrant.",
+            "answer": "The image depicts a busy city street."
+          },
+          {
+            "thought": "The presence of a blue car parked on the side of the road suggests that this is an urban area with streets filled with vehicles.",
+            "answer": "The image depicts a busy city street."
+          },
+          {
+            "thought": "The mention of traffic lights indicates that the area is well-maintained and has proper infrastructure for transportation.",
+            "answer": "The image depicts a busy city street."
+          }
+        ],
+        "scores": [
+          0.9,
+          0.8,
+          0.7
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "sidewalk",
+        "candidates": [
+          {
+            "thought": "This sentence describes the location where people walk.",
+            "answer": "Sidewalk"
+          },
+          {
+            "thought": "This sentence describes the presence of a fire hydrant.",
+            "answer": "Fire hydrant"
+          },
+          {
+            "thought": "This sentence describes the presence of traffic lights.",
+            "answer": "Traffic light"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "road",
+        "candidates": [
+          {
+            "thought": "The 'road' in this description refers to the entire street where the people walk.",
+            "answer": "Street"
+          },
+          {
+            "thought": "The 'road' in this description is not specific enough; it could refer to any path or area that connects two points.",
+            "answer": "Street"
+          },
+          {
+            "thought": "The 'road' in this description is likely referring to the pedestrian sidewalk, as the people are walking along it.",
+            "answer": "Sidewalk"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.5,
+          0.6
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "city street",
+        "selected_answer": "The image depicts a busy city street.",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "sidewalk",
+        "selected_answer": "Sidewalk",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "road",
+        "selected_answer": "Street",
+        "selected_score": 0.8
+      }
+    ]
+  },
+  {
+    "question_id": "4",
+    "question": "Are there both vegetables and peppers in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness/gaussian_0.05/images/00004.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a pizza with various toppings, including peppers and onions. The pizza is placed in a box, which is open and revealing the delicious meal. The pizza is cut into slices, making it easy to serve and enjoy. The toppings are spread evenly across the pizza, adding a burst of flavor to each bite.",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "vegetables",
+        "candidates": [
+          {
+            "thought": "[{\"thought\": \"The inclusion of peppers and onions suggests that these vegetables were used as toppings.\", \"answer\": \"Yes, the image includes vegetables such as peppers and onions.\"}]\n\n[{\"thought\": \"The pizza is placed in a box, which indicates that it was prepared ahead of time or for later consumption.\", \"answer\": \"No, the image does not show any preparation steps.\"}]\n\n[{\"thought\": \"The fact that the pizza is cut into slices means it can be served and enjoyed easily by people.\", \"answer\": \"Yes, the image shows that the pizza can be cut into slices.\"}]",
+            "answer": "[{\"thought\": \"The inclusion of peppers and onions suggests that these vegetables were used as toppings.\", \"answer\": \"Yes, the image includes vegetables such as peppers and onions.\"}]\n\n[{\"thought\": \"The pizza is placed in a box, which indicates that it was prepared ahead of time or for later consumption.\", \"answer\": \"No, the image does not show any preparation steps.\"}]\n\n[{\"thought\": \"The fact that the pizza is cut into slices means it can be served and enjoyed easily by people.\", \"answer\": \"Yes, the image shows that the pizza can be cut into slices.\"}]"
+          }
+        ],
+        "scores": [
+          0.8
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "peppers",
+        "candidates": [
+          {
+            "thought": "Peppers add a spicy kick and bright color to the pizza.",
+            "answer": "Peppers are often used as a topping on pizzas because they bring an extra level of flavor and texture."
+          },
+          {
+            "thought": "Peppers also have health benefits such as vitamin C and antioxidants.",
+            "answer": "Peppers are known for their anti-inflammatory properties and can be beneficial for overall health when consumed in moderation."
+          },
+          {
+            "thought": "Peppers can be a versatile ingredient in many types of cuisines.",
+            "answer": "They can be used to create a wide range of dishes from Mexican to Italian cuisine."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.9,
+          0.7
+        ],
+        "selected_index": 1
+      },
+      {
+        "sub_question": "both",
+        "candidates": [
+          {
+            "thought": "The image depicts a pizza with various toppings, such as peppers and onions.",
+            "answer": "The pizza has several different types of toppings on it."
+          },
+          {
+            "thought": "The pizza is displayed in a box that is open, revealing the food.",
+            "answer": "The box reveals the full size of the pizza."
+          },
+          {
+            "thought": "The pizza is cut into slices, indicating that it can be served easily.",
+            "answer": "The pizza is cut into pieces for serving."
+          }
+        ],
+        "scores": [
+          0.6,
+          0.5,
+          0.8
+        ],
+        "selected_index": 2
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "vegetables",
+        "selected_answer": "[{\"thought\": \"The inclusion of peppers and onions suggests that these vegetables were used as toppings.\", \"answer\": \"Yes, the image includes vegetables such as peppers and onions.\"}]\n\n[{\"thought\": \"The pizza is placed in a box, which indicates that it was prepared ahead of time or for later consumption.\", \"answer\": \"No, the image does not show any preparation steps.\"}]\n\n[{\"thought\": \"The fact that the pizza is cut into slices means it can be served and enjoyed easily by people.\", \"answer\": \"Yes, the image shows that the pizza can be cut into slices.\"}]",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "peppers",
+        "selected_answer": "Peppers are known for their anti-inflammatory properties and can be beneficial for overall health when consumed in moderation.",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "both",
+        "selected_answer": "The pizza is cut into pieces for serving.",
+        "selected_score": 0.8
+      }
+    ]
+  }
+]

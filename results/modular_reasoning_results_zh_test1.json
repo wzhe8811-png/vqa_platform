@@ -1,0 +1,100 @@
+[
+  {
+    "question_id": "0",
+    "question": "What place is shown?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2317441.jpg",
+    "ground_truth": "road",
+    "visual_description": "这张图片展示了一个人在街道上低碰地滑板，他的脚踝离开地面，展示出他的技巧和激情。这个人并不是孤独的，他的朋友们在他的身边观看他的表演，一共有13人在场。\n\n除了滑板运动员，还有其他人在街道上行走，共计有11人。其中一些人可能是观看滑板运动员的观众，而其他人则可能是正在街道上行走的人。",
+    "prediction": "street",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "滑板场地",
+        "candidates": [
+          {
+            "thought": "从照片中可以推断出这是在室外的场景，因为有人穿着运动装备（如长裤、短袖）",
+            "answer": "户外"
+          },
+          {
+            "thought": "照片中的人员数量表明这是一个多人参与的活动，因此这可能是一个滑板比赛或者街头表演场所",
+            "answer": "滑板场地"
+          },
+          {
+            "thought": "照片显示了滑板运动员和其他人的互动，以及他们在街道上的位置，这些信息支持这个假设是滑板公园或街舞场地",
+            "answer": "滑板场地"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "街道",
+        "candidates": [
+          {
+            "thought": "从图中可以看出，街道是背景环境。",
+            "answer": "街道"
+          },
+          {
+            "thought": "由于图中有大量的行人、车辆等，可以推断出街道是一个繁忙的地区。",
+            "answer": "街道"
+          },
+          {
+            "thought": "结合上下文信息，我们可以推断出这条街道可能是一些活动或比赛的地方。",
+            "answer": "街道"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "广场",
+        "candidates": [
+          {
+            "thought": "图片中提到的广场是指一个开放空间，通常指城市的公共区域，如公园、体育场或城市中心的空地。",
+            "answer": "广场"
+          },
+          {
+            "thought": "图片中的滑板运动员正在进行表演，周围还有一群朋友围观，说明这里是一个公共场所，可能是在某个运动场馆或者街头进行的活动。",
+            "answer": "运动场馆/街头"
+          },
+          {
+            "thought": "图片中出现的人物包括滑板运动员和其他行人，这表明这是一个公共空间，既有可能是某个城市的主要街道，也可能是公园等公共场所。",
+            "answer": "主要街道/公园"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "滑板场地",
+        "selected_answer": "户外",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "街道",
+        "selected_answer": "街道",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "广场",
+        "selected_answer": "广场",
+        "selected_score": 0.5
+      }
+    ]
+  }
+]

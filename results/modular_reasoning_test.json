@@ -1,0 +1,75 @@
+[
+  {
+    "question_id": "0",
+    "question": "What place is shown?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/gqa_standard/images/2317441.jpg",
+    "ground_truth": "road",
+    "visual_description": "The image captures a lively scene on a street, where a man is riding a skateboard down the road. He is wearing a helmet for safety while performing his skateboarding stunt. There are several other people in the scene, some of them walking or standing on the sidewalk.\n\nIn addition to the skateboarder, there are multiple bicycles scattered throughout the scene, with some parked and others being ridden by people. A few cars are also present in the image, parked or driving along the street. The overall atmosphere of the scene is energetic and active, with people engaging in various outdoor activities.",
+    "prediction": "street",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "street",
+        "candidates": [
+          {
+            "thought": "This image depicts a busy urban street.",
+            "answer": "Street"
+          },
+          {
+            "thought": "The man on the skateboard is performing an action that typically occurs on a street.",
+            "answer": "Street"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "skateboard park",
+        "candidates": [
+          {
+            "thought": "{\n  \"thoughts\": [\"The term 'skateboard park' refers to an area specifically designed for skateboarders to practice and perform tricks on flat surfaces without causing damage to property.\", \n               \"A skateboard park often includes ramps, rails, and boxes that provide different obstacles for skaters to navigate through, allowing for a wide range of skills to be displayed and practiced.\"],\n  \"answers\": [\"Yes, the scene could depict a skateboard park, as it includes elements such as a man riding a skateboard, bicycles, and even a car parking in the background.\"]\n}",
+            "answer": "{\n  \"thoughts\": [\"The term 'skateboard park' refers to an area specifically designed for skateboarders to practice and perform tricks on flat surfaces without causing damage to property.\", \n               \"A skateboard park often includes ramps, rails, and boxes that provide different obstacles for skaters to navigate through, allowing for a wide range of skills to be displayed and practiced.\"],\n  \"answers\": [\"Yes, the scene could depict a skateboard park, as it includes elements such as a man riding a skateboard, bicycles, and even a car parking in the background.\"]\n}"
+          }
+        ],
+        "scores": [
+          0.8
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "parking lot",
+        "candidates": [
+          {
+            "thought": "{\n  \"thoughts\": [\n    \"A parking lot refers to an area reserved for short-term parking of vehicles\",\n    \"The image does not contain any information about a parking lot\"\n  ],\n  \"answers\": []\n}",
+            "answer": "{\n  \"thoughts\": [\n    \"A parking lot refers to an area reserved for short-term parking of vehicles\",\n    \"The image does not contain any information about a parking lot\"\n  ],\n  \"answers\": []\n}"
+          }
+        ],
+        "scores": [
+          0.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "street",
+        "selected_answer": "Street",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "skateboard park",
+        "selected_answer": "{\n  \"thoughts\": [\"The term 'skateboard park' refers to an area specifically designed for skateboarders to practice and perform tricks on flat surfaces without causing damage to property.\", \n               \"A skateboard park often includes ramps, rails, and boxes that provide different obstacles for skaters to navigate through, allowing for a wide range of skills to be displayed and practiced.\"],\n  \"answers\": [\"Yes, the scene could depict a skateboard park, as it includes elements such as a man riding a skateboard, bicycles, and even a car parking in the background.\"]\n}",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "parking lot",
+        "selected_answer": "{\n  \"thoughts\": [\n    \"A parking lot refers to an area reserved for short-term parking of vehicles\",\n    \"The image does not contain any information about a parking lot\"\n  ],\n  \"answers\": []\n}",
+        "selected_score": 0.0
+      }
+    ]
+  }
+]

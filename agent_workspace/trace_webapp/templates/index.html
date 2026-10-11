@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VQA 推理过程可视化</title>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <style>
+    :root { --bg:#0f172a; --panel:#111827; --line:#334155; --text:#e5e7eb; --muted:#94a3b8; --accent:#22d3ee; --ok:#10b981; --bad:#ef4444; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif; }
+    .layout-with-bar { display:grid; grid-template-rows:auto 1fr; height:100vh; gap:10px; padding:10px; box-sizing:border-box; }
+    .admin-bar { display:flex; align-items:center; justify-content:space-between; padding:10px 14px; background:var(--panel); border:1px solid var(--line); border-radius:10px; font-size:13px; }
+    .admin-bar .tag { margin-left:8px; background:rgba(34,211,238,.15); color:var(--accent); }
+    .admin-bar button { width:auto; padding:6px 14px; font-size:12px; background:transparent; color:var(--muted); border:1px solid var(--line); border-radius:6px; cursor:pointer; }
+    .layout { display:grid; grid-template-columns:340px 1fr 360px; height:auto; min-height:0; gap:10px; padding:0; box-sizing:border-box; }
+    .panel { background:var(--panel); border:1px solid var(--line); border-radius:10px; overflow:hidden; display:flex; flex-direction:column; }
+    .panel h2 { margin:0; padding:12px 14px; font-size:15px; border-bottom:1px solid var(--line); color:var(--accent); }
+    .body { padding:12px; overflow:auto; flex:1; }
+    .case-item { padding:8px 10px; border:1px solid var(--line); border-radius:8px; margin-bottom:8px; cursor:pointer; font-size:13px; line-height:1.5; }
+    .case-item.active { outline:2px solid var(--accent); }
+    .tag { display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; margin-left:6px; }
+    .ok { background:rgba(16,185,129,.2); color:#34d399; } .bad { background:rgba(239,68,68,.2); color:#f87171; }
+    #graph { width:100%; height:100%; background:#020617; }
+    .meta { font-size:13px; line-height:1.6; color:var(--muted); }
+    pre { white-space:pre-wrap; word-break:break-word; font-size:12px; line-height:1.5; color:#cbd5e1; background:#0b1220; border:1px solid var(--line); border-radius:8px; padding:10px; }
+    select { width:100%; margin-bottom:10px; background:#0b1220; color:var(--text); border:1px solid var(--line); border-radius:6px; padding:8px; }
+    .case-image { width:100%; max-height:220px; object-fit:contain; border:1px solid var(--line); border-radius:8px; background:#020617; margin-top:10px; }
+    .bar-actions { display:flex; align-items:center; gap:8px; }
+    .user-panel { position:fixed; right:18px; top:64px; width:520px; max-height:calc(100vh - 86px); background:var(--panel); border:1px solid var(--line); border-radius:12px; box-shadow:0 18px 60px rgba(0,0,0,.45); display:none; z-index:10; overflow:hidden; }
+    .user-panel.show { display:flex; flex-direction:column; }
+    .user-panel h2 { margin:0; padding:12px 14px; font-size:15px; color:var(--accent); border-bottom:1px solid var(--line); }
+    .user-list { padding:12px; overflow:auto; }
+    .user-card { border:1px solid var(--line); border-radius:10px; padding:10px; margin-bottom:10px; background:#0b1220; font-size:13px; line-height:1.6; }
+    .record-card { margin-top:8px; padding:8px; border:1px dashed var(--line); border-radius:8px; color:#cbd5e1; }
+    .record-card img { display:block; max-width:100%; max-height:160px; object-fit:contain; border:1px solid var(--line); border-radius:8px; margin-top:6px; background:#020617; }
+  </style>
+</head>
+<body>
+  <div class="layout-with-bar">
+    <div class="admin-bar">
+      <div><strong>管理员 · {{ username }}</strong><span class="tag">轨迹浏览 7860</span><span class="tag">JSON 测试案例</span></div>
+      <div class="bar-actions"><button type="button" id="usersBtn">查看用户信息</button><button type="button" id="logoutBtn">退出登录</button></div>
+    </div>
+    <div id="userPanel" class="user-panel"><h2>用户个人信息</h2><div id="userList" class="user-list">加载中...</div></div>
+    <div class="layout">
+      <section class="panel"><h2>案例列表</h2><div class="body"><select id="caseSelect"></select><div id="caseList"></div></div></section>
+      <section class="panel"><h2>思维图（可拖拽，点击节点看详情）</h2><svg id="graph"></svg></section>
+      <section class="panel"><h2>节点详情</h2><div class="body"><div id="summary" class="meta"></div><img id="caseImage" class="case-image" style="display:none" alt="案例图片" /><pre id="detail">点击图中的节点查看详细信息</pre></div></section>
+    </div>
+  </div>
+<script>
+const PORTAL_URL={{ portal_url|tojson }};
+const colorMap={question:'#22d3ee',subq:'#f59e0b',candidate:'#60a5fa',candidate_selected:'#34d399',pred:'#a78bfa',gt:'#f43f5e'};
+let cases=[],currentId=null;
+async function apiJson(url){const res=await fetch(url);const data=await res.json().catch(()=>({error:'接口返回异常，请重新登录管理员账号'}));if(!res.ok)throw new Error(data.error||'请求失败');return data}
+async function loadCases(){cases=await apiJson('/api/cases');const select=document.getElementById('caseSelect');select.innerHTML='';cases.forEach(c=>{const opt=document.createElement('option');opt.value=c.question_id;opt.textContent=`Q${c.question_id} - ${(c.question||'').slice(0,45)}`;select.appendChild(opt)});select.onchange=e=>openCase(e.target.value);renderCaseList();if(cases.length)openCase(cases[0].question_id)}
+function renderCaseList(){const box=document.getElementById('caseList');box.innerHTML='';cases.forEach(c=>{const div=document.createElement('div');div.className='case-item'+(String(c.question_id)===String(currentId)?' active':'');const hit=Boolean(c.exact||c.soft);div.innerHTML=`<strong>问题${c.question_id}</strong>${hit?'<span class="tag ok">match: true</span>':'<span class="tag bad">match: false</span>'}<br>${c.question||''}`;div.onclick=()=>openCase(c.question_id);box.appendChild(div)})}
+async function openCase(qid){currentId=qid;document.getElementById('caseSelect').value=qid;renderCaseList();const data=await apiJson(`/api/case/${qid}`);renderSummary(data);renderGraph(data)}
+function renderSummary(data){const hit=Boolean(data.exact||data.soft);document.getElementById('summary').innerHTML=`<div><strong>问题ID:</strong> ${data.question_id} ${hit?'<span class="tag ok">match: true</span>':'<span class="tag bad">match: false</span>'}</div><div><strong>问题:</strong> ${data.question||''}</div><div><strong>预测:</strong> ${data.prediction||''}</div><div><strong>真值:</strong> ${data.ground_truth||''}</div>`;const img=document.getElementById('caseImage');if(data.image_url){img.src=data.image_url;img.style.display='block'}else{img.src='';img.style.display='none'}document.getElementById('detail').textContent='点击图中的节点查看详细信息'}
+function renderGraph(data){const svg=d3.select('#graph');svg.selectAll('*').remove();const width=svg.node().clientWidth,height=svg.node().clientHeight;const nodes=(data.nodes||[]).map(d=>({...d}));const links=(data.links||[]).map(d=>({...d}));const sim=d3.forceSimulation(nodes).force('link',d3.forceLink(links).id(d=>d.id).distance(90)).force('charge',d3.forceManyBody().strength(-380)).force('center',d3.forceCenter(width/2,height/2)).force('collision',d3.forceCollide().radius(26));const link=svg.append('g').attr('stroke','#334155').attr('stroke-opacity',.8).selectAll('line').data(links).join('line').attr('stroke-width',1.4);const node=svg.append('g').selectAll('circle').data(nodes).join('circle').attr('r',d=>String(d.type).includes('candidate')?12:16).attr('fill',d=>colorMap[d.type]||'#94a3b8').attr('stroke','#0b1220').attr('stroke-width',1.5).call(d3.drag().on('start',(e,d)=>{if(!e.active)sim.alphaTarget(.3).restart();d.fx=d.x;d.fy=d.y}).on('drag',(e,d)=>{d.fx=e.x;d.fy=e.y}).on('end',(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null})).on('click',(_,d)=>{document.getElementById('detail').textContent=JSON.stringify({id:d.id,label:d.label,type:d.type,detail:d.detail},null,2)});const label=svg.append('g').selectAll('text').data(nodes).join('text').text(d=>d.label).attr('font-size',11).attr('fill','#e2e8f0').attr('text-anchor','middle').attr('dy',4);sim.on('tick',()=>{link.attr('x1',d=>d.source.x).attr('y1',d=>d.source.y).attr('x2',d=>d.target.x).attr('y2',d=>d.target.y);node.attr('cx',d=>d.x).attr('cy',d=>d.y);label.attr('x',d=>d.x).attr('y',d=>d.y)})}
+async function loadUsers(){
+  const panel=document.getElementById('userPanel');
+  const list=document.getElementById('userList');
+  panel.classList.toggle('show');
+  if(!panel.classList.contains('show')) return;
+  list.textContent='加载中...';
+  try{
+    const users=await apiJson('/api/users');
+    if(!users.length){list.textContent='暂无用户信息';return;}
+    list.innerHTML=users.map(u=>{
+      const records=(u.records||[]).map(r=>`<div class="record-card"><div><strong>问题：</strong>${r.question||''}</div><div><strong>回答：</strong>${r.answer||''}</div>${r.image_url?`<img src="${r.image_url}" alt="历史图片" />`:''}</div>`).join('')||'<div class="record-card">暂无问答记录</div>';
+      return `<div class="user-card"><div><strong>账号名：</strong>${u.account||u.username||''}</div><div><strong>密码：</strong>${u.password||''}</div><div><strong>邮箱：</strong>${u.email||''}</div><div><strong>角色：</strong>${u.role||''}</div><div><strong>问答记录：</strong>${(u.records||[]).length} 条</div>${records}</div>`;
+    }).join('');
+  }catch(e){list.textContent='加载用户信息失败：'+e.message;}
+}
+document.getElementById('usersBtn').onclick=loadUsers;
+document.getElementById('logoutBtn').onclick=async()=>{try{await fetch(`${PORTAL_URL}/api/auth/logout`,{method:'POST',credentials:'include'})}catch(_){}window.location.href=`${PORTAL_URL}/login`};
+loadCases().catch(e=>{document.getElementById('detail').textContent=e.message});
+</script>
+</body>
+</html>

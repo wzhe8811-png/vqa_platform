@@ -1,0 +1,1905 @@
+[
+  {
+    "question_id": "0",
+    "question": "Are there both vegetables and peppers in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00004.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a delicious pizza with various toppings, including peppers and onions. The pizza is placed in a box, which is open and revealing the pizza's contents. The pizza is cut into slices, making it easy to serve and enjoy. The toppings are spread evenly across the pizza, adding a burst of flavor to each bite.",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "vegetables",
+        "candidates": [
+          {
+            "thought": "{\n  \"thoughts\": [\"The provided description mentions peppers and onions on the pizza.\", \"Peppers and onions are commonly used as vegetables in cooking.\", \"The presence of peppers and onions suggests that this pizza is likely made with fresh vegetables.\"],\n  \"answers\": [\n    {\n      \"reasoning\": \"Yes, vegetables.\",\n      \"thought\": \"The description clearly states that the pizza has peppers and onions on it.\"\n    },\n    {\n      \"reasoning\": \"Yes, vegetables.\",\n      \"thought\": \"The presence of peppers and onions on the pizza indicates that they were added for flavor and texture, rather than being raw ingredients.\"\n    },\n    {\n      \"reasoning\": \"Yes, vegetables.\",\n      \"thought\": \"Since the toppings are listed specifically as peppers and onions, it is safe to assume that these vegetables were included on the pizza.\"\n    }\n  ]\n}",
+            "answer": "{\n  \"thoughts\": [\"The provided description mentions peppers and onions on the pizza.\", \"Peppers and onions are commonly used as vegetables in cooking.\", \"The presence of peppers and onions suggests that this pizza is likely made with fresh vegetables.\"],\n  \"answers\": [\n    {\n      \"reasoning\": \"Yes, vegetables.\",\n      \"thought\": \"The description clearly states that the pizza has peppers and onions on it.\"\n    },\n    {\n      \"reasoning\": \"Yes, vegetables.\",\n      \"thought\": \"The presence of peppers and onions on the pizza indicates that they were added for flavor and texture, rather than being raw ingredients.\"\n    },\n    {\n      \"reasoning\": \"Yes, vegetables.\",\n      \"thought\": \"Since the toppings are listed specifically as peppers and onions, it is safe to assume that these vegetables were included on the pizza.\"\n    }\n  ]\n}"
+          }
+        ],
+        "scores": [
+          0.9
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "peppers",
+        "candidates": [
+          {
+            "thought": "Pepper refers to any type of pepper used as a topping on pizza.",
+            "answer": "Pepper can refer to any type of pepper used as a topping on pizza."
+          },
+          {
+            "thought": "In this context, the pepper could be red or green bell peppers.",
+            "answer": "Red or green bell peppers could be considered as 'peppers' on pizza."
+          },
+          {
+            "thought": "Toppings like bell peppers add a nice crunch and flavor.",
+            "answer": "Bell peppers can add a crunchy texture and a unique flavor to the pizza."
+          }
+        ],
+        "scores": [
+          0.6,
+          0.7,
+          0.8
+        ],
+        "selected_index": 2
+      },
+      {
+        "sub_question": "toppings",
+        "candidates": [
+          {
+            "thought": "Peppers and onions add a fresh and vibrant taste to the pizza.",
+            "answer": "The toppings include peppers and onions."
+          },
+          {
+            "thought": "The combination of peppers and onions gives the pizza a unique flavor profile.",
+            "answer": "The toppings include peppers and onions."
+          },
+          {
+            "thought": "This topping combination enhances the overall texture and taste of the pizza.",
+            "answer": "The toppings include peppers and onions."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.75,
+          0.6
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "vegetables",
+        "selected_answer": "{\n  \"thoughts\": [\"The provided description mentions peppers and onions on the pizza.\", \"Peppers and onions are commonly used as vegetables in cooking.\", \"The presence of peppers and onions suggests that this pizza is likely made with fresh vegetables.\"],\n  \"answers\": [\n    {\n      \"reasoning\": \"Yes, vegetables.\",\n      \"thought\": \"The description clearly states that the pizza has peppers and onions on it.\"\n    },\n    {\n      \"reasoning\": \"Yes, vegetables.\",\n      \"thought\": \"The presence of peppers and onions on the pizza indicates that they were added for flavor and texture, rather than being raw ingredients.\"\n    },\n    {\n      \"reasoning\": \"Yes, vegetables.\",\n      \"thought\": \"Since the toppings are listed specifically as peppers and onions, it is safe to assume that these vegetables were included on the pizza.\"\n    }\n  ]\n}",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "peppers",
+        "selected_answer": "Bell peppers can add a crunchy texture and a unique flavor to the pizza.",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "toppings",
+        "selected_answer": "The toppings include peppers and onions.",
+        "selected_score": 0.8
+      }
+    ]
+  },
+  {
+    "question_id": "1",
+    "question": "Is there a dog near the pillow?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00006.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a cat sitting on a bed, looking at its reflection in a mirror. The cat appears to be curious about its own image, as it gazes at the mirror. The bed is covered with a blanket, providing a cozy and comfortable environment for the cat.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "is there a dog near the pillow?",
+        "candidates": [
+          {
+            "thought": "Based on the description, there is no mention of a dog.",
+            "answer": "No, there is not a dog near the pillow."
+          },
+          {
+            "thought": "It's possible that there could be a dog behind the cat, but without more context, I cannot confirm this.",
+            "answer": "There might be a dog behind the cat, depending on the situation."
+          },
+          {
+            "thought": "Given the description, it seems unlikely that there would be a dog near the pillow.",
+            "answer": "Yes, based on the information provided, there likely isn't a dog near the pillow."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "does the cat interact with the dog?",
+        "candidates": [
+          {
+            "thought": "The provided image does not show any interaction between the cat and the dog.",
+            "answer": "No interaction."
+          },
+          {
+            "thought": "Given that there is no visual evidence of the cat interacting with the dog from this picture, the answer would be 'no interaction.'",
+            "answer": ""
+          },
+          {
+            "thought": "There is no information given about whether or not the cat interacts with the dog in this picture, so we cannot determine if they do or don't interact based solely on the visual description provided.",
+            "answer": "No interaction."
+          }
+        ],
+        "scores": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "what does the cat's gaze suggest?",
+        "candidates": [
+          {
+            "thought": "The cat's gaze suggests that it finds itself intriguing and possibly even amused by its reflection.",
+            "answer": "The cat seems to find its reflection intriguing and perhaps even amused."
+          },
+          {
+            "thought": "The cat's gaze suggests that it is trying to communicate with its reflection.",
+            "answer": "The cat is attempting to communicate with its reflection through its gaze."
+          },
+          {
+            "thought": "The cat's gaze suggests that it is curious about its own appearance.",
+            "answer": "The cat is interested in observing its reflection and possibly comparing it to its own appearance."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7,
+          0.6
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "is there a dog near the pillow?",
+        "selected_answer": "No, there is not a dog near the pillow.",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "does the cat interact with the dog?",
+        "selected_answer": "No interaction.",
+        "selected_score": 0.1
+      },
+      {
+        "sub_question": "what does the cat's gaze suggest?",
+        "selected_answer": "The cat seems to find its reflection intriguing and perhaps even amused.",
+        "selected_score": 0.8
+      }
+    ]
+  },
+  {
+    "question_id": "2",
+    "question": "Is the yellow vegetable to the left or to the right of the vegetable that is not rotten?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00008.jpg",
+    "ground_truth": "right",
+    "visual_description": "The image features a white plate filled with a variety of pizza slices. There are at least six different pizza slices on the plate, each with different toppings and sizes. The pizza slices are arranged in a visually appealing manner, showcasing the assortment of flavors and textures. The plate is placed on a dining table, ready to be enjoyed by those who partake in the delicious meal.",
+    "prediction": "no",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "yellow vegetable",
+        "candidates": [
+          {
+            "thought": "Yellow vegetables typically include broccoli, cauliflower, carrots, bell peppers, zucchini, and squash.",
+            "answer": "The yellow vegetable could refer to broccoli or cauliflower."
+          },
+          {
+            "thought": "Broccoli is a common choice for pizzas due to its versatility and flavor.",
+            "answer": "The yellow vegetable could be broccoli."
+          },
+          {
+            "thought": "Cauliflower is also a popular choice for pizza topping due to its mild flavor and texture.",
+            "answer": "The yellow vegetable could be cauliflower."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "rotten vegetable",
+        "candidates": [
+          {
+            "thought": "This image depicts a pizza plate with a diverse selection of toppings.",
+            "answer": "No rotten vegetables were used in the preparation of this dish."
+          }
+        ],
+        "scores": [
+          0.8
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "yellow vegetable",
+        "selected_answer": "The yellow vegetable could refer to broccoli or cauliflower.",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "rotten vegetable",
+        "selected_answer": "No rotten vegetables were used in the preparation of this dish.",
+        "selected_score": 0.8
+      }
+    ]
+  },
+  {
+    "question_id": "3",
+    "question": "What kind of vehicle is to the right of the car?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00009.jpg",
+    "ground_truth": "van",
+    "visual_description": "The image depicts a busy city street with a man wearing a red helmet riding a motorcycle. He is smiling and appears to be enjoying the ride. There are several other people on the street, some of them riding bicycles.\n\nIn addition to the motorcycle, there are multiple cars and a bus on the street. A few cars are parked or stopped, while others are in motion. The bus is located towards the right side of the scene.\n\nThere are also a couple of backpacks visible in the scene, one near the center and the other towards the right side. The overall atmosphere of the image is lively and bustling.",
+    "prediction": "a car is to the right of the car",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "car",
+        "candidates": [
+          {
+            "thought": "The car can refer to any vehicle that is parked, stopped, or moving on the street.",
+            "answer": "Car"
+          }
+        ],
+        "scores": [
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "bus",
+        "candidates": [
+          {
+            "thought": "The presence of a bus suggests that it is part of the urban landscape.",
+            "answer": "Yes."
+          },
+          {
+            "thought": "The fact that the bus is parked or stopped further indicates that it may not be currently in use.",
+            "answer": "No."
+          },
+          {
+            "thought": "The absence of any signs of construction or road repairs around the bus suggests that it is well-maintained and functioning properly.",
+            "answer": "Yes."
+          }
+        ],
+        "scores": [
+          0.9,
+          0.8,
+          0.7
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "backpack",
+        "candidates": [
+          {
+            "thought": "Backpacks can refer to various items carried by individuals for personal use.",
+            "answer": "Backpacks can refer to various items carried by individuals for personal use."
+          },
+          {
+            "thought": "Backpacks can also refer to the bags used to carry things such as laptops, books, clothes, etc., depending on their size and purpose.",
+            "answer": "Backpacks can also refer to the bags used to carry things such as laptops, books, clothes, etc., depending on their size and purpose."
+          },
+          {
+            "thought": "Backpacks can represent an individual's belongings, including keys, wallets, phones, cameras, etc.",
+            "answer": "Backpacks can represent an individual's belongings, including keys, wallets, phones, cameras, etc."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "car",
+        "selected_answer": "Car",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "bus",
+        "selected_answer": "Yes.",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "backpack",
+        "selected_answer": "Backpacks can refer to various items carried by individuals for personal use.",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "4",
+    "question": "Are there any boxes on the desk that is made of wood?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00011.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a wooden desk with a laptop computer sitting on top of it. The laptop is open and ready for use. Next to the laptop, there is a mouse and a telephone, indicating a well-equipped workspace. \n\nIn addition to the laptop and peripherals, there are two books placed on the desk, one on the left side and the other on the right side. A TV is also present in the scene, located above the laptop. The overall setting suggests a comfortable and functional workspace.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Are there any boxes on the desk that is made of wood?",
+        "candidates": [
+          {
+            "thought": "No specific reference to boxes on the desk made of wood.",
+            "answer": "No"
+          },
+          {
+            "thought": "The presence of a TV indicates the space is more than just a simple office setup.",
+            "answer": "No"
+          },
+          {
+            "thought": "There's no mention of desks or workstations being made of wood, so this information can't be inferred from the given visual description.",
+            "answer": "No"
+          }
+        ],
+        "scores": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Are there any boxes on the desk that is made of wood?",
+        "selected_answer": "No",
+        "selected_score": 0.1
+      }
+    ]
+  },
+  {
+    "question_id": "5",
+    "question": "What is the color of the helmet in the top?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00012.jpg",
+    "ground_truth": "gray",
+    "visual_description": "The image depicts a group of people, including both children and adults, skiing on a snow-covered slope. They are all wearing skis and are lined up in a row, possibly waiting for their turn or preparing to ski down the hill. The skiers are spread out across the slope, with some closer to the foreground and others further back.\n\nIn addition to the skiers, there are a few people standing near the edge of the slope, possibly observing the skiing activities or waiting for their turn. The scene captures the excitement and enjoyment of skiing in a winter setting.",
+    "prediction": "red",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "What is the color of the helmet in the top?",
+        "candidates": [
+          {
+            "thought": "I need to look at the picture carefully to determine the color of the helmet.",
+            "answer": "The color of the helmet cannot be determined from this visual description."
+          },
+          {
+            "thought": "The color of the helmet can be inferred based on common colors used by skiers.",
+            "answer": "Based on the context provided, it appears that most skiers wear helmets in shades of blue or black, so I would infer that the helmet may be either blue or black."
+          },
+          {
+            "thought": "The color of the helmet can also be influenced by personal preference or brand.",
+            "answer": "It's possible that one person in the group has a different color helmet than the rest due to their individual choice or preference."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "What is the color of the helmet in the top?",
+        "selected_answer": "The color of the helmet cannot be determined from this visual description.",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "6",
+    "question": "What animal are the trees behind of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00015.jpg",
+    "ground_truth": "elephant",
+    "visual_description": "The image features two elephants standing next to each other in a dirt field. They appear to be walking together, possibly in a zoo or a wildlife reserve. The elephants are positioned close to a tree, which provides a natural backdrop to the scene. The dirt field is surrounded by a stone wall, adding to the overall setting of the scene.",
+    "prediction": "elephants' habitat",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "What animal are the trees behind of?",
+        "candidates": [
+          {
+            "thought": "{\n  \"thoughts\":[\n    \"The elephant's environment suggests that they are in an enclosure.\",\n    \"Elephants typically live in zoos and wildlife reserves where they can roam freely.\",\n    \"Since there are no fences around the elephants, it is likely that this is not their natural habitat.\"\n  ],\n  \"answers\":[\n    \"The trees behind are likely part of the zoo enclosure or wildlife reserve.\",\n    \"There is no direct evidence to suggest they are native animals in this scenario.\",\n    \"This is more consistent with an encased environment rather than wild nature.\"\n  ]\n}",
+            "answer": "{\n  \"thoughts\":[\n    \"The elephant's environment suggests that they are in an enclosure.\",\n    \"Elephants typically live in zoos and wildlife reserves where they can roam freely.\",\n    \"Since there are no fences around the elephants, it is likely that this is not their natural habitat.\"\n  ],\n  \"answers\":[\n    \"The trees behind are likely part of the zoo enclosure or wildlife reserve.\",\n    \"There is no direct evidence to suggest they are native animals in this scenario.\",\n    \"This is more consistent with an encased environment rather than wild nature.\"\n  ]\n}"
+          }
+        ],
+        "scores": [
+          0.8
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "What animal are the trees behind of?",
+        "selected_answer": "{\n  \"thoughts\":[\n    \"The elephant's environment suggests that they are in an enclosure.\",\n    \"Elephants typically live in zoos and wildlife reserves where they can roam freely.\",\n    \"Since there are no fences around the elephants, it is likely that this is not their natural habitat.\"\n  ],\n  \"answers\":[\n    \"The trees behind are likely part of the zoo enclosure or wildlife reserve.\",\n    \"There is no direct evidence to suggest they are native animals in this scenario.\",\n    \"This is more consistent with an encased environment rather than wild nature.\"\n  ]\n}",
+        "selected_score": 0.8
+      }
+    ]
+  },
+  {
+    "question_id": "7",
+    "question": "What animal are these, zebras or lambs?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00017.jpg",
+    "ground_truth": "zebras",
+    "visual_description": "The image features a mother zebra and her baby standing together in a dirt field. The baby zebra is positioned close to the mother, and they appear to be grazing on the grass. The mother zebra is larger than the baby, and they both seem to be enjoying their time in the field.",
+    "prediction": "1) are these, zebras",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "zebra",
+        "candidates": [
+          {
+            "thought": "The zebra is a large animal found in Africa.",
+            "answer": "The zebra is a large mammal that lives in Africa."
+          },
+          {
+            "thought": "Zebras are known for their distinctive spotted coats.",
+            "answer": "Zebras are known for their unique spotted coat which helps them blend into the savannah landscape."
+          },
+          {
+            "thought": "Zebra meat is considered a delicacy in some cultures.",
+            "answer": "Zebra meat has been consumed as a food source by humans for centuries due to its high protein content."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.95,
+          0.75
+        ],
+        "selected_index": 1
+      },
+      {
+        "sub_question": "baby",
+        "candidates": [
+          {
+            "thought": "The baby zebra is smaller than its mother.",
+            "answer": "Yes"
+          },
+          {
+            "thought": "The baby zebra appears to be younger than its mother.",
+            "answer": "Yes"
+          },
+          {
+            "thought": "Both the mother and baby seem to be engaging in natural behavior of grazing on the grass.",
+            "answer": "Yes"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "field",
+        "candidates": [
+          {
+            "thought": "A field is typically an open space covered by grass or other vegetation.",
+            "answer": "Yes, the field mentioned in the description is an open space covered by grass."
+          },
+          {
+            "thought": "Zebra fields can refer to natural habitats where zebras live, such as savannas or plains.",
+            "answer": "Yes, it's possible that the field could be a natural habitat for zebras."
+          },
+          {
+            "thought": "The context suggests that this is a scene from a zoo or wildlife park, which may have specific rules about animal behavior and interactions.",
+            "answer": "It's also possible that the field is a man-made setting like a zoo or wildlife park."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "zebra",
+        "selected_answer": "Zebras are known for their unique spotted coat which helps them blend into the savannah landscape.",
+        "selected_score": 0.95
+      },
+      {
+        "sub_question": "baby",
+        "selected_answer": "Yes",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "field",
+        "selected_answer": "Yes, the field mentioned in the description is an open space covered by grass.",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "8",
+    "question": "Does the bowl to the left of the ball look red?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00018.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a woman kneeling on the floor, attentively taking care of a small kitten. She is holding a bottle, likely filled with milk, to feed the kitten. The kitten is sitting on the floor, close to the woman, and appears to be drinking from the bottle.\n\nThe scene takes place in a kitchen, with a sink visible in the background. The woman is wearing a red shirt, and there is a bowl placed on the floor near her. The overall atmosphere of the image is one of warmth and care, as the woman nurtures the young kitten.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Is the bowl on the left red?",
+        "candidates": [
+          {
+            "thought": "The sentence mentions that the bowl is on the left, but does not specify its color.",
+            "answer": "The sentence does not explicitly state if the bowl is red."
+          },
+          {
+            "thought": "Since it's a kitchen setting, the bowls used for food preparation or serving would typically be white, yellow, or light-colored to contrast with the countertops and surfaces.",
+            "answer": "Based on the context, it's unlikely the bowl would be red unless it's specifically mentioned."
+          },
+          {
+            "thought": "Given the context, a bowl might be colored differently depending on the specific needs of the dish being prepared or served, such as dairy products like milk which may be kept in a cream-coloured bowl.",
+            "answer": "A bowl used to serve or store milk could potentially be a different color than other dishes due to this purpose alone."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Is the bowl on the left red?",
+        "selected_answer": "The sentence does not explicitly state if the bowl is red.",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "9",
+    "question": "In which part of the photo is the boy, the bottom or the top?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00019.jpg",
+    "ground_truth": "bottom",
+    "visual_description": "The image showcases a large indoor showroom featuring a variety of motorcycles and cars on display. There are several motorcycles of different sizes and styles, some of which are placed on shelves or elevated platforms. In addition to the motorcycles, there are multiple cars on display, with some positioned closer to the foreground and others further back in the showroom.\n\nA group of people can be seen walking around and admiring the vehicles, with some individuals standing closer to the motorcycles and others near the cars. The overall atmosphere of the showroom is one of excitement and interest, as people explore and appreciate the diverse collection of vehicles.",
+    "prediction": "boy, the bottom",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "boy",
+        "candidates": [
+          {
+            "thought": "The boy may be interested in motorcycles and cars, as he is walking around and looking at the various displays.",
+            "answer": "It seems like the boy is attracted by the motorcycles and cars displayed."
+          },
+          {
+            "thought": "He could be a curious child who wants to know more about these vehicles.",
+            "answer": "There's a good chance the boy is a young enthusiast looking for information about motorcycles and cars."
+          },
+          {
+            "thought": "He could be part of a tour group or family outing, enjoying the sights together.",
+            "answer": "The presence of the boy suggests that he might be accompanying someone else on a tour, possibly his parents or siblings."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.6,
+          0.4
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "showroom",
+        "candidates": [
+          {
+            "thought": "This question is asking for visual description of an indoor showroom showcasing various types of motorcycles and cars.",
+            "answer": "The image showcases a large indoor showroom featuring a variety of motorcycles and cars on display."
+          },
+          {
+            "thought": "The question implies that the person who created this image wanted to describe the layout of the showroom, so it's important to capture the variety of motorcycles and cars displayed here.",
+            "answer": "There are several motorcycles of different sizes and styles, some of which are placed on shelves or elevated platforms."
+          },
+          {
+            "thought": "Additionally, there are multiple cars on display, with some positioned closer to the foreground and others further back in the showroom.",
+            "answer": "In addition to the motorcycles, there are multiple cars on display, with some positioned closer to the foreground and others further back in the showroom."
+          }
+        ],
+        "scores": [
+          0.6,
+          0.5,
+          0.7
+        ],
+        "selected_index": 2
+      },
+      {
+        "sub_question": "people",
+        "candidates": [
+          {
+            "thought": "People are shown walking around and admiring the motorcycles and cars.",
+            "answer": "These are likely customers visiting the showroom."
+          },
+          {
+            "thought": "The people may also be employees who are conducting tours for visitors.",
+            "answer": "It's possible that these people are employees of the dealership or company hosting the event."
+          },
+          {
+            "thought": "Some people may be family members or friends who are together at the show.",
+            "answer": "Others could be colleagues or acquaintances who are interested in attending such events."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "boy",
+        "selected_answer": "It seems like the boy is attracted by the motorcycles and cars displayed.",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "showroom",
+        "selected_answer": "In addition to the motorcycles, there are multiple cars on display, with some positioned closer to the foreground and others further back in the showroom.",
+        "selected_score": 0.7
+      },
+      {
+        "sub_question": "people",
+        "selected_answer": "These are likely customers visiting the showroom.",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "10",
+    "question": "What kind of furniture is in front of the light switch?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00020.jpg",
+    "ground_truth": "shelf",
+    "visual_description": "The image features a woman in a room, bending over a bed with a striped blanket. She appears to be in the process of making the bed or adjusting the sheets. The bed is positioned in the center of the room, and there is a chair located towards the right side of the room.\n\nIn addition to the bed and chair, there are several books scattered around the room, with some placed on the floor and others on surfaces. A handbag can also be seen on the floor, close to the woman.",
+    "prediction": "bedroom furniture",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "bed",
+        "candidates": [
+          {
+            "thought": "The bed is the main focus of the image.",
+            "answer": "The bed."
+          },
+          {
+            "thought": "The woman's actions suggest she is preparing for use of the bed.",
+            "answer": "Preparing for use of the bed."
+          },
+          {
+            "thought": "Books are scattered around the room, which could indicate that the woman has just finished using the bed for her own purposes or is about to do so.",
+            "answer": "About to use the bed."
+          }
+        ],
+        "scores": [
+          0.9,
+          0.8,
+          0.7
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "chair",
+        "candidates": [
+          {
+            "thought": "The chair is in the vicinity of the bed and woman.",
+            "answer": "Yes, the chair is present."
+          },
+          {
+            "thought": "The woman may use it for sitting while she is adjusting the sheets.",
+            "answer": "Possibly, the chair could be used for that purpose."
+          },
+          {
+            "thought": "Books and handbag suggest someone might have been preparing for the day or doing personal activities.",
+            "answer": "It's possible that the person was getting ready before starting their day."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "books",
+        "candidates": [
+          {
+            "thought": "Books suggest that the room has been occupied by someone else.",
+            "answer": "The presence of books suggests that the woman was not alone when she made the bed."
+          },
+          {
+            "thought": "There are multiple books scattered around the room, which indicates that they were likely taken from different locations.",
+            "answer": "This could imply that the woman had visitors or guests who left behind their belongings."
+          },
+          {
+            "thought": "The fact that the woman is adjusting the sheets on the bed shows that she is preparing for company.",
+            "answer": "It's possible that the woman is expecting guests and is trying to make the space look welcoming and tidy before they arrive."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7,
+          0.9
+        ],
+        "selected_index": 2
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "bed",
+        "selected_answer": "The bed.",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "chair",
+        "selected_answer": "Yes, the chair is present.",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "books",
+        "selected_answer": "It's possible that the woman is expecting guests and is trying to make the space look welcoming and tidy before they arrive.",
+        "selected_score": 0.9
+      }
+    ]
+  },
+  {
+    "question_id": "11",
+    "question": "Is the person near the garbage bin wearing a coat?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00021.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a blue and white bus parked next to a bus stop. The bus stop has a covered area, providing shelter for passengers waiting for the bus. Several people are waiting at the bus stop, with some standing closer to the bus and others further away.\n\nIn addition to the bus, there are a few cars parked in the vicinity, and a traffic light can be seen in the background. A person is holding a cell phone, possibly checking for updates or communicating with someone. The scene captures a typical day at a bus stop with people waiting for their ride.",
+    "prediction": "no",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Is the person near the garbage bin wearing a coat?",
+        "candidates": [
+          {
+            "thought": "I cannot see any person near the garbage bin wearing a coat.",
+            "answer": ""
+          },
+          {
+            "thought": "Looking closely at the image, I do not notice any person near the garbage bin wearing a coat.",
+            "answer": ""
+          },
+          {
+            "thought": "Based on my observation of the image, it appears that no one near the garbage bin is wearing a coat.",
+            "answer": ""
+          }
+        ],
+        "scores": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Is the person near the garbage bin wearing a coat?",
+        "selected_answer": "",
+        "selected_score": 0.0
+      }
+    ]
+  },
+  {
+    "question_id": "12",
+    "question": "Are there any beach umbrellas or balls in this scene?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00022.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image captures a lively scene at a ski resort, with a group of people skiing and snowboarding on a snow-covered slope. There are at least 13 people visible in the scene, some of them skiing and others snowboarding. The skiers and snowboarders are scattered across the slope, with some closer to the foreground and others further in the background.\n\nThe ski resort features a ski lift, which is visible in the background, transporting skiers and snowboarders up the mountain. The skiers and snowboarders are enjoying their time on the mountain, making the most of the winter sports facilities.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "no",
+        "candidates": [
+          {
+            "thought": "The image depicts a vibrant scene of people skiing and snowboarding at a ski resort.",
+            "answer": "Yes, there appears to be a lively atmosphere of people engaging in winter sports at a ski resort."
+          },
+          {
+            "thought": "The image shows a diverse group of individuals participating in various types of winter sports such as skiing and snowboarding.",
+            "answer": "Yes, there is an active and diverse group of people engaged in winter sports at a ski resort."
+          },
+          {
+            "thought": "The image showcases the beauty and excitement of skiing and snowboarding activities during the winter season.",
+            "answer": "Yes, the image captures the essence of the winter sports event at a ski resort."
+          }
+        ],
+        "scores": [
+          0.9,
+          0.85,
+          0.75
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "no",
+        "candidates": [
+          {
+            "thought": "The image depicts a lively scene at a ski resort where many people are skiing and snowboarding.",
+            "answer": "Yes, this scene meets the criteria of being at a ski resort."
+          },
+          {
+            "thought": "There are 13 people in the scene, which means there are not enough details about each person.",
+            "answer": "No, there are too many individuals in the scene to provide specific information about each one."
+          },
+          {
+            "thought": "The presence of a ski lift indicates that the scene takes place during winter or other cold seasons.",
+            "answer": "Yes, this scene takes place in winter because the ski lift can only be used for skiing and snowboarding when it's cold outside."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7,
+          0.9
+        ],
+        "selected_index": 2
+      },
+      {
+        "sub_question": "no",
+        "candidates": [
+          {
+            "thought": "This image captures a lively scene at a ski resort.",
+            "answer": "Yes, this is an image of a ski resort."
+          },
+          {
+            "thought": "There are at least 13 people visible in the scene.",
+            "answer": "Yes, there are at least 13 people in the scene."
+          },
+          {
+            "thought": "Some of them skiing and others snowboarding.",
+            "answer": "Yes, some of them are skiing while others are snowboarding."
+          }
+        ],
+        "scores": [
+          0.7,
+          0.95,
+          0.85
+        ],
+        "selected_index": 1
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "no",
+        "selected_answer": "Yes, there appears to be a lively atmosphere of people engaging in winter sports at a ski resort.",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "no",
+        "selected_answer": "Yes, this scene takes place in winter because the ski lift can only be used for skiing and snowboarding when it's cold outside.",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "no",
+        "selected_answer": "Yes, there are at least 13 people in the scene.",
+        "selected_score": 0.95
+      }
+    ]
+  },
+  {
+    "question_id": "13",
+    "question": "Are there any trucks in front of the white building?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00023.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a black and red train traveling down the tracks, passing by a train station. The train is positioned in the middle of the scene, with the station visible on the right side. The train station has a bench and a potted plant, adding a touch of greenery to the area.\n\nThere are several people in the scene, some of them standing near the train, while others are scattered around the station. A handbag can be seen placed on the ground, possibly belonging to one of the individuals present. The overall atmosphere of the scene is that of a busy train station with people going about their daily activities.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "No",
+        "candidates": [
+          {
+            "thought": "The presence of a handbag suggests that there may be someone waiting for the train or nearby.",
+            "answer": "It's possible that there is a person who is currently using the train station as they wait for their ride."
+          },
+          {
+            "thought": "The train is traveling down the tracks, indicating it is part of a regular service.",
+            "answer": "It seems like this train is a regular passenger train serving the city or town, which adds to its significance and familiarity."
+          },
+          {
+            "thought": "The train station has a bench and a potted plant, suggesting it serves commuters and travelers.",
+            "answer": "It appears that the train station is frequented by both locals and visitors, offering amenities such as seating and green space for those who need a break during their journey."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.9,
+          0.7
+        ],
+        "selected_index": 1
+      },
+      {
+        "sub_question": "Yes",
+        "candidates": [
+          {
+            "thought": "{\n    \"thoughts\": [\"The image shows a train traveling through a train station, with passengers and staff around.\", \"The presence of a bench and a potted plant adds visual interest to the scene.\", \"The overall feeling of the image is that of a bustling train station with activity taking place.\", \"The lack of any clear direction or focal point in the scene could suggest a sense of motion or movement.\"],\n    \"answers\": [\n        {\n            \"reasoning\": \"The image features a black and red train traveling down the tracks, which suggests it is moving.\",\n            \"thought\": \"The train's motion creates an interesting dynamic that draws attention to its position within the scene.\",\n            \"answer\": \"The train is moving.\"\n        },\n        {\n            \"reasoning\": \"The train station is depicted as a central focus in the scene, suggesting it is the main location being visited.\",\n            \"thought\": \"The train station appears to be the center of the action, drawing attention away from the train itself.\",\n            \"answer\": \"The train station is the primary subject of the image.\"\n        },\n        {\n            \"reasoning\": \"The use of contrasting colors (black and red) in the train and the train station helps draw attention to the train's presence.\",\n            \"thought\": \"The bright color combination of the train and station contrasts against each other, making the train stand out.\",\n            \"answer\": \"Contrasting colors enhance the train's visual impact.\"\n        }\n    ]\n}",
+            "answer": "{\n    \"thoughts\": [\"The image shows a train traveling through a train station, with passengers and staff around.\", \"The presence of a bench and a potted plant adds visual interest to the scene.\", \"The overall feeling of the image is that of a bustling train station with activity taking place.\", \"The lack of any clear direction or focal point in the scene could suggest a sense of motion or movement.\"],\n    \"answers\": [\n        {\n            \"reasoning\": \"The image features a black and red train traveling down the tracks, which suggests it is moving.\",\n            \"thought\": \"The train's motion creates an interesting dynamic that draws attention to its position within the scene.\",\n            \"answer\": \"The train is moving.\"\n        },\n        {\n            \"reasoning\": \"The train station is depicted as a central focus in the scene, suggesting it is the main location being visited.\",\n            \"thought\": \"The train station appears to be the center of the action, drawing attention away from the train itself.\",\n            \"answer\": \"The train station is the primary subject of the image.\"\n        },\n        {\n            \"reasoning\": \"The use of contrasting colors (black and red) in the train and the train station helps draw attention to the train's presence.\",\n            \"thought\": \"The bright color combination of the train and station contrasts against each other, making the train stand out.\",\n            \"answer\": \"Contrasting colors enhance the train's visual impact.\"\n        }\n    ]\n}"
+          }
+        ],
+        "scores": [
+          0.935
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "No",
+        "candidates": [
+          {
+            "thought": "{\n  \"thoughts\": [\n    \"The train station has a bench and a potted plant, which adds a bit of greenery.\",\n    \"People are scattered around the station, so it looks like there's a lot happening here.\",\n    \"I see someone holding a bag, but I don't know if they're important or not.\"\n  ],\n  \"answers\": [\n    {\n      \"path\": \"The scene is busy with people at the train station.\",\n      \"reasoning\": \"The presence of many people suggests that the station is active and bustling.\"\n    },\n    {\n      \"path\": \"The train station has a bench and a potted plant, which adds a bit of greenery.\",\n      \"reasoning\": \"These elements indicate that the station is well-maintained and pleasant.\"\n    },\n    {\n      \"path\": \"I see someone holding a bag, but I don't know if they're important or not.\",\n      \"reasoning\": \"The bag could hold personal belongings or even be carrying a significant item for someone.\"\n    }\n  ]\n}",
+            "answer": "{\n  \"thoughts\": [\n    \"The train station has a bench and a potted plant, which adds a bit of greenery.\",\n    \"People are scattered around the station, so it looks like there's a lot happening here.\",\n    \"I see someone holding a bag, but I don't know if they're important or not.\"\n  ],\n  \"answers\": [\n    {\n      \"path\": \"The scene is busy with people at the train station.\",\n      \"reasoning\": \"The presence of many people suggests that the station is active and bustling.\"\n    },\n    {\n      \"path\": \"The train station has a bench and a potted plant, which adds a bit of greenery.\",\n      \"reasoning\": \"These elements indicate that the station is well-maintained and pleasant.\"\n    },\n    {\n      \"path\": \"I see someone holding a bag, but I don't know if they're important or not.\",\n      \"reasoning\": \"The bag could hold personal belongings or even be carrying a significant item for someone.\"\n    }\n  ]\n}"
+          }
+        ],
+        "scores": [
+          0.8
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "No",
+        "selected_answer": "It seems like this train is a regular passenger train serving the city or town, which adds to its significance and familiarity.",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "Yes",
+        "selected_answer": "{\n    \"thoughts\": [\"The image shows a train traveling through a train station, with passengers and staff around.\", \"The presence of a bench and a potted plant adds visual interest to the scene.\", \"The overall feeling of the image is that of a bustling train station with activity taking place.\", \"The lack of any clear direction or focal point in the scene could suggest a sense of motion or movement.\"],\n    \"answers\": [\n        {\n            \"reasoning\": \"The image features a black and red train traveling down the tracks, which suggests it is moving.\",\n            \"thought\": \"The train's motion creates an interesting dynamic that draws attention to its position within the scene.\",\n            \"answer\": \"The train is moving.\"\n        },\n        {\n            \"reasoning\": \"The train station is depicted as a central focus in the scene, suggesting it is the main location being visited.\",\n            \"thought\": \"The train station appears to be the center of the action, drawing attention away from the train itself.\",\n            \"answer\": \"The train station is the primary subject of the image.\"\n        },\n        {\n            \"reasoning\": \"The use of contrasting colors (black and red) in the train and the train station helps draw attention to the train's presence.\",\n            \"thought\": \"The bright color combination of the train and station contrasts against each other, making the train stand out.\",\n            \"answer\": \"Contrasting colors enhance the train's visual impact.\"\n        }\n    ]\n}",
+        "selected_score": 0.935
+      },
+      {
+        "sub_question": "No",
+        "selected_answer": "{\n  \"thoughts\": [\n    \"The train station has a bench and a potted plant, which adds a bit of greenery.\",\n    \"People are scattered around the station, so it looks like there's a lot happening here.\",\n    \"I see someone holding a bag, but I don't know if they're important or not.\"\n  ],\n  \"answers\": [\n    {\n      \"path\": \"The scene is busy with people at the train station.\",\n      \"reasoning\": \"The presence of many people suggests that the station is active and bustling.\"\n    },\n    {\n      \"path\": \"The train station has a bench and a potted plant, which adds a bit of greenery.\",\n      \"reasoning\": \"These elements indicate that the station is well-maintained and pleasant.\"\n    },\n    {\n      \"path\": \"I see someone holding a bag, but I don't know if they're important or not.\",\n      \"reasoning\": \"The bag could hold personal belongings or even be carrying a significant item for someone.\"\n    }\n  ]\n}",
+        "selected_score": 0.8
+      }
+    ]
+  },
+  {
+    "question_id": "14",
+    "question": "Do you see either fences or buses there?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00024.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a man wearing a green and black striped hat, standing on a street corner. He is looking at the camera, possibly posing for a picture. The street is bustling with activity, as there are multiple cars parked or driving nearby. A traffic light is visible in the background, indicating that the man is standing at an intersection. The scene captures a moment of everyday life in an urban environment.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Do you see either fences or buses there?",
+        "candidates": [
+          {
+            "thought": "There are no fences in the image.",
+            "answer": "No"
+          },
+          {
+            "thought": "I cannot determine if there are buses in the image based on the visual description provided.",
+            "answer": "Unknown"
+          },
+          {
+            "thought": "I can assume that there are no fences or buses in the given image because they are not mentioned in the question or described visually.",
+            "answer": "No"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Do you see either fences or buses there?",
+        "selected_answer": "No",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "15",
+    "question": "Are the controllers on the left side or on the right?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00025.jpg",
+    "ground_truth": "left",
+    "visual_description": "The image features two men standing in a living room, playing a video game together. Both men are holding Wii controllers, fully engaged in the game. They are standing in front of a couch, which occupies a significant portion of the room.\n\nIn the background, there is a dining table with a cell phone placed on it. A bottle can also be seen on the table, possibly containing a beverage for the players. The living room appears to be a comfortable space for the two friends to enjoy their gaming session.",
+    "prediction": "yes",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "controllers_left",
+        "candidates": [
+          {
+            "thought": "These two men appear to be enjoying their gaming session in this living room.",
+            "answer": "They seem to be having fun and interacting with each other while playing a video game."
+          },
+          {
+            "thought": "The presence of a dining table suggests that they might have snacks or drinks nearby.",
+            "answer": "This could explain why one of them has a bottle of beverage next to them."
+          },
+          {
+            "thought": "The living room is likely designed for relaxation and entertainment, hence the use of a Wii controller.",
+            "answer": "It's clear that these men are using a gaming console as part of their leisure activities."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "controllers_right",
+        "candidates": [
+          {
+            "thought": "Both men have controller in their hands.",
+            "answer": "Wii Controllers"
+          },
+          {
+            "thought": "They're both playing video games.",
+            "answer": "Video Game"
+          },
+          {
+            "thought": "Playing on a couch suggests they're enjoying themselves.",
+            "answer": "Enjoying Gaming Session"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.8,
+          0.7
+        ],
+        "selected_index": 1
+      },
+      {
+        "sub_question": "game_session_occupation",
+        "candidates": [
+          {
+            "thought": "This is a casual gaming environment.",
+            "answer": "There is a relaxed and friendly atmosphere between the two men playing the game."
+          },
+          {
+            "thought": "Both men seem interested and focused on the game.",
+            "answer": "They appear to be enjoying themselves deeply."
+          },
+          {
+            "thought": "The presence of a cell phone suggests they might have some form of internet connection or social media interaction during the game.",
+            "answer": "It adds to the immersive experience of being part of a community while gaming."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "controllers_left",
+        "selected_answer": "They seem to be having fun and interacting with each other while playing a video game.",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "controllers_right",
+        "selected_answer": "Video Game",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "game_session_occupation",
+        "selected_answer": "There is a relaxed and friendly atmosphere between the two men playing the game.",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "16",
+    "question": "Are there both skateboarders and skateboards in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00026.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a young man skillfully riding a skateboard on a brick walkway. He is performing a trick, possibly a grind, as he moves along the path. The skateboarder is the main focus of the scene, with his skateboard clearly visible beneath him.\n\nIn the background, there are several other people scattered throughout the area, possibly observing the skateboarder or going about their own activities. The scene captures the excitement and energy of the skateboarder's performance.",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "skateboarders",
+        "candidates": [
+          {
+            "thought": "Skateboarding involves the use of specialized bicycles designed for speed and maneuverability.",
+            "answer": "Skateboarders typically ride bicycles for recreation, competition, or personal fitness."
+          },
+          {
+            "thought": "Some people engage in skateboarding for fun, while others compete at high levels.",
+            "answer": "There are different types of skateboarders, including beginners who learn to ride for leisure and advanced athletes who participate in competitions and training programs."
+          },
+          {
+            "thought": "Skateboarding has become popular worldwide due to its aesthetic appeal and physical benefits.",
+            "answer": "Skateboarders can be found everywhere from parks and streets to urban environments and even remote areas, showcasing the global interest in this sport."
+          }
+        ],
+        "scores": [
+          0.75,
+          0.8,
+          0.6
+        ],
+        "selected_index": 1
+      },
+      {
+        "sub_question": "skates",
+        "candidates": [
+          {
+            "thought": "Skateboarding refers to an outdoor activity where individuals ride skateboards through various obstacles. Skates can be categorized into two types: longboard and shortboard.",
+            "answer": "The skates in this visual description refer to a longboard."
+          }
+        ],
+        "scores": [
+          0.6
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "skateboard",
+        "candidates": [
+          {
+            "thought": "The image depicts a skilled skateboarder performing a trick.",
+            "answer": "Skateboard"
+          },
+          {
+            "thought": "A person is depicted skateboarding in an urban setting.",
+            "answer": "Skateboard"
+          },
+          {
+            "thought": "The scene includes a skateboard and a young man performing tricks.",
+            "answer": "Skateboard"
+          }
+        ],
+        "scores": [
+          0.85,
+          0.9,
+          0.7
+        ],
+        "selected_index": 1
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "skateboarders",
+        "selected_answer": "There are different types of skateboarders, including beginners who learn to ride for leisure and advanced athletes who participate in competitions and training programs.",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "skates",
+        "selected_answer": "The skates in this visual description refer to a longboard.",
+        "selected_score": 0.6
+      },
+      {
+        "sub_question": "skateboard",
+        "selected_answer": "Skateboard",
+        "selected_score": 0.9
+      }
+    ]
+  },
+  {
+    "question_id": "17",
+    "question": "What type of animal are the mountains behind of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00028.jpg",
+    "ground_truth": "horse",
+    "visual_description": "The image features a white horse standing in a dirt field, wearing a saddle and bridle. The horse appears to be calmly posing for the picture. The saddle is placed on the horse's back, and the bridle is attached to the horse's head.\n\nIn the background, there are a few people scattered around the field, possibly observing the horse or attending to other tasks. Additionally, there is a car parked in the background, likely belonging to one of the people present in the scene.",
+    "prediction": "yes",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "What type of animal are the mountains behind of?",
+        "candidates": [
+          {
+            "thought": "The given description does not provide enough information about the mountains behind the horse.",
+            "answer": "The mountains behind the horse cannot be determined from the given description."
+          },
+          {
+            "thought": "Based solely on the presence of a horse, it seems more likely that the mountains behind the horse are part of the natural landscape.",
+            "answer": "The mountains behind the horse could be part of the natural landscape."
+          },
+          {
+            "thought": "Since the horse is posed calmly, it suggests that the rider is likely to be someone who knows how to ride, which would indicate that these mountains are part of a larger outdoor setting such as a stable or riding area.",
+            "answer": "The mountains behind the horse could be part of a larger outdoor setting where horses are ridden."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "What type of animal are the mountains behind of?",
+        "selected_answer": "The mountains behind the horse cannot be determined from the given description.",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "18",
+    "question": "What animal is in front of the car?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00029.jpg",
+    "ground_truth": "dog",
+    "visual_description": "The image features a large brown dog standing in a grassy field, with its tongue out and panting. The dog appears to be enjoying the outdoor environment. In the background, there are several cars parked, with some closer to the dog and others further away. The cars are of various sizes and are arranged in a line, creating a contrast between the dog and the vehicles.",
+    "prediction": "brown dog",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "dog",
+        "candidates": [
+          {
+            "thought": "This is an image of a dog.",
+            "answer": "Yes"
+          },
+          {
+            "thought": "The dog is panting, which suggests that it is hot.",
+            "answer": "Yes"
+          },
+          {
+            "thought": "The dog's tongue is out, indicating that it is very thirsty.",
+            "answer": "Yes"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "vehicle",
+        "candidates": [
+          {
+            "thought": "[{\"thought\": \"The cars appear to be parked in a line which creates a contrast with the dog.\", \"answer\": \"Contrast\"}, {\"thought\": \"The dogs panting could indicate that it is hot outside.\", \"answer\": \"Hot\"}, {\"thought\": \"The dogs tongue out suggests they are taking pleasure in the weather.\", \"answer\": \"Outdoor Environment\"}}",
+            "answer": "[{\"thought\": \"The cars appear to be parked in a line which creates a contrast with the dog.\", \"answer\": \"Contrast\"}, {\"thought\": \"The dogs panting could indicate that it is hot outside.\", \"answer\": \"Hot\"}, {\"thought\": \"The dogs tongue out suggests they are taking pleasure in the weather.\", \"answer\": \"Outdoor Environment\"}}"
+          }
+        ],
+        "scores": [
+          0.6
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "dog",
+        "selected_answer": "Yes",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "vehicle",
+        "selected_answer": "[{\"thought\": \"The cars appear to be parked in a line which creates a contrast with the dog.\", \"answer\": \"Contrast\"}, {\"thought\": \"The dogs panting could indicate that it is hot outside.\", \"answer\": \"Hot\"}, {\"thought\": \"The dogs tongue out suggests they are taking pleasure in the weather.\", \"answer\": \"Outdoor Environment\"}}",
+        "selected_score": 0.6
+      }
+    ]
+  },
+  {
+    "question_id": "19",
+    "question": "Are there both men and children in this photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00032.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a young child, possibly a baby, laying on a wooden bench. The child is smiling and holding a snack, possibly a candy bar, in their hands. The bench is located in a park, providing a comfortable and relaxing environment for the child.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Are there both men and children in this photo?",
+        "candidates": [
+          {
+            "thought": "There are no other adults or children visible in the image.",
+            "answer": "No"
+          },
+          {
+            "thought": "The image depicts a scene where a young child is shown alone, not accompanied by any other individuals.",
+            "answer": "No"
+          },
+          {
+            "thought": "It's difficult to determine if there are more than one adult present without additional context.",
+            "answer": "Yes"
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Are there both men and children in this photo?",
+        "selected_answer": "No",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "20",
+    "question": "Which kind of fast food is to the right of the jar?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00034.jpg",
+    "ground_truth": "fries",
+    "visual_description": "The image features a dining table with a delicious meal on it. There is a large hamburger placed on a plate, accompanied by a side of french fries. A sandwich is also present on the table, adding to the variety of food.\n\nIn addition to the main meal, there are several items on the table, including a bottle, a cup, a fork, a knife, and a spoon. The table setting suggests a casual dining experience, with the food and utensils arranged for easy access.",
+    "prediction": "hamburger",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Which kind of fast food is to the right of the jar?",
+        "candidates": [
+          {
+            "thought": "Based on the description, the hamburger and french fries suggest that the meal is from a fast food chain.",
+            "answer": "Hamburger"
+          },
+          {
+            "thought": "There is no direct evidence in the description that the jar contains fast food.",
+            "answer": "No specific answer as the question is open-ended."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Which kind of fast food is to the right of the jar?",
+        "selected_answer": "Hamburger",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "21",
+    "question": "Are there either trays or snowboards in the picture?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00036.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image captures a man skillfully riding a skateboard on a ramp, performing a trick. He is wearing a black jacket and appears to be in motion. There are two other people in the scene, one standing near the ramp and another further away.\n\nThe skateboarder is the main focus of the image, and his action is the center of attention. The other people in the scene are likely observing the skateboarder's performance or waiting for their turn to ride the ramp.",
+    "prediction": "no",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Are there either trays or snowboards in the picture?",
+        "candidates": [
+          {
+            "thought": "The picture does not include trays or snowboards.",
+            "answer": "No trays or snowboards are present in the picture."
+          },
+          {
+            "thought": "It's possible that trays could have been included if they were part of the skateboarder's equipment.",
+            "answer": "There is no evidence that trays were used by the skateboarder in this picture."
+          },
+          {
+            "thought": "Snowboards would typically be found on ramps but are not shown in this picture.",
+            "answer": "Snowboards are not present in the picture as it depicts a skateboarder riding a ramp."
+          }
+        ],
+        "scores": [
+          0.8,
+          0.0,
+          0.2
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Are there either trays or snowboards in the picture?",
+        "selected_answer": "No trays or snowboards are present in the picture.",
+        "selected_score": 0.8
+      }
+    ]
+  },
+  {
+    "question_id": "22",
+    "question": "Is the box to the left or to the right of the man that is looking at the building?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00037.jpg",
+    "ground_truth": "left",
+    "visual_description": "The image depicts a rainy day in a city, with a person holding a colorful umbrella to shield themselves from the rain. The umbrella is open and covers a significant portion of the person's body. Another person can be seen standing nearby, also holding an umbrella.\n\nThe scene takes place near a fence, and there are two trash cans in the area. One trash can is located closer to the left side of the image, while the other is situated more towards the center. A car is parked in the background, and a handbag can be seen placed on the ground near the person holding the umbrella.",
+    "prediction": "yes",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "left",
+        "candidates": [
+          {
+            "thought": "The person holding the umbrella has their right arm extended to cover part of their body.",
+            "answer": "Person"
+          }
+        ],
+        "scores": [
+          0.6
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "man's position",
+        "candidates": [
+          {
+            "thought": "The man is standing under an umbrella.",
+            "answer": "Under an umbrella."
+          },
+          {
+            "thought": "The man is holding an umbrella.",
+            "answer": "Holding an umbrella."
+          },
+          {
+            "thought": "The man is protecting himself from the rain.",
+            "answer": "Protecting himself from the rain."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "man's perspective",
+        "candidates": [
+          {
+            "thought": "The man's perspective would likely include observing the people around him as they navigate through the rain, possibly noticing the various shades of color in their umbrellas.",
+            "answer": "A man's perspective may involve observing the people around him as they navigate through the rain."
+          },
+          {
+            "thought": "The man's perspective might focus on the weather conditions and how it affects his daily activities, such as carrying an umbrella or finding shelter.",
+            "answer": "A man's perspective could concern himself with weather conditions and personal needs like having an umbrella and finding shelter during rainy days."
+          },
+          {
+            "thought": "As he walks by the fence, the man may contemplate the beauty of nature despite the current weather, which can be refreshing for him.",
+            "answer": "A man's perspective could be about appreciating the natural environment even when it is raining."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "left",
+        "selected_answer": "Person",
+        "selected_score": 0.6
+      },
+      {
+        "sub_question": "man's position",
+        "selected_answer": "Under an umbrella.",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "man's perspective",
+        "selected_answer": "A man's perspective may involve observing the people around him as they navigate through the rain.",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "23",
+    "question": "What is located on top of the cucumber?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00041.jpg",
+    "ground_truth": "carrots",
+    "visual_description": "The image features a dining table with a blue plate containing a delicious meal. The plate is filled with rice, meat, and various vegetables, including carrots and broccoli. There are multiple carrots scattered across the plate, adding a vibrant touch to the dish.\n\nA fork is placed on the table, ready to be used to enjoy the meal. The table setting is complemented by a chair positioned nearby. The overall scene conveys a sense of a well-prepared and appetizing meal.",
+    "prediction": "cucumber has no top object",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "What is located on top of the cucumber?",
+        "candidates": [
+          {
+            "thought": "The cucumber is not present in the visual description provided.",
+            "answer": "No object is depicted on top of the cucumber."
+          }
+        ],
+        "scores": [
+          0.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "What is located on top of the cucumber?",
+        "selected_answer": "No object is depicted on top of the cucumber.",
+        "selected_score": 0.0
+      }
+    ]
+  },
+  {
+    "question_id": "24",
+    "question": "Is this a squirrel or a cat?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00042.jpg",
+    "ground_truth": "cat",
+    "visual_description": "The image features a large orange cat standing on a toilet seat, looking at the camera. The cat appears to be curious and is positioned in the middle of the toilet bowl. The toilet is located in a bathroom, and the cat seems to be exploring the area.",
+    "prediction": "yes",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Is this a squirrel or a cat?",
+        "candidates": [
+          {
+            "thought": "Based solely on the image provided, it's impossible to determine whether it's a squirrel or a cat.",
+            "answer": "It is difficult to accurately identify the animal based on the given information."
+          }
+        ],
+        "scores": [
+          0.3
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Is this a squirrel or a cat?",
+        "selected_answer": "It is difficult to accurately identify the animal based on the given information.",
+        "selected_score": 0.3
+      }
+    ]
+  },
+  {
+    "question_id": "25",
+    "question": "Are there both children and men in this photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00043.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a lively scene at a park, where a group of children is playing with a flock of birds. The birds are scattered throughout the park, with some flying close to the children and others perched on the ground. The children are enjoying the interaction with the birds, and some are even feeding them.\n\nIn the background, there are several benches and a swing, providing a place for the children to sit and relax. A few people can be seen in the park, likely watching the children and the birds or participating in their own activities.\n\nAdditionally, there are a few handbags and a backpack placed around the park, likely belonging to the children or their parents.",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "children",
+        "candidates": [
+          {
+            "thought": "Children in the image appear to be between 5-10 years old.",
+            "answer": "Yes"
+          },
+          {
+            "thought": "Younger children could have been involved, as they may not yet fully understand the concept of sharing food with animals.",
+            "answer": "No"
+          },
+          {
+            "thought": "Adults were observed in the background, suggesting that the children may have been accompanied by an adult who was supervising the activity.",
+            "answer": "Yes"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.7,
+          0.9
+        ],
+        "selected_index": 2
+      },
+      {
+        "sub_question": "men",
+        "candidates": [
+          {
+            "thought": "This image does not depict any male figures.",
+            "answer": "Male figures are not present in this image."
+          },
+          {
+            "thought": "A child holding a bird feeder may be considered as a man.",
+            "answer": "A person holding a bird feeder would not necessarily imply gender but could be either male or female depending on the context."
+          },
+          {
+            "thought": "There's no clear indication of gender in this image, so it cannot be definitively determined whether the individuals depicted are men or women.",
+            "answer": "Since there's no gender reference in the description provided, it's impossible to conclude if they are men or women."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "children",
+        "selected_answer": "Yes",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "men",
+        "selected_answer": "Male figures are not present in this image.",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "26",
+    "question": "Do you see a frisbee to the left of the dog the helmet is on?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00044.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image depicts a lively street scene with a group of people gathered around a red motorcycle. A man is riding the motorcycle, while others are standing or sitting nearby. There are at least 13 people in the scene, with some standing closer to the motorcycle and others further away.\n\nIn addition to the motorcycle, there are two handbags visible in the scene, one near the center and the other towards the right side. A chair can also be seen in the background, placed near the left side of the image. The overall atmosphere appears to be a casual gathering or event, with people enjoying each other's company.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Do you see a frisbee to the left of the dog the helmet is on?",
+        "candidates": [
+          {
+            "thought": "I don't see any frisbee in the image.",
+            "answer": "No frisbee was found."
+          },
+          {
+            "thought": "Based on the given description, it doesn't appear that a frisbee has been included in the scene.",
+            "answer": "It does not contain a frisbee."
+          },
+          {
+            "thought": "As per the given visual description, there is no frisbee present.",
+            "answer": "There is no frisbee depicted in the image."
+          }
+        ],
+        "scores": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Do you see a frisbee to the left of the dog the helmet is on?",
+        "selected_answer": "No frisbee was found.",
+        "selected_score": 0.1
+      }
+    ]
+  },
+  {
+    "question_id": "27",
+    "question": "Are there any skateboards or helmets?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00045.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a young man skillfully riding a skateboard on a sidewalk. He is performing a trick, possibly a kickflip, as he jumps in the air. The skateboarder is wearing a black jacket, which adds to the overall style of the scene.\n\nIn the background, there is a backpack placed on the ground, possibly belonging to the skateboarder or someone else in the area. The scene captures the excitement and energy of the skateboarder as he showcases his talent.",
+    "prediction": "no",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Are there any skateboards or helmets?",
+        "candidates": [
+          {
+            "thought": "{\n  \"thoughts\": [\"No mention of skateboards or helmets.\", \"Skateboarder is likely not wearing a helmet for safety reasons.\", \"Skateboarding can be dangerous and protective gear such as helmets are essential.\", \"Skateboards could be visible but not necessarily present.\"],\n  \"answers\": [\n    {\n      \"reasoning\": \"There are no skateboards or helmets shown in the image.\",\n      \"justification\": \"The image does not include any signifiers of skateboards or protective gear.\"\n    },\n    {\n      \"reasoning\": \"It's possible that the skateboarder is not using a helmet due to the nature of their activity (skateboarding).\",\n      \"justification\": \"Skateboarding is known for its high risk and the use of protective equipment may vary among different individuals or groups.\"\n    },\n    {\n      \"reasoning\": \"While it's difficult to tell from this image, skateboards could be present but not necessarily visible.\",\n      \"justification\": \"Skateboarders often wear them while performing tricks, but they may not be visible or captured in this particular frame.\"\n    }\n  ]\n}",
+            "answer": "{\n  \"thoughts\": [\"No mention of skateboards or helmets.\", \"Skateboarder is likely not wearing a helmet for safety reasons.\", \"Skateboarding can be dangerous and protective gear such as helmets are essential.\", \"Skateboards could be visible but not necessarily present.\"],\n  \"answers\": [\n    {\n      \"reasoning\": \"There are no skateboards or helmets shown in the image.\",\n      \"justification\": \"The image does not include any signifiers of skateboards or protective gear.\"\n    },\n    {\n      \"reasoning\": \"It's possible that the skateboarder is not using a helmet due to the nature of their activity (skateboarding).\",\n      \"justification\": \"Skateboarding is known for its high risk and the use of protective equipment may vary among different individuals or groups.\"\n    },\n    {\n      \"reasoning\": \"While it's difficult to tell from this image, skateboards could be present but not necessarily visible.\",\n      \"justification\": \"Skateboarders often wear them while performing tricks, but they may not be visible or captured in this particular frame.\"\n    }\n  ]\n}"
+          }
+        ],
+        "scores": [
+          0.6
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Are there any skateboards or helmets?",
+        "selected_answer": "{\n  \"thoughts\": [\"No mention of skateboards or helmets.\", \"Skateboarder is likely not wearing a helmet for safety reasons.\", \"Skateboarding can be dangerous and protective gear such as helmets are essential.\", \"Skateboards could be visible but not necessarily present.\"],\n  \"answers\": [\n    {\n      \"reasoning\": \"There are no skateboards or helmets shown in the image.\",\n      \"justification\": \"The image does not include any signifiers of skateboards or protective gear.\"\n    },\n    {\n      \"reasoning\": \"It's possible that the skateboarder is not using a helmet due to the nature of their activity (skateboarding).\",\n      \"justification\": \"Skateboarding is known for its high risk and the use of protective equipment may vary among different individuals or groups.\"\n    },\n    {\n      \"reasoning\": \"While it's difficult to tell from this image, skateboards could be present but not necessarily visible.\",\n      \"justification\": \"Skateboarders often wear them while performing tricks, but they may not be visible or captured in this particular frame.\"\n    }\n  ]\n}",
+        "selected_score": 0.6
+      }
+    ]
+  },
+  {
+    "question_id": "28",
+    "question": "Is there any towel to the left of the black bag?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00047.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a bathroom with a white toilet situated next to a sink. Above the toilet, there are two towels hanging on a towel rack, adding a touch of color to the space. The sink is accompanied by a mirror, which reflects the bathroom's interior.\n\nIn the background, there is a person partially visible, likely using the bathroom or attending to other tasks. The overall scene is a typical bathroom setup with a focus on the toilet and sink area.",
+    "prediction": "no",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Is there any towel to the left of the black bag?",
+        "candidates": [
+          {
+            "thought": "[{\"thought\": \"Based on the visual description provided, it seems that there is no towel to the left of the black bag.\", \"answer\": \"No towel found.\"}, \n{\"thought\": \"Given the context of the image, there are towels hanging on a towel rack above the toilet. However, the presence of a black bag suggests someone might be in the process of moving through the space, possibly for personal hygiene purposes.\", \"answer\": \"Black bag indicates possible use of the bathroom.\"},\n{\"thought\": \"The presence of a mirror behind the person suggests they may be looking at themselves while using the bathroom. However, since there are no towels shown near the mirror, it is unlikely that they would need them during their visit to the bathroom.\", \"answer\": \"Towels not needed.\"}]\n\nJSON Array with Objects:\n```json\n[\n  {\n    \"thought\": \"There is no towel to the left of the black bag.\",\n    \"answer\": \"No towel found.\"\n  },\n  {\n    \"thought\": \"A black bag indicates someone might be in the process of using the bathroom.\",\n    \"answer\": \"Black bag indicates possible use of the bathroom.\"\n  },\n  {\n    \"thought\": \"Towels are not needed if there are no towels shown near the mirror.\",\n    \"answer\": \"Towels not needed.\"\n  }\n]\n```",
+            "answer": "[{\"thought\": \"Based on the visual description provided, it seems that there is no towel to the left of the black bag.\", \"answer\": \"No towel found.\"}, \n{\"thought\": \"Given the context of the image, there are towels hanging on a towel rack above the toilet. However, the presence of a black bag suggests someone might be in the process of moving through the space, possibly for personal hygiene purposes.\", \"answer\": \"Black bag indicates possible use of the bathroom.\"},\n{\"thought\": \"The presence of a mirror behind the person suggests they may be looking at themselves while using the bathroom. However, since there are no towels shown near the mirror, it is unlikely that they would need them during their visit to the bathroom.\", \"answer\": \"Towels not needed.\"}]\n\nJSON Array with Objects:\n```json\n[\n  {\n    \"thought\": \"There is no towel to the left of the black bag.\",\n    \"answer\": \"No towel found.\"\n  },\n  {\n    \"thought\": \"A black bag indicates someone might be in the process of using the bathroom.\",\n    \"answer\": \"Black bag indicates possible use of the bathroom.\"\n  },\n  {\n    \"thought\": \"Towels are not needed if there are no towels shown near the mirror.\",\n    \"answer\": \"Towels not needed.\"\n  }\n]\n```"
+          }
+        ],
+        "scores": [
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Is there any towel to the left of the black bag?",
+        "selected_answer": "[{\"thought\": \"Based on the visual description provided, it seems that there is no towel to the left of the black bag.\", \"answer\": \"No towel found.\"}, \n{\"thought\": \"Given the context of the image, there are towels hanging on a towel rack above the toilet. However, the presence of a black bag suggests someone might be in the process of moving through the space, possibly for personal hygiene purposes.\", \"answer\": \"Black bag indicates possible use of the bathroom.\"},\n{\"thought\": \"The presence of a mirror behind the person suggests they may be looking at themselves while using the bathroom. However, since there are no towels shown near the mirror, it is unlikely that they would need them during their visit to the bathroom.\", \"answer\": \"Towels not needed.\"}]\n\nJSON Array with Objects:\n```json\n[\n  {\n    \"thought\": \"There is no towel to the left of the black bag.\",\n    \"answer\": \"No towel found.\"\n  },\n  {\n    \"thought\": \"A black bag indicates someone might be in the process of using the bathroom.\",\n    \"answer\": \"Black bag indicates possible use of the bathroom.\"\n  },\n  {\n    \"thought\": \"Towels are not needed if there are no towels shown near the mirror.\",\n    \"answer\": \"Towels not needed.\"\n  }\n]\n```",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "29",
+    "question": "Do the necktie and the book have the same color?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00048.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image depicts two men standing in a living room, each holding a Wii remote and actively playing a video game. They are standing in front of a couch, which occupies a significant portion of the room. \n\nThere are several books scattered around the room, with some placed on the couch and others on the floor. A chair is also visible in the scene, positioned near the couch. The living room appears to be a comfortable space for the two friends to enjoy their gaming session together.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "same color",
+        "candidates": [
+          {
+            "thought": "Both men are wearing casual clothing.",
+            "answer": "Both men are dressed casually."
+          },
+          {
+            "thought": "They are sitting in a living room, likely watching TV or playing video games.",
+            "answer": "Yes, they are engaged in an active activity such as playing video games."
+          },
+          {
+            "thought": "The living room has a variety of different items scattered around it, including books, furniture, and a couch.",
+            "answer": "Yes, there are multiple objects in the living room."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "color of necktie",
+        "candidates": [
+          {
+            "thought": "The color of the neckties cannot be determined from the provided visual description.",
+            "answer": "The color of the neckties cannot be determined from the provided visual description."
+          }
+        ],
+        "scores": [
+          0.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "color of book",
+        "candidates": [
+          {
+            "thought": "[{\"thought\": \"The color of the books could be inferred from their presence in the scene.\", \"answer\": \"The color of the books is not specified.\"}, {\"thought\": \"In this context, it's common for books to be found in various colors or materials such as paperbacks, hardcovers, or even digital e-books.\", \"answer\": \"The color of the books can vary depending on the type and material they are made from.\"}, {\"thought\": \"Given that there are no specific details about the books' color mentioned in the description, it's impossible to accurately determine their color without additional information.\", \"answer\": \"It is uncertain what color the books are because they are not described in the given visual description.\"}]\n\nJSON output: [{\"thought\": \"The color of the books could be inferred from their presence in the scene.\", \"answer\": \"The color of the books is not specified.\"}, {\"thought\": \"In this context, it's common for books to be found in various colors or materials such as paperbacks, hardcovers, or even digital e-books.\", \"answer\": \"The color of the books can vary depending on the type and material they are made from.\"}, {\"thought\": \"Given that there are no specific details about the books' color mentioned in the description, it's impossible to accurately determine their color without additional information.\", \"answer\": \"It is uncertain what color the books are because they are not described in the given visual description.\"}]",
+            "answer": "[{\"thought\": \"The color of the books could be inferred from their presence in the scene.\", \"answer\": \"The color of the books is not specified.\"}, {\"thought\": \"In this context, it's common for books to be found in various colors or materials such as paperbacks, hardcovers, or even digital e-books.\", \"answer\": \"The color of the books can vary depending on the type and material they are made from.\"}, {\"thought\": \"Given that there are no specific details about the books' color mentioned in the description, it's impossible to accurately determine their color without additional information.\", \"answer\": \"It is uncertain what color the books are because they are not described in the given visual description.\"}]\n\nJSON output: [{\"thought\": \"The color of the books could be inferred from their presence in the scene.\", \"answer\": \"The color of the books is not specified.\"}, {\"thought\": \"In this context, it's common for books to be found in various colors or materials such as paperbacks, hardcovers, or even digital e-books.\", \"answer\": \"The color of the books can vary depending on the type and material they are made from.\"}, {\"thought\": \"Given that there are no specific details about the books' color mentioned in the description, it's impossible to accurately determine their color without additional information.\", \"answer\": \"It is uncertain what color the books are because they are not described in the given visual description.\"}]"
+          }
+        ],
+        "scores": [
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "same color",
+        "selected_answer": "Both men are dressed casually.",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "color of necktie",
+        "selected_answer": "The color of the neckties cannot be determined from the provided visual description.",
+        "selected_score": 0.0
+      },
+      {
+        "sub_question": "color of book",
+        "selected_answer": "[{\"thought\": \"The color of the books could be inferred from their presence in the scene.\", \"answer\": \"The color of the books is not specified.\"}, {\"thought\": \"In this context, it's common for books to be found in various colors or materials such as paperbacks, hardcovers, or even digital e-books.\", \"answer\": \"The color of the books can vary depending on the type and material they are made from.\"}, {\"thought\": \"Given that there are no specific details about the books' color mentioned in the description, it's impossible to accurately determine their color without additional information.\", \"answer\": \"It is uncertain what color the books are because they are not described in the given visual description.\"}]\n\nJSON output: [{\"thought\": \"The color of the books could be inferred from their presence in the scene.\", \"answer\": \"The color of the books is not specified.\"}, {\"thought\": \"In this context, it's common for books to be found in various colors or materials such as paperbacks, hardcovers, or even digital e-books.\", \"answer\": \"The color of the books can vary depending on the type and material they are made from.\"}, {\"thought\": \"Given that there are no specific details about the books' color mentioned in the description, it's impossible to accurately determine their color without additional information.\", \"answer\": \"It is uncertain what color the books are because they are not described in the given visual description.\"}]",
+        "selected_score": 0.5
+      }
+    ]
+  },
+  {
+    "question_id": "30",
+    "question": "Is there a pig or a hippo in this image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data/processed_gqa_robustness_50/gaussian_0.00/images/00049.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a black and white cat sitting on a bed, looking at a box of donuts. The box is filled with various types of donuts, including chocolate and sprinkled ones. The cat appears to be curious about the delicious treats in the box. The bed occupies most of the scene, with the cat positioned towards the left side of the image.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "Is there a pig or a hippo in this image?",
+        "candidates": [
+          {
+            "thought": "No animals other than the cat are depicted.",
+            "answer": "No, there is no animal besides the cat in this image."
+          },
+          {
+            "thought": "It's not possible for a pig or a hippo to appear in a cat-themed image as these two animals do not share a common habitat with cats.",
+            "answer": "No, there is no animal besides the cat in this image that resembles a pig or a hippo."
+          },
+          {
+            "thought": "This image only depicts a cat on a bed, which suggests it's unlikely there would be any other animals in the same location.",
+            "answer": "No, there is no animal besides the cat in this image that could be mistaken for a pig or a hippo."
+          }
+        ],
+        "scores": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "Is there a pig or a hippo in this image?",
+        "selected_answer": "No, there is no animal besides the cat in this image.",
+        "selected_score": 0.5
+      }
+    ]
+  }
+]
