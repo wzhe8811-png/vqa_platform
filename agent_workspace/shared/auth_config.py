@@ -13,11 +13,11 @@ def secret_key() -> str:
 
 
 def portal_base_url() -> str:
-    return os.environ.get("PORTAL_BASE_URL", "http://127.0.0.1:7862").rstrip("/")
+    return os.environ.get("PORTAL_BASE_URL", "").rstrip("/")
 
 
 def trace_base_url() -> str:
-    return os.environ.get("TRACE_BASE_URL", "http://127.0.0.1:7860").rstrip("/")
+    return os.environ.get("TRACE_BASE_URL", "").rstrip("/")
 
 
 def redirect_url_for_role(role: str) -> str:
