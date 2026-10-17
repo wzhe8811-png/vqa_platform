@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-PYTHON_BIN="/root/miniconda3/envs/llava_env/bin/python"
+PYTHON_BIN="/root/miniconda3/envs/vqa_env/bin/python"
 PYTHON_BIN_DIR="$(dirname "${PYTHON_BIN}")"
 BASE_DIR="/root/autodl-tmp/vision_qa_platform/agent_workspace"
 RUN_DIR="${BASE_DIR}/.run"
