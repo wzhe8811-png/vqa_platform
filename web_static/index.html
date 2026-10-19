@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>基于推理时拓展的视觉问答系统</title>
+<script src="/echarts.min.js"></script>
+<style>
+:root{
+  --bg:#0a0e1c; --bg2:#0e1530; --card:rgba(148,178,255,.055); --card2:rgba(148,178,255,.095);
+  --line:rgba(140,170,255,.14); --line2:rgba(140,170,255,.28);
+  --text:#e8edff; --dim:#8ea0c8; --dim2:#64749c;
+  --blue:#5b8cff; --purple:#9d6bff; --cyan:#22d3ee;
+  --green:#4ade80; --red:#fb7185; --gold:#fbbf24;
+  --grad:linear-gradient(135deg,#5b8cff,#9d6bff);
+  --radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--text); min-height:100vh;
+  font-family:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background-image:
+    radial-gradient(900px 420px at 12% -8%, rgba(91,140,255,.16), transparent 60%),
+    radial-gradient(800px 400px at 92% -4%, rgba(157,107,255,.14), transparent 60%),
+    radial-gradient(700px 500px at 50% 115%, rgba(34,211,238,.07), transparent 60%);
+  background-attachment:fixed;
+}
+.wrap{max-width:1680px;margin:0 auto;padding:0 30px 60px}
+/* ---------- 顶栏 ---------- */
+.hero{padding:30px 0 6px}
+.hero .title{font-size:31px;font-weight:700;letter-spacing:.5px;background:linear-gradient(92deg,#7aa5ff,#b08cff 55%,#6fe3ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .subtitle{margin-top:8px;color:var(--dim);font-size:13.5px;letter-spacing:.3px}
+.hero .subtitle b{color:var(--cyan);font-weight:600}
+/* ---------- Tab 导航 ---------- */
+.nav{display:flex;gap:10px;margin:24px 0 0;flex-wrap:wrap}
+.nav .tab{
+  display:flex;align-items:center;gap:8px;padding:11px 22px;border-radius:26px;cursor:pointer;
+  background:var(--card);border:1px solid var(--line);color:var(--dim);font-size:14px;font-weight:500;
+  backdrop-filter:blur(8px);transition:all .22s ease;
+}
+.nav .tab:hover{color:var(--text);border-color:var(--line2);transform:translateY(-1px)}
+.nav .tab.active{
+  background:var(--grad);color:#fff;border-color:transparent;
+  box-shadow:0 6px 22px rgba(91,140,255,.35);
+}
+.nav .tab .ico{font-size:16px}
+/* ---------- 页面 ---------- */
+.page{display:none;animation:fadeIn .35s ease}
+.page.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+/* ---------- 卡片 ---------- */
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;margin-top:18px;backdrop-filter:blur(10px);
+  box-shadow:0 8px 28px rgba(4,8,24,.35);
+}
+.card h3{font-size:15.5px;font-weight:600;margin-bottom:14px;color:#b9c9ff;display:flex;align-items:center;gap:9px;letter-spacing:.3px}
+.card h3 .badge-note{font-size:11px;font-weight:400;color:var(--dim2);border:1px solid var(--line);padding:2px 9px;border-radius:10px;margin-left:auto}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.grid2-13{display:grid;grid-template-columns:1fr 1.7fr;gap:22px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+@media(max-width:1080px){.grid2,.grid2-13{grid-template-columns:1fr}}
+/* ---------- 表单 ---------- */
+label.fld{display:block;font-size:12.5px;color:var(--dim);margin:16px 0 6px;letter-spacing:.4px}
+label.fld .rowline{display:flex;justify-content:space-between;align-items:center}
+input[type=text],textarea,select{
+  width:100%;padding:13px 16px;border-radius:12px;border:1px solid var(--line);
+  background:rgba(10,16,36,.7);color:var(--text);font-size:15px;outline:none;transition:border .2s;
+  font-family:inherit;
+}
+textarea{resize:vertical;min-height:74px;line-height:1.6}
+input:focus,textarea:focus,select:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(91,140,255,.15)}
+button{font-family:inherit;cursor:pointer;border:none;font-size:14px;font-weight:600;transition:all .2s}
+.btn-main{
+  background:var(--grad);color:#fff;padding:14px 34px;border-radius:12px;font-size:15px;
+  box-shadow:0 5px 18px rgba(91,140,255,.4);
+}
+.btn-main:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(91,140,255,.55)}
+.btn-main:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.btn-ghost{background:var(--card2);border:1px solid var(--line);color:var(--dim);padding:8px 16px;border-radius:10px;font-size:12.5px}
+.btn-ghost:hover{color:var(--text);border-color:var(--line2)}
+.btn-trans{
+  background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.35);color:#67dcee;
+  padding:7px 14px;border-radius:9px;font-size:12.5px;white-space:nowrap;
+}
+.btn-trans:hover{background:rgba(34,211,238,.22);color:#a5ecf7}
+.btn-trans:disabled{opacity:.5;cursor:wait}
+/* ---------- 上传框 ---------- */
+.upload{
+  border:1.5px dashed var(--line2);border-radius:14px;padding:34px 16px;text-align:center;
+  cursor:pointer;color:var(--dim);font-size:13.5px;background:rgba(10,16,36,.4);transition:all .25s;
+}
+.upload:hover{border-color:var(--blue);background:rgba(91,140,255,.07);color:#b9c9ff}
+.upload img{max-width:100%;max-height:230px;border-radius:12px;margin-top:12px;border:1px solid var(--line)}
+.upload .hint{font-size:11.5px;color:var(--dim2);margin-top:5px}
+/* ---------- 方法选择 ---------- */
+.method-group{display:flex;flex-wrap:wrap;gap:9px;margin-top:10px}
+.method-opt{
+  padding:9px 16px;border-radius:20px;border:1px solid var(--line);cursor:pointer;
+  font-size:13px;color:var(--dim);background:rgba(10,16,36,.5);transition:all .2s;user-select:none;
+}
+.method-opt:hover{color:var(--text);border-color:var(--line2)}
+.method-opt.on{background:rgba(91,140,255,.16);border-color:var(--blue);color:#9dbbff;box-shadow:0 0 10px rgba(91,140,255,.25)}
+/* ---------- 结果区 ---------- */
+.answer-hero{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:22px 26px;border-radius:14px;
+  background:linear-gradient(135deg,rgba(91,140,255,.14),rgba(157,107,255,.10));border:1px solid var(--line2)}
+.answer-hero .ans{font-size:34px;font-weight:800;letter-spacing:.5px;background:linear-gradient(92deg,#cfe0ff,#c4b5ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.answer-hero .ans-zh{font-size:26px;font-weight:700;color:#ffd76b}
+.badge{padding:5px 13px;border-radius:14px;font-size:12px;font-weight:700;letter-spacing:.4px}
+.badge.ok{background:rgba(74,222,128,.16);color:var(--green);border:1px solid rgba(74,222,128,.4)}
+.badge.bad{background:rgba(251,113,133,.14);color:var(--red);border:1px solid rgba(251,113,133,.4)}
+.badge.dim{background:rgba(142,160,200,.12);color:var(--dim);border:1px solid var(--line)}
+.meta{color:var(--dim2);font-size:12px}
+/* ---------- 图表 ---------- */
+.chart{width:100%;height:600px;background:rgba(8,12,28,.5);border-radius:12px;border:1px solid var(--line);margin-top:10px}
+.chart.sm{height:310px}
+.chart.md{height:440px}
+/* ---------- 文本框 ---------- */
+.raw{
+  background:rgba(8,12,28,.6);border:1px solid var(--line);border-radius:12px;padding:14px 16px;
+  font-size:13.5px;line-height:1.75;white-space:pre-wrap;color:#aebde2;max-height:250px;overflow:auto;margin-top:6px;
+}
+/* ---------- 对比卡片 ---------- */
+.cmp-card{
+  background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;position:relative;overflow:hidden;
+  transition:all .25s;
+}
+.cmp-card:hover{transform:translateY(-3px);border-color:var(--line2);box-shadow:0 10px 26px rgba(4,8,24,.5)}
+.cmp-card .mname{font-size:13px;font-weight:700;color:#9dbbff;letter-spacing:.5px}
+.cmp-card .topline{position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad);opacity:.7}
+.cmp-card .ans{font-size:22px;font-weight:800;margin:10px 0 4px}
+.cmp-card .ans-zh{font-size:15px;font-weight:600;color:#ffd76b;margin-bottom:8px}
+.cmp-card .row{display:flex;justify-content:space-between;align-items:center;font-size:11.5px;color:var(--dim2);margin-top:5px;gap:8px}
+/* ---------- 统计卡片 ---------- */
+.stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-top:6px}
+.stat{
+  background:linear-gradient(160deg,rgba(91,140,255,.12),rgba(157,107,255,.06));
+  border:1px solid var(--line);border-radius:14px;padding:18px 14px;text-align:center;position:relative;overflow:hidden;
+}
+.stat .num{font-size:29px;font-weight:800;background:linear-gradient(92deg,#7aa5ff,#b08cff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .lbl{font-size:12.5px;color:var(--dim);margin-top:5px;letter-spacing:.3px}
+.stat .sub{font-size:11px;color:var(--dim2);margin-top:3px}
+.stat.hl{border-color:rgba(251,191,36,.45);box-shadow:0 0 18px rgba(251,191,36,.15)}
+.stat.hl .num{background:linear-gradient(92deg,#ffd76b,#ffb45e);-webkit-background-clip:text;background-clip:text;color:transparent}
+/* ---------- 表格 ---------- */
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{padding:10px 12px;text-align:left;color:var(--dim2);font-weight:600;font-size:11.5px;letter-spacing:.5px;border-bottom:1px solid var(--line2);white-space:nowrap}
+td{padding:10px 12px;border-bottom:1px solid rgba(140,170,255,.07);vertical-align:top;line-height:1.5}
+tbody tr{transition:background .15s}
+tbody tr:hover{background:rgba(91,140,255,.06)}
+.ok-t{color:var(--green);font-weight:700}
+.bad-t{color:var(--red);font-weight:700}
+.tbl-scroll{overflow:auto;max-height:640px;margin-top:8px;border-radius:12px;border:1px solid var(--line)}
+.tbl-img{width:88px;border-radius:10px;border:1px solid var(--line);cursor:zoom-in;transition:transform .2s}
+.tbl-img:hover{transform:scale(1.06);border-color:var(--blue)}
+/* ---------- 分页 ---------- */
+.pager{display:flex;gap:10px;align-items:center;margin-top:12px;font-size:13px;color:var(--dim)}
+/* ---------- 加载 ---------- */
+.loading{display:none;text-align:center;padding:26px;color:#9dbbff;font-size:13.5px;margin-top:12px}
+.loading.show{display:block}
+.spinner{display:inline-block;width:15px;height:15px;border:2.5px solid var(--blue);border-top-color:transparent;border-radius:50%;animation:spin .8s linear infinite;vertical-align:-3px;margin-right:9px}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* ---------- 弹窗 ---------- */
+.modal{display:none;position:fixed;inset:0;background:rgba(3,6,16,.75);z-index:50;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px)}
+.modal.open{display:flex}
+.modal-body{background:#101830;border:1px solid var(--line2);border-radius:18px;width:min(1120px,94vw);max-height:92vh;overflow:auto;padding:24px;box-shadow:0 24px 70px rgba(0,0,0,.6)}
+.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:12px}
+.modal-head h3{font-size:16px;color:#b9c9ff;font-weight:600;line-height:1.5}
+/* ---------- 流程 ---------- */
+.flow{display:flex;align-items:stretch;gap:0;flex-wrap:wrap;margin:16px 0 6px}
+.flow-node{
+  background:linear-gradient(160deg,rgba(91,140,255,.14),rgba(157,107,255,.08));
+  border:1px solid var(--line2);border-radius:13px;padding:13px 18px;font-size:13px;font-weight:600;text-align:center;min-width:128px;line-height:1.6;
+}
+.flow-node .ds{display:block;font-size:11px;color:var(--dim);font-weight:400;margin-top:3px}
+.flow-arrow{align-self:center;color:var(--dim2);font-size:20px;padding:0 7px}
+/* ---------- 说明文字 ---------- */
+.info-p{font-size:13.5px;color:#aebde2;line-height:1.9;margin:8px 0}
+.info-p b{color:var(--cyan);font-weight:600}
+/* ---------- 输入行 ---------- */
+.flex{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.spread{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <div class="title">🧠 基于推理时拓展的视觉问答系统</div>
+    <div class="subtitle">
+      <b>LLaVA-1.5-7B</b> 视觉理解 + <b>Qwen2-7B-Instruct</b> 文本推理 · 五种推理策略 · 思维树可视化 · 中英双语交互
+    </div>
+  </div>
+
+  <div class="nav">
+    <div class="tab active" data-page="p1"><span class="ico">🔍</span>单题交互推理</div>
+    <div class="tab" data-page="p2"><span class="ico">⚖️</span>多方法对比</div>
+    <div class="tab" data-page="p3"><span class="ico">📊</span>实验数据统计</div>
+    <div class="tab" data-page="p5"><span class="ico">🖼️</span>历史结果回溯</div>
+    <div class="tab" data-page="p4"><span class="ico">📖</span>系统说明</div>
+  </div>
+
+  <!-- ================= 页面1 单题推理 ================= -->
+  <div class="page active" id="p1">
+    <div class="card">
+      <h3>输入<span class="badge-note">支持中文问题自动翻译为英文 · 答案中英双语输出</span></h3>
+      <div class="grid2">
+        <div>
+          <div class="upload" id="uploadBox1" onclick="document.getElementById('imgInput1').click()">
+            🖼️ 点击上传图片
+            <div class="hint">支持 jpg / png，上传后可预览</div>
+            <img id="imgPreview1" style="display:none">
+          </div>
+          <input type="file" id="imgInput1" accept="image/*" style="display:none">
+        </div>
+        <div>
+          <label class="fld"><div class="rowline"><span>问题（支持中文）</span>
+            <button class="btn-trans" id="btnTrans1" onclick="translateQ('q1','btnTrans1')">🌐 中文 → 英文</button></div></label>
+          <textarea id="q1" placeholder="可以输入中文问题，例如: 图像中间的头盔是什么颜色的？&#10;也可以直接输入英文问题"></textarea>
+          <label class="fld">标准答案（可选，用于自动判定对错）</label>
+          <input type="text" id="gt1" placeholder="例如: light blue">
+        </div>
+      </div>
+      <label class="fld">推理方法</label>
+      <div class="method-group" id="methodGroup1">
+        <div class="method-opt on" data-m="modular">🧩 Modular 四模块</div>
+        <div class="method-opt" data-m="standard">⚡ Standard 直答</div>
+        <div class="method-opt" data-m="cot">💭 CoT 链式思维</div>
+        <div class="method-opt" data-m="tot">🌳 ToT 思维树</div>
+        <div class="method-opt" data-m="got">🕸️ GoT 思维图</div>
+      </div>
+      <div style="margin-top:20px" class="flex">
+        <button class="btn-main" id="btnInfer1" onclick="runInfer()">🚀 开始推理</button>
+        <span class="meta">首次推理需加载模型（约 1 分钟），之后约 15~60 秒/题</span>
+      </div>
+      <div class="loading" id="loading1"><span class="spinner"></span>推理中，请稍候（约 15~60 秒）…</div>
+    </div>
+    <div id="result1"></div>
+  </div>
+
+  <!-- ================= 页面2 多方法对比 ================= -->
+  <div class="page" id="p2">
+    <div class="card">
+      <h3>同一图片 · 同一问题 · 多方法横向对比<span class="badge-note">最多 5 个方法同时推理</span></h3>
+      <div class="grid2-13">
+        <div>
+          <div class="upload" id="uploadBox2" onclick="document.getElementById('imgInput2').click()">
+            🖼️ 点击上传图片
+            <img id="imgPreview2" style="display:none">
+          </div>
+          <input type="file" id="imgInput2" accept="image/*" style="display:none">
+          <label class="fld"><div class="rowline"><span>问题（支持中文）</span>
+            <button class="btn-trans" id="btnTrans2" onclick="translateQ('q2','btnTrans2')">🌐 中文 → 英文</button></div></label>
+          <textarea id="q2" placeholder="可以输入中文问题，将自动翻译为英文"></textarea>
+          <label class="fld">标准答案（可选）</label>
+          <input type="text" id="gt2">
+          <label class="fld">参与对比的方法</label>
+          <div class="method-group" id="methodGroup2">
+            <div class="method-opt on" data-m="standard">⚡ Standard</div>
+            <div class="method-opt on" data-m="cot">💭 CoT</div>
+            <div class="method-opt on" data-m="tot">🌳 ToT</div>
+            <div class="method-opt on" data-m="got">🕸️ GoT</div>
+            <div class="method-opt on" data-m="modular">🧩 Modular</div>
+          </div>
+          <div style="margin-top:20px" class="flex">
+            <button class="btn-main" onclick="runCompare()">⚖️ 开始对比</button>
+            <span class="meta">5 个方法约需 1~3 分钟</span>
+          </div>
+          <div class="loading" id="loading2"><span class="spinner"></span>对比推理中…</div>
+        </div>
+        <div>
+          <div id="compareHead"></div>
+          <div class="grid3" id="compareCards" style="margin-top:10px"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= 页面3 实验数据统计 ================= -->
+  <div class="page" id="p3">
+    <div class="card">
+      <h3>主实验 · 五种推理策略对比（100 样本）<span class="badge-note">统一双模型架构 · 同批数据</span></h3>
+      <div class="stat-row" id="statCards"></div>
+      <div class="chart md" id="chartMethods"></div>
+    </div>
+    <div class="card">
+      <h3>消融实验（100 样本） & 鲁棒性测试（50 样本 × 3 次）</h3>
+      <div class="grid2">
+        <div class="chart sm" id="chartAblation"></div>
+        <div class="chart sm" id="chartRobust"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= 页面5 历史结果回溯 ================= -->
+  <div class="page" id="p5">
+    <div class="card">
+      <h3>历史测试结果逐题回溯<span class="badge-note">每题附原图 · 点击「思维树」查看完整推理轨迹</span></h3>
+      <div class="flex" style="margin-bottom:12px">
+        <select id="resFile" style="max-width:320px" onchange="loadTable(0)"></select>
+        <label style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--dim);cursor:pointer">
+          <input type="checkbox" id="wrongOnly" onchange="loadTable(0)"> 只看错题
+        </label>
+        <input type="text" id="searchQ" placeholder="按问题关键词搜索…" style="max-width:280px" onkeyup="debounceSearch()">
+        <span class="meta" id="tableInfo"></span>
+      </div>
+      <div class="tbl-scroll">
+        <table id="resTable">
+          <thead><tr><th>图片</th><th>ID</th><th>问题</th><th>标准答案</th><th>模型预测</th><th>结果</th><th>操作</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="pager">
+        <button class="btn-ghost" onclick="loadTable(page-1)">‹ 上一页</button>
+        <span id="pageInfo"></span>
+        <button class="btn-ghost" onclick="loadTable(page+1)">下一页 ›</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= 页面4 系统说明 ================= -->
+  <div class="page" id="p4">
+    <div class="card">
+      <h3>双模型架构</h3>
+      <div class="flow">
+        <div class="flow-node">🖼️ 输入图片 + 问题<span class="ds">用户交互入口</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node">👁️ LLaVA-1.5-7B<span class="ds">聚焦问题的视觉描述<br>视觉直答（强参考）</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node">🧠 Qwen2-7B-Instruct<span class="ds">文本推理引擎<br>推理时拓展搜索</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node">✅ 最终答案<span class="ds">+ 完整思维树轨迹</span></div>
+      </div>
+      <p class="info-p"><b>设计思想：</b>视觉模型负责「看」——生成聚焦问题的英文视觉描述并直接看图作答；文本推理模型负责「想」——在视觉描述上进行推理时拓展。视觉答案作为强参考贯穿推理循环，与文本候选共同参与评分与聚合，实现视觉信号与语言推理的互补。</p>
+    </div>
+    <div class="card">
+      <h3>四模块协同推理流水线（Modular）</h3>
+      <div class="flow">
+        <div class="flow-node">📌 模块 1 · 问题分解器<span class="ds">主问题 → 3 个可验证子问题</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node">💡 模块 2 · 思维生成器<span class="ds">每子问题 → 3 条候选路径</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node">⚖️ 模块 3 · 状态评估器<span class="ds">按正确性一致性评分 0.1~1.0</span></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node">🧩 模块 4 · 聚合器<span class="ds">视觉答案 + 子答案 → 最终答案</span></div>
+      </div>
+      <p class="info-p"><b>视觉答案注入：</b>每个子问题均由 LLaVA 直接看图作答并注入候选生成环节；主问题的视觉答案在聚合阶段作为最高优先级参考——视觉观察与语言推理互为校验。</p>
+    </div>
+    <div class="card">
+      <h3>五种推理策略</h3>
+      <div class="grid3">
+        <div class="cmp-card"><div class="topline"></div><div class="mname">⚡ Standard（单次直答）</div>
+          <p class="info-p">视觉描述 + 单次文本生成，无推理拓展。作为全流程的基线方法。</p></div>
+        <div class="cmp-card"><div class="topline"></div><div class="mname">💭 CoT（链式思维）</div>
+          <p class="info-p">Let's think step by step 线性推理链。一步出错则整条链失败，缺乏回溯与纠错。</p></div>
+        <div class="cmp-card"><div class="topline"></div><div class="mname">🌳 ToT（思维树）</div>
+          <p class="info-p">生成多条候选推理路径 → 逐条评分 → 选取最优，实现宽度优先的树形搜索空间探索。</p></div>
+        <div class="cmp-card"><div class="topline"></div><div class="mname">🕸️ GoT（思维图）</div>
+          <p class="info-p">候选路径构成图结构，评分环节允许跨路径的信息参照与融合，探索能力更强。</p></div>
+        <div class="cmp-card"><div class="topline"></div><div class="mname">🧩 Modular（四模块协同）</div>
+          <p class="info-p">分解 → 生成 → 评分 → 聚合四模块流水线，视觉答案贯穿全程，推理过程完全可追溯。</p></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>评测口径（三层流水线）</h3>
+      <p class="info-p">① <b>答案提取</b>（extract_final_answer）——从推理链文本中定位最终答案；② <b>规范化</b>（canonicalize）——同义词映射（cupboard→cabinet 等）、数字词、单复数归一；③ <b>等价判断</b>（answers_equivalent）——精确匹配 → 软匹配（标准答案词集合 ⊆ 预测词集合）→ 修饰词剥离（light blue ≈ blue）。</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="traceModal">
+  <div class="modal-body">
+    <div class="modal-head">
+      <h3 id="modalTitle"></h3>
+      <button class="btn-ghost" onclick="closeModal('traceModal')">✕ 关闭</button>
+    </div>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<div class="modal" id="imgModal">
+  <div class="modal-body" style="width:auto;max-width:min(860px,92vw)">
+    <div class="modal-head">
+      <h3>题目原图</h3>
+      <button class="btn-ghost" onclick="closeModal('imgModal')">✕ 关闭</button>
+    </div>
+    <img id="imgModalImg" style="width:100%;border-radius:12px;border:1px solid var(--line)">
+  </div>
+</div>
+
+<script>
+const METHOD_NAMES={standard:'⚡ Standard 单次直答',cot:'💭 CoT 链式思维',tot:'🌳 ToT 思维树',got:'🕸️ GoT 思维图',modular:'🧩 Modular 四模块'};
+let selMethod1='modular', selMethods2=new Set(['standard','cot','tot','got','modular']), page=0;
+
+document.querySelectorAll('#methodGroup1 .method-opt').forEach(el=>el.onclick=()=>{
+  document.querySelectorAll('#methodGroup1 .method-opt').forEach(x=>x.classList.remove('on'));
+  el.classList.add('on'); selMethod1=el.dataset.m;
+});
+document.querySelectorAll('#methodGroup2 .method-opt').forEach(el=>el.onclick=()=>{
+  el.classList.toggle('on');
+  el.classList.contains('on')?selMethods2.add(el.dataset.m):selMethods2.delete(el.dataset.m);
+});
+document.querySelectorAll('.nav .tab').forEach(t=>t.onclick=()=>{
+  document.querySelectorAll('.nav .tab').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));
+  t.classList.add('active'); document.getElementById(t.dataset.page).classList.add('active');
+  if(t.dataset.page==='p3'){ loadStats(); }
+  if(t.dataset.page==='p5'){ loadResFiles(); }
+});
+function bindUpload(inputId,previewId){
+  document.getElementById(inputId).onchange=e=>{
+    const f=e.target.files[0]; if(!f)return;
+    const r=new FileReader();
+    r.onload=()=>{const img=document.getElementById(previewId);img.src=r.result;img.style.display='block';};
+    r.readAsDataURL(f);
+  };
+}
+bindUpload('imgInput1','imgPreview1'); bindUpload('imgInput2','imgPreview2');
+
+/* ---------------- 中文→英文翻译 ---------------- */
+async function translateQ(qid,btnId){
+  const box=document.getElementById(qid);
+  const text=box.value.trim();
+  if(!text){alert('请先输入问题');return}
+  const btn=document.getElementById(btnId);
+  btn.disabled=true; btn.textContent='⏳ 翻译中…';
+  try{
+    const r=await fetch('/api/translate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text})});
+    const d=await r.json();
+    if(d.error){alert(d.error);return}
+    box.value=d.translated;
+  }catch(e){alert('翻译失败: '+e)}
+  btn.disabled=false; btn.textContent='🌐 中文 → 英文';
+}
+
+/* ---------------- 思维树渲染（节点直接显示思路内容） ---------------- */
+const scoreHsl=s=>`hsl(${Math.max(0,Math.min(1,s))*125}, 72%, 58%)`;
+function renderTree(el, tree){
+  if(typeof echarts==='undefined'){ el.innerHTML='<p style="color:#fb7185;padding:20px;text-align:center">ECharts 加载失败，请刷新页面</p>'; return; }
+  // 统计深度与每层节点数，按内容实际大小撑开画布，放入滚动容器（滚动条拖动平移，100% 生效）
+  let depth=0, levelCounts={};
+  (function walk(n,d){depth=Math.max(depth,d);levelCounts[d]=(levelCounts[d]||0)+1;(n.children||[]).forEach(c=>walk(c,d+1));})(tree,0);
+  const maxPerLevel=Math.max(...Object.values(levelCounts));
+  const wrap=document.createElement('div');
+  wrap.style.cssText='overflow:auto;max-height:620px;border-radius:12px;border:1px solid var(--line);background:rgba(8,12,28,.5);margin-top:10px';
+  el.parentNode.insertBefore(wrap,el);
+  wrap.appendChild(el);
+  el.style.cssText=`width:${Math.max(wrap.clientWidth||900,(depth+1)*430)}px;height:${Math.max(560,maxPerLevel*50+40)}px;`;
+  const chart=echarts.init(el);
+  const short=(s,n)=>{s=String(s||'');return s.length>n?s.slice(0,n)+'…':s};
+  chart.setOption({
+    tooltip:{trigger:'item',backgroundColor:'#141c36',borderColor:'#3d5a8f',textStyle:{color:'#e8edff',fontSize:12.5},
+      confine:true,
+      extraCssText:'max-width:430px;white-space:normal;word-break:break-word;line-height:1.65;border-radius:10px;padding:12px 14px;',
+      formatter:p=>{
+        let t='<b>'+p.name+'</b>';
+        if(p.data.thought)t+='<br><span style="color:#8ea0c8">💭 '+p.data.thought+'</span>';
+        if(p.data.visual_answer)t+='<br>👁 视觉答案: '+p.data.visual_answer;
+        if(p.data.score!==undefined)t+='<br>评分: <b style="color:'+scoreHsl(p.data.score)+'">'+p.data.score.toFixed(2)+'</b>';
+        if(p.data.visual)t+='<br>👁 视觉模型候选';
+        if(p.data.selected)t+='<br>⭐ 被评估器选中';
+        if(p.data.final)t+='<br>🏁 最终输出';
+        return t;
+      }},
+    series:[{
+      type:'tree', data:[tree], orient:'LR',
+      roam:true, scaleLimit:{min:.2,max:3},
+      symbol:'circle', symbolSize:9,
+      initialTreeDepth:-1, expandAndCollapse:true,
+      animationDuration:600, animationDurationUpdate:400,
+      edgeShape:'curve', edgeForkPosition:'62%',
+      lineStyle:{color:'rgba(130,160,235,.28)',width:1.6,curveness:.55},
+      itemStyle:{color:'#25325a',borderWidth:0},
+      emphasis:{focus:'descendant',lineStyle:{color:'rgba(130,160,235,.6)',width:2.2}},
+      label:{
+        position:'left',verticalAlign:'middle',align:'right',
+        fontSize:12,padding:[8,15],borderRadius:14,
+        borderWidth:2,
+        backgroundColor:'rgba(255,255,255,.95)',
+        borderColor:p=>{
+          if(p.data.final)return '#16a34a';
+          if(p.data.selected)return '#d97706';
+          if(p.data.visual)return 'rgba(6,182,212,.85)';
+          if(p.data.score!==undefined){const h=p.data.score*125;return `hsla(${h},70%,45%,.8)`}
+          return 'rgba(100,116,139,.55)';
+        },
+        formatter:p=>{
+          let n=p.name;
+          if(p.data.visual)n='👁 '+n;
+          if(p.data.depth===0)return '{r|❓ '+n+'}';
+          let second=null;
+          if(p.data.thought)second='💭 '+short(p.data.thought,46);
+          else if(p.data.visual_answer)second='👁 视觉: '+short(p.data.visual_answer,40);
+          if(second)return '{n|'+n+'}\n{t|'+second+'}';
+          return '{n|'+n+'}';
+        },
+        rich:{
+          r:{fontSize:13.5,fontWeight:700,color:'#111827',lineHeight:19},
+          n:{fontSize:12.5,fontWeight:700,color:'#111827',lineHeight:17},
+          t:{fontSize:10.5,color:'#374151',lineHeight:14},
+        },
+      },
+      leaves:{label:{position:'right',align:'left'}},
+    }]
+  });
+  const ro=new ResizeObserver(()=>chart.resize());
+  ro.observe(el);
+}
+
+/* ---------------- 单题推理 ---------------- */
+async function runInfer(){
+  const f=document.getElementById('imgInput1').files[0];
+  let q=document.getElementById('q1').value.trim();
+  if(!f){alert('请先上传图片');return}
+  if(!q){alert('请输入问题');return}
+  // 若输入是中文（含 CJK 字符），自动翻译
+  if(/[一-鿿]/.test(q)){
+    const r=await fetch('/api/translate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:q})});
+    const d=await r.json();
+    if(!d.error)q=d.translated;
+  }
+  document.getElementById('loading1').classList.add('show');
+  document.getElementById('btnInfer1').disabled=true;
+  document.getElementById('result1').innerHTML='';
+  try{
+    const fd=new FormData(); fd.append('image',f); fd.append('question',q); fd.append('method',selMethod1);
+    const gt=document.getElementById('gt1').value.trim(); if(gt)fd.append('ground_truth',gt);
+    const r=await fetch('/api/infer',{method:'POST',body:fd});
+    const d=await r.json();
+    renderResult(d,document.getElementById('result1'));
+  }catch(e){alert('推理失败: '+e)}
+  document.getElementById('loading1').classList.remove('show');
+  document.getElementById('btnInfer1').disabled=false;
+}
+
+function renderResult(d,container){
+  if(d.error){container.innerHTML='<div class="card"><h3>⚠️ 错误</h3><p class="info-p">'+esc(d.error)+'</p></div>';return}
+  let html='<div class="card">';
+  html+='<div class="spread"><h3 style="margin:0">推理结果 · '+METHOD_NAMES[d.method]+'</h3><span class="meta">⏱ 耗时 '+d.time_cost+' 秒</span></div>';
+  html+='<div class="answer-hero" style="margin-top:14px">';
+  html+='<div><div class="ans">'+esc(d.final_answer)+'</div>'+(d.chinese_answer?'<div class="ans-zh">'+esc(d.chinese_answer)+'</div>':'')+'</div>';
+  if(d.correct!==undefined)html+=d.correct?'<span class="badge ok">✓ 回答正确</span>':'<span class="badge bad">✗ 回答错误 · GT: '+esc(d.ground_truth||'')+'</span>';
+  html+='</div>';
+  if(d.image_url)html+='<div class="flex" style="margin-top:14px"><img src="'+d.image_url+'" style="max-height:150px;border-radius:10px;border:1px solid var(--line)">'+
+    '<div style="flex:1;min-width:240px"><label class="fld" style="margin-top:0">👁 视觉直答（LLaVA 直接看图）</label><div class="raw" style="max-height:64px">'+esc(d.visual_answer||'（无）')+'</div></div></div>';
+  html+='<label class="fld">📝 视觉描述（LLaVA）</label><div class="raw">'+esc(d.visual_description||'')+'</div>';
+  if(d.tree){
+    html+='<label class="fld">🌳 思维树可视化 <span class="meta">（🖱 拖动滚动条左右查看 · 滚轮缩放 · 胶囊颜色=评分 · 金色边框=选中 · 👁=视觉候选 · 点击节点收展）</span></label><div class="chart" id="treeChart"></div>';
+  }else if(d.chain!==undefined){
+    html+='<label class="fld">💭 推理链（CoT）</label><div class="raw">'+esc(d.chain)+'</div>';
+  }else{
+    html+='<label class="fld">📄 模型原始输出</label><div class="raw">'+esc(d.raw||'')+'</div>';
+  }
+  if(d.raw!==undefined && d.tree)html+='<label class="fld">📄 模型原始输出</label><div class="raw">'+esc(d.raw)+'</div>';
+  html+='</div>';
+  container.innerHTML=html;
+  if(d.tree)setTimeout(()=>renderTree(document.getElementById('treeChart'),d.tree),60);
+  container.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+/* ---------------- 多方法对比 ---------------- */
+async function runCompare(){
+  const f=document.getElementById('imgInput2').files[0];
+  let q=document.getElementById('q2').value.trim();
+  if(!f){alert('请先上传图片');return}
+  if(!q){alert('请输入问题');return}
+  if(selMethods2.size===0){alert('请至少选择一个方法');return}
+  if(/[一-鿿]/.test(q)){
+    const r=await fetch('/api/translate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:q})});
+    const d=await r.json();
+    if(!d.error)q=d.translated;
+  }
+  document.getElementById('loading2').classList.add('show');
+  document.getElementById('compareCards').innerHTML='';
+  document.getElementById('compareHead').innerHTML='';
+  try{
+    const fd=new FormData(); fd.append('image',f); fd.append('question',q); fd.append('methods',[...selMethods2].join(','));
+    const gt=document.getElementById('gt2').value.trim(); if(gt)fd.append('ground_truth',gt);
+    const r=await fetch('/api/compare',{method:'POST',body:fd});
+    const d=await r.json();
+    if(d.error){alert(d.error);return}
+    document.getElementById('compareHead').innerHTML=
+      '<div class="flex"><img src="'+d.image_url+'" style="max-height:110px;border-radius:10px;border:1px solid var(--line)">'+
+      '<div><div class="info-p" style="margin:0;font-weight:600">'+esc(q)+'</div>'+
+      (d.ground_truth?'<div class="meta">标准答案: '+esc(d.ground_truth)+'</div>':'')+'</div></div>';
+    const names={standard:'⚡ Standard',cot:'💭 CoT',tot:'🌳 ToT',got:'🕸️ GoT',modular:'🧩 Modular'};
+    document.getElementById('compareCards').innerHTML=d.results.map(x=>{
+      if(x.error)return '<div class="cmp-card"><div class="topline" style="background:#fb7185"></div><div class="mname">'+names[x.method]+'</div><div class="ans" style="color:#fb7185;font-size:15px">推理失败</div><div class="row"><span>'+esc(x.error)+'</span></div></div>';
+      return '<div class="cmp-card"><div class="topline"></div><div class="mname">'+names[x.method]+'</div>'+
+        '<div class="ans">'+esc(x.final_answer)+'</div>'+
+        (x.chinese_answer?'<div class="ans-zh">'+esc(x.chinese_answer)+'</div>':'')+
+        '<div class="row"><span>'+(x.correct!==undefined?(x.correct?'<span class="badge ok">✓ 对</span>':'<span class="badge bad">✗ 错</span>'):'<span class="badge dim">未判定</span>')+'</span><span>⏱ '+x.time_cost+'s</span></div>'+
+        '<div class="row"><span>👁 视觉答案: '+esc(x.visual_answer||'—')+'</span></div>'+
+        '</div>';
+    }).join('');
+  }catch(e){alert('对比失败: '+e)}
+  document.getElementById('loading2').classList.remove('show');
+}
+
+/* ---------------- 实验数据统计 ---------------- */
+async function loadStats(){
+  try{
+    const r=await fetch('/api/stats'); const d=await r.json();
+    const main=d.experiments.slice(0,5);
+    const maxAcc=Math.max(...main.map(x=>x.accuracy));
+    document.getElementById('statCards').innerHTML=main.map(x=>
+      '<div class="stat'+(x.accuracy===maxAcc?' hl':'')+'"><div class="num">'+x.accuracy+'%</div>'+
+      '<div class="lbl">'+x.label+'</div><div class="sub">'+x.correct+' / '+x.total+' 题</div></div>').join('');
+    const c1=echarts.init(document.getElementById('chartMethods'));
+    c1.setOption({
+      title:{text:'五种推理策略准确率对比（100 样本）',textStyle:{color:'#c6d4ff',fontSize:14,fontWeight:500},left:12,top:10},
+      tooltip:{trigger:'axis',backgroundColor:'#141c36',borderColor:'#3d5a8f',textStyle:{color:'#e8edff'}},
+      grid:{left:90,right:24,top:56,bottom:36},
+      xAxis:{type:'category',data:main.map(x=>x.label),axisLabel:{color:'#8ea0c8',interval:0},axisLine:{lineStyle:{color:'rgba(140,170,255,.2)'}}},
+      yAxis:{type:'value',min:40,max:70,axisLabel:{color:'#8ea0c8'},splitLine:{lineStyle:{color:'rgba(140,170,255,.08)'}}},
+      series:[{type:'bar',barWidth:42,data:main.map(x=>({value:x.accuracy,
+          itemStyle:{borderRadius:[8,8,0,0],color:x.accuracy===maxAcc?new echarts.graphic.LinearGradient(0,0,0,1,[{offset:0,color:'#ffd76b'},{offset:1,color:'#f59e0b'}])
+            :new echarts.graphic.LinearGradient(0,0,0,1,[{offset:0,color:'#5b8cff'},{offset:1,color:'#9d6bff'}])}})),
+        label:{show:true,position:'top',color:'#dfe7ff',fontWeight:600,formatter:'{c}%'}}]
+    });
+    const abl=d.experiments.slice(5);
+    const base=d.experiments[4]?d.experiments[4].accuracy:58;
+    const ablData=[base,...abl.map(x=>x.accuracy)];
+    const c2=echarts.init(document.getElementById('chartAblation'));
+    c2.setOption({
+      title:{text:'四模块消融实验（100 样本）',textStyle:{color:'#c6d4ff',fontSize:14,fontWeight:500},left:12,top:10},
+      tooltip:{trigger:'axis',backgroundColor:'#141c36',borderColor:'#3d5a8f',textStyle:{color:'#e8edff'}},
+      grid:{left:70,right:24,top:56,bottom:36},
+      xAxis:{type:'category',data:['完整版','缺分解','缺生成','缺评分','缺聚合'],axisLabel:{color:'#8ea0c8'},axisLine:{lineStyle:{color:'rgba(140,170,255,.2)'}}},
+      yAxis:{type:'value',min:40,max:70,axisLabel:{color:'#8ea0c8'},splitLine:{lineStyle:{color:'rgba(140,170,255,.08)'}}},
+      series:[{type:'bar',barWidth:40,data:ablData.map((v,i)=>({value:v,
+          itemStyle:{borderRadius:[8,8,0,0],color:i===0?'#4ade80':(i===4?'#fb7185':'#5b8cff')}})),
+        label:{show:true,position:'top',color:'#dfe7ff',fontWeight:600,
+          formatter:p=>p.value+'%'+(p.dataIndex>0?' (Δ'+(p.value-base>0?'+':'')+(p.value-base)+')':'')}}]
+    });
+    const rb=d.robustness;
+    const c3=echarts.init(document.getElementById('chartRobust'));
+    c3.setOption({
+      title:{text:'鲁棒性测试（完整四模块 × 3 次运行）',textStyle:{color:'#c6d4ff',fontSize:14,fontWeight:500},left:12,top:10},
+      tooltip:{trigger:'axis',backgroundColor:'#141c36',borderColor:'#3d5a8f',textStyle:{color:'#e8edff'}},
+      grid:{left:70,right:24,top:56,bottom:36},
+      xAxis:{type:'category',data:rb.map(x=>x.label.replace('鲁棒性-','第')),axisLabel:{color:'#8ea0c8'},axisLine:{lineStyle:{color:'rgba(140,170,255,.2)'}}},
+      yAxis:{type:'value',min:40,max:70,axisLabel:{color:'#8ea0c8'},splitLine:{lineStyle:{color:'rgba(140,170,255,.08)'}}},
+      series:[{type:'line',data:rb.map(x=>x.accuracy),smooth:true,symbolSize:11,
+        itemStyle:{color:'#9d6bff',borderColor:'#0a0e1c',borderWidth:2},
+        lineStyle:{width:3,color:'#9d6bff'},areaStyle:{color:new echarts.graphic.LinearGradient(0,0,0,1,[{offset:0,color:'rgba(157,107,255,.3)'},{offset:1,color:'rgba(157,107,255,.02)'}])},
+        label:{show:true,position:'top',color:'#dfe7ff',fontWeight:600,formatter:'{c}%'}}]
+    });
+  }catch(e){console.error(e)}
+}
+
+/* ---------------- 历史结果回溯 ---------------- */
+async function loadResFiles(){
+  const r=await fetch('/api/stats'); const d=await r.json();
+  const sel=document.getElementById('resFile');
+  sel.innerHTML='';
+  [...d.experiments,...d.robustness].forEach(x=>{
+    const o=document.createElement('option'); o.value=x.file; o.textContent=x.label+'（'+x.accuracy+'%）'; sel.appendChild(o);
+  });
+  loadTable(0);
+}
+let searchTimer=null;
+function debounceSearch(){clearTimeout(searchTimer);searchTimer=setTimeout(()=>loadTable(0),500)}
+async function loadTable(p){
+  page=p;
+  const fn=document.getElementById('resFile').value;
+  const wrong=document.getElementById('wrongOnly').checked?'1':'0';
+  const q=encodeURIComponent(document.getElementById('searchQ').value.trim());
+  const r=await fetch('/api/result/'+fn+'?offset='+p*20+'&limit=20&wrong='+wrong+'&q='+q);
+  const d=await r.json();
+  const tbody=document.querySelector('#resTable tbody');
+  tbody.innerHTML=d.items.map((it,i)=>'<tr>'+
+    '<td>'+(it.img?'<img class="tbl-img" src="'+it.img+'" loading="lazy" onclick="zoomImg(this.src)">':'<span class="meta">—</span>')+'</td>'+
+    '<td class="meta">'+esc(String(it.id))+'</td><td>'+esc(it.question)+'</td>'+
+    '<td>'+esc(it.gt)+'</td><td>'+esc(it.pred)+'</td>'+
+    '<td class="'+(it.correct?'ok-t':'bad-t')+'">'+(it.correct?'✓':'✗')+'</td>'+
+    '<td>'+(it.has_trace?'<button class="btn-ghost" onclick="showTrace(\''+fn+'\','+(p*20+i)+')">🌳 思维树</button>':'<span class="meta">—</span>')+'</td></tr>').join('');
+  document.getElementById('tableInfo').textContent='共 '+d.total+' 条';
+  document.getElementById('pageInfo').textContent='第 '+(p+1)+' 页 / 共 '+Math.max(1,Math.ceil(d.total/20))+' 页';
+}
+function zoomImg(src){
+  document.getElementById('imgModalImg').src=src;
+  document.getElementById('imgModal').classList.add('open');
+}
+async function showTrace(fn,idx){
+  const r=await fetch('/api/trace/'+fn+'/'+idx);
+  const d=await r.json();
+  if(d.error){alert(d.error);return}
+  const it=d.item;
+  document.getElementById('modalTitle').textContent='Q'+it.id+' · '+it.question;
+  let html='<div class="flex" style="margin-bottom:12px">'+(it.img?'<img src="'+it.img+'" style="max-height:120px;border-radius:10px;border:1px solid var(--line);cursor:zoom-in" onclick="zoomImg(this.src)">':'')+
+    '<div><div class="flex" style="gap:8px"><span class="'+(it.correct?'badge ok':'badge bad')+'">'+(it.correct?'✓ 回答正确':'✗ 回答错误')+'</span>'+
+    '<span class="meta">GT: '+esc(it.gt)+' → 预测: '+esc(it.pred)+'</span></div></div></div>';
+  html+='<div class="raw" style="max-height:110px">'+esc(it.visual_description||'')+'</div>';
+  if(d.tree)html+='<div class="chart md" id="modalTree"></div>';
+  document.getElementById('modalContent').innerHTML=html;
+  document.getElementById('traceModal').classList.add('open');
+  if(d.tree)setTimeout(()=>renderTree(document.getElementById('modalTree'),d.tree),60);
+}
+function closeModal(id){document.getElementById(id).classList.remove('open')}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+</script>
+</body>
+</html>
