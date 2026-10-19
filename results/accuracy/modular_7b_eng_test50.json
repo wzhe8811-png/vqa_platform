@@ -1,0 +1,4432 @@
+[
+  {
+    "question_id": "0",
+    "question": "What color is the helmet in the middle of the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2331963.jpg",
+    "ground_truth": "light blue",
+    "visual_description": "In the middle of the image, there is a boy wearing a blue helmet while playing baseball. The helmet is blue, and it is an essential piece of safety gear for the player. The boy is holding a baseball bat, and he is in the process of swinging it, likely attempting to hit the ball during the game.",
+    "prediction": "blue",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中的主要对象是什么颜色？",
+        "visual_answer": "Blue",
+        "candidates": [
+          {
+            "thought": "图像中主要对象是穿着蓝色头盔的男孩在打棒球，头盔的颜色是蓝色。",
+            "answer": "蓝色"
+          },
+          {
+            "thought": "观察到男孩身穿的蓝色头盔和手持的蓝色棒球棒，推断主要对象的颜色为蓝色。",
+            "answer": "蓝色"
+          },
+          {
+            "thought": "基于图像主体——穿着蓝色头盔并挥动棒球棒的男孩，可以判断主要对象的颜色是蓝色。",
+            "answer": "蓝色"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "在图像中央的对象是什么颜色？",
+        "visual_answer": "Blue",
+        "candidates": [
+          {
+            "thought": "图像中央的主体是穿着蓝色盔甲的男孩，因此主要颜色是蓝色。",
+            "answer": "Blue"
+          },
+          {
+            "thought": "观察到的显著特征是蓝色的头盔，这是图像中占主导的颜色。",
+            "answer": "Blue"
+          },
+          {
+            "thought": "通过描述可以得知，主要活动是在玩棒球，而提到的装备如蓝色头盔提供了关键的颜色信息。",
+            "answer": "Blue"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "男孩头戴的头盔是什么颜色？",
+        "visual_answer": "蓝色",
+        "candidates": [
+          {
+            "thought": "观察图像中的主体——男孩，他正在玩耍的场景是打棒球，通常打棒球时会佩戴头盔以确保安全。头盔的颜色在描述中被明确指出为蓝色。",
+            "answer": "蓝色"
+          },
+          {
+            "thought": "注意到图像中的显著特征——蓝色的头盔，该头盔作为安全装备对打棒球的男孩来说至关重要。此信息直接从描述中提取。",
+            "answer": "蓝色"
+          },
+          {
+            "thought": "识别出关键细节——在场景中，男孩身穿蓝色头盔，进行着棒球活动。这一细节说明了头盔的颜色，即蓝色。",
+            "answer": "蓝色"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中的主要对象是什么颜色？",
+        "visual_answer": "Blue",
+        "selected_answer": "蓝色",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "在图像中央的对象是什么颜色？",
+        "visual_answer": "Blue",
+        "selected_answer": "Blue",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "男孩头戴的头盔是什么颜色？",
+        "visual_answer": "蓝色",
+        "selected_answer": "蓝色",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "1",
+    "question": "What is the color of the fence made of metal?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2374871.jpg",
+    "ground_truth": "green",
+    "visual_description": "The fence made of metal is green.",
+    "prediction": "green",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中的金属栅栏是什么颜色？",
+        "visual_answer": "绿色",
+        "candidates": [
+          {
+            "thought": "观察到图像中明确描述了金属栅栏的颜色为绿色",
+            "answer": "绿色"
+          },
+          {
+            "thought": "通过对比图像中的颜色与文本描述的一致性来得出结论",
+            "answer": "绿色"
+          },
+          {
+            "thought": "注意到描述中使用了'是'这一肯定词，意味着金属栅栏的颜色被明确指定了",
+            "answer": "绿色"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "金属栅栏的颜色与什么相似？",
+        "visual_answer": "铁",
+        "candidates": [
+          {
+            "thought": "绿色的金属栅栏可能由可以涂成绿色的材料制成，铁是常见的一种。",
+            "answer": "铁"
+          },
+          {
+            "thought": "考虑到颜色和材质的对应性，绿色金属栅栏通常由能够被加工成绿色并且耐用的金属制成，铁符合这一描述。",
+            "answer": "铁"
+          },
+          {
+            "thought": "根据常见的金属加工和涂装技术，绿色金属栅栏可能是通过在铁上进行油漆处理得到的颜色。",
+            "answer": "铁"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "如何描述金属栅栏的颜色特征？",
+        "visual_answer": "银色",
+        "candidates": [
+          {
+            "thought": "根据描述，金属栅栏被涂成了绿色，而不是其原始的银色。",
+            "answer": "绿色"
+          },
+          {
+            "thought": "在日常经验中，金属栅栏在未经特殊处理的情况下通常会呈现银色。但描述中提到它是绿色的。",
+            "answer": "绿色"
+          },
+          {
+            "thought": "虽然直觉上可能会想到金属是银色的，但这里强调了它被涂成了绿色。",
+            "answer": "绿色"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中的金属栅栏是什么颜色？",
+        "visual_answer": "绿色",
+        "selected_answer": "绿色",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "金属栅栏的颜色与什么相似？",
+        "visual_answer": "铁",
+        "selected_answer": "铁",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "如何描述金属栅栏的颜色特征？",
+        "visual_answer": "银色",
+        "selected_answer": "绿色",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "2",
+    "question": "Which kind of fast food is the bacon on?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2378194.jpg",
+    "ground_truth": "pizza",
+    "visual_description": "The image features a large pizza with various toppings, including mushrooms and peppers. The pizza is placed on a dining table, and it appears to be a delicious and appetizing meal. The bacon is spread across the pizza, adding a savory touch to the dish. The pizza is served in a metal pan, which is placed on the table, making it easy for people to enjoy the meal.",
+    "prediction": "bacon pizza",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中是否有包含披萨的元素？",
+        "visual_answer": "Yes",
+        "candidates": [
+          {
+            "thought": "图像显示一张大披萨作为餐桌上的一道美食。",
+            "answer": "是"
+          },
+          {
+            "thought": "披萨上的配料包括蘑菇、甜椒和铺开的熏肉。",
+            "answer": "是"
+          },
+          {
+            "thought": "金属烤盘用于盛放披萨，便于享用。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "披萨上有哪些主要的配料？",
+        "visual_answer": "蘑菇",
+        "candidates": [
+          {
+            "thought": "观察披萨上的颜色和形状，可以发现明显的长条状物体，这些是配料之一。",
+            "answer": "培根"
+          },
+          {
+            "thought": "注意到有深绿色的圆形部分，这通常是蔬菜的特征，因此可以推断出这是配料之一。",
+            "answer": "青椒"
+          },
+          {
+            "thought": "考虑披萨上的棕色斑点，这些可能是蘑菇的特征，因此可以判断蘑菇是配料之一。",
+            "answer": "蘑菇"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.6,
+          1.0
+        ],
+        "selected_index": 2
+      },
+      {
+        "sub_question": "金属盘子有什么作用？",
+        "visual_answer": "保持食物",
+        "candidates": [
+          {
+            "thought": "金属盘子用于保持食物的温度，让食物在食用过程中保持温暖和美味。",
+            "answer": "保持食物温度"
+          },
+          {
+            "thought": "金属盘子提供了一个平滑、稳定的表面，便于人们放置和移动食物，享受用餐体验。",
+            "answer": "提供用餐便利性"
+          },
+          {
+            "thought": "金属盘子具有一定的导热性，有助于食物的均匀加热或保温，确保每一口都能达到理想的口感。",
+            "answer": "促进食物均匀加热"
+          }
+        ],
+        "scores": [
+          1.0,
+          0.8,
+          0.7
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中是否有包含披萨的元素？",
+        "visual_answer": "Yes",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "披萨上有哪些主要的配料？",
+        "visual_answer": "蘑菇",
+        "selected_answer": "蘑菇",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "金属盘子有什么作用？",
+        "visual_answer": "保持食物",
+        "selected_answer": "保持食物温度",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "3",
+    "question": "Is there any grass or mud that is not brown?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2350927.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a group of sheep standing on a grassy hillside. The grass appears to be brown, indicating that it might be dry or not in its prime condition. The sheep are scattered across the hill, with some standing closer to the foreground and others further in the background. The scene captures the essence of a typical pastoral landscape, with the sheep as the main subjects and the brown grass as the primary visual element.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中的草有不是棕色的部分吗？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "图像描述中提到草的颜色为‘棕色’，没有特别说明有非棕色的部分。但作为视觉模型的直接回答提到有不是棕色的部分，这可能是指存在其他颜色的对象或元素，如树木、天空等。",
+            "answer": "是，图中有非棕色的部分，比如天空和远处的树木。"
+          },
+          {
+            "thought": "从整体场景描述出发，尽管主要视觉焦点是棕色的草和羊群，但不能排除图像中存在其他颜色的细节，如羊群中不同个体毛发的自然色差，或者是远处地平线上其他颜色的环境。",
+            "answer": "可能是，虽然主要视觉元素是棕色的草和羊，但考虑到自然景观的多样性，图中可能包含其他颜色的元素，如羊的不同毛色或远处的天际线。"
+          },
+          {
+            "thought": "仔细分析图像描述可以推断出，虽然文本中明确指出了草的颜色，但没有绝对排除图像中可能存在颜色对比或细节上的细微变化，如羊群中不同个体之间的自然色差。",
+            "answer": "有可能，根据描述推断，除了主要的棕色元素外，图像中可能存在颜色对比或细节差异，例如羊群中不同个体的毛发颜色差异。"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "如果有，它们是什么颜色？",
+        "visual_answer": "White",
+        "candidates": [
+          {
+            "thought": "羊群通常被描绘成白色，这是常见和典型的颜色。",
+            "answer": "White"
+          },
+          {
+            "thought": "背景的棕色草可能暗示了季节或环境条件，但主要焦点是羊群的颜色。",
+            "answer": "White"
+          },
+          {
+            "thought": "在自然环境的图像中，羊群颜色的变化不大，因此可以合理推测为白色。",
+            "answer": "White"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "除了草之外，还有非棕色的元素吗？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "图像中描绘了一群羊在一片枯黄的草地上，背景的景色暗示并非春季或夏季，可能有其他季节性植被或树木存在。",
+            "answer": "是"
+          },
+          {
+            "thought": "观察到羊群分布于草地上，虽然草为棕色，但可以推测山丘上可能有不生长草的地方，如岩石或裸露的土壤，这些区域的颜色可能不是棕色。",
+            "answer": "是"
+          },
+          {
+            "thought": "虽然图像的主题是棕色的草和羊，但在远处可能存在非棕色的元素，比如天边的云彩或更远距离的建筑，它们的颜色并不受限于棕色。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中的草有不是棕色的部分吗？",
+        "visual_answer": "是",
+        "selected_answer": "是，图中有非棕色的部分，比如天空和远处的树木。",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "如果有，它们是什么颜色？",
+        "visual_answer": "White",
+        "selected_answer": "White",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "除了草之外，还有非棕色的元素吗？",
+        "visual_answer": "是",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "4",
+    "question": "Is the boat on the right of the picture?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2335519.jpg",
+    "ground_truth": "no",
+    "visual_description": "In the image, there is a white boat on the left side of the picture, and a white truck on the right side. The boat is being towed by the truck, and the man is standing next to the boat, possibly preparing to get on it. The scene suggests that the boat is being transported to a different location, and the man is likely the one responsible for this task.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中的船位于右侧吗？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "根据描述，船在图片的左侧。因此，判断船位于右侧的答案是错误的。",
+            "answer": "否"
+          },
+          {
+            "thought": "描述中提到男子站在船旁，准备登船。这表明船不在图片的右侧。",
+            "answer": "否"
+          },
+          {
+            "thought": "描述强调了船被卡车拖拽，且位于图片的一侧。既然描述中明确指出船在左侧，那么它不在右侧。",
+            "answer": "否"
+          }
+        ],
+        "scores": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "船和卡车分别位于图片的哪一侧？",
+        "visual_answer": "左",
+        "candidates": [
+          {
+            "thought": "根据描述，白船在图片左边，白卡车在右边。因此，可以推断出船和卡车分别位于图片的左侧和右侧。",
+            "answer": "左侧，右侧"
+          },
+          {
+            "thought": "描述中明确指出，白船靠近画面左侧边缘，而白卡车则位于画面右侧。这意味着船和卡车在图片上的相对位置是左对右。",
+            "answer": "左侧，右侧"
+          },
+          {
+            "thought": "从描述得知，有一艘船被卡车拖动，并且人站在船旁准备登船。这暗示了船和卡车在图片中的布局是船在左，卡车在右。",
+            "answer": "左侧，右侧"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "图中是否有男人在准备上船？",
+        "visual_answer": "Yes",
+        "candidates": [
+          {
+            "thought": "画面中有个人站在船旁，可能准备登船",
+            "answer": "Yes"
+          },
+          {
+            "thought": "根据船被牵引和人物位置，可以推断有人在准备上船",
+            "answer": "Yes"
+          },
+          {
+            "thought": "细节显示有人在船边，暗示他可能即将登船",
+            "answer": "Yes"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中的船位于右侧吗？",
+        "visual_answer": "是",
+        "selected_answer": "否",
+        "selected_score": 0.1
+      },
+      {
+        "sub_question": "船和卡车分别位于图片的哪一侧？",
+        "visual_answer": "左",
+        "selected_answer": "左侧，右侧",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "图中是否有男人在准备上船？",
+        "visual_answer": "Yes",
+        "selected_answer": "Yes",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "5",
+    "question": "Is the bottle to the left or to the right of the chair that is in the middle of the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2328576.jpg",
+    "ground_truth": "right",
+    "visual_description": "In the image, there is a woman sitting on a bed, brushing her teeth. She is wearing a blue shirt and is positioned near the center of the scene. A chair is located in the middle of the image, and a bottle is placed to the right of the chair. The woman is sitting on the bed, which is situated on the left side of the image. The chair and the bottle are both located on the right side of the image, with the chair being closer to the center and the bottle being further to the right.",
+    "prediction": "right",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "瓶和椅之间是否有其他物体？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "从整体布局考虑，观察者通常从左至右或从上至下扫描图像，因此瓶和椅之间的空间可能包含其他物体。",
+            "answer": "是"
+          },
+          {
+            "thought": "通过分析人物活动区域，人物在床边活动，意味着瓶和椅之间可能存在与人物活动相关的物品。",
+            "answer": "是"
+          },
+          {
+            "thought": "考虑到房间的常见布局，如水杯、小夜灯等可能位于瓶和椅之间。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "椅位于画面中心位置吗？",
+        "visual_answer": "No",
+        "candidates": [
+          {
+            "thought": "椅子在画面的右侧，远离中心位置。",
+            "answer": "No"
+          },
+          {
+            "thought": "尽管椅子靠近中间，但它并未完全位于画面中心。",
+            "answer": "No"
+          },
+          {
+            "thought": "椅子相对于其他物体（如床和瓶）的位置表明它不在中心。",
+            "answer": "No"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "瓶和椅之间是否有其他物体？",
+        "visual_answer": "是",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "椅位于画面中心位置吗？",
+        "visual_answer": "No",
+        "selected_answer": "No",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "6",
+    "question": "Which kind of device is on the floor?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2341659.jpg",
+    "ground_truth": "console",
+    "visual_description": "The image features a young boy playing a video game on a television. The television is placed on the floor, and the boy is standing in front of it, holding a remote control. The room appears to be a living space, with a bookshelf nearby, containing several books. The presence of the bookshelf and the books suggests that the room might be a family room or a living room where people can relax and enjoy leisure activities like watching television and playing video games.",
+    "prediction": "television",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "地板上的设备是什么？",
+        "visual_answer": "电视",
+        "candidates": [
+          {
+            "thought": "图像中显示一个男孩在玩视频游戏，电视被放在地板上，因此地板上的设备是电视。",
+            "answer": "电视"
+          },
+          {
+            "thought": "观察到的场景是一个家庭娱乐空间，包含书架和书籍，电视作为家庭娱乐中心通常放置于地板上，所以地板上的设备是电视。",
+            "answer": "电视"
+          },
+          {
+            "thought": "图像描绘的是一个站立的男孩在控制电视播放视频游戏，没有其他明显设备出现，因此可以推断出地板上的设备是电视。",
+            "answer": "电视"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "这台设备是用来做什么的？",
+        "visual_answer": "Watch tv",
+        "candidates": [
+          {
+            "thought": "电视通常用于播放视频内容，包括电视节目和电影。在这个场景中，电视上显示的是一个视频游戏的画面，因此可以推断这台设备是用来玩游戏的。",
+            "answer": "Play video games"
+          },
+          {
+            "thought": "电视作为家庭娱乐中心，通常用来观看各种娱乐内容。在这里，虽然显示的是游戏画面，但其主要功能仍可理解为提供娱乐体验。",
+            "answer": "Provide entertainment"
+          },
+          {
+            "thought": "书架的存在暗示了这是一个适合休息和休闲的空间。电视和游戏的组合常见于家庭娱乐活动，因此可以推断这台设备主要用于家庭成员的娱乐活动。",
+            "answer": "Facilitate family leisure activities"
+          }
+        ],
+        "scores": [
+          1.0,
+          0.9,
+          0.8
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "设备的位置关系是什么？",
+        "visual_answer": "在电视前",
+        "candidates": [
+          {
+            "thought": "小男孩站在电视前面玩游戏",
+            "answer": "电视位于男孩前方的地板上"
+          },
+          {
+            "thought": "书架和书籍表明这是一个可以休闲的地方",
+            "answer": "书架放置于房间内，靠近电视区域"
+          },
+          {
+            "thought": "遥控器在男孩手中说明他正在操控电视或游戏",
+            "answer": "遥控器被手持，处于男孩的控制之下"
+          }
+        ],
+        "scores": [
+          1.0,
+          0.8,
+          0.7
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "地板上的设备是什么？",
+        "visual_answer": "电视",
+        "selected_answer": "电视",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "这台设备是用来做什么的？",
+        "visual_answer": "Watch tv",
+        "selected_answer": "Play video games",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "设备的位置关系是什么？",
+        "visual_answer": "在电视前",
+        "selected_answer": "电视位于男孩前方的地板上",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "7",
+    "question": "What is the sidewalk made of?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2379240.jpg",
+    "ground_truth": "brick",
+    "visual_description": "The sidewalk is made of bricks, creating a distinct and visually appealing surface. The bricks are arranged in a way that forms a path for pedestrians to walk on. The sidewalk is located next to a building, which could be a shop or a restaurant, as there is a sign outside the building. The presence of a fire hydrant on the sidewalk also indicates that the area is well-maintained and prepared for emergencies.",
+    "prediction": "bricks",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "这条人行道由什么材料制成？",
+        "visual_answer": "Brick",
+        "candidates": [
+          {
+            "thought": "人行道表面由不同形状和颜色的砖块组成，形成明显的视觉效果。",
+            "answer": "Brick"
+          },
+          {
+            "thought": "人行道与建筑相邻，可能用于商业用途，如商店或餐馆。",
+            "answer": "Adjacent to a building possibly used for commerce"
+          },
+          {
+            "thought": "火栓的存在表明该区域进行了适当的维护并准备应对紧急情况。",
+            "answer": "Presence of a fire hydrant indicating proper maintenance and emergency readiness"
+          }
+        ],
+        "scores": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "人行道上的砖块是如何排列的？",
+        "visual_answer": "排列",
+        "candidates": [
+          {
+            "thought": "从描述中提到的‘砖块’和‘形成一个路径’，可以推断出人行道上的砖块排列形成了一个连贯的通道。",
+            "answer": "连贯排列"
+          },
+          {
+            "thought": "根据描述中强调的‘砖块’以及其作为‘表面材料’，可以推断出砖块是以有规律的方式铺设在人行道上。",
+            "answer": "有规律排列"
+          },
+          {
+            "thought": "由于描述中提到砖块创造出‘视觉吸引力’的表面，可以推断出人行道上的砖块可能是以特定设计或图案排列，以增强美观性。",
+            "answer": "具有设计感的排列"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          0.8
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "这条人行道由什么材料制成？",
+        "visual_answer": "Brick",
+        "selected_answer": "Brick",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "人行道上的砖块是如何排列的？",
+        "visual_answer": "排列",
+        "selected_answer": "连贯排列",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "8",
+    "question": "Is there a plate beside the bed?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2374558.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a cozy bedroom with a bed placed in the corner of the room. A lamp is situated on a small table next to the bed, providing a warm and inviting atmosphere. There is a plate on the table, which is located near the bed. The room also has a window, allowing natural light to enter the space. The overall setting suggests a comfortable and relaxing environment.",
+    "prediction": "yes",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中是否有盘子靠近床的位置？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "画面中有一个小桌子靠近床，桌子上放着一个盘子。",
+            "answer": "是"
+          },
+          {
+            "thought": "根据布局分析，桌子位于床的一侧，盘子被放置在了该位置上。",
+            "answer": "是"
+          },
+          {
+            "thought": "从房间整体布置看，盘子的位置方便在床上使用或休息时拿取。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "盘子是否位于小桌子和床之间？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "根据描述，盘子位于小桌子附近，并且靠近床。因此，可以推断盘子位于小桌子和床之间。",
+            "answer": "是"
+          },
+          {
+            "thought": "从房间布局看，小桌子紧挨着床边放置，而盘子又靠近小桌子。这意味着盘子可能处于小桌子和床的区域内。",
+            "answer": "是"
+          },
+          {
+            "thought": "描述中提到的‘小桌子’、‘床’和‘盘子’的位置关系显示，盘子的位置与两者相邻。因此，盘子确实位于小桌子和床之间。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "是否有物品放置在床边的小桌子上？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "观察图片中床边的小桌子，发现有物品放置其上。",
+            "answer": "是"
+          },
+          {
+            "thought": "注意到小桌上有一个灯和一个接近床的位置的盘子，说明有物品。",
+            "answer": "是"
+          },
+          {
+            "thought": "通过判断房间的整体氛围以及小桌上的物品布局，确认床边的小桌上确实有物品。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中是否有盘子靠近床的位置？",
+        "visual_answer": "是",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "盘子是否位于小桌子和床之间？",
+        "visual_answer": "是",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "是否有物品放置在床边的小桌子上？",
+        "visual_answer": "是",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "9",
+    "question": "Is there a mirror in this scene?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2374558.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a cozy bedroom with a bed situated in the corner of the room. The bed is adorned with a colorful quilt, and there are two lamps on the nightstand, one on the left side and the other on the right side. A clock is also present on the right side of the nightstand. The room is well-lit, with a window providing natural light.\n\nIn addition to the bed and nightstand, there is a chair in the room, positioned near the left side of the bed. A vase can be seen on the right side of the bed, adding a decorative touch to the space. The room appears to be a comfortable and inviting living area.",
+    "prediction": "no",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中有镜子吗？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "观察房间内的家具布置，特别是床的位置和方向，以及是否有明显的镜子反射。",
+            "answer": "是"
+          },
+          {
+            "thought": "检查图片中是否有任何平面物体能够作为镜子使用，如大型的平面物品或有镜面材质的家具。",
+            "answer": "是"
+          },
+          {
+            "thought": "从照明的角度考虑，镜子通常用于反射光线以增强室内亮度，分析图片中是否有足够的光线反射迹象。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "镜子位于房间的哪个位置？",
+        "visual_answer": "窗",
+        "candidates": [
+          {
+            "thought": "根据描述，房间内有床和夜灯，但没有提到镜子的位置。镜子通常放在房间里以方便日常使用或装饰，可能在床边、窗边或者墙壁上。",
+            "answer": "无法确定镜子的具体位置"
+          },
+          {
+            "thought": "描述中提到了一个装饰性的花瓶在床的右侧，镜子可能与之相邻或者在相似的位置。",
+            "answer": "镜子可能位于床的右侧"
+          },
+          {
+            "thought": "房间内的光线来自窗户，镜子反射光线可以增强室内的亮度。因此，镜子可能被放置在能够最大化利用自然光的地方。",
+            "answer": "镜子可能位于靠近窗户的位置"
+          }
+        ],
+        "scores": [
+          0.1,
+          0.8,
+          0.9
+        ],
+        "selected_index": 2
+      },
+      {
+        "sub_question": "镜子是面向哪个方向的？",
+        "visual_answer": "右",
+        "candidates": [
+          {
+            "thought": "根据描述，房间被良好照明，有窗户提供自然光。这意味着镜子应该反射房间内的光线或物品。由于描述中提到了一个钟在右侧夜桌，且未提及镜子的位置，我们可以推断镜子可能位于房间内可以反射到钟和/或窗边自然光的地方。在常见布局中，镜子通常放置在床头、夜桌或靠近窗户的位置，以利用光线。结合描述中的床角位置，推测镜子可能在靠近窗户的一侧，以便反射光线并照亮整个房间。",
+            "answer": "左"
+          },
+          {
+            "thought": "描述中提到有一盏灯在床头两侧的夜桌上，这表明房间内有良好的照明系统。考虑到镜子反射光线的能力，它通常被放置在能够充分利用这些光源的位置，如靠近窗户或床头。如果镜子位于右侧，它将无法直接反射来自左侧的灯光，也无法充分利用来自窗户的自然光，这与描述中提到的房间良好照明情况不符。",
+            "answer": "右"
+          },
+          {
+            "thought": "描述中强调了房间内的椅子和床的位置，以及两盏灯分别位于床头的左右两侧。这种布局暗示了一个对称的布局原则，使得房间看起来更加平衡和谐。如果镜子位于房间的右半部分，它就可以与左侧的灯具形成对称，同时反射来自右侧的自然光，增强房间的整体光照效果。这种布局逻辑符合描述中提到的房间是“舒适和邀请”的特性。",
+            "answer": "右"
+          }
+        ],
+        "scores": [
+          1.0,
+          0.1,
+          0.1
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中有镜子吗？",
+        "visual_answer": "是",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "镜子位于房间的哪个位置？",
+        "visual_answer": "窗",
+        "selected_answer": "镜子可能位于靠近窗户的位置",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "镜子是面向哪个方向的？",
+        "visual_answer": "右",
+        "selected_answer": "左",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "10",
+    "question": "Are the letters on the bag on the left?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2329435.jpg",
+    "ground_truth": "yes",
+    "visual_description": "In the image, a woman is brushing her teeth in a room. She is holding a toothbrush in her mouth and a toothpaste tube in her hand. The room features a sink, a cup, and a handbag. The handbag is placed on the floor, and the cup is located near the sink. The woman is standing in front of the sink, and the toothbrush is positioned close to her mouth. The letters on the bag are indeed on the left side of the image.",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "子问题: 图中手袋的位置是哪里？}：{子问题: 手袋上的字母是在左边还是右边？}：{子问题: 你能否确认图中的手袋确实有字母吗？",
+        "visual_answer": "Yes",
+        "candidates": [
+          {
+            "thought": "观察手袋的位置，它是否在画面的一侧。",
+            "answer": "手袋位于画面的左侧。"
+          },
+          {
+            "thought": "检查手袋上的字母位置，确定它们是否在手袋的左侧。",
+            "answer": "手袋上的字母位于左侧。"
+          },
+          {
+            "thought": "确认图像中的所有细节，包括手袋和其上可能的字母。",
+            "answer": "手袋确有字母，且位于左侧。"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "子问题: 图中手袋的位置是哪里？}：{子问题: 手袋上的字母是在左边还是右边？}：{子问题: 你能否确认图中的手袋确实有字母吗？",
+        "visual_answer": "Yes",
+        "selected_answer": "手袋位于画面的左侧。",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "11",
+    "question": "Are there both forks and tablecloths in the image?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2379459.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a white plate with a variety of desserts, including cakes and pastries. There are four distinct desserts on the plate, each with different shapes and sizes. The plate is placed on a dining table, which is covered with a blue tablecloth. Additionally, there is a fork located near the plate, likely used for serving the desserts. The overall scene suggests a pleasant dining experience with a focus on the delicious desserts.",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中是否包含叉子？",
+        "visual_answer": "No",
+        "candidates": [
+          {
+            "thought": "图片中有白色盘子和多种甜点，包括蛋糕和糕点。盘子旁边放着一把叉子，用于服务甜点。",
+            "answer": "Yes"
+          },
+          {
+            "thought": "分析显示，餐桌上覆盖着蓝色桌布，盘子上排列着四款不同形状和大小的甜点。盘子附近有一把叉子，显然是用来分发甜点的工具。",
+            "answer": "Yes"
+          },
+          {
+            "thought": "仔细观察图像，可以看到一个白色的盘子上放着多种甜点。在盘子一侧，发现了一把叉子，很可能是用来提供甜点的餐具。",
+            "answer": "Yes"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "桌布的颜色是什么？",
+        "visual_answer": "蓝色",
+        "candidates": [
+          {
+            "thought": "桌布覆盖在餐桌上，描述中提到是蓝色的桌布。",
+            "answer": "蓝色"
+          },
+          {
+            "thought": "通过观察图像中的背景颜色，可以判断出是蓝色的桌布。",
+            "answer": "蓝色"
+          },
+          {
+            "thought": "描述中明确指出桌布的颜色是蓝色，因此可以直接得出答案。",
+            "answer": "蓝色"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "盘子上的食物种类数量是多少？",
+        "visual_answer": "4",
+        "candidates": [
+          {
+            "thought": "从图片中直接数出食物的种类数量",
+            "answer": "4"
+          },
+          {
+            "thought": "观察图片中的食物并根据描述进行分类",
+            "answer": "4"
+          },
+          {
+            "thought": "识别图片中的食物元素，并计数这些元素的数量",
+            "answer": "4"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中是否包含叉子？",
+        "visual_answer": "No",
+        "selected_answer": "Yes",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "桌布的颜色是什么？",
+        "visual_answer": "蓝色",
+        "selected_answer": "蓝色",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "盘子上的食物种类数量是多少？",
+        "visual_answer": "4",
+        "selected_answer": "4",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "12",
+    "question": "What is on the bun in the top?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2375415.jpg",
+    "ground_truth": "lettuce",
+    "visual_description": "The image features a dining table with a plate of food, including a sandwich and a side of rice. There are two sandwiches on the table, one of which is placed on a bun. The bun is located in the top right corner of the plate. The table setting also includes a wine glass, a cup, and a bottle, suggesting that the meal is accompanied by a beverage. The overall scene appears to be a casual dining experience with a variety of food items.",
+    "prediction": "roast beef",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中的面包顶部放的是什么食物？",
+        "visual_answer": "肉",
+        "candidates": [
+          {
+            "thought": "观察面包顶部的食物，可以看到是夹在其中的三明治的一部分",
+            "answer": "三明治"
+          },
+          {
+            "thought": "从整体场景判断，面包作为三明治的基础，顶部通常会夹有肉类、蔬菜等食材",
+            "answer": "肉类或蔬菜"
+          },
+          {
+            "thought": "根据常见的食物搭配习惯，面包顶部的食物可能是作为三明治的主料之一，如火腿、鸡肉等",
+            "answer": "肉类"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.6,
+          0.7
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "这食物是什么形状的？",
+        "visual_answer": "Round",
+        "candidates": [
+          {
+            "thought": "观察图片中食品的基本形状，特别是主要食物之一的汉堡包。汉堡包通常呈扁平圆状。",
+            "answer": "圆形"
+          },
+          {
+            "thought": "从图片中识别餐具的布局和食物摆放方式，推测食物形状。常见的三明治和汉堡包在盘子上的摆放形式通常是圆的。",
+            "answer": "圆形"
+          },
+          {
+            "thought": "考虑图片中的食物种类和常见烹饪方法，如制作三明治和汉堡。这些食物在制作时会形成圆形状。",
+            "answer": "圆形"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "这食物位于盘子的哪个位置？",
+        "visual_answer": "中",
+        "candidates": [
+          {
+            "thought": "从描述来看，图片中的食物是围绕着盘子布置的。提到有两个三明治，其中一个在面包上，并位于盘子的右上角。这意味着食物主要集中在盘子的中心区域，因为右上角是在盘子的中心部分。",
+            "answer": "中"
+          },
+          {
+            "thought": "描述中提到了一个面包，其位置被明确指定在右上角。通常情况下，盘子的中央会放置其他食物，因此我们可以推断出大部分食物位于盘子的中心。",
+            "answer": "中"
+          },
+          {
+            "thought": "虽然描述中特别提到了一个三明治的位置（右上角），但没有具体说明其他食物的具体位置。考虑到常规的餐桌布局，通常食物会围绕着盘子均匀分布，因此可以合理推测大部分食物位于盘子的中心区域。",
+            "answer": "中"
+          }
+        ],
+        "scores": [
+          0.9,
+          0.9,
+          0.9
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中的面包顶部放的是什么食物？",
+        "visual_answer": "肉",
+        "selected_answer": "三明治",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "这食物是什么形状的？",
+        "visual_answer": "Round",
+        "selected_answer": "圆形",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "这食物位于盘子的哪个位置？",
+        "visual_answer": "中",
+        "selected_answer": "中",
+        "selected_score": 0.9
+      }
+    ]
+  },
+  {
+    "question_id": "13",
+    "question": "What is the vegetable on the bun?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2375415.jpg",
+    "ground_truth": "lettuce",
+    "visual_description": "The image features a dining table with a plate of food, including a sandwich and a salad. The sandwich is placed on a bun, and there is a side of rice on the plate. The salad consists of a variety of vegetables, including carrots and lettuce. The carrots are scattered throughout the salad, with some placed closer to the sandwich and others further away. The lettuce is also present in the salad, adding to the overall mix of vegetables. The dining table occupies most of the scene, with the plate of food and the sandwich being the main focus.",
+    "prediction": "lettuce",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "蔬菜与三明治的关系是什么？",
+        "visual_answer": "它们是一起食用的",
+        "candidates": [
+          {
+            "thought": "蔬菜和三明治都在同一盘子上，通常人们会将它们一起食用。",
+            "answer": "它们是餐桌上的主食配菜，共同构成一顿饭。"
+          },
+          {
+            "thought": "在图片中，蔬菜（如胡萝卜和生菜）位于三明治旁边，暗示了它们可能作为三明治的补充食物被一同享用。",
+            "answer": "蔬菜作为三明治的配菜或佐餐，与之共同构成了餐桌上的一道主食。"
+          },
+          {
+            "thought": "从摆放布局看，三明治和蔬菜（特别是胡萝卜和生菜）都在盘子上并排放置，这表明它们是同一餐的组成部分，通常会被同时食用。",
+            "answer": "蔬菜与三明治同属一餐，它们可以相互搭配食用，丰富口味和营养。"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "是否存在除了蔬菜和三明治之外的其他食物？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "观察图片中除了蔬菜和三明治之外的区域，可以看到有米饭作为配菜。",
+            "answer": "存在除蔬菜和三明治外的食物，包括米饭。"
+          },
+          {
+            "thought": "从图片布局来看，整体中心围绕着三明治和沙拉，旁边有米饭，因此可以推断出存在其他食物。",
+            "answer": "是的，存在除蔬菜和三明治外的食物，如米饭。"
+          },
+          {
+            "thought": "注意到图片中的食物元素，除了主要的三明治和沙拉外，还有一份看起来像是用来搭配的白米饭。",
+            "answer": "答案是肯定的，存在除了蔬菜和三明治以外的食物，即米饭。"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "蔬菜与三明治的关系是什么？",
+        "visual_answer": "它们是一起食用的",
+        "selected_answer": "它们是餐桌上的主食配菜，共同构成一顿饭。",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "是否存在除了蔬菜和三明治之外的其他食物？",
+        "visual_answer": "是",
+        "selected_answer": "存在除蔬菜和三明治外的食物，包括米饭。",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "14",
+    "question": "Does the short sleeved shirt look green?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2373967.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The woman in the image is wearing a green short sleeved shirt.",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图片中的女子穿着什么颜色的短袖衬衫？",
+        "visual_answer": "绿色",
+        "candidates": [
+          {
+            "thought": "根据图像描述，女性穿着的短袖衬衫是绿色的。因此，我可以直接回答。",
+            "answer": "绿色"
+          }
+        ],
+        "scores": [
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "短袖衬衫看起来是绿色的吗？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "根据图像描述，穿着者穿着一件绿色短袖衬衫。因此，短袖衬衫看起来应该是绿色的。",
+            "answer": "是"
+          },
+          {
+            "thought": "从视觉模型的角度出发，它直接识别出颜色为绿色。因此，短袖衬衫看起来是绿色的。",
+            "answer": "是"
+          },
+          {
+            "thought": "观察者通过对比图像中的颜色信息，可以确认短袖衬衫呈现绿色。所以，视觉上短袖衬衫确实是绿色的。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "可以确认短袖衬衫的颜色是绿色吗？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "图像中女性穿着的短袖衬衫颜色为绿色",
+            "answer": "是"
+          },
+          {
+            "thought": "根据图像描述，可以推断出短袖衬衫的颜色是绿色",
+            "answer": "是"
+          },
+          {
+            "thought": "图像细节显示女性上衣为绿色短袖衬衫",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图片中的女子穿着什么颜色的短袖衬衫？",
+        "visual_answer": "绿色",
+        "selected_answer": "绿色",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "短袖衬衫看起来是绿色的吗？",
+        "visual_answer": "是",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "可以确认短袖衬衫的颜色是绿色吗？",
+        "visual_answer": "是",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "15",
+    "question": "What kind of clothing isn't short sleeved?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2373967.jpg",
+    "ground_truth": "cap",
+    "visual_description": "In the image, a woman is sitting in a chair, wearing a green shirt and a hat. She is holding a sandwich in her hand. There are several other people in the scene, some of whom are also wearing short sleeved clothing. The woman's hat is not short sleeved, making it the only piece of clothing that is not short sleeved in the image.",
+    "prediction": "hat",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中的哪件衣物不是短袖的？",
+        "visual_answer": "衣服",
+        "candidates": [
+          {
+            "thought": "观察图片中人物的着装情况",
+            "answer": "女子佩戴的帽子是唯一非短袖的衣物"
+          },
+          {
+            "thought": "识别出图片中所有人的衣物特点",
+            "answer": "女子的绿色衬衫是短袖，而她的帽子则不是"
+          },
+          {
+            "thought": "比较图片中衣物的长度特性",
+            "answer": "在所有展示的衣物中，只有女子的帽子长度超过了短袖衣物"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "这件非短袖衣物是什么？",
+        "visual_answer": "衣",
+        "candidates": [
+          {
+            "thought": "根据描述，唯一不是短袖的衣物是帽子，因为其他衣物都是短袖，而帽子通常不被认为是短袖的一部分。",
+            "answer": "帽子"
+          },
+          {
+            "thought": "从上下文理解，女性在图片中戴着一顶帽子，帽子作为她穿戴的唯一非短袖衣物符合逻辑。",
+            "answer": "帽子"
+          },
+          {
+            "thought": "注意到图片中女性的着装细节，她的衬衫是绿色的且是短袖的，而她的帽子则没有提及袖子长度，因此可以推断出帽子是非短袖衣物。",
+            "answer": "帽子"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "在图中，有哪些人穿着短袖衣物？",
+        "visual_answer": "2",
+        "candidates": [
+          {
+            "thought": "观察图片中人物的衣物，找出穿着短袖衣物的人数。",
+            "answer": "4"
+          },
+          {
+            "thought": "注意到图片中有多个人物，仔细检查每个人物所穿衣物的长度。排除长袖和无袖衣物，仅计算短袖衣物。",
+            "answer": "3"
+          },
+          {
+            "thought": "从左到右或从上到下逐个检查图片中的人物，记录穿着短袖衣物的人数。确保没有遗漏任何可能穿着短袖的个体。",
+            "answer": "5"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.6,
+          0.4
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中的哪件衣物不是短袖的？",
+        "visual_answer": "衣服",
+        "selected_answer": "女子佩戴的帽子是唯一非短袖的衣物",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "这件非短袖衣物是什么？",
+        "visual_answer": "衣",
+        "selected_answer": "帽子",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "在图中，有哪些人穿着短袖衣物？",
+        "visual_answer": "2",
+        "selected_answer": "4",
+        "selected_score": 0.8
+      }
+    ]
+  },
+  {
+    "question_id": "16",
+    "question": "Is the chair on the right of the photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2374981.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a white truck parked on a street, with a chair placed on the right side of the truck. There are also two people in the scene, one standing closer to the left side of the truck and the other person standing further to the right. The presence of the chair and people suggests that the truck might be parked for a specific purpose or event, possibly involving the transportation of items or equipment.",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "照片中的椅子位于卡车的哪一侧？",
+        "visual_answer": "右",
+        "candidates": [
+          {
+            "thought": "观察图片中物体相对位置关系",
+            "answer": "右"
+          },
+          {
+            "thought": "识别图片主要元素并判断椅子位置",
+            "answer": "右"
+          },
+          {
+            "thought": "结合图片描述和元素特征进行定位",
+            "answer": "右"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "请问是否有两个人出现在照片中？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "根据描述，有两句话提到人，分别在卡车的左右两侧，因此可以推断出至少有两人出现。",
+            "answer": "是"
+          },
+          {
+            "thought": "描述中明确指出‘有两个’人在现场，一个靠近卡车左侧，另一个则位于右侧。这直接支持了存在两个人的结论。",
+            "answer": "是"
+          },
+          {
+            "thought": "通过观察图像描述中的细节，如卡车旁放置的椅子以及站在卡车左右两侧的人，可以合理推断出图像中确实存在两个人。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "照片中的椅子位于卡车的哪一侧？",
+        "visual_answer": "右",
+        "selected_answer": "右",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "请问是否有两个人出现在照片中？",
+        "visual_answer": "是",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "17",
+    "question": "What is that person walking on?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2376039.jpg",
+    "ground_truth": "bricks",
+    "visual_description": "The image features a person walking down a narrow alleyway between two buildings. The person is holding a red umbrella, which is open and providing protection from the elements. The alleyway is made of bricks, giving it a distinctive appearance. The person is walking on the brick path, which is the primary surface of the alleyway. The scene captures the person's journey through the narrow passage between the buildings, with the red umbrella serving as a focal point in the image.",
+    "prediction": "brick path",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "那人在行走的表面是什么？",
+        "visual_answer": "瓦",
+        "candidates": [
+          {
+            "thought": "根据描述，人走在砖铺的路上",
+            "answer": "砖"
+          },
+          {
+            "thought": "描述中提到了砖作为场景的一部分，可以推断出走的表面是砖",
+            "answer": "砖"
+          },
+          {
+            "thought": "描述中明确提到‘砖制的’外观，表明人行走的地面材料是砖",
+            "answer": "砖"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "那条砖路有什么特征？",
+        "visual_answer": "砖",
+        "candidates": [
+          {
+            "thought": "砖路是构成这条窄巷的主要地面材质。",
+            "answer": "砖"
+          },
+          {
+            "thought": "行人走在砖路上，砖路是狭窄巷道的唯一行走表面。",
+            "answer": "砖"
+          },
+          {
+            "thought": "砖路的质地和颜色与周围的建筑物相协调，体现了城市的建筑风格。",
+            "answer": "砖"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "人手中持有的伞的状态如何？",
+        "visual_answer": "濡",
+        "candidates": [
+          {
+            "thought": "[{\"thought\": \"伞的颜色是红色，并且是打开的，因此可以推断出伞的状态是撑开的。\", \"answer\": \"撑开\"},\n{\"thought\": \"在描述中提到人手持着伞，说明伞是处于可使用的状态，即准备好提供保护。\", \"answer\": \"准备使用\"},\n{\"thought\": \"环境显示正在下雨或有雨水，因此人持有伞是为了遮挡雨滴。这表明伞的状态是已经打开并用于防雨。\", \"answer\": \"防雨\"]",
+            "answer": "[{\"thought\": \"伞的颜色是红色，并且是打开的，因此可以推断出伞的状态是撑开的。\", \"answer\": \"撑开\"},\n{\"thought\": \"在描述中提到人手持着伞，说明伞是处于可使用的状态，即准备好提供保护。\", \"answer\": \"准备使用\"},\n{\"thought\": \"环境显示正在下雨或有雨水，因此人持有伞是为了遮挡雨滴。这表明伞的状态是已经打开并用于防雨。\", \"answer\": \"防雨\"]"
+          }
+        ],
+        "scores": [
+          0.9
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "那人在行走的表面是什么？",
+        "visual_answer": "瓦",
+        "selected_answer": "砖",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "那条砖路有什么特征？",
+        "visual_answer": "砖",
+        "selected_answer": "砖",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "人手中持有的伞的状态如何？",
+        "visual_answer": "濡",
+        "selected_answer": "[{\"thought\": \"伞的颜色是红色，并且是打开的，因此可以推断出伞的状态是撑开的。\", \"answer\": \"撑开\"},\n{\"thought\": \"在描述中提到人手持着伞，说明伞是处于可使用的状态，即准备好提供保护。\", \"answer\": \"准备使用\"},\n{\"thought\": \"环境显示正在下雨或有雨水，因此人持有伞是为了遮挡雨滴。这表明伞的状态是已经打开并用于防雨。\", \"answer\": \"防雨\"]",
+        "selected_score": 0.9
+      }
+    ]
+  },
+  {
+    "question_id": "18",
+    "question": "In which part of the image is the broccoli?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2373925.jpg",
+    "ground_truth": "left",
+    "visual_description": "The image features a table with a variety of vegetables, including broccoli. The broccoli is located on the left side of the table, surrounded by other vegetables. The table is filled with an assortment of fresh produce, showcasing the abundance of healthy food options.",
+    "prediction": "left side",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中的蔬菜有哪些种类？",
+        "visual_answer": "西红柿",
+        "candidates": [
+          {
+            "thought": "观察图片中蔬菜的布局和颜色，特别是与已知蔬菜的对比，推测出未知蔬菜的类型。",
+            "answer": "黄瓜"
+          },
+          {
+            "thought": "根据图片中的蔬菜位置关系以及与已知蔬菜的相似度，进行类比推理。",
+            "answer": "茄子"
+          },
+          {
+            "thought": "利用对蔬菜的一般知识和图片提供的上下文信息，排除已知蔬菜后进行合理猜测。",
+            "answer": "豆角"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.1,
+          0.1
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "图片中的主角蔬菜位于哪里？",
+        "visual_answer": "左",
+        "candidates": [
+          {
+            "thought": "根据描述，图片中展示了一张满是新鲜蔬菜的桌子，其中包含西兰花。西兰花位于桌子的左侧。",
+            "answer": "左"
+          },
+          {
+            "thought": "观察者可以定位到图片的主要部分，即蔬菜所在的区域，并识别西兰花在这些区域中的位置。",
+            "answer": "左"
+          },
+          {
+            "thought": "描述提供了关于西兰花位置的明确信息，可以直接从文本中提取出答案。",
+            "answer": "左"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "具体的，图片中左侧面摆放的是什么蔬菜？",
+        "visual_answer": "西红柿",
+        "candidates": [
+          {
+            "thought": "根据描述，图片中左侧面摆放的蔬菜是多种，包括了‘broccoli’（西兰花）。因此，直接的答案应该是与之对应的中文名称。",
+            "answer": "西兰花"
+          },
+          {
+            "thought": "虽然描述中提到有其他蔬菜，但并未详细指出左边具体是什么蔬菜。如果假设视觉模型可能识别出左边较为显眼或特定的蔬菜，那么这里可以推测是西红柿。",
+            "answer": "西红柿"
+          },
+          {
+            "thought": "描述中强调了图片中有一个被明确提到的蔬菜‘broccoli’（西兰花）位于左侧。这暗示了左侧摆放的主要蔬菜就是西兰花，而不是西红柿或其他未明确指出的蔬菜。",
+            "answer": "西兰花"
+          }
+        ],
+        "scores": [
+          1.0,
+          0.1,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中的蔬菜有哪些种类？",
+        "visual_answer": "西红柿",
+        "selected_answer": "黄瓜",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "图片中的主角蔬菜位于哪里？",
+        "visual_answer": "左",
+        "selected_answer": "左",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "具体的，图片中左侧面摆放的是什么蔬菜？",
+        "visual_answer": "西红柿",
+        "selected_answer": "西兰花",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "19",
+    "question": "Who is younger, the boy or the woman?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2380504.jpg",
+    "ground_truth": "boy",
+    "visual_description": "In the image, a woman is standing on a snow-covered slope, holding a ski pole. She is wearing a blue jacket and appears to be the main focus of the scene. There is also a boy in the background, who is wearing a blue jacket as well. The woman is positioned closer to the foreground, while the boy is further back in the scene. It is not possible to definitively determine who is younger, the boy or the woman, based on the image alone.",
+    "prediction": "无法确定",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "他们在进行什么活动？",
+        "visual_answer": "Skiing",
+        "candidates": [
+          {
+            "thought": "根据人物穿着和所处环境（雪地、滑雪杆），可以推断出他们在进行滑雪活动。",
+            "answer": "滑雪"
+          },
+          {
+            "thought": "背景中的男孩也穿着蓝色夹克，与前方女性相似的装备提示可能是在同一场活动中，即滑雪。",
+            "answer": "滑雪"
+          },
+          {
+            "thought": "女性站在雪坡上并持有滑雪杖，这是滑雪活动的标准姿势和装备配备，因此推断他们正在进行滑雪。",
+            "answer": "滑雪"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "他们在进行什么活动？",
+        "visual_answer": "Skiing",
+        "selected_answer": "滑雪",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "20",
+    "question": "What is covering the sky?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2349636.jpg",
+    "ground_truth": "branches",
+    "visual_description": "The image features a large elephant standing next to a tree, with its trunk wrapped around the tree. The elephant is the main focus of the scene, occupying a significant portion of the image. The sky is visible in the background, but it is not covered by any objects or attributes. The elephant's trunk is the only element in the image that is covering the sky, as it wraps around the tree.",
+    "prediction": "elephant's trunk",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "什么元素在画面中覆盖了天空？",
+        "visual_answer": "树",
+        "candidates": [
+          {
+            "thought": "大象的鼻子遮住了天空",
+            "answer": "大象的鼻子"
+          },
+          {
+            "thought": "树的存在使得天空被部分遮挡",
+            "answer": "树"
+          },
+          {
+            "thought": "观察主体是大象，其行为导致天空可见度降低",
+            "answer": "大象"
+          }
+        ],
+        "scores": [
+          1.0,
+          0.9,
+          0.1
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "覆盖天空的元素与大象有关系吗？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "大象的鼻子遮住了天空，这是由于其自然行为（如抓住树）导致的。",
+            "answer": "有关系"
+          },
+          {
+            "thought": "天空被遮挡部分属于大象的动作范围，因此与大象有关。",
+            "answer": "有关系"
+          },
+          {
+            "thought": "图像中唯一遮挡天空的元素是大象的鼻子，说明两者存在联系。",
+            "answer": "有关系"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "覆盖天空的具体物体是什么姿态？",
+        "visual_answer": "半身",
+        "candidates": [
+          {
+            "thought": "[{\"thought\": \"根据描述，主要的遮挡物是大象的长鼻子，它环绕着一棵树。因为这个长鼻子是大象的一部分，所以可以推断出遮挡物的姿态与大象的姿态相关。由于大象是站立的，所以长鼻子的姿态也是站立的姿态。\", \"answer\": \"站立\"},\n{\"thought\": \"描述中提到大象的长鼻子“包裹”住了一棵树，这意味着长鼻子从地面延伸到树的高度。因此，可以推断出遮挡物的姿态是从地面开始，向上延伸至树的高度，这应该是一种“弯曲”的姿态，以适应环绕树干的形状。\", \"answer\": \"弯曲\"},\n{\"thought\": \"虽然描述中没有明确提到长鼻子的动作细节，但从它“包裹”住树的行为可以推测出一种“环绕”的动作。这种动作可能涉及长鼻子在水平方向上的移动和围绕树干的旋转，因此可以推断出长鼻子的姿态是“环绕”的。\", \"answer\": \"环绕\"}",
+            "answer": "[{\"thought\": \"根据描述，主要的遮挡物是大象的长鼻子，它环绕着一棵树。因为这个长鼻子是大象的一部分，所以可以推断出遮挡物的姿态与大象的姿态相关。由于大象是站立的，所以长鼻子的姿态也是站立的姿态。\", \"answer\": \"站立\"},\n{\"thought\": \"描述中提到大象的长鼻子“包裹”住了一棵树，这意味着长鼻子从地面延伸到树的高度。因此，可以推断出遮挡物的姿态是从地面开始，向上延伸至树的高度，这应该是一种“弯曲”的姿态，以适应环绕树干的形状。\", \"answer\": \"弯曲\"},\n{\"thought\": \"虽然描述中没有明确提到长鼻子的动作细节，但从它“包裹”住树的行为可以推测出一种“环绕”的动作。这种动作可能涉及长鼻子在水平方向上的移动和围绕树干的旋转，因此可以推断出长鼻子的姿态是“环绕”的。\", \"answer\": \"环绕\"}"
+          }
+        ],
+        "scores": [
+          0.8
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "什么元素在画面中覆盖了天空？",
+        "visual_answer": "树",
+        "selected_answer": "大象的鼻子",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "覆盖天空的元素与大象有关系吗？",
+        "visual_answer": "是",
+        "selected_answer": "有关系",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "覆盖天空的具体物体是什么姿态？",
+        "visual_answer": "半身",
+        "selected_answer": "[{\"thought\": \"根据描述，主要的遮挡物是大象的长鼻子，它环绕着一棵树。因为这个长鼻子是大象的一部分，所以可以推断出遮挡物的姿态与大象的姿态相关。由于大象是站立的，所以长鼻子的姿态也是站立的姿态。\", \"answer\": \"站立\"},\n{\"thought\": \"描述中提到大象的长鼻子“包裹”住了一棵树，这意味着长鼻子从地面延伸到树的高度。因此，可以推断出遮挡物的姿态是从地面开始，向上延伸至树的高度，这应该是一种“弯曲”的姿态，以适应环绕树干的形状。\", \"answer\": \"弯曲\"},\n{\"thought\": \"虽然描述中没有明确提到长鼻子的动作细节，但从它“包裹”住树的行为可以推测出一种“环绕”的动作。这种动作可能涉及长鼻子在水平方向上的移动和围绕树干的旋转，因此可以推断出长鼻子的姿态是“环绕”的。\", \"answer\": \"环绕\"}",
+        "selected_score": 0.8
+      }
+    ]
+  },
+  {
+    "question_id": "21",
+    "question": "Is the giraffe in front of the fence?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2373686.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a giraffe standing in a zoo enclosure, surrounded by trees and a fence. The giraffe is positioned in front of the fence, with its body facing the camera. The fence is visible in the background, and the trees provide a natural environment for the giraffe. The scene captures the giraffe's presence within its habitat, showcasing its size and the surrounding landscape.",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "围栏是否位于主角动物的前面？",
+        "visual_answer": "No",
+        "candidates": [
+          {
+            "thought": "根据描述，主角是一只站在前方的长颈鹿，围栏位于长颈鹿身后，因此围栏不位于主角动物的前面。",
+            "answer": "否"
+          },
+          {
+            "thought": "从图像中，可以观察到长颈鹿面对镜头站立，背景是围栏和树木。这意味着围栏并非处于主角动物的前方。",
+            "answer": "否"
+          },
+          {
+            "thought": "描述指出长颈鹿位于围栏之前，并且背景有树木和围栏。这表明围栏的位置是在长颈鹿之后，而非其前方。",
+            "answer": "否"
+          }
+        ],
+        "scores": [
+          0.9,
+          0.9,
+          0.9
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "主角动物是否面向相机？",
+        "visual_answer": "Yes",
+        "candidates": [
+          {
+            "thought": "根据描述，图像中有一只长颈鹿站在动物园的围栏前，身体面对镜头。因此，它面向相机。",
+            "answer": "Yes"
+          },
+          {
+            "thought": "长颈鹿在画面中占据显著位置，并且身体方向正对观众，表明它面向相机。",
+            "answer": "Yes"
+          },
+          {
+            "thought": "描述中明确提到‘The giraffe is positioned in front of the fence, with its body facing the camera’，这说明长颈鹿的确面向相机。",
+            "answer": "Yes"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "围栏是否位于主角动物的前面？",
+        "visual_answer": "No",
+        "selected_answer": "否",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "主角动物是否面向相机？",
+        "visual_answer": "Yes",
+        "selected_answer": "Yes",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "22",
+    "question": "Is the shop new or old?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2376775.jpg",
+    "ground_truth": "new",
+    "visual_description": "The image features a group of people standing in a store, surrounded by various bicycles. There are at least six bicycles in the scene, with some placed closer to the people and others further away. The people are engaged in conversation, and some of them are wearing ties, suggesting a more formal or professional setting. The presence of multiple bicycles and people in the store indicates that it is a well-stocked shop, possibly a new or recently opened establishment. The store's layout and the variety of bicycles on display suggest that it is a place where customers can find a wide range of bicycles to choose from.",
+    "prediction": "yes",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "人们的行为和服装是否暗示这是一个新开业的商店？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "[{\"thought\": \"人们穿着正式，可能在开业庆典或活动中”， \"answer\": \"是\"}]\n[{\"thought\": \"店内摆满自行车，顾客在交流选购”， \"answer\": \"是\"}]\n[{\"thought\": \"新店通常会吸引较多顾客试车或咨询”， \"answer\": \"是\"}]",
+            "answer": "[{\"thought\": \"人们穿着正式，可能在开业庆典或活动中”， \"answer\": \"是\"}]\n[{\"thought\": \"店内摆满自行车，顾客在交流选购”， \"answer\": \"是\"}]\n[{\"thought\": \"新店通常会吸引较多顾客试车或咨询”， \"answer\": \"是\"}]"
+          }
+        ],
+        "scores": [
+          0.8
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "商店内的自行车种类和数量是否符合新商店的特点？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "从图片中可以看到至少有六辆自行车，这表明商店内自行车的数量足够多，适合新商店吸引顾客。",
+            "answer": "是"
+          },
+          {
+            "thought": "多种类型的自行车显示了商店的多样性，这通常在新商店中较为常见，以满足不同消费者的需求。",
+            "answer": "是"
+          },
+          {
+            "thought": "由于商店内人流量较大且顾客穿着正式，可以推断这是一个专门销售高端或专业自行车的新店。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "人们的行为和服装是否暗示这是一个新开业的商店？",
+        "visual_answer": "是",
+        "selected_answer": "[{\"thought\": \"人们穿着正式，可能在开业庆典或活动中”， \"answer\": \"是\"}]\n[{\"thought\": \"店内摆满自行车，顾客在交流选购”， \"answer\": \"是\"}]\n[{\"thought\": \"新店通常会吸引较多顾客试车或咨询”， \"answer\": \"是\"}]",
+        "selected_score": 0.8
+      },
+      {
+        "sub_question": "商店内的自行车种类和数量是否符合新商店的特点？",
+        "visual_answer": "是",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "23",
+    "question": "Is there any mirror or bus in the photo?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2350952.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a busy city street with a variety of vehicles and pedestrians. There is a blue car driving down the street, and a bus is also present in the scene. Additionally, there are multiple bicycles parked or in use, with one bicycle located near the center of the image and another one towards the left side.\n\nSeveral people can be seen walking or standing on the street, with some of them carrying handbags. The street is lined with buildings, creating a bustling urban atmosphere. The presence of the bus and the variety of vehicles and pedestrians indicate that this is a busy area with a lot of activity.",
+    "prediction": "yes",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中有镜子吗？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "观察图片中的元素和场景，寻找可能的反射源，如车辆窗户、水面或建筑物表面等。",
+            "answer": "否"
+          },
+          {
+            "thought": "仔细检查图片中是否有明显的反射效果，如反光的表面或镜面物体。",
+            "answer": "是"
+          },
+          {
+            "thought": "考虑城市街道常见的环境因素，如汽车后视镜或行人手持的镜子，以及非传统反射源的可能性。",
+            "answer": "否"
+          }
+        ],
+        "scores": [
+          0.1,
+          1.0,
+          0.1
+        ],
+        "selected_index": 1
+      },
+      {
+        "sub_question": "图中有公交车吗？",
+        "visual_answer": "No",
+        "candidates": [
+          {
+            "thought": "图像描述中明确提到了一辆蓝色的汽车和一辆公共汽车在街上。",
+            "answer": "是"
+          },
+          {
+            "thought": "仔细观察图像中的车辆类型，发现包含有公交车。",
+            "answer": "是"
+          },
+          {
+            "thought": "根据场景描述的元素包括车辆、行人以及城市环境特征，可以推断出存在公交车。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          0.9,
+          0.9,
+          0.9
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中有镜子吗？",
+        "visual_answer": "是",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "图中有公交车吗？",
+        "visual_answer": "No",
+        "selected_answer": "是",
+        "selected_score": 0.9
+      }
+    ]
+  },
+  {
+    "question_id": "24",
+    "question": "What is the name of the drink to the right of the plate?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2373095.jpg",
+    "ground_truth": "beer",
+    "visual_description": "The image features a man sitting at a dining table with a plate of pizza in front of him. He is wearing glasses and appears to be enjoying his meal. There are two cups on the table, one to the left of the plate and the other to the right. The cups are filled with beer, which is the drink to the right of the plate. The man is seated in a chair, and the dining table occupies a significant portion of the scene.",
+    "prediction": "beer",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中的右侧杯子中装的是什么饮料？",
+        "visual_answer": "啤酒",
+        "candidates": [
+          {
+            "thought": "根据描述，图中右侧的杯子是啤酒，因为描述中明确提到了有两杯啤酒在桌上。",
+            "answer": "啤酒"
+          },
+          {
+            "thought": "观察图片细节，可以发现右侧有一个杯子，并且它被描述为‘the drink to the right of the plate’，即餐盘右边的饮料，因此可以推断出是啤酒。",
+            "answer": "啤酒"
+          },
+          {
+            "thought": "通过理解描述中的上下文，得知餐桌上有一份披萨和两杯啤酒，所以右侧的杯子中装的应该是啤酒。",
+            "answer": "啤酒"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "饮料的颜色是什么？",
+        "visual_answer": "Brown",
+        "candidates": [
+          {
+            "thought": "观察图片中的啤酒杯子，可以看到啤酒呈淡黄色而非棕色。",
+            "answer": "黄色"
+          },
+          {
+            "thought": "从图片中可以清晰看到饮料的颜色为透明液体，且具有气泡，这是啤酒的典型特征。",
+            "answer": "透明液体"
+          },
+          {
+            "thought": "虽然文本描述中提到饮料为啤酒，但颜色通常被描述为浅黄色或金黄色，而非棕色。",
+            "answer": "浅黄色或金黄色"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.2,
+          1.0
+        ],
+        "selected_index": 2
+      },
+      {
+        "sub_question": "杯子里是否有其他物质与饮料混在一起？",
+        "visual_answer": "Yes",
+        "candidates": [
+          {
+            "thought": "从图片中可以看到桌子上有两个杯子，其中一个装有啤酒。因此可以推断出杯子里有饮料。",
+            "answer": "是"
+          },
+          {
+            "thought": "观察到画面中有明显的啤酒饮料，以及一个被占用的杯口，可以推测其他物质未与饮料混合。",
+            "answer": "否"
+          },
+          {
+            "thought": "考虑到图片展示的场景较为清晰，且啤酒杯为唯一盛放液体的容器，可以合理推测杯中只有啤酒。",
+            "answer": "没有其他物质"
+          }
+        ],
+        "scores": [
+          1.0,
+          0.1,
+          0.2
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中的右侧杯子中装的是什么饮料？",
+        "visual_answer": "啤酒",
+        "selected_answer": "啤酒",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "饮料的颜色是什么？",
+        "visual_answer": "Brown",
+        "selected_answer": "浅黄色或金黄色",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "杯子里是否有其他物质与饮料混在一起？",
+        "visual_answer": "Yes",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "25",
+    "question": "What kind of drink do you think is on the table?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2373095.jpg",
+    "ground_truth": "beer",
+    "visual_description": "The image features a man sitting at a dining table with a pizza in front of him. There are two cups on the table, one placed closer to the man and the other one further away. The cups are likely filled with beer, as they are commonly associated with pizza dining. The man appears to be enjoying his meal and drinks in a relaxed setting.",
+    "prediction": "beer",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中桌子上靠近男子的杯子装的是什么？",
+        "visual_answer": "啤酒",
+        "candidates": [
+          {
+            "thought": "根据常见餐桌饮品推测，靠近男子的杯子通常盛放饮料。结合普遍的饮酒习惯，可以推断该杯子装有啤酒。",
+            "answer": "啤酒"
+          },
+          {
+            "thought": "从视觉模型直接答案出发，考虑到模型的准确性，直接给出杯子内为啤酒的答案。",
+            "answer": "啤酒"
+          },
+          {
+            "thought": "基于对图片环境的观察，通常在享受披萨时会搭配啤酒。因此，可以合理推断靠近男子的杯子装有啤酒。",
+            "answer": "啤酒"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "你认为杯子里装的是什么类型的饮料？",
+        "visual_answer": "Beer",
+        "candidates": [
+          {
+            "thought": "杯子常见于饮酒场合，特别是与披萨搭配时。",
+            "answer": "啤酒"
+          },
+          {
+            "thought": "从图片中可以看到有两杯物体位于桌上，并且靠近食物。这种布置通常表示它们是用于饮品的。",
+            "answer": "啤酒"
+          },
+          {
+            "thought": "根据日常生活经验，啤酒常与披萨一同享用。",
+            "answer": "啤酒"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中桌子上靠近男子的杯子装的是什么？",
+        "visual_answer": "啤酒",
+        "selected_answer": "啤酒",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "你认为杯子里装的是什么类型的饮料？",
+        "visual_answer": "Beer",
+        "selected_answer": "啤酒",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "26",
+    "question": "Is there any beer on the table?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2373095.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a man sitting at a dining table, enjoying a meal. In front of him, there is a large pizza on a plate, accompanied by a glass of beer. The man is wearing glasses and appears to be smiling. The table is set with a knife and a fork, indicating that the meal is ready to be eaten. The scene suggests a relaxed and enjoyable dining experience.",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "餐桌上是否有啤酒？",
+        "visual_answer": "Yes",
+        "candidates": [
+          {
+            "thought": "图像中展示了一位男士坐在餐桌旁享受美食，餐盘上有一大块披萨和一瓶啤酒。男士佩戴眼镜，面带微笑，暗示了轻松愉快的用餐氛围。餐桌上的刀叉预示着食物已准备就绪。从这些细节可以推断出餐桌上确有啤酒。",
+            "answer": "Yes"
+          },
+          {
+            "thought": "观察到男士正在用餐，其面前摆有食物，包括一大块披萨和啤酒，以及餐具（刀和叉）。这些元素共同构成了一幅典型的用餐场景，说明餐桌上确实有啤酒。",
+            "answer": "Yes"
+          },
+          {
+            "thought": "画面中清晰可见男士正在享用披萨和啤酒这一组合，同时还有刀叉放置在餐盘旁，这表明他正在进行一顿饭的就餐活动。从这个情境判断，餐桌上包含啤酒。",
+            "answer": "Yes"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "啤酒是在玻璃杯里吗？",
+        "visual_answer": "Yes",
+        "candidates": [
+          {
+            "thought": "根据图像描述，啤酒被提到与大披萨和餐具一起放在餐桌上，暗示啤酒在玻璃杯中。",
+            "answer": "Yes"
+          },
+          {
+            "thought": "从画面显示的背景信息看，餐桌上有一瓶啤酒，通常会被放置在玻璃杯中饮用。",
+            "answer": "Yes"
+          },
+          {
+            "thought": "图像中展示了餐桌上的一瓶啤酒及其所处的玻璃杯环境，这表明啤酒是在玻璃杯中的。",
+            "answer": "Yes"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "男子正在享用的食物中包含披萨吗？",
+        "visual_answer": "Yes",
+        "candidates": [
+          {
+            "thought": "根据描述，画面中有一个大号的披萨放在盘子里，这是食物的一部分。",
+            "answer": "Yes"
+          },
+          {
+            "thought": "男子正坐在餐桌旁享受美食，餐桌上放有披萨和啤酒，表明他正在用餐。",
+            "answer": "Yes"
+          },
+          {
+            "thought": "描述提到男子在享受一餐，餐具有刀叉准备就绪，而披萨是常见的用餐食品之一。",
+            "answer": "Yes"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "餐桌上是否有啤酒？",
+        "visual_answer": "Yes",
+        "selected_answer": "Yes",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "啤酒是在玻璃杯里吗？",
+        "visual_answer": "Yes",
+        "selected_answer": "Yes",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "男子正在享用的食物中包含披萨吗？",
+        "visual_answer": "Yes",
+        "selected_answer": "Yes",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "27",
+    "question": "What kind of drink is on the table?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2373095.jpg",
+    "ground_truth": "beer",
+    "visual_description": "The image features a man sitting at a dining table with a pizza in front of him. There are two glasses on the table, one of which is filled with beer. The man is wearing glasses and appears to be enjoying his meal. The table is surrounded by chairs, and there is a car visible in the background. The scene suggests a casual dining experience, with the man enjoying a pizza and a beer.",
+    "prediction": "beer",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "餐桌上放着什么类型的饮品？",
+        "visual_answer": "Beer",
+        "candidates": [
+          {
+            "thought": "从图片中可以看到桌上有两个杯子，其中一个被填满并置于显眼位置，结合常见的饮品搭配，推测是啤酒。",
+            "answer": "啤酒"
+          },
+          {
+            "thought": "观察图片细节，发现桌上有一瓶未开启的饮料，考虑到常见的餐桌饮品选择，啤酒是最有可能的选项之一。",
+            "answer": "啤酒"
+          },
+          {
+            "thought": "通过分析图片背景和氛围，判断为轻松休闲的用餐环境，通常人们会选择啤酒作为饮品，因此猜测为啤酒。",
+            "answer": "啤酒"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "饮品是满的吗？",
+        "visual_answer": "Yes",
+        "candidates": [
+          {
+            "thought": "观察图片中的玻璃杯，其中一个装有液体，并且看起来是满的。",
+            "answer": "是"
+          },
+          {
+            "thought": "从图片细节看，两个玻璃杯中有一个被填充，且没有溢出的迹象，表明是满的。",
+            "answer": "是"
+          },
+          {
+            "thought": "图片显示一个装有啤酒的玻璃杯位于餐桌上，并且看起来水位较高，接近杯口，暗示是满的。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "是啤酒吗？",
+        "visual_answer": "Yes",
+        "candidates": [
+          {
+            "thought": "根据描述中提到的‘filled with beer’可以推断出这是啤酒。",
+            "answer": "是"
+          },
+          {
+            "thought": "观察图片中餐桌上放着的一杯液体，通过上下文提示我们可以判断那是啤酒。",
+            "answer": "是"
+          },
+          {
+            "thought": "描述中明确提到有一杯被填满的啤酒，因此可以推理出图中包含啤酒。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "餐桌上放着什么类型的饮品？",
+        "visual_answer": "Beer",
+        "selected_answer": "啤酒",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "饮品是满的吗？",
+        "visual_answer": "Yes",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "是啤酒吗？",
+        "visual_answer": "Yes",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "28",
+    "question": "What is the animal in the grass?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2338773.jpg",
+    "ground_truth": "giraffe",
+    "visual_description": "The image features a giraffe standing in a grassy field. The giraffe is the main focus of the scene, and it appears to be looking at the camera. The grassy field provides a natural habitat for the giraffe, and the open space allows the viewer to appreciate the animal's size and features. The giraffe's long neck and legs are clearly visible, making it an interesting and captivating sight.",
+    "prediction": "giraffe in field",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中的主要动物是什么？",
+        "visual_answer": "Giraffe",
+        "candidates": [
+          {
+            "thought": "图像中明显的大型哺乳动物是长颈鹿",
+            "answer": "Giraffe"
+          },
+          {
+            "thought": "通过观察动物特征，如长颈和腿，可以判断出是长颈鹿",
+            "answer": "Giraffe"
+          },
+          {
+            "thought": "在自然环境中站立的大型草食性动物通常是长颈鹿",
+            "answer": "Giraffe"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "该动物处于什么样的环境中？",
+        "visual_answer": "Savannah",
+        "candidates": [
+          {
+            "thought": "图像中展示的是一只站在草地上的长颈鹿，这通常与非洲大草原的自然环境相符合。",
+            "answer": "大草原"
+          },
+          {
+            "thought": "长颈鹿是典型的非洲动物，常常出现在开阔的非洲景观中。",
+            "answer": "非洲大草原"
+          },
+          {
+            "thought": "考虑到长颈鹿的特征和栖息地，图像描绘的环境可能是一个有开阔视野和丰富植被的非洲区域。",
+            "answer": "非洲开放地带"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          0.95
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "动物的哪一部分特征最引人注目？",
+        "visual_answer": "Neck",
+        "candidates": [
+          {
+            "thought": "长颈和腿是该动物最显著的特点，因为它们使动物显得特别高大和独特。",
+            "answer": "Legs"
+          },
+          {
+            "thought": "作为草食性动物，它庞大的体型适应了其在野外生存的需求，是吸引人注意的一个方面。",
+            "answer": "Size"
+          },
+          {
+            "thought": "它的外观与自然环境形成鲜明对比，尤其是那长长的颈部，使其成为焦点。",
+            "answer": "Neck"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.5,
+          1.0
+        ],
+        "selected_index": 2
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中的主要动物是什么？",
+        "visual_answer": "Giraffe",
+        "selected_answer": "Giraffe",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "该动物处于什么样的环境中？",
+        "visual_answer": "Savannah",
+        "selected_answer": "大草原",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "动物的哪一部分特征最引人注目？",
+        "visual_answer": "Neck",
+        "selected_answer": "Neck",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "29",
+    "question": "Is there a cow or a zebra in the picture?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2372978.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a herd of zebras grazing in a grassy field. There are at least nine zebras visible in the scene, with some standing closer to the foreground and others further in the background. The zebras are spread out across the field, with some closer to the left side, others in the middle, and a few more towards the right side. The zebras are the main focus of the image, and there are no cows present.",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中是否有牛存在？",
+        "visual_answer": "No",
+        "candidates": [
+          {
+            "thought": "根据图像描述，没有提到有牛的存在。",
+            "answer": "No"
+          },
+          {
+            "thought": "图像中主要展示了九只斑马在草地上吃草，未提及任何其他动物。",
+            "answer": "No"
+          },
+          {
+            "thought": "观察者注意到画面中只有斑马，并没有看到任何牛的身影。",
+            "answer": "No"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "图中是否有斑马存在？",
+        "visual_answer": "Yes",
+        "candidates": [
+          {
+            "thought": "画面中心和四周都是斑马，数量众多，因此可以推断出图中有斑马存在。",
+            "answer": "Yes"
+          },
+          {
+            "thought": "根据对场景的观察，主要生物为斑马，没有其他种类的动物出现，因此可以得出结论图中有斑马。",
+            "answer": "Yes"
+          },
+          {
+            "thought": "在图像描述中明确提到有至少九只斑马，分布于画面的不同位置，因此可以推理出图中有斑马。",
+            "answer": "Yes"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "图中是否有其他动物存在？",
+        "visual_answer": "Yes",
+        "candidates": [
+          {
+            "thought": "图中主要描绘了一群正在吃草的斑马，没有任何其他动物出现。",
+            "answer": "No"
+          },
+          {
+            "thought": "虽然画面以斑马为主，但在广阔的草原上有可能隐藏着其他动物，但图片中并未展示。",
+            "answer": "不确定"
+          },
+          {
+            "thought": "由于图像清晰展示了斑马群体而没有明确说明有无其他动物，因此可能需要更详细的观察来判断。",
+            "answer": "不确定"
+          }
+        ],
+        "scores": [
+          0.1,
+          0.3,
+          0.3
+        ],
+        "selected_index": 1
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中是否有牛存在？",
+        "visual_answer": "No",
+        "selected_answer": "No",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "图中是否有斑马存在？",
+        "visual_answer": "Yes",
+        "selected_answer": "Yes",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "图中是否有其他动物存在？",
+        "visual_answer": "Yes",
+        "selected_answer": "不确定",
+        "selected_score": 0.3
+      }
+    ]
+  },
+  {
+    "question_id": "30",
+    "question": "What vehicle is not dusty?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2378857.jpg",
+    "ground_truth": "car",
+    "visual_description": "The image features a row of buses parked on a street, with some of them appearing dusty. A man is walking past these buses, and there are several other people in the scene. One of the buses is not dusty, and it is located towards the right side of the image. The other buses are parked in a line, with some of them being closer to the left side of the image, while others are positioned more towards the center. The man walking past the buses is situated in the middle of the scene, and he appears to be the main focus of the image.",
+    "prediction": "the clean bus",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中的哪辆公交车没有灰尘？",
+        "visual_answer": "第一辆",
+        "candidates": [
+          {
+            "thought": "观察到图像中所有车辆的外观特征，发现位于右侧的一辆公交车表面光洁，无灰尘痕迹。",
+            "answer": "右侧的公交车"
+          },
+          {
+            "thought": "注意到图像中央位置的人物视线集中于一辆车，该车未被灰尘覆盖，推测此车为无尘车辆。",
+            "answer": "人物视线聚焦的车辆"
+          },
+          {
+            "thought": "分析场景布局，发现最靠近画面中心且位置靠右的一辆车表面干净，没有灰尘。",
+            "answer": "画面中心偏右的车辆"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "没有灰尘的公交车位于图片的哪个位置？",
+        "visual_answer": "左",
+        "candidates": [
+          {
+            "thought": "根据描述，没有灰尘的公交车位于右侧，但问题是问没有灰尘的公交车位于图片的哪个位置，所以需要从相反的角度推理。",
+            "answer": "右"
+          },
+          {
+            "thought": "描述中提到了一些灰尘的公交车在左侧，而问题指向的是没有灰尘的公交车的位置，这意味着我们需要找到一个与灰尘存在与否相反的答案。",
+            "answer": "左"
+          },
+          {
+            "thought": "描述清晰地指出了没有灰尘的公交车在图片的右侧，但由于问题的表述方式，我们需调整思考方向，寻找与直接答案相反的位置。",
+            "answer": "左"
+          }
+        ],
+        "scores": [
+          0.9,
+          0.1,
+          0.9
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "行走的人在场景中的位置与没有灰尘的公交车位置关系是怎样的？",
+        "visual_answer": "相邻",
+        "candidates": [
+          {
+            "thought": "行走的人位于没有灰尘的公交车的左侧",
+            "answer": "左邻"
+          },
+          {
+            "thought": "没有灰尘的公交车位于行走的人右侧",
+            "answer": "右邻"
+          },
+          {
+            "thought": "行走的人和没有灰尘的公交车都在同一行中",
+            "answer": "同行"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.2,
+          1.0
+        ],
+        "selected_index": 2
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中的哪辆公交车没有灰尘？",
+        "visual_answer": "第一辆",
+        "selected_answer": "右侧的公交车",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "没有灰尘的公交车位于图片的哪个位置？",
+        "visual_answer": "左",
+        "selected_answer": "右",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "行走的人在场景中的位置与没有灰尘的公交车位置关系是怎样的？",
+        "visual_answer": "相邻",
+        "selected_answer": "同行",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "31",
+    "question": "What is this, a bus or a train?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2378857.jpg",
+    "ground_truth": "bus",
+    "visual_description": "The image features a row of buses parked next to each other on a street. There are at least five buses visible in the scene, with some of them being closer to the foreground and others further back. A man is walking past the buses, and there are also two other people in the scene, one of them closer to the foreground and the other further back. The presence of multiple buses and people walking by suggests that this is more likely a bus stop rather than a train station.",
+    "prediction": "bus",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "这幅图像描绘的是什么交通工具？",
+        "visual_answer": "Bus",
+        "candidates": [
+          {
+            "thought": "画面中有多辆停靠在街道上的车辆，且有行人经过，暗示这是个公共运输点。车辆外观符合公交设计。",
+            "answer": "公交车"
+          },
+          {
+            "thought": "场景中有多个并排停放的交通工具，通常情况下，火车站会更大且会有更多设施，而这里更适合描述为一个公交站点。",
+            "answer": "公交车"
+          },
+          {
+            "thought": "画面中没有显示出典型的火车特征如长车身或铁轨，而是显示了多辆较小的车辆排列在一起，这更符合公交车的布局。",
+            "answer": "公交车"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "是否有显示这是一站台还是停车场？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "图像中有多辆公交车并排停放，这通常出现在公交站点而非停车场。同时，有人在走动，进一步说明这是一个公交站点。",
+            "answer": "是"
+          },
+          {
+            "thought": "画面背景中的物体布局和人物活动方式暗示这不是一个封闭的停车场，而更有可能是一个开放式的公交站点。",
+            "answer": "是"
+          },
+          {
+            "thought": "观察到有公交车停靠且有人行迹，这些细节指向这是一个公共交通运输的集合点——公交站点，而不是用于车辆长期停放的停车场。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "这幅图像描绘的是什么交通工具？",
+        "visual_answer": "Bus",
+        "selected_answer": "公交车",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "是否有显示这是一站台还是停车场？",
+        "visual_answer": "是",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "32",
+    "question": "What type of aircraft is in the sky?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2380567.jpg",
+    "ground_truth": "airplane",
+    "visual_description": "The image features a large white airplane flying through a cloudy sky. The airplane is positioned in the middle of the scene, with its wings visible as it soars through the air. The sky is filled with clouds, creating a dramatic backdrop for the airplane's flight.",
+    "prediction": "airplane",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "天空中的大型飞行器是什么类型？",
+        "visual_answer": "翼",
+        "candidates": [
+          {
+            "thought": "从图像中可以看出，这是一个在云层中飞行的大型飞机。飞机通常指的是有固定机翼、发动机和用于载人或货物的内部空间的航空器。因此，这个大型飞行器是飞机类型。",
+            "answer": "飞机"
+          },
+          {
+            "thought": "观察到的飞行器处于空中，并且被描述为大型且白色，这暗示了它是一种飞行在空中的交通工具，结合其在云层中的位置，可以推断出这是一种能够穿越大气层的飞行器，即飞机。",
+            "answer": "飞机"
+          },
+          {
+            "thought": "根据图像特征，可以看到一个明显的机翼结构，这是飞机独有的设计，用于提供升力。同时，描述中提到它在云层中飞行，这进一步证实了它是一种飞行器，即飞机。",
+            "answer": "飞机"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "飞行器的颜色是什么？",
+        "visual_answer": "白色",
+        "candidates": [
+          {
+            "thought": "根据图像描述中提到的“大型白色飞机”，可以推断出飞行器的颜色是白色。",
+            "answer": "白色"
+          },
+          {
+            "thought": "观察到图像中飞机的主体部分为白色，因此可以合理推测飞行器颜色为白色。",
+            "answer": "白色"
+          },
+          {
+            "thought": "描述指出天空和飞机都呈现白色背景，由此可以推断飞机本身也是白色。",
+            "answer": "白色"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "飞行器是否携带明显的标志或标识？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "图像中显示了一架大型白飞机，因此可以推断出飞行器可能具有明显的标志或标识。",
+            "answer": "是"
+          },
+          {
+            "thought": "背景的云层和飞机的位置暗示了这可能是一架商业航班，商业航班通常会有明显的航空公司标志。",
+            "answer": "是"
+          },
+          {
+            "thought": "虽然图像没有具体显示标志，但考虑到飞机在天空中的常见情景，我们可以合理假设它可能携带了某种形式的标识。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "天空中的大型飞行器是什么类型？",
+        "visual_answer": "翼",
+        "selected_answer": "飞机",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "飞行器的颜色是什么？",
+        "visual_answer": "白色",
+        "selected_answer": "白色",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "飞行器是否携带明显的标志或标识？",
+        "visual_answer": "是",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "33",
+    "question": "Is it indoors?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2353515.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a harbor with several boats docked in the water. There are also a few people present in the scene, some of whom are standing near the boats. The boats are of various sizes and are docked close to each other. The presence of people and the boats in the water suggest that this is an outdoor location, not an indoor space.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "是否有证据表明这是一个室内场景？",
+        "visual_answer": "不",
+        "candidates": [
+          {
+            "thought": "画面中显示的是室外环境的港口，包含水面上停泊的船只和岸上的人类活动。这些特征通常与室外空间相关联，而非室内环境。",
+            "answer": "否"
+          },
+          {
+            "thought": "观察到的画面包括自然光线、水体反射和物体的物理结构（如船只、码头），这些都是室外环境的明显迹象。室内空间通常不会展示这样的自然元素或物体布局。",
+            "answer": "否"
+          },
+          {
+            "thought": "在图像中，没有出现任何与室内环境相联系的元素或细节，例如窗户、墙壁或其他典型的建筑特征。这进一步支持了这不是一个室内场景的观点。",
+            "answer": "否"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "是否有证据表明这是一个室内场景？",
+        "visual_answer": "不",
+        "selected_answer": "否",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "34",
+    "question": "Is the trash can to the left or to the right of the toilet?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2353354.jpg",
+    "ground_truth": "right",
+    "visual_description": "In the image, there is a small bathroom with a toilet and a sink. The toilet is located on the left side of the bathroom, while the sink is situated on the right side. A trash can is placed between the toilet and the sink, indicating that it is located in the middle of the bathroom.",
+    "prediction": "right",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中的马桶位于哪里？",
+        "visual_answer": "洗手间",
+        "candidates": [
+          {
+            "thought": "图像描述中有明确指出马桶的位置在左侧",
+            "answer": "左侧"
+          },
+          {
+            "thought": "视觉模型可能理解为整体空间布局的描述，将马桶归类于洗手间的组成部分",
+            "answer": "洗手间"
+          },
+          {
+            "thought": "考虑视觉模型可能依据物体相对位置进行定位，将距离洗手盆更远的物体视为左侧",
+            "answer": "左侧"
+          }
+        ],
+        "scores": [
+          1.0,
+          0.7,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "垃圾桶是否靠近马桶？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "根据描述，垃圾桶位于厕所和水槽之间，意味着它在浴室的中间位置。因此，垃圾桶靠近马桶。",
+            "answer": "是"
+          },
+          {
+            "thought": "描述中提到垃圾桶在厕所左侧和水槽右侧的中间，表明它与马桶的距离较近。",
+            "answer": "是"
+          },
+          {
+            "thought": "从空间布局看，由于垃圾桶位于马桶和水槽之间，这说明它在靠近马桶的位置。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中的马桶位于哪里？",
+        "visual_answer": "洗手间",
+        "selected_answer": "左侧",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "垃圾桶是否靠近马桶？",
+        "visual_answer": "是",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "35",
+    "question": "What vehicle is yellow?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2374087.jpg",
+    "ground_truth": "bus",
+    "visual_description": "The image features a busy street with a yellow bus driving down the road. The bus is the main focus of the scene, and it is surrounded by various vehicles, including cars and trucks. There are multiple traffic lights in the scene, with one close to the bus and others further away.\n\nIn addition to the vehicles, there are several people visible in the image, some of whom are walking or standing near the road. A motorcycle can also be seen parked on the side of the street. The presence of multiple traffic lights and the busy street indicate that this is likely an urban area with a high level of traffic.",
+    "prediction": "yellow vehicle: bus",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中的主要焦点是什么颜色的车辆？",
+        "visual_answer": "Yellow",
+        "candidates": [
+          {
+            "thought": "黄色的车辆是黄颜色的公共汽车。",
+            "answer": "黄色"
+          },
+          {
+            "thought": "图像中颜色突出的元素是黄色的公共汽车。",
+            "answer": "黄色"
+          },
+          {
+            "thought": "观察图像的主视觉元素，黄色公共汽车是最显眼的颜色。",
+            "answer": "黄色"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "这辆黄色的车辆是什么类型？",
+        "visual_answer": "Bus",
+        "candidates": [
+          {
+            "thought": "黄色车辆在街道上移动，通常用于载人，因此是公共交通工具。",
+            "answer": "公交车"
+          },
+          {
+            "thought": "车辆在街道上，有多个交通灯，表明在城市环境中，且用于载人，故可能是公交车。",
+            "answer": "公交车"
+          },
+          {
+            "thought": "黄色车辆在繁忙街道中，周围有其他车辆和行人，这通常表明是一辆可以载多人的交通工具，即公交车。",
+            "answer": "公交车"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "除了黄色车辆外，图中还有哪些类型的车辆？",
+        "visual_answer": "汽车",
+        "candidates": [
+          {
+            "thought": "观察图片中的交通工具，除了黄色的公交车，还可以看到停在路边的摩托车和行驶在路上的各种车辆。",
+            "answer": "汽车、卡车"
+          },
+          {
+            "thought": "通过识别交通标志和车辆形态，除了黄色的巴士，还能识别出常见的城市车辆类型。",
+            "answer": "汽车、卡车、摩托车"
+          },
+          {
+            "thought": "根据图片中车辆的大小和位置判断，除了黄色的公交车外，还能看到小型汽车和可能的货车。",
+            "answer": "汽车、卡车"
+          }
+        ],
+        "scores": [
+          1.0,
+          0.8,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中的主要焦点是什么颜色的车辆？",
+        "visual_answer": "Yellow",
+        "selected_answer": "黄色",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "这辆黄色的车辆是什么类型？",
+        "visual_answer": "Bus",
+        "selected_answer": "公交车",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "除了黄色车辆外，图中还有哪些类型的车辆？",
+        "visual_answer": "汽车",
+        "selected_answer": "汽车、卡车",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "36",
+    "question": "What is the photo showing?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2341637.jpg",
+    "ground_truth": "sidewalk",
+    "visual_description": "The photo shows a woman standing on a sidewalk, surrounded by a large flock of birds. The birds are scattered around her, with some close to her feet and others further away. The woman appears to be feeding the birds, as she is holding a bag, possibly containing food for the birds. The scene captures the interaction between the woman and the birds, creating a lively and engaging atmosphere.",
+    "prediction": "woman feeding birds",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "照片中主要的人物是谁？",
+        "visual_answer": "老妇",
+        "candidates": [
+          {
+            "thought": "画面的焦点是站在人行道上的女性，她与周围的大群鸟类互动。",
+            "answer": "女性"
+          },
+          {
+            "thought": "女性手中拿着可能装有食物的袋子，表明她正在喂食这些鸟类。",
+            "answer": "喂鸟的女性"
+          },
+          {
+            "thought": "图像展示了女性与鸟类和谐共处的场景，因此主体可能是鸟类的喂食者或保护者。",
+            "answer": "鸟类的照顾者"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.9,
+          0.7
+        ],
+        "selected_index": 1
+      },
+      {
+        "sub_question": "照片中的人物在做什么？",
+        "visual_answer": "喂鸦",
+        "candidates": [
+          {
+            "thought": "画面显示一位女士站在人行道上，身边围绕着一大群鸟。她手持一个袋子，袋内可能装有鸟食。",
+            "answer": "喂鸟"
+          },
+          {
+            "thought": "女士的动作和手中拿着的袋子表明她正在向周围的鸟类提供食物，营造出和谐互动的场景。",
+            "answer": "投喂鸟类"
+          },
+          {
+            "thought": "图像描绘了女士与鸟类的亲密互动，她似乎正在通过手中的袋子吸引或提供食物给周围飞行的鸟群。",
+            "answer": "与鸟类互动"
+          }
+        ],
+        "scores": [
+          1.0,
+          0.95,
+          0.8
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "照片中的鸟类处于什么状态？",
+        "visual_answer": "饥饿",
+        "candidates": [
+          {
+            "thought": "从照片中，可以看到鸟儿们围绕着喂食者，有的靠近脚边，有的在远处，这表明它们可能正在寻找食物。此外，喂食者手中拿着一个袋子，暗示她可能有食物提供给它们。综合这些信息，可以推断出鸟类的状态是饥饿的。",
+            "answer": "饥饿"
+          },
+          {
+            "thought": "画面展现了一个女性站在人行道上，身边聚集着许多鸟类。其中一些鸟儿靠近她的脚边，这通常意味着它们正试图接近并获取食物。女性手中拿着一个袋子，虽然未明确说明袋内物品，但考虑到情境，很可能是用来装食物的容器。这样的行为和布局，指向了鸟类可能处于饥饿状态的结论。",
+            "answer": "饥饿"
+          },
+          {
+            "thought": "通过观察图像，可以看到一只女性站在一群鸟中间，鸟儿们分散在其周围，部分靠近她的脚边。这种互动方式通常发生在鸟类寻找食物时。加之女性手中拿着一个袋子，这一细节暗示她可能在为鸟儿们准备食物。因此，可以合理推测鸟类在此场景中处于饥饿状态，正期待获取食物。",
+            "answer": "饥饿"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "照片中主要的人物是谁？",
+        "visual_answer": "老妇",
+        "selected_answer": "喂鸟的女性",
+        "selected_score": 0.9
+      },
+      {
+        "sub_question": "照片中的人物在做什么？",
+        "visual_answer": "喂鸦",
+        "selected_answer": "喂鸟",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "照片中的鸟类处于什么状态？",
+        "visual_answer": "饥饿",
+        "selected_answer": "饥饿",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "37",
+    "question": "Which place is it?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2341637.jpg",
+    "ground_truth": "sidewalk",
+    "visual_description": "The image depicts a woman standing on a sidewalk, surrounded by a large flock of birds. The birds are scattered all around her, with some close to her feet and others further away. The woman appears to be feeding the birds, as she is holding a bag, possibly containing food for the birds. The scene takes place in an urban environment, with buildings visible in the background. The presence of the woman and the birds creates a lively and bustling atmosphere in the city.",
+    "prediction": "city street",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "子问题: 画面中的主体是什么？}：{子问题: 这个场景发生在哪里？}：{子问题: 画面中有无特定的行为或活动？",
+        "visual_answer": "主体是老妇人，场景发生在街头，有行为或活动。",
+        "candidates": [
+          {
+            "thought": "画面的焦点是站在人行道上的女性，她似乎在喂食周围的大群鸟类。",
+            "answer": "主体是站在人行道上的女性。"
+          },
+          {
+            "thought": "背景中的建筑表明这个场景位于城市环境中。",
+            "answer": "这个场景发生在街头，属于城市环境。"
+          },
+          {
+            "thought": "通过女性手中的袋子可以推断出她正在进行喂鸟的行为。",
+            "answer": "画面中存在喂鸟的行为或活动。"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "子问题: 画面中的主体是什么？}：{子问题: 这个场景发生在哪里？}：{子问题: 画面中有无特定的行为或活动？",
+        "visual_answer": "主体是老妇人，场景发生在街头，有行为或活动。",
+        "selected_answer": "主体是站在人行道上的女性。",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "38",
+    "question": "Does the car to the right of the other car have blue color?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2379293.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a train traveling down the tracks, with a car to the right of another car. The car to the right is blue in color. The train is moving along the tracks, and the cars are positioned next to each other, creating a sense of motion and progression.",
+    "prediction": "yes",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中的右边汽车是什么颜色？",
+        "visual_answer": "Yellow",
+        "candidates": [
+          {
+            "thought": "根据描述，图像中右侧的汽车是蓝色的。视觉模型给出的答案与描述不符，因此这条推理路径被排除。",
+            "answer": "Blue"
+          },
+          {
+            "thought": "描述中明确指出右侧汽车的颜色是蓝色，因此不需要进行复杂推理，直接回答颜色即可。",
+            "answer": "Blue"
+          },
+          {
+            "thought": "观察到描述中提到的汽车颜色信息，没有提及任何黄色信息，因此可以合理推断右侧汽车不是黄色。",
+            "answer": "Not Yellow"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          0.8
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "图中是否有两辆汽车？",
+        "visual_answer": "No",
+        "candidates": [
+          {
+            "thought": "仔细观察图片，可以看到在右方有一辆蓝色的汽车，旁边还有一辆未被特别标记的汽车。因此，可以判断出有两辆汽车。",
+            "answer": "Yes"
+          },
+          {
+            "thought": "从描述中提取信息，提到了“car to the right of another car”，这说明存在两辆汽车并列摆放，因此答案是肯定的。",
+            "answer": "Yes"
+          },
+          {
+            "thought": "分析描述时注意到“with a car to the right of another car”，这意味着存在至少两辆汽车，并且它们的位置关系清晰，所以可以得出结论，图中有两辆汽车。",
+            "answer": "Yes"
+          }
+        ],
+        "scores": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中的右边汽车是什么颜色？",
+        "visual_answer": "Yellow",
+        "selected_answer": "Blue",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "图中是否有两辆汽车？",
+        "visual_answer": "No",
+        "selected_answer": "Yes",
+        "selected_score": 0.8
+      }
+    ]
+  },
+  {
+    "question_id": "39",
+    "question": "What color is the vegetable on top of the lettuce?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2341527.jpg",
+    "ground_truth": "orange",
+    "visual_description": "The image features a sandwich cut in half, with one half placed on a table and the other half on a piece of paper. The sandwich is filled with meat and vegetables, including a tomato slice. The vegetable on top of the lettuce is red, which is the color of the tomato slice. The sandwich is placed on a dining table, and the table occupies a significant portion of the image.",
+    "prediction": "red",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "What color is the vegetable on top of the lettuce?",
+        "visual_answer": "Red",
+        "candidates": [
+          {
+            "thought": "蔬菜位于生菜顶部，颜色与番茄片相同，因此是红色的。",
+            "answer": "红"
+          },
+          {
+            "thought": "根据图像描述中的细节，可以看到蔬菜的颜色是红色的。",
+            "answer": "红"
+          },
+          {
+            "thought": "观察图片中被展示的食品，蔬菜的颜色与番茄片一致，故判断为红色。",
+            "answer": "红"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "What color is the vegetable on top of the lettuce?",
+        "visual_answer": "Red",
+        "selected_answer": "红",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "40",
+    "question": "Which animal is that, a rhino or an elephant?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2351718.jpg",
+    "ground_truth": "elephant",
+    "visual_description": "The image features a large elephant standing in a dirt field. The elephant is the main focus of the scene, and it appears to be walking or standing in the dirt. The elephant's size and shape are distinctive, making it easy to identify as an elephant. The dirt field provides a natural environment for the elephant, and the overall scene is a clear representation of an elephant in its habitat.",
+    "prediction": "an elephant",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "大象和犀牛在体型上有什么明显的区别？",
+        "visual_answer": "大象比犀牛大",
+        "candidates": [
+          {
+            "thought": "观察到大象和犀牛在图像中并不存在同时出现的情况，因此需要根据常识和描述来推理。图像描述中明确提到大象的大小和形状，强调了其体型巨大。",
+            "answer": "大象通常比犀牛大。"
+          }
+        ],
+        "scores": [
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "这张图片展示的是大象在自然环境中的状态吗？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "图中大象位于一片尘土飞扬的田野中，这通常被认为是自然环境的一部分。",
+            "answer": "是"
+          },
+          {
+            "thought": "大象的外观和所处的背景（田野）暗示它身处自然环境中。",
+            "answer": "是"
+          },
+          {
+            "thought": "没有其他人工结构或迹象显示人类活动的影响，这支持图像展示的是大象在自然环境中的状态。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "大象和犀牛在体型上有什么明显的区别？",
+        "visual_answer": "大象比犀牛大",
+        "selected_answer": "大象通常比犀牛大。",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "这张图片展示的是大象在自然环境中的状态吗？",
+        "visual_answer": "是",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "41",
+    "question": "Is the boy's hair curly and short?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2373271.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a young boy sitting at a dining table, eating food from a bowl. He is using a spoon to eat the food. The boy has curly hair, which is short in length. The dining table is surrounded by chairs, with one chair visible on the left side of the table and another on the right side. The boy is the main focus of the image, and his curly hair is a noticeable feature.",
+    "prediction": "yes",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "男孩的头发是卷曲的吗？",
+        "visual_answer": "Yes",
+        "candidates": [
+          {
+            "thought": "根据描述，图像中男孩的头发特征被明确指出为'卷曲'。",
+            "answer": "Yes"
+          },
+          {
+            "thought": "图像细节包括了对男孩头发长度和形状的描述，其中提及'短'和'卷曲'。",
+            "answer": "Yes"
+          },
+          {
+            "thought": "从提供的信息来看，描述中没有提到男孩的头发不是卷曲的，因此可以推断出答案为肯定的。",
+            "answer": "Yes"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "男孩的头发长度是短的吗？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "从描述中提到男孩有'短'发，因此他的头发长度是短的。",
+            "answer": "是"
+          },
+          {
+            "thought": "观察到图像显示男孩的头发呈'短'长度，这意味着他的头发是短的。",
+            "answer": "是"
+          },
+          {
+            "thought": "根据描述和图像展示，男孩的发型特征是'短'的，确认他的头发长度为短。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "图中是否显示了男孩在用餐？",
+        "visual_answer": "Yes",
+        "candidates": [
+          {
+            "thought": "图像中有一个小孩坐在餐桌旁，正在使用勺子吃碗里的食物。",
+            "answer": "是"
+          },
+          {
+            "thought": "餐桌周围有椅子，暗示这是一个家庭用餐场景。",
+            "answer": "是"
+          },
+          {
+            "thought": "男孩的注意力集中在食物上，表明他在用餐过程中。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "男孩的头发是卷曲的吗？",
+        "visual_answer": "Yes",
+        "selected_answer": "Yes",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "男孩的头发长度是短的吗？",
+        "visual_answer": "是",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "图中是否显示了男孩在用餐？",
+        "visual_answer": "Yes",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "42",
+    "question": "Does the device to the right of the umbrella look black?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2374220.jpg",
+    "ground_truth": "no",
+    "visual_description": "In the image, a woman is walking down the street while holding an umbrella. A man is taking a picture of her using a camera. The camera is located to the right of the umbrella, and it appears to be black in color. The woman is wearing a yellow dress, and she is walking on the sidewalk. The scene captures a moment of interaction between the woman and the photographer.",
+    "prediction": "yes",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中的伞右边有什么设备？",
+        "visual_answer": "Camera",
+        "candidates": [
+          {
+            "thought": "根据描述，伞的右边有一台相机。相机通常与摄影有关，所以可以推断出这是一台相机。",
+            "answer": "Camera"
+          },
+          {
+            "thought": "伞在图片中右侧，说明相机也位于右侧。结合上下文，可以推测这是一台用于拍照的设备。",
+            "answer": "Photographing equipment"
+          },
+          {
+            "thought": "描述中提到男子正在用相机拍摄女子，因此伞的右侧应该放着相机。",
+            "answer": "Camera"
+          }
+        ],
+        "scores": [
+          1.0,
+          0.8,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "该设备看起来是什么颜色？",
+        "visual_answer": "Gray",
+        "candidates": [
+          {
+            "thought": "根据描述中的'它出现为黑色', 可以推断出设备的颜色是黑色。",
+            "answer": "Black"
+          },
+          {
+            "thought": "虽然描述中提到了相机的位置和与伞的关系，但没有明确提到颜色，但在上下文中可以合理推测为黑色。",
+            "answer": "Black"
+          },
+          {
+            "thought": "在提供的选项中，灰色（灰）并未出现在描述中，而黑色则是直接提到的颜色，因此选择黑色作为答案。",
+            "answer": "Black"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "该设备是否为黑色？",
+        "visual_answer": "No",
+        "candidates": [
+          {
+            "thought": "从描述中，可以看到相机被形容为‘它出现为黑色在颜色’，因此可以推断出相机是黑色的。但由于直接答案是否定的，可能需要进一步分析描述中的其他线索来形成这个推理路径。",
+            "answer": "Yes"
+          },
+          {
+            "thought": "描述中提到相机‘它出现为黑色在颜色’，这直接表明相机的颜色属性。虽然直接答案是否定的，但通过理解描述的语言用法，可以合理推测出相机确实是黑色的。",
+            "answer": "Yes"
+          },
+          {
+            "thought": "虽然直接答案是否定的，但描述中的“它出现为黑色在颜色”这一表述暗示了相机的颜色。通过仔细解析描述的用词和语境，可以得出相机为黑色的结论。",
+            "answer": "Yes"
+          }
+        ],
+        "scores": [
+          0.9,
+          0.9,
+          0.9
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中的伞右边有什么设备？",
+        "visual_answer": "Camera",
+        "selected_answer": "Camera",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "该设备看起来是什么颜色？",
+        "visual_answer": "Gray",
+        "selected_answer": "Black",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "该设备是否为黑色？",
+        "visual_answer": "No",
+        "selected_answer": "Yes",
+        "selected_score": 0.9
+      }
+    ]
+  },
+  {
+    "question_id": "43",
+    "question": "What color is the jersey the number is on?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2340236.jpg",
+    "ground_truth": "black",
+    "visual_description": "The image features a baseball player in a black and white jersey, swinging a baseball bat. The player is wearing a number on his jersey, which is red. The scene takes place in a stadium, with several other people present in the background. Some of them are sitting on chairs, while others are standing. The chairs are scattered around the area, with some closer to the foreground and others further back. The overall atmosphere of the image is that of an active sports event.",
+    "prediction": "red",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中的球衣是什么颜色？",
+        "visual_answer": "红",
+        "candidates": [
+          {
+            "thought": "从图片中可以清晰看到球员的球衣是黑色和白色的组合，因此球衣的颜色为黑白色。",
+            "answer": "黑白"
+          },
+          {
+            "thought": "观察到球员球衣上的数字是红色的，由于球衣整体颜色并未直接给出，可以根据已知信息推测可能的颜色。",
+            "answer": "红"
+          },
+          {
+            "thought": "虽然图片主要聚焦于球员挥棒的动作和背景的体育场环境，但通过仔细观察球员的全身装备，可以发现球衣的颜色。",
+            "answer": "黑白"
+          }
+        ],
+        "scores": [
+          0.1,
+          1.0,
+          0.1
+        ],
+        "selected_index": 1
+      },
+      {
+        "sub_question": "球衣上的号码是什么颜色？",
+        "visual_answer": "红",
+        "candidates": [
+          {
+            "thought": "观察球衣上的数字位置和整体图像色彩对比",
+            "answer": "红"
+          },
+          {
+            "thought": "注意到数字在黑白球衣的背景下呈现的颜色",
+            "answer": "红"
+          },
+          {
+            "thought": "通过对比数字与周围环境的色彩差异识别其颜色",
+            "answer": "红"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中的球衣是什么颜色？",
+        "visual_answer": "红",
+        "selected_answer": "红",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "球衣上的号码是什么颜色？",
+        "visual_answer": "红",
+        "selected_answer": "红",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "44",
+    "question": "Do you see any people to the right of the woman that is wearing a dress?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2341585.jpg",
+    "ground_truth": "yes",
+    "visual_description": "In the image, there is a woman wearing a dress standing on a sidewalk. She is holding a cell phone and appears to be engaged in a conversation. There are several other people in the scene, including a man playing a guitar and a man playing a violin. The people are standing around the street, and some are closer to the woman in the dress. There is also a chair placed in the scene, possibly for someone to sit and enjoy the music. The presence of multiple people and musical instruments suggests a lively and social atmosphere.",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中右侧是否有其他人？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "观察图片右侧的场景，可以看到有其他人在场。",
+            "answer": "是"
+          },
+          {
+            "thought": "右侧有人坐在椅子上，旁边还有演奏乐器的人。",
+            "answer": "是"
+          },
+          {
+            "thought": "通过图片细节，可以发现右侧存在互动和社交活动。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "右侧的人们正在做什么活动？",
+        "visual_answer": "演奏",
+        "candidates": [
+          {
+            "thought": "从图像中可以看到多人聚集在街道周围，其中有人在演奏乐器，如吉他和小提琴。这表明他们可能正在举行一个小型的音乐表演或街头音乐会。",
+            "answer": "演奏音乐"
+          },
+          {
+            "thought": "右侧画面中的人物围绕着街道，其中一些人在乐器前，这些乐器包括吉他和小提琴，这暗示他们在进行表演。",
+            "answer": "参与表演"
+          },
+          {
+            "thought": "观察到有人在演奏乐器，如吉他和小提琴，同时还有椅子的出现，这通常是为了让表演者坐下来，推测这些人正在举办或参与一个现场表演活动。",
+            "answer": "举办现场表演"
+          }
+        ],
+        "scores": [
+          1.0,
+          0.9,
+          0.8
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "右侧是否有人坐在椅子上？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "观察图片中的元素，发现有一把椅子在场景中，且有多个站立的人。根据图片展示的布局和活动氛围，可以推断出可能存在人在椅子上坐着。",
+            "answer": "是"
+          },
+          {
+            "thought": "从图片的整体氛围和人们的行为来看，通常在这样的场景中，人们会围绕音乐互动或休息。因此，有可能某个人正在椅子上享受音乐或休息。",
+            "answer": "是"
+          },
+          {
+            "thought": "考虑到图片细节，如椅子的放置位置以及周围站立的人群，我们可以合理推测，椅子的存在是为了供人休息或欣赏音乐，因此右侧可能有人在椅子上。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中右侧是否有其他人？",
+        "visual_answer": "是",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "右侧的人们正在做什么活动？",
+        "visual_answer": "演奏",
+        "selected_answer": "演奏音乐",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "右侧是否有人坐在椅子上？",
+        "visual_answer": "是",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "45",
+    "question": "Does the shirt have a different color than the kite?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2353439.jpg",
+    "ground_truth": "no",
+    "visual_description": "In the image, a young girl is standing in a grassy field, flying a green kite. The kite is positioned in the air, slightly above the girl's head. The girl is wearing a blue shirt, which is different in color from the green kite. The scene captures the girl's enjoyment of flying the kite in the open field.",
+    "prediction": "yes",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中的女孩穿的衣服与风筝相比，颜色是否不同？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "观察图像中女孩的衣物颜色和风筝的颜色对比",
+            "answer": "是"
+          },
+          {
+            "thought": "识别女孩蓝色衣物与绿色风筝之间的颜色差异",
+            "answer": "是"
+          },
+          {
+            "thought": "比较图像中人物和物体的颜色属性以判断差异性",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "女孩的衣服是什么颜色？",
+        "visual_answer": "蓝色",
+        "candidates": [
+          {
+            "thought": "观察女孩的穿着，注意到她的上衣颜色与背景中的绿色形成对比",
+            "answer": "蓝色"
+          },
+          {
+            "thought": "通过对比图像中的色彩，识别出女孩上衣的颜色不同于周围的自然环境色",
+            "answer": "蓝色"
+          },
+          {
+            "thought": "根据图像中的衣物细节，辨认出女孩所穿衬衫的颜色",
+            "answer": "蓝色"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "风筝是什么颜色？",
+        "visual_answer": "绿色",
+        "candidates": [
+          {
+            "thought": "观察图像中的主要对象是女孩和她的绿色风筝，风筝的颜色清晰可见。",
+            "answer": "绿色"
+          },
+          {
+            "thought": "从描述中提取关键信息，指出风筝被描述为‘green’，即绿色的。",
+            "answer": "绿色"
+          },
+          {
+            "thought": "基于颜色对比分析，女孩穿着蓝色衣服，而风筝是绿色的，颜色对比明显，易于辨认。",
+            "answer": "绿色"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中的女孩穿的衣服与风筝相比，颜色是否不同？",
+        "visual_answer": "是",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "女孩的衣服是什么颜色？",
+        "visual_answer": "蓝色",
+        "selected_answer": "蓝色",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "风筝是什么颜色？",
+        "visual_answer": "绿色",
+        "selected_answer": "绿色",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "46",
+    "question": "Are there rugs or bookcases?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2373585.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a cat sitting on a desk, looking at a television screen. The television is placed on the desk, and the cat is positioned in front of it. There are no rugs or bookcases in the scene. The focus of the image is on the cat and the television, with the cat's attention drawn towards the screen.",
+    "prediction": "no",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中有地毯吗？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "观察图片中的细节，包括地面、家具等元素，判断是否存在地毯。",
+            "answer": "否"
+          },
+          {
+            "thought": "从图片的背景环境推断，通常办公或学习空间不会放置地毯，以保持整洁和专业性。",
+            "answer": "否"
+          },
+          {
+            "thought": "注意到图片中明确描绘了桌面、电视和猫的位置关系，没有提及任何覆盖地面的物品。",
+            "answer": "否"
+          }
+        ],
+        "scores": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "图中有书架吗？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "图像中没有提到书架的存在",
+            "answer": "否"
+          },
+          {
+            "thought": "猫在电视前，通常情况下书架不在这个位置",
+            "answer": "否"
+          },
+          {
+            "thought": "缺乏描述书架的细节，因此无法确定其存在",
+            "answer": "不确定"
+          }
+        ],
+        "scores": [
+          0.1,
+          0.1,
+          1.0
+        ],
+        "selected_index": 2
+      },
+      {
+        "sub_question": "猫的位置与电视的距离如何？",
+        "visual_answer": "很近",
+        "candidates": [
+          {
+            "thought": "根据图像描述，猫坐在桌子上并正对着电视屏幕。可以推断出猫距离电视较近，因为它需要直视电视屏幕。",
+            "answer": "很近"
+          },
+          {
+            "thought": "从视觉角度来看，猫和电视之间的空间看起来不大，且猫的大小在图像中明显小于电视，暗示它们之间的距离不大。",
+            "answer": "很近"
+          },
+          {
+            "thought": "由于猫没有表现出明显的后退或靠近行为，且电视放置在桌面的合理位置，可以推断猫与电视保持了一个舒适且便于观察的距离，因此应该是在较近距离内。",
+            "answer": "很近"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中有地毯吗？",
+        "visual_answer": "是",
+        "selected_answer": "否",
+        "selected_score": 0.1
+      },
+      {
+        "sub_question": "图中有书架吗？",
+        "visual_answer": "是",
+        "selected_answer": "不确定",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "猫的位置与电视的距离如何？",
+        "visual_answer": "很近",
+        "selected_answer": "很近",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "47",
+    "question": "Are there any consoles on the floor?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2341659.jpg",
+    "ground_truth": "yes",
+    "visual_description": "The image features a young boy standing in a room, playing a video game on a television. The television is placed on the floor, and the boy is holding a remote control, likely a Wii remote, to interact with the game. The room appears to be a living space, with a bookshelf nearby, containing several books. The presence of the television and the boy's engagement in the game suggest that there is a console on the floor, which is the Wii console.",
+    "prediction": "yes",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "地板上是否有游戏机？",
+        "visual_answer": "Yes",
+        "candidates": [
+          {
+            "thought": "图像显示电视位于地板上，因此可以推断出地板上有游戏机。",
+            "answer": "Yes"
+          },
+          {
+            "thought": "男孩正在使用一个遥控器玩游戏，暗示地板上可能有与之配套的游戏设备。",
+            "answer": "Yes"
+          },
+          {
+            "thought": "书架上放着书籍，与游戏环境相符，进一步支持地板上有游戏机的假设。",
+            "answer": "Yes"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "游戏机是用于什么设备？",
+        "visual_answer": "电视",
+        "candidates": [
+          {
+            "thought": "电视上显示的是视频游戏画面，因此游戏机被连接到了电视上。",
+            "answer": "电视"
+          },
+          {
+            "thought": "男孩正在使用Wii遥控器进行游戏操作，这表明游戏机是Wii。",
+            "answer": "Wii游戏机"
+          },
+          {
+            "thought": "房间内有书架和书籍，通常游戏机放在这样的家庭娱乐环境中。",
+            "answer": "游戏机"
+          }
+        ],
+        "scores": [
+          1.0,
+          0.9,
+          0.8
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "男孩正在玩哪个游戏？",
+        "visual_answer": "Boxing",
+        "candidates": [
+          {
+            "thought": "根据图像描述，男孩手持的可能是Wii遥控器，通常用于体感游戏，因此他可能在玩需要身体动作的游戏。结合选项，最有可能的是拳击类游戏。",
+            "answer": "Boxing"
+          },
+          {
+            "thought": "图像中显示的电视放在地上，男孩正使用类似Wii遥控器的设备进行操作。这种设置和设备组合常出现在Wii游戏机上，因此他很可能在玩Wii上的体感游戏。选项中Boxing是体感游戏类型的一种，与图像描述相符。",
+            "answer": "Boxing"
+          },
+          {
+            "thought": "观察到电视和地板上的游戏设备，可以推断出这是一个家庭娱乐场景，使用Wii游戏机。选项中的Boxing是一个常见的Wii游戏，通常需要玩家使用Wii遥控器进行体感操作。因此，这是合理的假设。",
+            "answer": "Boxing"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "地板上是否有游戏机？",
+        "visual_answer": "Yes",
+        "selected_answer": "Yes",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "游戏机是用于什么设备？",
+        "visual_answer": "电视",
+        "selected_answer": "电视",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "男孩正在玩哪个游戏？",
+        "visual_answer": "Boxing",
+        "selected_answer": "Boxing",
+        "selected_score": 1.0
+      }
+    ]
+  },
+  {
+    "question_id": "48",
+    "question": "Does the ground look bare?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2335800.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features two giraffes standing in a dirt area, with one of them looking at the camera. The ground appears to be bare, with no visible vegetation or grass. The giraffes are positioned close to each other, with one standing slightly behind the other. The scene is set in a zoo, where the giraffes are likely to be cared for and provided with a suitable environment.",
+    "prediction": "yes",
+    "correct": false,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "地面看起来光秃秃的吗？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "地面没有植被或草，只有裸露的土壤。",
+            "answer": "是"
+          },
+          {
+            "thought": "观察者注意到地面上缺少植被覆盖，只有尘土。",
+            "answer": "是"
+          },
+          {
+            "thought": "从画面中可以看出，地面没有任何绿色植物，只是一片泥土。",
+            "answer": "是"
+          }
+        ],
+        "scores": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "图片中地面是否有可见的植被或草？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "根据描述，地面没有可见的植被或草。因此，可以推断出地面是裸露的。",
+            "answer": "否"
+          },
+          {
+            "thought": "描述提到地面为‘脏区’，这可能暗示存在一些尘土或小颗粒，但并未明确说明有无植被。因此，不能肯定地说有或没有。",
+            "answer": "不确定"
+          },
+          {
+            "thought": "画面中的主要焦点是两头长颈鹿，并未详细描绘地面情况。所以从图片中无法直接判断地面是否存在植被或草。",
+            "answer": "无法判断"
+          }
+        ],
+        "scores": [
+          0.1,
+          0.4,
+          0.5
+        ],
+        "selected_index": 2
+      },
+      {
+        "sub_question": "有几只 giraffes 在图片中出现？",
+        "visual_answer": "2",
+        "candidates": [
+          {
+            "thought": "图片中明显可以看到两只 giraffes, 一只在镜头前而另一只在后面。",
+            "answer": "2"
+          },
+          {
+            "thought": "根据动物数量的基本计数原则，近距离观察图片可以发现两只 giraffes。",
+            "answer": "2"
+          },
+          {
+            "thought": "在动物园环境中，图片提供者通常会确保展示的动物数量准确无误。因此，图片中应有两只 giraffes。",
+            "answer": "2"
+          }
+        ],
+        "scores": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "selected_index": 0
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "地面看起来光秃秃的吗？",
+        "visual_answer": "是",
+        "selected_answer": "是",
+        "selected_score": 1.0
+      },
+      {
+        "sub_question": "图片中地面是否有可见的植被或草？",
+        "visual_answer": "是",
+        "selected_answer": "无法判断",
+        "selected_score": 0.5
+      },
+      {
+        "sub_question": "有几只 giraffes 在图片中出现？",
+        "visual_answer": "2",
+        "selected_answer": "2",
+        "selected_score": 2.0
+      }
+    ]
+  },
+  {
+    "question_id": "49",
+    "question": "Are there rice cookers or blenders?",
+    "image": "/root/autodl-tmp/vision_qa_platform/data_sample/2329692.jpg",
+    "ground_truth": "no",
+    "visual_description": "The image features a kitchen with a laptop placed on a countertop. There are two chairs in the scene, one located near the laptop and the other further away. A microwave is also present in the kitchen, positioned towards the right side of the room. Additionally, there are two bottles, one placed near the left side of the kitchen and the other closer to the center. The kitchen appears to be well-equipped and functional, with various appliances and items for cooking and dining.",
+    "prediction": "no",
+    "correct": true,
+    "status": "success",
+    "trace": [
+      {
+        "sub_question": "图中是否有电饭煲？",
+        "visual_answer": "是",
+        "candidates": [
+          {
+            "thought": "观察图片中的主要厨房设备，寻找电饭煲的迹象。",
+            "answer": "否"
+          },
+          {
+            "thought": "检查图片中是否包含任何电饭煲的描述或特征。",
+            "answer": "否"
+          },
+          {
+            "thought": "考虑图片中不存在的设备类型，以排除常见厨房用具外的可能性。",
+            "answer": "否"
+          }
+        ],
+        "scores": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "selected_index": 0
+      },
+      {
+        "sub_question": "左侧的物体是什么？",
+        "visual_answer": "烤箱",
+        "candidates": [
+          {
+            "thought": "观察到图片中左侧行为区域，存在两个瓶子，因此左侧物体是两个瓶子之一。",
+            "answer": "一个瓶子"
+          },
+          {
+            "thought": "考虑到图片展示了厨房环境，左部可能摆放的是厨房常用的电器或物品，而非瓶子，因此这里考虑其他可能性。",
+            "answer": "微波炉"
+          },
+          {
+            "thought": "注意到图片中的厨具布局，左侧位置通常用于放置小物件或烹饪用品，结合常见厨房配置，此处可能是一个烤箱。",
+            "answer": "烤箱"
+          }
+        ],
+        "scores": [
+          0.1,
+          0.9,
+          1.0
+        ],
+        "selected_index": 2
+      }
+    ],
+    "selected_sub_answers": [
+      {
+        "sub_question": "图中是否有电饭煲？",
+        "visual_answer": "是",
+        "selected_answer": "否",
+        "selected_score": 0.1
+      },
+      {
+        "sub_question": "左侧的物体是什么？",
+        "visual_answer": "烤箱",
+        "selected_answer": "烤箱",
+        "selected_score": 1.0
+      }
+    ]
+  }
+]
